@@ -1,0 +1,876 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
+@font-face {
+    font-family: "Metropolis 1920";
+    src: url("../cooking/assets/fonts/Metropolis1920.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    background: #000;
+}
+h2 {
+    font-size: 48px;
+    line-height: 72px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+.hero-main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-main video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.hero-main .container {
+    position: relative;
+    z-index: 5;
+}
+.hero-main:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.hero-main span {
+    font-family: "Miniver", cursive;
+    color: #c9ab81;
+    text-align: center;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 20px;
+}
+.hero-main h2 {
+    font-family: "Metropolis 1920";
+    color: #c9ab81;
+    letter-spacing: 0.1em;
+    font-size: 120px;
+    line-height: 126px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero-main p {
+    max-width: 700px;
+    margin: 20px auto 30px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.hero-main a {
+    padding: 11px 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #c9ab81;
+    border: 1px solid #c9ab81;
+    position: relative;
+    transition: all 0.3s;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.hero-main a small {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-main a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(201, 171, 129);
+    transition: all 0.3s;
+}
+.hero-main a:hover {
+    color: #000;
+}
+
+.hero-main a:hover::after {
+    width: 100%;
+}
+.cooking-main {
+    overflow: hidden;
+}
+.cooking-main .caption h2 {
+    margin-bottom: 100px;
+}
+
+.content h3 {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0px 0px 24px;
+}
+
+.content p {
+    line-height: 31.5px;
+    font-size: 18px;
+}
+.img-box {
+    position: relative;
+}
+.custom-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: solid 2px #cea547;
+    z-index: 5;
+}
+.img-box img {
+    width: 100%;
+}
+.cooking-main .row:nth-child(even) .content {
+    padding-right: 30px;
+}
+
+.cooking-main .row {
+    margin-bottom: 72px;
+}
+.cooking-main .row:nth-child(odd) .content {
+    padding-left: 30px;
+}
+.cooking-main .row:nth-child(odd) .custom-border {
+    right: -30px;
+    top: -30px;
+    left: auto;
+}
+.cooking-main .row:nth-child(even) .custom-border {
+    left: -30px;
+    top: -30px;
+}
+.fade-in-right {
+    animation: fade-in-right 1.5s ease-in-out;
+}
+
+.fade-out-right {
+    animation: fade-out-right 1.5s ease-in-out;
+}
+
+@keyframes fade-in-right {
+    0% {
+        margin-left: 50px;
+        margin-right: -50px;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0;
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-right {
+    0% {
+        margin-left: 0;
+        margin-right: 0px;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in-left {
+    animation: fade-in-left 1.5s ease-in-out;
+}
+
+.fade-out-left {
+    animation: fade-out-left 1.5s ease-in-out;
+}
+
+@keyframes fade-in-left {
+    from {
+        margin-left: -50px;
+        margin-right: 50px;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0px;
+        margin-right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-left {
+    from {
+        margin-left: 0px;
+        margin-right: 0px;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.what-we-make p {
+    text-align: center;
+    color: #fff;
+}
+
+.caption {
+    margin-bottom: 50px;
+}
+
+.caption h2 {
+    margin-bottom: 16px;
+    font-family: "Roboto Slab", serif;
+}
+.caption p {
+    font-size: 18px;
+    line-height: 31.5px;
+    margin: 0;
+}
+
+.what-we-make {
+    background-image: url(../cooking/assets/longimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: bottom left;
+}
+
+.card-food {
+    border: 2px solid #cea547;
+    position: relative;
+    padding: 1rem;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.card-food .imgTitle {
+    display: block;
+}
+.card-food .img-wrapper {
+    overflow: hidden;
+    padding-top: 66%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.card-food .img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+    filter: saturate(90%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 5px;
+    height: 100%;
+}
+.card-food p {
+    font-size: 15px;
+    line-height: 26.25px;
+    color: #fff;
+    font-weight: 700;
+    opacity: 0.9;
+    text-align: left;
+    margin: 0;
+    cursor: pointer;
+}
+
+.card-food .title {
+    font-size: 18px;
+    line-height: 31.5px;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-food .btn-read {
+    font-family: "Raleway", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 0.5rem;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.card-food:hover .img-wrapper img {
+    filter: saturate(100%);
+    transform: scale(1.05);
+}
+
+.about-cooking {
+    background-image: url(../cooking/assets/secondlastsection1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: bottom left;
+    position: relative;
+}
+
+.about-cooking:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about-cooking .container {
+    position: relative;
+    z-index: 5;
+}
+
+.about-cooking .caption {
+    margin-bottom: 0;
+}
+.about-cooking .caption p {
+    margin-top: 24px;
+}
+
+.cooking-page footer {
+    background: #000;
+}
+
+#cookinkModal .modal-dialog {
+    max-width: 1308px;
+}
+#cookinkModal .modal-content {
+    background-color: #000000;
+    border: 2px solid #cea547;
+    padding: 72px 20px;
+    max-height: calc(100vh - 144px);
+    overflow-y: auto;
+}
+
+#cookinkModal .modal-content::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+
+#cookinkModal .modal-content::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+
+#cookinkModal .modal-content::-webkit-scrollbar-thumb {
+    background: #cea547;
+}
+
+/* Handle on hover */
+
+#cookinkModal .modal-content::-webkit-scrollbar-thumb:hover {
+    background: #cea547;
+}
+
+.innerModal {
+    max-width: 990px;
+    margin: 0 auto;
+}
+.innerModal .media {
+    display: flex;
+    align-items: flex-start;
+}
+.innerModal .media .img-holder {
+    flex: 0 0 420px;
+    max-width: 420px;
+    margin-right: 1.5rem;
+    position: relative;
+    padding-top: 66.66%;
+}
+
+.innerModal .media .img-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+.innerModal .media .media-body {
+    flex: 1;
+}
+
+.innerModal .media .media-body h2 {
+    font-family: "Roboto Slab", serif;
+}
+.innerModal .media .media-body p {
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.btnclose {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 999;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+}
+
+#lightboxCarousel-egmejr20 .text-white p {
+    margin: 0;
+}
+#lightboxCarousel-egmejr20 .text-white p:first-of-type {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    height: auto !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: -48px;
+    color: #fff;
+}
+.carousel-control-prev {
+    left: -46px;
+}
+
+.carousel-control-next {
+    right: -46px;
+}
+
+.sliderWrapper {
+    position: relative;
+}
+.swiper-button-prev {
+    left: -50px;
+}
+.swiper-button-next {
+    right: -50px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border: 1px solid #cea547;
+    color: #cea547;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-top: -30px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.food-detail .img-holder {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+}
+.food-detail .img-holder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cookCard {
+    text-align: center;
+}
+
+.cookCard .icon {
+    font-size: 32px;
+    color: #c9ab81;
+}
+.cookCard h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+}
+.cookCard span {
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 20px;
+}
+.food-detail hr {
+    margin: 48px 0;
+}
+.food-detail h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    line-height: 1;
+    color: #c9ab81;
+}
+.food-detail p a{
+    text-decoration: underline;
+    color: #c9ab81;
+
+}
+.food-detail .subTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #c9ab81;
+}
+
+.cardSteps {
+    display: flex;
+}
+
+.cardSteps .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #c9ab81;
+}
+.cardSteps .desciption {
+    flex: 1;
+}
+
+.cardSteps .desciption .titleStep {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.cardSteps {
+    margin-bottom: 20px;
+}
+.cardSteps .desciption p {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.food-detail ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+.food-detail ul li {
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    position: relative;
+}
+
+.food-detail ul li:before {
+    content: "";
+    color: #c9ab81;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    position: relative;
+    top: 7px;
+    background: url('https://api.iconify.design/carbon/dot-mark.svg?color=%23c9ab81&width=10&height=10') no-repeat center center / contain;
+}
+.food-detail ul li a{
+    color: #c9ab81;
+}
+
+.food-detail h5 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+}
+.food-detail ul li span {
+    flex: 1;
+}
+.modalHeader {
+    padding: 30px 30px;
+}
+
+.arrowback {
+    display: inline-flex;
+    align-items: center;
+    color: #c9ab81;
+    transition: all 0.3s;
+}
+.arrowback i {
+    margin-right: 8px;
+    font-size: 18px;
+    line-height: 1;
+    transition: all 0.3s;
+}
+
+.arrowback:hover {
+    color: #c9ab81;
+}
+.arrowback:hover i {
+    transform: translateX(-5px);
+}
+
+.readMore .modal-dialog {
+    max-width: 1200px;
+    padding: 0 15px;
+}
+.readMore .modal-content {
+    background: #262525;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.readMore .modal-content .food-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 80px);
+}
+
+.modalBody {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 30px 50px;
+}
+.modalBody p{
+    font-size: 14px;
+}
+
+.readMore .modal-content .modalBody::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+
+.readMore .modal-content .modalBody::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+
+.readMore .modal-content .modalBody::-webkit-scrollbar-thumb {
+    background: #cea547;
+}
+
+/* Handle on hover */
+
+.readMore .modal-content .modalBody::-webkit-scrollbar-thumb:hover {
+    background: #cea547;
+}
+@media (max-width: 1400px) {
+    .btnclose {
+        top: 12px;
+        right: 12px;
+    }
+    .innerModal .media .img-holder {
+        flex: 0 0 320px;
+        max-width: 320px;
+    }
+    #cookinkModal .modal-dialog {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .cooking-main .row:nth-child(odd) .content {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+    .cooking-main .row:nth-child(even) .content {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+    #cookinkModal .modal-dialog {
+        max-width: 800px;
+    }
+    .innerModal .media .media-body h2 {
+        font-size: 36px;
+        line-height: 1;
+    }
+    .innerModal .media .media-body p {
+        font-size: 16px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: relative;
+        margin: 0 5px;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .sliderWrapper .control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .cooking-main .caption h2 {
+        margin-bottom: 40px;
+    }
+    .content h3 {
+        font-size: 36px;
+        font-weight: 300;
+        margin: 0px 0px 18px;
+    }
+    .content p {
+        line-height: 24px;
+        font-size: 16px;
+    }
+    #cookinkModal .modal-dialog {
+        max-width: 740px;
+    }
+    .innerModal .media {
+        flex-direction: column;
+    }
+    .innerModal .media .img-holder {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .innerModal .media .img-holder {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+        width: 100%;
+        padding-top: 45%;
+        margin-bottom: 30px;
+    }
+    #cookinkModal .modal-content {
+        padding: 30px;
+    }
+    .food-detail .img-holder {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cooking-main .row:nth-child(even) .custom-border {
+        left: -10px;
+        top: -15px;
+    }
+    .cooking-main .row:nth-child(odd) .custom-border {
+        right: -10px;
+        top: -15px;
+        left: auto;
+    }
+    .cooking-main .row:nth-child(odd) .content {
+        padding: 0;
+        margin-bottom: 45px;
+    }
+    .cooking-main .row:nth-child(even) .content {
+        margin-bottom: 45px;
+    }
+    #cookinkModal .modal-dialog {
+        max-width: 560px;
+    }
+}
+@media (max-width: 575px) {
+    .hero-main h2 {
+        font-size: 74px;
+        line-height: 60px;
+    }
+    .hero-main p {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+    .content h3 {
+        font-size: 28px;
+    }
+    section {
+        padding: 36px 0;
+    }
+    .caption p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #cookinkModal .modal-dialog {
+        padding: 0 1rem;
+    }
+    #cookinkModal .modal-content {
+        padding: 36px 16px;
+        max-height: calc(100vh - 94px);
+    }
+    .innerModal .media .media-body h2 {
+        font-size: 26px;
+        line-height: 1;
+    }
+}

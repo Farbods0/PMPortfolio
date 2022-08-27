@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Monoton&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+body {
+    font-family: "Arial, sans-serif";
+    color: #fff;
+    background: #000;
+}
+h2 {
+    font-size: 48px;
+    line-height: 72px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.cta-primary {
+    position: relative;
+    color: #fff;
+    z-index: 0;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    padding: 20px 22px;
+    transition: all 0.5s;
+    background-color: #4063e6;
+    border-radius: 0;
+}
+
+.cta-primary:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);
+}
+.hero-main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-main video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.hero-main .container {
+    position: relative;
+    z-index: 5;
+}
+.hero-main:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.hero-main h2 {
+    font-family: "Monoton", cursive;
+    color: #fff;
+    font-size: 72px;
+    line-height: 126px;
+    font-weight: 300;
+}
+
+.widget-controls {
+    padding-left: 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.latestMusic {
+    background-image: url(../dj/assets/dj-09.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+    background-position: 50% 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0;
+    background-attachment: fixed;
+}
+.latestMusic:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.latestMusic .container {
+    position: relative;
+    z-index: 5;
+}
+
+.where-play {
+    background-image: url(../dj/assets/barclub.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+    background-position: 50% 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0;
+}
+
+.where-play:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.where-play .container {
+    position: relative;
+    z-index: 5;
+}
+.innerText {
+    position: relative;
+    z-index: 5;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 1;
+}
+
+.iconList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+.iconList h4 {
+    margin: 0;
+    font-size: 21.6px;
+    line-height: 37.8px;
+}
+
+.iconList .iconHolder {
+    position: relative;
+    top: -10px;
+}
+
+.iconList .iconHolder .square {
+    display: inline-block;
+    position: absolute;
+    top: -110px;
+    right: 0px;
+    height: 96px;
+    width: 96px;
+    border: 21px solid #0f0f3b;
+    transition: all ease 0.3s;
+    left: 0;
+    margin: 0 auto;
+}
+
+.iconList .iconHolder .rings_icon {
+    max-width: 119px;
+    position: absolute;
+    left: -6px;
+    top: -134px;
+}
+
+.iconList .iconHolder .danceIcon {
+    max-width: 119px;
+    position: absolute;
+    left: 46px;
+    top: -124px;
+}
+
+.iconList .iconHolder .cocktail {
+    max-width: 156px;
+    position: absolute;
+    right: -18px;
+    top: -184px;
+}
+
+.iconList .iconHolder .playlist_icon {
+    max-width: 156px;
+    position: absolute;
+    left: 0;
+    top: -142px;
+}
+
+.iconList .iconHolder .dj_icon {
+    max-width: 156px;
+    position: absolute;
+    left: -46px;
+    top: -167px;
+}
+
+.iconList {
+    margin-top: 180px;
+}
+.navigation.active .iconBox .iconHolder .square,
+.navigation:hover .iconBox .iconHolder .square {
+    border: 21px solid #d71362;
+}
+
+.navigation.active .iconBox .iconHolder img,
+.navigation:hover .iconBox .iconHolder img {
+    filter: brightness(0) invert(1);
+}
+.navigation.active h4,
+.navigation:hover h4 {
+    color: #d71362;
+}
+.live-stream p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.live-stream p span {
+    display: inline-block;
+    height: 2px;
+    width: 30px;
+    margin: 0 10px;
+    line-height: 16px;
+    background-color: #4063e6;
+}
+
+.cflexrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.cflexrow .clabel {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.cflexrow h1 {
+    font-size: 205px;
+    font-weight: 700;
+    font-family: "Barlow Condensed", sans-serif;
+    opacity: 0.6;
+}
+
+.cflexrow .countertext {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    letter-spacing: 0.2em;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.cflexrow .countertext {
+    font-family: "Space Mono", monospace;
+}
+
+.cflexrow .clabel {
+    margin: 0 20px;
+}
+
+.live-stream {
+    background-image: url(../dj/assets/sick-music-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+    background-position: 50% 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0;
+    background-attachment: fixed;
+}
+
+.live-stream:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.live-streamc .container {
+    position: relative;
+    z-index: 999;
+}
+
+.innerContent {
+    position: relative;
+    z-index: 5;
+}
+
+.card-cloud {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem 2.5rem;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    border: 0.5px solid rgba(255,255,255,0.3);
+    margin: 0 -0.5px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.card-cloud:hover .btn {
+    transform:scale(1.2);
+}
+
+.card-cloud:hover{
+    background: #fff;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.card-cloud:hover .img-white{
+    filter: none;
+}
+.img-white{
+    filter: brightness(0) invert(1);
+}
+
+.card-cloud:hover p{
+    color: #000;
+}
+.card-cloud p {
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: initial;
+    color: #fff;
+}
+.card-cloud i img {
+    width: 10rem;
+}
+.card-cloud .iconStyle {
+    font-size: 20px;
+    line-height: 35px;
+    font-family: "Marvel", sans-serif;
+    color: #fff;
+}
+
+.card-cloud p {
+    margin-bottom: 40px;
+}
+.card-cloud .iconStyle {
+    display: inline-flex;
+    align-items: center;
+}
+.card-cloud .iconStyle i {
+    margin-right: 7px;
+    line-height: 1;
+}
+.card-cloud .iconImg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+}
+
+.card-cloud .btn{
+    background-image: linear-gradient(to right,#fb3a64,#ba01e2);
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 500;
+    height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    line-height: 46px;
+    transition: all 0.2s;
+}
+.card-cloud .btn i{
+    font-size: 16px;
+    line-height: 1;
+    position: relative;
+    margin-right: 8px;
+
+}
+
+.card-cloud .btn:focus,
+.card-cloud .btn:hover{
+    
+    background-image: linear-gradient(to right,#ba01e2 ,#fb3a64);
+    border: none;
+    color: #fff;
+    transform:scale(1.2);
+}
+
+.source-main {
+    background-image: url(../dj/assets/assets/source1dj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+    background-position: 50% 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px 0;
+    background-attachment: fixed;
+}
+
+.source-main:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.passion-main {
+    background-image: url(../dj/assets/assets/source5dj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0;
+}
+
+.passion-main:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.passion-main .container {
+    position: relative;
+    z-index: 5;
+}
+
+.content p {
+    font-size: 18px;
+    /*text-transform: uppercase; */
+}
+.passion-main .img-holder {
+    border: 3px solid white;
+    padding: 0.5rem;
+}
+.passion-main .img-holder img {
+    width: 100%;
+}
+
+@media (max-width: 1199px) {
+    .cflexrow h1 {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    #latest-music-tracks {
+        flex-direction: column;
+    }
+    .iconList h4 {
+        font-size: 16px;
+    }
+    .navigation.active .iconBox .iconHolder .square,
+    .navigation:hover .iconBox .iconHolder .square,
+    .iconList .iconHolder .square {
+        border-width: 8px;
+    }
+    .source-main [class*="col-"] {
+        margin-bottom: 30px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+
+    .iconList {
+        flex-wrap: wrap;
+    }
+    .iconList .iconHolder .square {
+        width: 50px;
+        height: 50px;
+    }
+    .iconList .iconHolder .rings_icon {
+        max-width: 64px;
+        position: absolute;
+        left: 0;
+        top: -57px;
+    }
+    .iconList .iconHolder .danceIcon {
+        max-width: 60px;
+        position: absolute;
+        left: 41px;
+        top: -53px;
+    }
+
+    .iconList .iconHolder .cocktail {
+        max-width: 98px;
+        position: absolute;
+        right: 0px;
+        top: -92px;
+    }
+    .iconList .iconHolder .playlist_icon {
+        max-width: 70px;
+        position: absolute;
+        left: 18px;
+        top: -75px;
+    }
+    .iconList .iconHolder .dj_icon {
+        max-width: 82px;
+        position: absolute;
+        left: -2px;
+        top: -74px;
+    }
+    .iconList .iconHolder .square {
+        top: -47px;
+    }
+    .iconList {
+        margin-top: 96px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cflexrow h1 {
+        font-size: 80px;
+    }
+    .cflexrow .countertext {
+        top: 0px;
+    }
+
+    .innerText .navigation {
+        margin-bottom: 100px;
+    }
+    .iconList {
+        justify-content: center;
+    }
+    .iconList li {
+        padding: 0 10px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 56px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cflexrow h1 {
+        font-size: 40px;
+    }
+    .cflexrow .countertext {
+        top: -8px;
+        font-size: 11px;
+    }
+    .hero-main h2 {
+        font-size: 42px;
+    }
+}

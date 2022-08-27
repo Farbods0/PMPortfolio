@@ -1,0 +1,58 @@
+body {
+    font-family: "Raleway", sans-serif;
+    color: #000;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.contact-main {
+    padding: 72px 0;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 31.5px;
+}
+
+label span {
+    font-size: 15.3px;
+    font-weight: 400;
+    line-height: 26.775px;
+}
+
+.form-control {
+    border-width: 2px;
+    border-style: solid;
+    padding: 9px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+form .btn-from {
+    font-size: 14px;
+    border: 1px solid #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 12px;
+    line-height: 1;
+    padding: 12px;
+    border-radius: 4px;
+    color: #bbb;
+}
+
+form .btn-from:hover {
+    color: #000;
+}

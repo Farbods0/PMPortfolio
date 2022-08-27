@@ -1,0 +1,149 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.about-main {
+    padding: 72px 0;
+    overflow: hidden;
+}
+
+.contentText p {
+    margin-bottom: 24px;
+    color: #4d4d4d;
+    font-size: 18px;
+    line-height: 31.5px;
+    font-family: "Raleway", sans-serif;
+}
+.contentText .imgHolder {
+    float: right;
+    max-width: 420px;
+    margin-left: 15px;
+}
+.contentText .imgHolder img {
+    width: 100%;
+}
+.contentText a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.contentText a:hover {
+    color: #1d5ba0;
+    text-decoration: underline;
+}
+
+.find-me {
+    background-image: url(../about/assets/ven-diagram-bg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+    background-position: 50% 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0;
+    background-attachment: fixed;
+}
+
+.find-me:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.find-me .container {
+    position: relative;
+    z-index: 5;
+}
+
+.media-quote {
+    display: flex;
+    margin-bottom: 48px;
+}
+.media-quote .media-body {
+    font-family: "Open Sans", sans-serif;
+    flex: 1;
+    font-size: 52px;
+    color: #fff;
+    line-height: 52px;
+    font-weight: 700;
+    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+    margin-top: 5px;
+    margin-right: 24px;
+    font-size: 42px;
+    color: #fff;
+}
+
+@media (max-width: 1199px) {
+    .page-title {
+        height: 375px;
+    }
+    .page-title h2 {
+        font-size: 56px;
+    }
+    .find-me img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contentText .imgHolder {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contentText .imgHolder {
+        max-width: 100%;
+        margin: 0 0 30px;
+    }
+    .media-quote .media-body {
+        font-size: 36px;
+        line-height: 44px;
+        padding: 16px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .find-me img {
+        max-width: 100%;
+    }
+    .icon {
+        margin-right: 12px;
+        font-size: 26px;
+    }
+    .media-quote .media-body {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .page-title h2 {
+        font-size: 42px;
+    }
+    .page-title {
+        height: 320px;
+    }
+}

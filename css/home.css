@@ -1,0 +1,315 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+}
+h2 {
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+}
+a:hover,
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-family: "Raleway", sans-serif;
+}
+
+.cta-primary {
+    color: #ffffff;
+    background-color: #1d5ba0;
+    border-color: #1d5ba0;
+    text-transform: uppercase;
+}
+
+.cta-primary:focus,
+.cta-primary:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #1d5ba0;
+}
+
+a:hover {
+    color: #1d5ba0;
+}
+/* HERO MAIN */
+
+.hero-main {
+    background-image: url(../images/hero/stockphotofront.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out 0s;
+    background-position: 50% 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0;
+    background-attachment: fixed;
+}
+
+.hero-main:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-main .container {
+    position: relative;
+    z-index: 5;
+}
+
+.hero-main .hero-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-main .hero-content img {
+    max-width: 600px;
+}
+.hero-main h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    margin: 50px 0 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    margin: 0 0 48px;
+}
+
+.content p {
+    margin-bottom: 48px;
+    line-height: 31.5px;
+    font-size: 18px;
+}
+
+/* whoAm */
+.whoAm {
+    padding: 72px 0;
+    min-height: 100vh;
+    background-image: url(../images/road.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.whoAm:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.whoAm .container {
+    position: relative;
+    z-index: 5;
+}
+/* HOW I WORK START */
+
+.how-work {
+    padding: 72px 0;
+    min-height: 100vh;
+    background-image: url(../images/55-1600x1030.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.how-work:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.how-work .container {
+    position: relative;
+    z-index: 5;
+}
+
+.how-work h2 {
+    margin-bottom: 50px;
+}
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.card-icon .icon {
+    font-size: 62px;
+    color: #1d5ba0;
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+.card-icon h3 {
+    line-height: 35px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.card-icon p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+/* WHERE WORK START */
+
+.where-work {
+    padding: 72px 0;
+    min-height: 100vh;
+    color: #fff;
+    background-image: url(../images/architecture-blur-bridge-314378.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.where-work a {
+    color: #fff;
+}
+.where-work:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.where-work .container {
+    position: relative;
+    z-index: 5;
+}
+
+@media (max-width: 1199px) {
+    .hero-main h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    .content p {
+        margin-bottom: 30px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .content h2 {
+        margin: 0 0 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-main .hero-content img {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .hero-main h1 {
+        font-size: 20px;
+        margin: 25px 0 0;
+    }
+   
+    .content p {
+        margin-bottom: 16px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .whoAm {
+        padding: 35px 0;
+    }
+
+    section {
+        padding: 35px 0;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .card-icon .icon {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+    .card-icon h3 {
+        line-height: 28px;
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+}

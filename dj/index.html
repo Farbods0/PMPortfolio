@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Farbod Jahan | DJ</title>
+    <link rel="icon" type="image/x-icon" href="/Logo/Icon/V2/FarbodJahan-White.svg">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dj.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body class="cooking-page">
+    <div class="external-wrapper">
+        <!-- HEADER START -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/FarbodJahan.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <button class="closeIcon"><iconify-icon icon="ep:close"></iconify-icon></button>
+                      
+                        <button class="closeIcon"><iconify-icon icon="ep:close"></iconify-icon></button>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="../index.html">
+                                    <iconify-icon icon="fa:home"></iconify-icon>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../about/">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../resume/">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../contact/">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Interests</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a class="dropdownitem" href="index.html">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../cooking/index.html">Cooking</a></li>
+                                        <li><a class="dropdownitem" href="../real-estate/">Real Estate</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- HEADER END -->
+        <!-- SECTION HERO MAIN START -->
+        <section class="hero-main">
+            <video style="object-fit: cover; width:100%; height:100vh;" src="./assets/file.mp4" id="video-slider"
+                loop="" autoplay="" muted=""></video>
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400"> DJ MUSIC</h2>
+            </div>
+        </section>
+        <!-- SECTION HERO MAIN END -->
+        <!-- SECTION LATEST MUSIC START -->
+        <section class="latestMusic para">
+            <div class="container">
+                <div class="title">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">LATEST MUSIC</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">CHECK OUT MY LATEST MIXES</p>
+                </div>
+                <style>
+                    #latest-music-tracks {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    @media only screen and (max-width: 620px) {
+                        #latest-music-tracks {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+
+                    .widget-controls {
+                        border: 0 !important;
+                    }
+
+                    .widget-controls-top {
+                        border: 0 !important;
+                    }
+
+                    .widget-controls-mid {
+                        border: 0 !important;
+                    }
+
+                    /* WHERE I STYLE */
+                    .whereI-backgroundColor {
+                        /* background-image: url(barclub.jpg) ; */
+                        background-color: #100726;
+                        /* background-repeat: no-repeat;
+                                    background-size: cover; */
+                        transition: all 0.5s ease-in-out;
+                        height: 60vh;
+                    }
+
+                    .backgroundCover {
+                        background-color: rgba(0, 0, 0, 0.7) !important;
+                        /* transition: all 0.5s ease-in-out; */
+                        height: 100%;
+                    }
+
+                    .whereI-class {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 120%;
+                        font-weight: 500;
+                    }
+
+                    .square-1 {
+                        position: absolute;
+                        top: -110px;
+                        right: 0px;
+
+                        height: 96px;
+                        width: 96px;
+                        border: 21px solid #0F0F3B;
+                        box-sizing: border-box;
+                        transition: all ease .3s;
+
+                    }
+
+                    .whereI-item:hover .square-1 {
+                        border: 21px solid #d71362;
+                    }
+
+                    .whereI-class .icon {
+                        width: 67px;
+                        position: absolute;
+                        top: -75px;
+                        right: 10px;
+                        opacity: 0.8;
+                    }
+
+                    @media screen and (max-width: 990px) {
+                        .Weddings_small_size {
+                            font-size: 18px !important;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        .whereI-class {
+                            display: grid !important;
+                            grid-template-columns: repeat(2, 1fr) !important;
+                            grid-gap: 80px !important;
+                        }
+
+                        .whereI-backgroundColor {
+
+                            height: auto;
+                        }
+
+                        .whereI-class .icon {
+                            width: 75px;
+                            top: 0px;
+                            right: 0px;
+                            position: static;
+                            padding-top: 20px;
+                            margin-right: 117px;
+                            margin: 0 auto;
+                        }
+
+                        .square-1 {
+
+                            top: 35px !important;
+                            right: 100px !important;
+                            height: 80px !important;
+                            width: 80px !important;
+                            border: 18px solid #0F0F3B !important;
+
+                        }
+
+                        .whereI-item:hover .square-1 {
+                            border: 18px solid #d71362 !important;
+                        }
+
+                        
+
+                    
+                     
+
+
+
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        .whereI-class {
+                            display: grid !important;
+                            grid-template-columns: repeat(1, 1fr) !important;
+                            grid-gap: 80px !important;
+                        }
+
+                        .whereI-class .icon {
+                            width: 75px;
+                            top: 0px;
+                            right: 0px;
+                            position: static;
+                            padding-top: 20px;
+                            margin-right: 117px;
+                            margin: 0 auto;
+                        }
+
+                        .Where-Do-I-Play {
+                            margin-bottom: 0 !important;
+                        }
+
+                        .square-1 {
+
+
+                            right: 151px !important;
+
+
+                        }
+
+
+                    }
+
+                    .whereI-container {
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        height: 100%;
+                    }
+
+                    .whereI-flex {
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 9rem;
+                    }
+                </style>
+                </style>
+                <div id="latest-music-tracks" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="loading" style="grid-column: 1 / span 3;"></div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION LATEST MUSIC END -->
+        <!-- SECTION WHERE DO I PLAY START -->
+        <section class="where-play" id="background">
+            <div class="container">
+                <div class="innerText">
+                <div class="title">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">WHERE DO I PLAY</h2>
+                </div>
+                <ul class="iconList" data-aos="fade-up" data-aos-duration="1000">
+                    <li class="navigation "  data-image-id='1'>
+                        <div class="iconBox">
+                            <div class="iconHolder">
+                                <span class="square"></span>
+                                <img src="./assets/rings.png" alt="" class="rings_icon">
+                            </div>
+                            <h4>Weddings</h4>
+                        </div>
+                    </li>
+                    <li class="navigation active" data-image-id='2'>
+                        <div class="iconBox ">
+                            <div class="iconHolder ">
+                                <span class="square"></span>
+                                <img src="./assets/dance.png" alt="" class="danceIcon">
+                            </div>
+                            <h4>Clubs and Bars</h4>
+                        </div>
+                    </li>
+                    <li class="navigation" data-image-id='3'>
+                        <div class="iconBox">
+                            <div class="iconHolder">
+                                <span class="square"></span>
+                                <img src="./assets/cocktail.png" alt="" class="cocktail">
+                            </div>
+                            <h4>Corporate Events</h4>
+                        </div>
+                    </li>
+                    <li class="navigation" data-image-id='4'>
+                        <div class="iconBox">
+                            <div class="iconHolder">
+                                <span class="square"></span>
+                                <img src="./assets/playlist.png" alt="" class="playlist_icon">
+                            </div>
+                            <h4>Playlist Creation</h4>
+                        </div>
+                    </li>
+                    <li class="navigation" data-image-id='5'>
+                        <div class="iconBox">
+                            <div class="iconHolder">
+                                <span class="square"></span>
+                                <img src="./assets/dj.png" alt="" class="dj_icon">
+                            </div>
+                            <h4>DJ Lessons</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <!-- SECTION WHERE DO I PLAY END -->
+        <!-- SECTION LIVE STREAM START -->
+        <section class="live-stream para">
+            <div class="container">
+                <div class="innerContent">
+                <div class="title">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">NEXT LIVE STREAM</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">Casa de DJ FJ <span></span>  San Francisco, US</p>
+                </div>
+                <div class="cflexrow"id="toFriday"></div>
+                <div class="text-center">
+                    <a href="https://twitch.com/fjahan" target="”_blank”" class="btn cta-primary" data-aos="fade-up" data-aos-duration="1000">Livestream</a>
+                </div></div>
+            </div>
+        </section>
+        <!-- SECTION LIVE STREAM END -->
+        <!-- Section Source Start -->
+        <section class="source-main para">
+            <div class="container">
+                <div class="innerContent">
+                    <div class="title">
+                        <h2 data-aos="fade-up" data-aos-duration="1000">SOURCE</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000">Listen to my mixes anywhere. For most up to date, check out Mixcloud</p>
+                    </div>
+                    <div class="row g-0 align-items-center">
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="card-cloud" >
+                                    <i class="iconImg">
+                                        <img src="./assets/podcast/mixcloud_logo.png" alt="" class="img-white">
+                                    </i>
+                                    <p>For all the
+                                        latest dj mixes featuring house, deep house, and
+                                        more click the link below! </p>
+                                        <a class="btn cta-primary"  href="https://www.mixcloud.com/farbodjahan/" target="”_blank”"><i><iconify-icon icon="bi:music-note-beamed"></iconify-icon></i> Listen</a>
+                                </div>
+                        </div>
+                        <div class="col-lg-4"  data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card-cloud soundCloud">
+                                <i class="iconImg">
+                                    <img src="./assets/podcast/soundcloud_logo.png" alt="">
+                                </i>
+                                <p>Soundcloud is
+                                    not regularily updated but it gives you a taste
+                                    of the music I play!  </p>
+                                    <a class="btn cta-primary"  href="https://soundcloud.com/farbodjahan" target="”_blank”"><i><iconify-icon icon="bi:music-note-beamed"></iconify-icon></i> Listen</a>
+                            </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-cloud" >
+                            <i class="iconImg">
+                                <img src="./assets/podcast/twitch_logo.png" alt="">
+                            </i>
+                            <p>Livestreams
+                                every Thursday 8pm PST. Subscribe to be notified
+                                on the next stream! </p>
+                                <a class="btn cta-primary"  href="https://www.twitch.tv/fjahan" target="”_blank”"><i><iconify-icon icon="bi:music-note-beamed"></iconify-icon></i> Listen</a>
+                        </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Source End -->
+        <!-- Section My Passion Start -->
+        <section class="passion-main">
+            <div class="innerMain">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="content">
+                            <p data-aos="fade-up" data-aos-duration="1000">My passion for electronic music started over 10 years ago when I got my first taste of what electronic music was. Over the years my passion for this music has grown to the point where I started to explore Djing as a hobby. When the world was lockedown and I could no longer see my favorite artists live I took matters into my own hands and tried to recreate this experience from my home.</p>
+                            <p data-aos="fade-up" data-aos-duration="1000">I picked up my first controller back in 2020 and had been practicing every week. Trying different genres and styles till I found what my sound is. Every show I put all my passion into the decks and try to recreate the dance floor as I would enjoy listening to my favorite artist. Tune into the livestream to experience what DJ FJ has to offer.</p>
+                            <a class="btn cta-primary"  href="/contact/index.html"> Book your next Event</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5">
+                        <div class="img-holder">
+                            <img src="../dj/assets/Dj Photo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section My Passion End -->
+        <!-- Footer Start -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="copyright">
+                            © 2010 - 2022 Farbod Jahan
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="social-link">
+                            <li><a href="https://www.facebook.com/farbods0" target="_blank">
+                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                                </a></li>
+                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank">
+                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
+                                </a></li>
+                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank">
+                                    <iconify-icon icon="fa:instagram"></iconify-icon>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <div id="loading">
+            <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
+                <div class="ldio-xo4z6m7kfv">
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="top-btn"><iconify-icon icon="bx:up-arrow-alt"></iconify-icon></button>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/simpleparallax.js"></script>
+    <script src="./js/track.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        CountDown("countDownText", 5, "00:00:00:00");
+
+
+        var images = {
+                "1": "assets/wedding-bg.jpg",
+                "2": "assets/barclub.jpg",
+                "3": "assets/corporate.jpg",
+                "4": "assets/playlistcreation.jpg",
+                "5": "assets/djlessons.jpg"
+            };
+            var background = document.getElementById('background');
+
+
+            var articleDivs = document.querySelectorAll('.navigation');
+            var i;
+
+            for (i = 0; i < articleDivs.length; i++) {
+                articleDivs[i].addEventListener('mouseenter', function (e) {
+                    var textDiv = document.querySelector('.navigation');
+                    var a = e.target;
+                    var imgId = a.getAttribute('data-image-id');
+                    var imgSrc = images[imgId];
+                    var style = ['background-image: url(' + imgSrc + ');', 'opacity:1'].join('');
+                    background.setAttribute('style', style);
+                });
+
+
+              
+            }
+
+
+            $(".navigation").mouseenter(function() {
+                    return $(this).addClass("active").siblings().removeClass("active");
+                });
+
+
+    </script>
+</body>
+
+</html>
