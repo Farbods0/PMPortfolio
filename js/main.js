@@ -27,6 +27,7 @@ document.onreadystatechange = function() {
   } else {
       document.querySelector("#loading").style.visibility = "hidden";
       document.querySelector("body").style.visibility = "visible";
+      document.querySelector("body").style.transition = "all 0.3s";
   }
 };
 

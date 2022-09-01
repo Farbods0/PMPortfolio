@@ -146,4 +146,7 @@ h6 {
     .page-title {
         height: 320px;
     }
+    .contentText p{
+        font-size: 14px;
+    }
 }

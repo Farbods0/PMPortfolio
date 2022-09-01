@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Monoton&family=Righteous&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
 
 body {
     font-family: "Arial, sans-serif";
@@ -352,37 +352,37 @@ h6 {
     justify-content: center;
     padding: 1.5rem 1rem 2.5rem;
     height: 100%;
-    background: rgba(0,0,0,0.5);
-    border: 0.5px solid rgba(255,255,255,0.3);
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
     margin: 0 -0.5px;
     transition: all 0.3s;
     position: relative;
 }
 
 .card-cloud:hover .btn {
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
-.card-cloud:hover{
+.card-cloud:hover {
     background: #fff;
     transform: scale(1.1);
     z-index: 1;
 }
 
-.card-cloud:hover .img-white{
+.card-cloud:hover .img-white {
     filter: none;
 }
-.img-white{
+.img-white {
     filter: brightness(0) invert(1);
 }
 
-.card-cloud:hover p{
+.card-cloud:hover p {
     color: #000;
 }
 .card-cloud p {
     font-size: 18px;
     line-height: 34px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-transform: initial;
     color: #fff;
@@ -416,8 +416,8 @@ h6 {
     height: 160px;
 }
 
-.card-cloud .btn{
-    background-image: linear-gradient(to right,#fb3a64,#ba01e2);
+.card-cloud .btn {
+    background-image: linear-gradient(to right, #fb3a64, #ba01e2);
     border: none;
     outline: none;
     padding: 0 25px;
@@ -431,21 +431,19 @@ h6 {
     line-height: 46px;
     transition: all 0.2s;
 }
-.card-cloud .btn i{
+.card-cloud .btn i {
     font-size: 16px;
     line-height: 1;
     position: relative;
     margin-right: 8px;
-
 }
 
 .card-cloud .btn:focus,
-.card-cloud .btn:hover{
-    
-    background-image: linear-gradient(to right,#ba01e2 ,#fb3a64);
+.card-cloud .btn:hover {
+    background-image: linear-gradient(to right, #ba01e2, #fb3a64);
     border: none;
     color: #fff;
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
 .source-main {
@@ -461,7 +459,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:100px 0;
+    padding: 100px 0;
     background-attachment: fixed;
 }
 
@@ -586,6 +584,12 @@ h6 {
     .iconList {
         margin-top: 96px;
     }
+    #latest-music-tracks iframe {
+        height: auto !important;
+    }
+    .passion-main .img-holder {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -609,15 +613,22 @@ h6 {
         font-size: 36px;
         line-height: 56px;
     }
+
+    .cflexrow {
+        margin-bottom: 15px;
+    }
+    .cta-primary {
+        padding: 12px 14px;
+    }
 }
 
 @media (max-width: 575px) {
     .cflexrow h1 {
-        font-size: 40px;
+        font-size: 52px;
     }
     .cflexrow .countertext {
         top: -8px;
-        font-size: 11px;
+        font-size: 12px;
     }
     .hero-main h2 {
         font-size: 42px;

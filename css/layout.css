@@ -133,7 +133,7 @@ body .external-wrapper {
     align-items: center;
     justify-content: center;
     top: 0;
-    transition: all 0.3s;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @keyframes ldio-xo4z6m7kfv {
@@ -189,11 +189,7 @@ body .external-wrapper {
         font-size: 56px;
     }
 }
-@media(max-width:767px){
-    header .navbar-nav .nav-item .nav-link {
-        font-size: 16px;
-    }
-}
+
 @media (max-width: 575px) {
     .page-title h2 {
         font-size: 42px;
@@ -210,5 +206,12 @@ body .external-wrapper {
     }
     header .navbar-nav .nav-item .dropdown-menu {
         top: 30px !important;
+    }
+    .page-title.resumeTitle{
+        /* background-attachment: inherit; */
+        background-position: 50% 0px;
+    }
+    .captionPage p{
+        color: #fff;
     }
 }
