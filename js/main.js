@@ -1,5 +1,6 @@
 
 
+AOS.init();
 
 const toggleBtn = document.querySelector('.navbar-toggler');
 const closeMenu = document.querySelector('.closeIcon');
@@ -36,7 +37,6 @@ let topBtn = document.querySelector(".top-btn");
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 window.onscroll = () => window.scrollY > 500 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0
 
-AOS.init();
 
 
 

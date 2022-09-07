@@ -189,7 +189,13 @@ body .external-wrapper {
         font-size: 56px;
     }
 }
-
+@media(max-width:767px){
+    .live-stream,
+    .page-title.about {
+        background-attachment:initial !important;
+        background-size: cover !important;
+    }
+}
 @media (max-width: 575px) {
     .page-title h2 {
         font-size: 42px;
@@ -213,5 +219,14 @@ body .external-wrapper {
     }
     .captionPage p{
         color: #fff;
+    }
+}
+
+
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .live-stream,
+    .page-title.about {
+        background-attachment:scroll !important;
     }
 }
