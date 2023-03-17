@@ -43,7 +43,7 @@ async function CountDown(id, day, time) {
       title.innerHTML = "WE ARE NOW LIVE";
       el.classList.add('justify-content-center');
       livestreamButton.classList.add('mt-5');
-      el.innerHTML = '<iframe src="https://player.twitch.tv/?channel=fjahan&parent=www.farbodjahan.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>'
+      el.innerHTML = '<iframe src="https://player.twitch.tv/?channel=fjahan&parent=farbodjahan.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>'
     } else {
       title.innerHTML = "NEXT LIVE STREAM";
       el.innerHTML = update();
