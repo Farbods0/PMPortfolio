@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Metrophobic&family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
+
 @font-face {
     font-family: "Metropolis 1920";
     src: url("../cooking/assets/fonts/Metropolis1920.ttf") format("truetype");
@@ -14,10 +15,12 @@ body {
     color: #fff;
     background: #000;
 }
+
 h2 {
     font-size: 48px;
     line-height: 72px;
 }
+
 h2,
 h3,
 h4,
@@ -26,6 +29,7 @@ h6 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
 }
+
 .hero-main {
     min-height: 100vh;
     display: flex;
@@ -44,10 +48,12 @@ h6 {
     bottom: 0;
     top: 0;
 }
+
 .hero-main .container {
     position: relative;
     z-index: 5;
 }
+
 .hero-main:after {
     content: "";
     background-color: #000000;
@@ -58,6 +64,7 @@ h6 {
     right: 0;
     bottom: 0;
 }
+
 .hero-main span {
     font-family: "Miniver", cursive;
     color: #c9ab81;
@@ -66,6 +73,7 @@ h6 {
     display: block;
     margin-bottom: 20px;
 }
+
 .hero-main h2 {
     font-family: "Metropolis 1920";
     color: #c9ab81;
@@ -113,6 +121,7 @@ h6 {
     background: rgb(201, 171, 129);
     transition: all 0.3s;
 }
+
 .hero-main a:hover {
     color: #000;
 }
@@ -120,9 +129,11 @@ h6 {
 .hero-main a:hover::after {
     width: 100%;
 }
+
 .cooking-main {
     overflow: hidden;
 }
+
 .cooking-main .caption h2 {
     margin-bottom: 100px;
 }
@@ -137,9 +148,11 @@ h6 {
     line-height: 31.5px;
     font-size: 18px;
 }
+
 .img-box {
     position: relative;
 }
+
 .custom-border {
     position: absolute;
     left: 0;
@@ -150,9 +163,11 @@ h6 {
     border: solid 2px #cea547;
     z-index: 5;
 }
+
 .img-box img {
     width: 100%;
 }
+
 .cooking-main .row:nth-child(even) .content {
     padding-right: 30px;
 }
@@ -160,18 +175,22 @@ h6 {
 .cooking-main .row {
     margin-bottom: 72px;
 }
+
 .cooking-main .row:nth-child(odd) .content {
     padding-left: 30px;
 }
+
 .cooking-main .row:nth-child(odd) .custom-border {
     right: -30px;
     top: -30px;
     left: auto;
 }
+
 .cooking-main .row:nth-child(even) .custom-border {
     left: -30px;
     top: -30px;
 }
+
 .fade-in-right {
     animation: fade-in-right 1.5s ease-in-out;
 }
@@ -186,6 +205,7 @@ h6 {
         margin-right: -50px;
         opacity: 0;
     }
+
     100% {
         margin-left: 0;
         margin-right: 0;
@@ -199,6 +219,7 @@ h6 {
         margin-right: 0px;
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -218,6 +239,7 @@ h6 {
         margin-right: 50px;
         opacity: 0;
     }
+
     to {
         margin-left: 0px;
         margin-right: 0px;
@@ -231,6 +253,7 @@ h6 {
         margin-right: 0px;
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -249,6 +272,7 @@ h6 {
     margin-bottom: 16px;
     font-family: "Roboto Slab", serif;
 }
+
 .caption p {
     font-size: 18px;
     line-height: 31.5px;
@@ -262,6 +286,12 @@ h6 {
     background-position: center;
     background-attachment: fixed;
     background-position: bottom left;
+}
+
+@media only screen and (min-width: 768px) {
+    .cardBody>p {
+        height: 78.75px;
+    }
 }
 
 .card-food {
@@ -278,6 +308,7 @@ h6 {
 .card-food .imgTitle {
     display: block;
 }
+
 .card-food .img-wrapper {
     overflow: hidden;
     padding-top: 66%;
@@ -299,6 +330,7 @@ h6 {
     border-radius: 5px;
     height: 100%;
 }
+
 .card-food p {
     font-size: 15px;
     line-height: 26.25px;
@@ -321,7 +353,7 @@ h6 {
     text-transform: uppercase;
     display: -webkit-box;
     -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;  
+    -webkit-box-orient: vertical;
     overflow: hidden;
     cursor: pointer;
 }
@@ -379,6 +411,7 @@ h6 {
 .about-cooking .caption {
     margin-bottom: 0;
 }
+
 .about-cooking .caption p {
     margin-top: 24px;
 }
@@ -390,6 +423,7 @@ h6 {
 #cookinkModal .modal-dialog {
     max-width: 1308px;
 }
+
 #cookinkModal .modal-content {
     background-color: #000000;
     border: 2px solid #cea547;
@@ -425,10 +459,12 @@ h6 {
     max-width: 990px;
     margin: 0 auto;
 }
+
 .innerModal .media {
     display: flex;
     align-items: flex-start;
 }
+
 .innerModal .media .img-holder {
     flex: 0 0 420px;
     max-width: 420px;
@@ -444,6 +480,7 @@ h6 {
     position: absolute;
     inset: 0;
 }
+
 .innerModal .media .media-body {
     flex: 1;
 }
@@ -451,6 +488,7 @@ h6 {
 .innerModal .media .media-body h2 {
     font-family: "Roboto Slab", serif;
 }
+
 .innerModal .media .media-body p {
     font-size: 18px;
     margin-top: 24px;
@@ -470,6 +508,7 @@ h6 {
 #lightboxCarousel-egmejr20 .text-white p {
     margin: 0;
 }
+
 #lightboxCarousel-egmejr20 .text-white p:first-of-type {
     position: absolute;
     left: 0;
@@ -492,6 +531,7 @@ h6 {
     margin-top: -48px;
     color: #fff;
 }
+
 .carousel-control-prev {
     left: -46px;
 }
@@ -503,9 +543,11 @@ h6 {
 .sliderWrapper {
     position: relative;
 }
+
 .swiper-button-prev {
     left: -50px;
 }
+
 .swiper-button-next {
     right: -50px;
 }
@@ -536,6 +578,7 @@ h6 {
     width: 100%;
     padding-top: 75%;
 }
+
 .food-detail .img-holder img {
     position: absolute;
     top: 0;
@@ -555,20 +598,24 @@ h6 {
     font-size: 32px;
     color: #c9ab81;
 }
+
 .cookCard h4 {
     font-weight: 500;
     font-size: 16px;
     margin: 0;
 }
+
 .cookCard span {
     font-size: 16px;
     font-weight: 300;
     display: block;
     margin-bottom: 20px;
 }
+
 .food-detail hr {
     margin: 48px 0;
 }
+
 .food-detail h2 {
     font-size: 26px;
     font-weight: 600;
@@ -576,11 +623,13 @@ h6 {
     line-height: 1;
     color: #c9ab81;
 }
-.food-detail p a{
+
+.food-detail p a {
     text-decoration: underline;
     color: #c9ab81;
 
 }
+
 .food-detail .subTitle {
     font-size: 20px;
     font-weight: 600;
@@ -597,6 +646,7 @@ h6 {
     font-size: 24px;
     color: #c9ab81;
 }
+
 .cardSteps .desciption {
     flex: 1;
 }
@@ -610,6 +660,7 @@ h6 {
 .cardSteps {
     margin-bottom: 20px;
 }
+
 .cardSteps .desciption p {
     line-height: 24px;
     margin-bottom: 20px;
@@ -620,6 +671,7 @@ h6 {
     padding: 0;
     margin: 0 0 20px;
 }
+
 .food-detail ul li {
     font-size: 14px;
     line-height: 22px;
@@ -640,7 +692,8 @@ h6 {
     top: 7px;
     background: url('https://api.iconify.design/carbon/dot-mark.svg?color=%23c9ab81&width=10&height=10') no-repeat center center / contain;
 }
-.food-detail ul li a{
+
+.food-detail ul li a {
     color: #c9ab81;
 }
 
@@ -651,9 +704,11 @@ h6 {
     line-height: 24px;
     text-decoration: underline;
 }
+
 .food-detail ul li span {
     flex: 1;
 }
+
 .modalHeader {
     padding: 30px 30px;
 }
@@ -664,6 +719,7 @@ h6 {
     color: #c9ab81;
     transition: all 0.3s;
 }
+
 .arrowback i {
     margin-right: 8px;
     font-size: 18px;
@@ -674,6 +730,7 @@ h6 {
 .arrowback:hover {
     color: #c9ab81;
 }
+
 .arrowback:hover i {
     transform: translateX(-5px);
 }
@@ -682,6 +739,7 @@ h6 {
     max-width: 1200px;
     padding: 0 15px;
 }
+
 .readMore .modal-content {
     background: #262525;
     overflow-x: hidden;
@@ -701,7 +759,8 @@ h6 {
     overflow-x: hidden;
     padding: 0 30px 50px;
 }
-.modalBody p{
+
+.modalBody p {
     font-size: 14px;
 }
 
@@ -727,15 +786,18 @@ h6 {
 .readMore .modal-content .modalBody::-webkit-scrollbar-thumb:hover {
     background: #cea547;
 }
+
 @media (max-width: 1400px) {
     .btnclose {
         top: 12px;
         right: 12px;
     }
+
     .innerModal .media .img-holder {
         flex: 0 0 320px;
         max-width: 320px;
     }
+
     #cookinkModal .modal-dialog {
         max-width: 960px;
     }
@@ -746,28 +808,35 @@ h6 {
         padding: 0;
         margin-bottom: 80px;
     }
+
     .cooking-main .row:nth-child(even) .content {
         padding: 0;
         margin-bottom: 80px;
     }
+
     #cookinkModal .modal-dialog {
         max-width: 800px;
     }
+
     .innerModal .media .media-body h2 {
         font-size: 36px;
         line-height: 1;
     }
+
     .innerModal .media .media-body p {
         font-size: 16px;
     }
+
     .swiper-button-next,
     .swiper-button-prev {
         position: relative;
         margin: 0 5px;
     }
+
     .swiper-button-prev {
         left: 0;
     }
+
     .swiper-button-next {
         right: 0;
     }
@@ -783,25 +852,31 @@ h6 {
     .cooking-main .caption h2 {
         margin-bottom: 40px;
     }
+
     .content h3 {
         font-size: 36px;
         font-weight: 300;
         margin: 0px 0px 18px;
     }
+
     .content p {
         line-height: 24px;
         font-size: 16px;
     }
+
     #cookinkModal .modal-dialog {
         max-width: 740px;
     }
+
     .innerModal .media {
         flex-direction: column;
     }
+
     .innerModal .media .img-holder {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .innerModal .media .img-holder {
         flex: 0 0 100%;
         max-width: 100%;
@@ -810,9 +885,11 @@ h6 {
         padding-top: 45%;
         margin-bottom: 30px;
     }
+
     #cookinkModal .modal-content {
         padding: 30px;
     }
+
     .food-detail .img-holder {
         margin-bottom: 30px;
     }
@@ -823,40 +900,50 @@ h6 {
         left: -10px;
         top: -15px;
     }
+
     .cooking-main .row:nth-child(odd) .custom-border {
         right: -10px;
         top: -15px;
         left: auto;
     }
+
     .cooking-main .row:nth-child(odd) .content {
         padding: 0;
         margin-bottom: 45px;
     }
+
     .cooking-main .row:nth-child(even) .content {
         margin-bottom: 45px;
     }
+
     #cookinkModal .modal-dialog {
         max-width: 560px;
     }
 }
+
 @media (max-width: 575px) {
     .hero-main h2 {
         font-size: 74px;
         line-height: 60px;
     }
+
     .hero-main p {
         font-size: 14px;
     }
+
     h2 {
         font-size: 32px;
         line-height: 44px;
     }
+
     .content h3 {
         font-size: 28px;
     }
+
     section {
         padding: 36px 0;
     }
+
     .caption p {
         font-size: 16px;
         line-height: 24px;
@@ -865,10 +952,12 @@ h6 {
     #cookinkModal .modal-dialog {
         padding: 0 1rem;
     }
+
     #cookinkModal .modal-content {
         padding: 36px 16px;
         max-height: calc(100vh - 94px);
     }
+
     .innerModal .media .media-body h2 {
         font-size: 26px;
         line-height: 1;

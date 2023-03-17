@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brussel Sprouts</title>
+    <link rel="stylesheet" href="./js/simpleLightbox.css">
+    <script src="./js/simpleLightbox.js"></script>
+</head>
+
+<body>
+    <div class="card-food">
+        <a href="./assets/Food/brussel.jpg" class="imgTitle lGallery" title="Brussel Sprouts ">
+            <div class="img-wrapper">
+                <img src="./assets/Food/brussel.jpg" alt="">
+            </div>
+        </a>
+
+        <div class="cardBody" data-bs-toggle="modal" data-bs-target="#read-more-brussel-sprouts">
+            <h4 class="title">Brussel Sprouts</h4>
+            <p>Brussel sprouts will be the only vegtable that your guests will be asking for seconds. </p>
+            <div class="text-center">
+                <p class="btn-read">Read More</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new SimpleLightbox({
+            elements: '.imageGallery1 a.lGallery'
+        });
+    </script>
+</body>
+
+</html>
