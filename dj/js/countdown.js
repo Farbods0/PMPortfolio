@@ -12,7 +12,7 @@ async function CountDown(id, day, time) {
 
     // Get number of days to Thursday
     var dayNum = todayPst.getDay();
-    var daysToThur = 4 - (dayNum < 4 ? dayNum : dayNum - 7);
+    var daysToThur = 4 - (dayNum < 5 ? dayNum : dayNum - 7);
 
     // Get milliseconds to noon Thursday
     var ThursdayNight = new Date(+todayPst);
