@@ -6,7 +6,7 @@ var trackDiv = document.querySelector('#latest-music-tracks');
 //    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1459944949&color=%23ff5500
 // 4. at the src after /tracks/ there will be your track id
 // 5. copy that id and paste it to the array below
-const soundCloudTrackIds = ['1501945009', '1459944949', '1438807573'];
+const soundCloudTrackIds = ['1459944949', '1438807573', '1422911431'];
 
 for (var i = 0; i < soundCloudTrackIds.length; i++) {
     trackDiv.innerHTML += generateIframe(soundCloudTrackIds[i], i)
