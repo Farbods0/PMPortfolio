@@ -24,6 +24,7 @@ const recipes = [
     'rasberry-danish',
     'mozzarella-cheese',
     'brussel-sprouts',
+    'japanese-milkbread',
 ];
 
 // to add new recipe
