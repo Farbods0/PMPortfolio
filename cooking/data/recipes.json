@@ -18,7 +18,7 @@
         "title": "Tonkotsu broth",
         "items": [
           "4 lb femur",
-          "4 lb neck bone (if not availble, get skull)",
+          "4 lb neck bone (if not available, get skull)",
           "1-2 lb trotter",
           "bunch green onion",
           "1 large yellow onion",
@@ -30,7 +30,7 @@
       {
         "title": "Noodles (6 servings)",
         "items": [
-          "500 g pead flour",
+          "500 g bread flour",
           "5 g vital wheat gluten",
           "185g water",
           "5 g baked soda",
@@ -68,7 +68,7 @@
           "15 g katsuobushi",
           "20 g sake",
           "30 g mirin",
-          "30 g pown sugar"
+          "30 g brown sugar"
         ]
       },
       {
@@ -96,7 +96,7 @@
           },
           {
             "type": "step",
-            "html": "2. The night before you want your poth ready, drain the bones, add them to a pot with fresh water covering them by 2 inches, and ping to a boil over high heat."
+            "html": "2. The night before you want your broth ready, drain the bones, add them to a pot with fresh water covering them by 2 inches, and bring to a boil over high heat."
           },
           {
             "type": "step",
@@ -108,23 +108,23 @@
           },
           {
             "type": "step",
-            "html": "5. Return the bones to the pot. Add fresh water, and add in the fatback. If doing the night before, ping this to a boil, then down to the lowest setting on your stove, and cover. Then go to bed. If not, continue to step 7."
+            "html": "5. Return the bones to the pot. Add fresh water, and add in the fatback. If doing the night before, bring this to a boil, then down to the lowest setting on your stove, and cover. Then go to bed. If not, continue to step 7."
           },
           {
             "type": "step",
-            "html": "6. In the morning, ping the pot back up to a full boil, then back down to the lowest setting possible to mantain that jostling boil while covered. (For me, this is medium on my stove)."
+            "html": "6. In the morning, bring the pot back up to a full boil, then back down to the lowest setting possible to maintain that jostling boil while covered. (For me, this is medium on my stove)."
           },
           {
             "type": "step",
-            "html": "7. Depending on when you started cooking, continue to boil the poth for 12-18 hours, or until desired consistency and color is reached, meat has completely separated and poken down in the poth, and fatback pieces have mostly melted. Optionally, you can stir every 1-2 hours just to check up on things and promote more churning. Please feel free to add back water if the level gets too low."
+            "html": "7. Depending on when you started cooking, continue to boil the broth for 12-18 hours, or until desired consistency and color is reached, meat has completely separated and broken down in the broth, and fatback pieces have mostly melted. Optionally, you can stir every 1-2 hours just to check up on things and promote more churning. Please feel free to add back water if the level gets too low."
           },
           {
             "type": "step",
-            "html": "8. Once cooked to your liking, strain the poth, discarding the solids, and reserve poth until needed over low heat. This poth keeps for around a week in the fridge."
+            "html": "8. Once cooked to your liking, strain the broth, discarding the solids, and reserve broth until needed over low heat. This broth keeps for around a week in the fridge."
           },
           {
             "type": "step",
-            "html": "9. If poth is not a creamy white, you can use a blender on high for 10 seconds to help with emulsion."
+            "html": "9. If broth is not a creamy white, you can use a blender on high for 10 seconds to help with emulsion."
           },
           {
             "type": "subheading",
@@ -213,7 +213,7 @@
           },
           {
             "type": "step",
-            "html": "14. Take out bag and place in oven to poil"
+            "html": "14. Take out bag and place in oven to broil"
           }
         ]
       },
@@ -283,7 +283,7 @@
           },
           {
             "type": "step",
-            "html": "6. ping 180F (or just below a boil) and hold for 15 minutes."
+            "html": "6. bring 180F (or just below a boil) and hold for 15 minutes."
           },
           {
             "type": "step",
@@ -295,7 +295,7 @@
           },
           {
             "type": "step",
-            "html": "9. In a new clean pot, add your mirin, sake, and pown sugar. ping to a boil, and simmer for 5 minutes."
+            "html": "9. In a new clean pot, add your mirin, sake, and brown sugar. bring to a boil, and simmer for 5 minutes."
           },
           {
             "type": "step",
@@ -307,7 +307,7 @@
           },
           {
             "type": "step",
-            "html": "12. Done. Taste it with your poth and adjust as needed. Maybe it needs more soy? Maybe it needs more salt? Maybe some extra umami. Only you can judge."
+            "html": "12. Done. Taste it with your broth and adjust as needed. Maybe it needs more soy? Maybe it needs more salt? Maybe some extra umami. Only you can judge."
           }
         ]
       },
@@ -633,7 +633,7 @@
     "title": "Birria Quesa Tacos",
     "category": "Entree",
     "description": "Tortillas filled with the stew's tender, juicy meat dipped in meat broth.",
-    "image": "assets/Food/birriaQuesaTacos.jpeg",
+    "image": "assets/optimized/birriaQuesaTacos.webp",
     "prepTime": "30 mins",
     "totalTime": "2 hours",
     "yield": "30 tacos",
@@ -971,7 +971,7 @@
     "title": "Soup Dumpling (Xiaolongbao)",
     "category": "Appetizer",
     "description": "Delicate steamed dumpling filled with pork and soup often thought to have originated in Shanghai.",
-    "image": "assets/Food/SoupDumpling.jpg",
+    "image": "assets/optimized/SoupDumpling.webp",
     "prepTime": "20 mins",
     "totalTime": "9 hours",
     "yield": "30 dumplings",
@@ -1179,7 +1179,7 @@
     "title": "Blooming Onion",
     "category": "Appetizer",
     "description": "A crispy deep-fried blooming onion served with spicy mayo aioli for extra flavor.",
-    "image": "assets/Food/BloominOnion.jpeg",
+    "image": "assets/optimized/BloominOnion.webp",
     "prepTime": "10 mins",
     "totalTime": "20 mins",
     "yield": "1 Large Onion",
@@ -1699,7 +1699,7 @@
     "title": "Spaghetti and Meat Sauce",
     "category": "Entree",
     "description": "Is a long, thin, solid, cylindrical pasta. It is a staple food of traditional Italian cuisine.",
-    "image": "assets/Food/spaghetti.jpg",
+    "image": "assets/optimized/spaghetti.webp",
     "prepTime": "30 mins",
     "totalTime": "4 hours",
     "yield": "6 Servings",
@@ -2259,7 +2259,7 @@
     "title": "Masala Fries",
     "category": "Appetizer",
     "description": "Crispy spiced masala fries served with a creamy sriracha mayo dipping sauce.",
-    "image": "assets/Food/maslafood.jpg",
+    "image": "assets/optimized/maslafood.webp",
     "prepTime": "30 min",
     "totalTime": "45 mins",
     "yield": "6 servings",
@@ -2965,7 +2965,7 @@
     "title": "Mozzarella Cheese",
     "category": "Appetizer",
     "description": "Creamy white or pale ivory in colour, mozzarella has a mild, fresh lactic flavour.",
-    "image": "assets/Food/mozzarrella.jpg",
+    "image": "assets/optimized/mozzarrella.webp",
     "prepTime": "10 mins",
     "totalTime": "30 mins",
     "yield": "3 mozzarella balls",

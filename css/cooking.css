@@ -56,96 +56,9 @@ body.cooking-page .external-wrapper {
     overflow: clip;
 }
 
-/* Translucent frosted navbar on scroll — keep crisp white text/logo & dark glass dropdown */
-.cooking-page header {
-    background: rgba(0, 0, 0, 0.55);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    transition: background-color 200ms ease-out;
-}
-
-.cooking-page.sticky-header header {
-    background: rgba(12, 12, 14, 0.88);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-}
-
-.cooking-page header .navbar-brand img,
-.cooking-page.sticky-header header .navbar-brand img {
-    filter: brightness(0) invert(1);
-}
-
-.cooking-page header .navbar-nav .nav-item .nav-link,
-.cooking-page.sticky-header header .navbar-nav .nav-item .nav-link {
-    color: rgba(245, 245, 247, 0.88);
-}
-
-.cooking-page header .navbar-nav .nav-item .nav-link:hover,
-.cooking-page header .navbar-nav .nav-item .nav-link.active,
-.cooking-page.sticky-header header .navbar-nav .nav-item .nav-link:hover,
-.cooking-page.sticky-header header .navbar-nav .nav-item .nav-link.active {
-    color: #ffffff;
-}
-
-.cooking-page header .navbar-nav .nav-item .nav-link.active:before,
-.cooking-page header .navbar-nav .nav-item .nav-link:hover:before {
-    height: 2px;
-    background-color: var(--ck-accent);
-}
-
-.cooking-page header .navbar-toggler,
-.cooking-page.sticky-header header .navbar-toggler {
-    filter: brightness(0) invert(1);
-}
-
-/* Fix hover-only dropdown so hidden menu doesn't block clicks underneath, and style in dark frosted glass */
-@media (min-width: 992px) {
-    .cooking-page header .navbar-nav .nav-item .dropdown-menu {
-        pointer-events: none;
-    }
-
-    .cooking-page header .navbar-nav .nav-item:hover .dropdown-menu,
-    .cooking-page header .navbar-nav .nav-item:focus-within .dropdown-menu {
-        pointer-events: auto;
-        opacity: 1;
-        transform: translate(-50%, 0) !important;
-    }
-
-    .cooking-page header .navbar-nav .nav-item .dropdown-menu ul {
-        background: rgba(24, 24, 27, 0.94);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        border-radius: 14px;
-        padding: 8px 18px !important;
-        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6);
-    }
-
-    .cooking-page header .navbar-nav .nav-item .dropdown-menu ul:before {
-        background-color: rgba(24, 24, 27, 0.94);
-        border-top: 1px solid rgba(255, 255, 255, 0.14);
-        border-left: 1px solid rgba(255, 255, 255, 0.14);
-        width: 0.75rem;
-        height: 0.75rem;
-        top: -0.4rem;
-    }
-
-    .cooking-page header .navbar-nav .nav-item .dropdown-menu ul .dropdownitem {
-        color: rgba(245, 245, 247, 0.82);
-        border-top-color: rgba(255, 255, 255, 0.08);
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        padding: 10px 4px;
-    }
-
-    .cooking-page header .navbar-nav .nav-item .dropdown-menu ul .dropdownitem:hover {
-        color: var(--ck-accent);
-    }
-}
-
+/* Header & Footer inherit unified dark-craft shell from style.css with --fj-accent (#e5c07b) */
 .cooking-page footer {
-    background: #060607;
+    background: #050507;
     border-top: 1px solid var(--ck-border);
 }
 
@@ -1240,6 +1153,56 @@ body.cooking-page .external-wrapper {
     border: 1px solid var(--ck-border);
     border-radius: var(--ck-radius-md);
     padding: 24px 22px;
+}
+
+.batch-scaler-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 10px;
+    margin-bottom: 18px;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--ck-border);
+}
+
+.batch-scaler-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ck-text-secondary);
+}
+
+.batch-scaler-pills {
+    display: inline-flex;
+    gap: 4px;
+}
+
+.scale-pill {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--ck-text-secondary);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 140ms ease-out, color 140ms ease-out, transform 120ms var(--ck-ease-out);
+}
+
+.scale-pill:active {
+    transform: scale(0.95);
+}
+
+.scale-pill.is-active {
+    background: var(--ck-accent);
+    color: #0b0b0c;
+}
+
+@media print {
+    .batch-scaler-bar {
+        display: none !important;
+    }
 }
 
 @media (min-width: 992px) {

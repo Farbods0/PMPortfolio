@@ -136,7 +136,7 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="../../">
                         <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -149,7 +149,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                <a class="nav-link" href="../../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -167,7 +167,7 @@
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -239,7 +239,7 @@
                                         <iconify-icon icon="ic:outline-ramen-dining"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>12 servings</span>
+                                    <span id="recipe-yield-val" data-base-yield="12 servings">12 servings</span>
                                 </div>
                             </div>
                         </div>
@@ -254,47 +254,55 @@
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
                                 </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
+                                </div>
                                 <div class="ingredient-group">
   <h5>Oven-Braised Pork</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">3.3 lbs pork belly chunks</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">1 lb pork shoulder</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">2.5 cups pork stock</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3">1.25 cups Shaoxing wine</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4">1.25 cups soy sauce</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5">7 whole star anise</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6">2.5-inch fresh ginger knob</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-7">8 bruised garlic cloves</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="3.3 lbs pork belly chunks">3.3 lbs pork belly chunks</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="1 lb pork shoulder">1 lb pork shoulder</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="2.5 cups pork stock">2.5 cups pork stock</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="1.25 cups Shaoxing wine">1.25 cups Shaoxing wine</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4" data-raw-text="1.25 cups soy sauce">1.25 cups soy sauce</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5" data-raw-text="7 whole star anise">7 whole star anise</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6" data-raw-text="2.5-inch fresh ginger knob">2.5-inch fresh ginger knob</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-7" data-raw-text="8 bruised garlic cloves">8 bruised garlic cloves</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Triple Hand-Pulled Noodle Dough (38–40 Pieces)</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">1.4 kg all-purpose or bread flour</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1">20g (4 tsp) kosher salt</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2">700g (3 cups) water</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3">Neutral oil (for heavily coating every dough rectangle)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0" data-raw-text="1.4 kg all-purpose or bread flour">1.4 kg all-purpose or bread flour</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1" data-raw-text="20g (4 tsp) kosher salt">20g (4 tsp) kosher salt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2" data-raw-text="700g (3 cups) water">700g (3 cups) water</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3" data-raw-text="Neutral oil (for heavily coating every dough rectangle)">Neutral oil (for heavily coating every dough rectangle)</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Bowl Base, Hot-Oil Sizzle &amp; Greens</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">Per bowl base: 1 tbsp soy sauce, 1 tbsp Chinese black vinegar, pinch sugar, pinch MSG</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1">30 cloves garlic, minced</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2">6 scallions, thinly sliced &amp; 2 fresh chillies, sliced</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3">1 bunch fresh cilantro, torn</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-4">Coarse Sichuan chili flakes, Doubanjiang &amp; toasted sesame seeds</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-5">1 cup lard or neutral cooking oil (heated to 350°F)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-6">14 oz fresh spinach + 6 garlic cloves cut into slivers</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0" data-raw-text="Per bowl base: 1 tbsp soy sauce, 1 tbsp Chinese black vinegar, pinch sugar, pinch MSG">Per bowl base: 1 tbsp soy sauce, 1 tbsp Chinese black vinegar, pinch sugar, pinch MSG</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1" data-raw-text="30 cloves garlic, minced">30 cloves garlic, minced</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2" data-raw-text="6 scallions, thinly sliced &amp; 2 fresh chillies, sliced">6 scallions, thinly sliced &amp; 2 fresh chillies, sliced</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3" data-raw-text="1 bunch fresh cilantro, torn">1 bunch fresh cilantro, torn</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-4" data-raw-text="Coarse Sichuan chili flakes, Doubanjiang &amp; toasted sesame seeds">Coarse Sichuan chili flakes, Doubanjiang &amp; toasted sesame seeds</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-5" data-raw-text="1 cup lard or neutral cooking oil (heated to 350°F)">1 cup lard or neutral cooking oil (heated to 350°F)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-6" data-raw-text="14 oz fresh spinach + 6 garlic cloves cut into slivers">14 oz fresh spinach + 6 garlic cloves cut into slivers</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Spicy Cucumber Salad &amp; Garlic Shishitos</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0">12 cucumbers, spiralized + 4 tsp salt (for salting &amp; rinsing)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-1">Cucumber dressing: 2 tbsp soy sauce, 4 minced garlic cloves, 2 tbsp rice vinegar, 2 tbsp chili oil, 2 tbsp sugar, 2 tsp sesame oil, 2 tsp sesame seeds</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2">2.5 lbs shishito peppers</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-3">10 garlic cloves sliced into thin chips, 2.5 tsp sesame oil &amp; 2.5 tsp soy sauce</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0" data-raw-text="12 cucumbers, spiralized + 4 tsp salt (for salting &amp; rinsing)">12 cucumbers, spiralized + 4 tsp salt (for salting &amp; rinsing)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-1" data-raw-text="Cucumber dressing: 2 tbsp soy sauce, 4 minced garlic cloves, 2 tbsp rice vinegar, 2 tbsp chili oil, 2 tbsp sugar, 2 tsp sesame oil, 2 tsp sesame seeds">Cucumber dressing: 2 tbsp soy sauce, 4 minced garlic cloves, 2 tbsp rice vinegar, 2 tbsp chili oil, 2 tbsp sugar, 2 tsp sesame oil, 2 tsp sesame seeds</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2" data-raw-text="2.5 lbs shishito peppers">2.5 lbs shishito peppers</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-3" data-raw-text="10 garlic cloves sliced into thin chips, 2.5 tsp sesame oil &amp; 2.5 tsp soy sauce">10 garlic cloves sliced into thin chips, 2.5 tsp sesame oil &amp; 2.5 tsp soy sauce</label></li>
   </ul>
 </div>
                             </div>
@@ -395,25 +403,35 @@
         <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../resume/">Resume</a></li>
+                        <li><a href="../">Cooking</a></li>
+                        <li><a href="../../real-estate/">Real Estate</a></li>
+                        <li><a href="../../dj/">DJ</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

@@ -5,40 +5,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact | Farbod Jahan</title>
-    <meta name="description" content="Get in touch with Farbod Jahan — Product Executive, Technologist, and Builder based in San Francisco, CA.">
+    <meta name="description" content="Get in touch with Farbod Jahan regarding Product, Advisory, Real Estate, DJ bookings, Cooking, or Mentorship.">
     <link rel="canonical" href="https://farbodjahan.com/contact/">
+
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Farbod Jahan">
+    <meta property="og:description" content="Reach out for Product, Advisory, Real Estate, DJ sets, Cooking, or Mentorship.">
+    <meta property="og:image" content="https://farbodjahan.com/about/assets/Profile.jpg">
+    <meta property="og:url" content="https://farbodjahan.com/contact/">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
 
     <link href="../css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link href="../css/contact.css" rel="stylesheet">
 </head>
 
-<body class="contact-page">
+<body>
     <div class="external-wrapper">
         <!-- HEADER START -->
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
+                    <a class="navbar-brand" href="../">
+                        <img src="../images/FarbodJahan.png" alt="Farbod Jahan">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <button class="closeIcon" aria-label="Close menu"><iconify-icon icon="ep:close"></iconify-icon></button>
+                        <button class="closeIcon" aria-label="Close menu">
+                            <iconify-icon icon="ep:close"></iconify-icon>
+                        </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html" aria-label="Home">
+                                <a class="nav-link" href="../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -49,14 +60,13 @@
                                 <a class="nav-link" href="../resume/">Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./">Contact</a>
+                                <a class="nav-link active" aria-current="page" href="./">Contact</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown"
-                                    aria-expanded="false">Interests</a>
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../cooking/">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -69,265 +79,230 @@
         </header>
         <!-- HEADER END -->
 
-        <!-- HERO START -->
-        <section class="contact-hero">
+        <main class="contact-page-main">
             <div class="container">
-                <span class="contact-eyebrow">San Francisco, CA</span>
-                <h1>Let’s connect.</h1>
-                <p>Whether it’s product leadership, AI advisory, real estate, or even a recipe recommendation — drop a
-                    note below and I’ll get back to you.</p>
-            </div>
-        </section>
-        <!-- HERO END -->
+                <div class="contact-hub-grid">
+                    <!-- LEFT COLUMN -->
+                    <div class="contact-info-col" data-reveal>
+                        <span class="fj-kicker">San Francisco, CA &middot; Pacific Time</span>
+                        <h1 class="contact-headline">Say hello.</h1>
+                        <p class="contact-lead">
+                            Whether it’s a product leadership conversation, startup advisory, buying a home in the Bay Area, booking a DJ set, swapping a recipe, or mentorship — pick a tag and send a note.
+                        </p>
 
-        <!-- MAIN CONTACT SECTION START -->
-        <main class="contact-main">
-            <div class="container">
-                <div class="row g-4 align-items-start">
-                    <!-- Left: Direct Info Card -->
-                    <div class="col-lg-5">
-                        <div class="contact-info-card">
-                            <div class="contact-profile-row">
-                                <img src="../about/assets/Profile.jpg" alt="Farbod Jahan" class="contact-avatar">
-                                <div>
-                                    <h2>Farbod Jahan</h2>
-                                    <p>Product Executive &amp; Technologist</p>
+                        <div class="direct-channels">
+                            <button type="button" class="channel-card" data-copy-text="Farbod.J.Jahan@gmail.com" data-copied-text="Copied to clipboard!">
+                                <div class="channel-icon">
+                                    <iconify-icon icon="lucide:mail"></iconify-icon>
                                 </div>
-                            </div>
-
-                            <p class="contact-blurb">I love meeting thoughtful builders, founders, and curious minds.
-                                Feel free to use the form or reach out directly through any channel below.</p>
-
-                            <div class="contact-channels">
-                                <div class="channel-item">
-                                    <div class="channel-icon">
-                                        <iconify-icon icon="mdi:email-outline"></iconify-icon>
-                                    </div>
-                                    <div class="channel-text">
-                                        <span class="channel-label">Email</span>
-                                        <a href="mailto:Farbod.J.Jahan@gmail.com" class="channel-value">Farbod.J.Jahan@gmail.com</a>
-                                    </div>
-                                    <button type="button" class="copy-email-btn" id="copy-email-btn"
-                                        data-email="Farbod.J.Jahan@gmail.com" aria-label="Copy email address">
-                                        <iconify-icon icon="mdi:content-copy"></iconify-icon>
-                                        <span>Copy</span>
-                                    </button>
+                                <div class="channel-meta">
+                                    <span class="channel-label">Direct Email</span>
+                                    <strong data-copy-label>Farbod.J.Jahan@gmail.com</strong>
                                 </div>
+                                <span class="channel-action-hint">Copy</span>
+                            </button>
 
-                                <a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener"
-                                    class="channel-item channel-link">
-                                    <div class="channel-icon">
-                                        <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                    </div>
-                                    <div class="channel-text">
-                                        <span class="channel-label">LinkedIn</span>
-                                        <span class="channel-value">linkedin.com/in/farbod-jahan</span>
-                                    </div>
-                                    <iconify-icon icon="mdi:arrow-top-right" class="channel-arrow"></iconify-icon>
-                                </a>
+                            <a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" class="channel-card">
+                                <div class="channel-icon">
+                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
+                                </div>
+                                <div class="channel-meta">
+                                    <span class="channel-label">LinkedIn</span>
+                                    <strong>linkedin.com/in/farbod-jahan</strong>
+                                </div>
+                                <span class="channel-action-hint">Open &nearr;</span>
+                            </a>
 
-                                <a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener"
-                                    class="channel-item channel-link">
-                                    <div class="channel-icon">
-                                        <iconify-icon icon="fa:instagram"></iconify-icon>
-                                    </div>
-                                    <div class="channel-text">
-                                        <span class="channel-label">Instagram</span>
-                                        <span class="channel-value">@farbod_jahan</span>
-                                    </div>
-                                    <iconify-icon icon="mdi:arrow-top-right" class="channel-arrow"></iconify-icon>
-                                </a>
-                            </div>
-
-                            <div class="response-note">
-                                <span class="status-dot" aria-hidden="true"></span>
-                                Typically responds within 1–2 business days
+                            <div class="channel-card is-static">
+                                <div class="channel-icon">
+                                    <iconify-icon icon="lucide:map-pin"></iconify-icon>
+                                </div>
+                                <div class="channel-meta">
+                                    <span class="channel-label">Location</span>
+                                    <strong>San Francisco Bay Area, CA</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right: Interactive Formspree Card -->
-                    <div class="col-lg-7">
+                    <!-- RIGHT COLUMN: HIGH-CONTRAST PAPER FORM CARD -->
+                    <div class="contact-form-col" data-reveal data-reveal-delay="50">
                         <div class="contact-form-card">
-                            <form id="contact-form" action="https://formspree.io/f/mpznlrry" method="POST" novalidate>
-                                <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-                                <input type="hidden" name="_subject" id="form-subject" value="New message from farbodjahan.com">
-                                <input type="hidden" name="topic" id="form-topic" value="General">
+                            <form id="contact-form" action="https://formspree.io/f/mpznlrry" method="POST">
+                                <div class="topic-picker-group">
+                                    <div class="form-field-label">
+                                        <span>What’s this regarding?</span>
+                                        <span class="req-badge">Select one or more</span>
+                                    </div>
+                                    <input type="hidden" name="topic" id="contact-topic" value="Product">
 
-                                <div class="form-section-head">
-                                    <h3>Send a message</h3>
-                                    <p>Pick a topic or jump straight in.</p>
-                                </div>
-
-                                <div class="topic-pills" role="group" aria-label="Message topic">
-                                    <button type="button" class="topic-pill is-active" data-topic="Product & Advisory">Product &amp; Advisory</button>
-                                    <button type="button" class="topic-pill" data-topic="Mentoring / Speaking">Mentoring / Speaking</button>
-                                    <button type="button" class="topic-pill" data-topic="Real Estate">Real Estate</button>
-                                    <button type="button" class="topic-pill" data-topic="Cooking / Recipe">Cooking / Recipe</button>
-                                    <button type="button" class="topic-pill" data-topic="Just Saying Hi">Just Saying Hi</button>
+                                    <!-- Each tag separated cleanly -->
+                                    <div class="topic-pills" role="group" aria-label="Inquiry topics">
+                                        <button type="button" class="topic-pill is-active" data-topic="Product" data-slug="product" data-placeholder="Share what you're building or the product role/topic on your mind..." aria-pressed="true">Product</button>
+                                        <button type="button" class="topic-pill" data-topic="Advisory" data-slug="advisory" data-placeholder="Tell me about your company, stage, and where you're looking for advisory support..." aria-pressed="false">Advisory</button>
+                                        <button type="button" class="topic-pill" data-topic="Real Estate" data-slug="real-estate" data-placeholder="Looking to buy, sell, or invest in SF / Peninsula / South Bay? Share your timeline and goals..." aria-pressed="false">Real Estate</button>
+                                        <button type="button" class="topic-pill" data-topic="DJ" data-slug="dj" data-placeholder="Share your event date, venue/city, vibe, and set length..." aria-pressed="false">DJ</button>
+                                        <button type="button" class="topic-pill" data-topic="Cooking" data-slug="cooking" data-placeholder="Have a recipe request, kitchen question, or dish I should tackle next?..." aria-pressed="false">Cooking</button>
+                                        <button type="button" class="topic-pill" data-topic="Mentorship" data-slug="mentorship" data-placeholder="Tell me a little about your background and what career questions you're navigating..." aria-pressed="false">Mentorship</button>
+                                        <button type="button" class="topic-pill" data-topic="Other" data-slug="other" data-placeholder="What's on your mind?..." aria-pressed="false">Other</button>
+                                    </div>
                                 </div>
 
                                 <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="full-name" class="modern-label">Name <span class="req-dot">*</span></label>
-                                        <input type="text" name="name" id="full-name" class="modern-input"
-                                            placeholder="Your name" autocomplete="name" required>
+                                    <div class="col-sm-6">
+                                        <div class="field-group">
+                                            <label for="full-name" class="form-field-label">Name <span class="req-badge">Required</span></label>
+                                            <input type="text" name="name" id="full-name" class="fj-input" placeholder="Jane Doe" autocomplete="name" required>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="email-address" class="modern-label">Email <span class="req-dot">*</span></label>
-                                        <input type="email" name="email" id="email-address" class="modern-input"
-                                            placeholder="you@example.com" autocomplete="email" required>
+                                    <div class="col-sm-6">
+                                        <div class="field-group">
+                                            <label for="email-address" class="form-field-label">Email <span class="req-badge">Required</span></label>
+                                            <input type="email" name="email" id="email-address" class="fj-input" placeholder="jane@company.com" autocomplete="email" required>
+                                        </div>
                                     </div>
                                     <div class="col-12">
-                                        <label for="message" class="modern-label">Message <span class="req-dot">*</span></label>
-                                        <textarea name="message" id="message" rows="6" class="modern-input modern-textarea"
-                                            placeholder="What's on your mind?" required></textarea>
+                                        <div class="field-group">
+                                            <label for="message" class="form-field-label">Message <span class="req-badge">Required</span></label>
+                                            <textarea name="message" id="message" rows="5" class="fj-input" placeholder="Share what you're building or the product role/topic on your mind..." required></textarea>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite" hidden></div>
+                                <div id="form-error-banner" class="form-error-banner" hidden>
+                                    Something went wrong sending your message. Please try again or email <strong>Farbod.J.Jahan@gmail.com</strong> directly.
+                                </div>
 
-                                <div class="form-footer-row">
-                                    <button type="submit" id="submit-btn" class="submit-pill-btn">
-                                        <span class="btn-text">Send Message</span>
-                                        <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+                                <div class="form-submit-row">
+                                    <button type="submit" class="fj-btn fj-btn-primary contact-submit-btn" id="contact-submit-btn">
+                                        <span id="submit-btn-text">Send Message</span>
+                                        <iconify-icon icon="lucide:send"></iconify-icon>
                                     </button>
-                                    <span class="form-privacy-note">Delivered directly to Farbod’s inbox.</span>
+                                    <span class="privacy-note">Delivered straight to my inbox.</span>
                                 </div>
                             </form>
 
-                            <div id="contact-success" class="contact-success-state" hidden>
-                                <div class="success-badge">
-                                    <iconify-icon icon="mdi:check"></iconify-icon>
+                            <div id="contact-success-state" class="contact-success-state" hidden>
+                                <div class="success-icon-ring">
+                                    <iconify-icon icon="lucide:check"></iconify-icon>
                                 </div>
-                                <h3>Message sent!</h3>
-                                <p>Thanks for reaching out — I’ve received your note and will reply soon.</p>
-                                <button type="button" id="send-another-btn" class="send-another-btn">Send another message</button>
+                                <h3>Message sent.</h3>
+                                <p>Thanks for reaching out — I’ve got your note and will get back to you soon.</p>
+                                <button type="button" class="fj-btn fj-btn-secondary" id="contact-reset-btn">Send another message</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- MAIN CONTACT SECTION END -->
 
-        <!-- Footer Start -->
+        <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Sr. Director of Product @ Visa &middot; DJ, Cook &amp; Realtor &middot; San Francisco</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../about/">About</a></li>
+                        <li><a href="../resume/">Resume</a></li>
+                        <li><a href="../cooking/">Cooking</a></li>
+                        <li><a href="../real-estate/">Real Estate</a></li>
+                        <li><a href="../dj/">DJ</a></li>
+                        <li><a href="./">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
-        <!-- Footer End -->
-
-        <button class="top-btn" aria-label="Scroll to top"><iconify-icon icon="bx:up-arrow-alt"></iconify-icon></button>
+        <!-- FOOTER END -->
     </div>
 
+    <button class="top-btn" aria-label="Scroll to top">
+        <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
+    </button>
+
     <script src="../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
     <script src="../js/main.js" defer></script>
     <script>
         (() => {
-            // Copy email button
-            const copyBtn = document.getElementById('copy-email-btn');
-            if (copyBtn) {
-                copyBtn.addEventListener('click', async () => {
-                    const email = copyBtn.dataset.email;
-                    try {
-                        await navigator.clipboard.writeText(email);
-                    } catch {
-                        const tmp = document.createElement('input');
-                        tmp.value = email;
-                        document.body.appendChild(tmp);
-                        tmp.select();
-                        document.execCommand('copy');
-                        document.body.removeChild(tmp);
-                    }
-                    const lbl = copyBtn.querySelector('span');
-                    if (lbl) lbl.textContent = 'Copied!';
-                    copyBtn.classList.add('is-copied');
-                    setTimeout(() => {
-                        if (lbl) lbl.textContent = 'Copy';
-                        copyBtn.classList.remove('is-copied');
-                    }, 2000);
-                });
-            }
+            const topicInput = document.getElementById('contact-topic');
+            const messageBox = document.getElementById('message');
+            const pills = Array.from(document.querySelectorAll('.topic-pill'));
 
-            // Topic quick-select pills
-            const topicPills = document.querySelectorAll('.topic-pill');
-            const topicInput = document.getElementById('form-topic');
-            const subjectInput = document.getElementById('form-subject');
-            let currentTopic = 'Product & Advisory';
+            const syncSelectedTopics = (lastClickedPill) => {
+                let activePills = pills.filter((p) => p.classList.contains('is-active'));
+                if (activePills.length === 0 && lastClickedPill) {
+                    lastClickedPill.classList.add('is-active');
+                    lastClickedPill.setAttribute('aria-pressed', 'true');
+                    activePills = [lastClickedPill];
+                }
+                if (topicInput) {
+                    topicInput.value = activePills.map((p) => p.dataset.topic).join(', ');
+                }
+                if (messageBox && activePills.length === 1 && activePills[0].dataset.placeholder) {
+                    messageBox.placeholder = activePills[0].dataset.placeholder;
+                } else if (messageBox && activePills.length > 1) {
+                    messageBox.placeholder = `Regarding ${activePills.map((p) => p.dataset.topic).join(' & ')} — share a few details...`;
+                }
+            };
 
-            if (topicInput) topicInput.value = currentTopic;
-            if (subjectInput) subjectInput.value = `Portfolio Contact (${currentTopic})`;
-
-            topicPills.forEach((pill) => {
+            pills.forEach((pill) => {
                 pill.addEventListener('click', () => {
-                    topicPills.forEach((p) => p.classList.remove('is-active'));
-                    pill.classList.add('is-active');
-                    currentTopic = pill.dataset.topic || 'General';
-                    if (topicInput) topicInput.value = currentTopic;
-                    if (subjectInput) subjectInput.value = `Portfolio Contact (${currentTopic})`;
+                    const willActivate = !pill.classList.contains('is-active');
+                    pill.classList.toggle('is-active', willActivate);
+                    pill.setAttribute('aria-pressed', String(willActivate));
+                    syncSelectedTopics(pill);
                 });
             });
 
-            // Formspree AJAX submission with clear status & fallback
-            const form = document.getElementById('contact-form');
-            const submitBtn = document.getElementById('submit-btn');
-            const feedbackEl = document.getElementById('form-feedback');
-            const successEl = document.getElementById('contact-success');
-            const sendAnotherBtn = document.getElementById('send-another-btn');
+            // Pre-select separate tag from URL ?topic=real-estate | dj | cooking | advisory | mentorship | product
+            const urlTopic = (new URLSearchParams(window.location.search).get('topic') || '').toLowerCase();
+            if (urlTopic) {
+                const match = pills.find(
+                    (p) => p.dataset.slug === urlTopic || p.dataset.topic.toLowerCase() === urlTopic
+                );
+                if (match) {
+                    pills.forEach((p) => {
+                        const isMatch = p === match;
+                        p.classList.toggle('is-active', isMatch);
+                        p.setAttribute('aria-pressed', String(isMatch));
+                    });
+                    syncSelectedTopics(match);
+                }
+            }
 
-            const showError = (msg) => {
-                if (!feedbackEl) return;
-                feedbackEl.innerHTML = msg;
-                feedbackEl.hidden = false;
-            };
+            // Async Formspree submit
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('contact-submit-btn');
+            const submitText = document.getElementById('submit-btn-text');
+            const errorBanner = document.getElementById('form-error-banner');
+            const successState = document.getElementById('contact-success-state');
+            const resetBtn = document.getElementById('contact-reset-btn');
 
             if (form) {
                 form.addEventListener('submit', async (e) => {
                     e.preventDefault();
-                    if (feedbackEl) feedbackEl.hidden = true;
-
-                    const nameVal = (document.getElementById('full-name')?.value || '').trim();
-                    const emailVal = (document.getElementById('email-address')?.value || '').trim();
-                    const msgVal = (document.getElementById('message')?.value || '').trim();
-
-                    if (!nameVal || !emailVal || !msgVal) {
-                        showError('Please fill out your name, email, and message.');
-                        return;
-                    }
-                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
-                        showError('Please enter a valid email address.');
-                        return;
-                    }
-
-                    if (subjectInput) {
-                        subjectInput.value = `[${currentTopic}] Message from ${nameVal}`;
-                    }
-
-                    const btnText = submitBtn?.querySelector('.btn-text');
+                    if (errorBanner) errorBanner.hidden = true;
                     if (submitBtn) submitBtn.disabled = true;
-                    if (btnText) btnText.textContent = 'Sending…';
+                    if (submitText) submitText.textContent = 'Sending...';
 
                     try {
                         const res = await fetch(form.action, {
@@ -335,31 +310,23 @@
                             body: new FormData(form),
                             headers: { Accept: 'application/json' },
                         });
-
-                        if (res.ok) {
-                            form.reset();
-                            form.hidden = true;
-                            if (successEl) successEl.hidden = false;
-                        } else {
-                            const data = await res.json().catch(() => null);
-                            const errText = data?.errors?.map((err) => err.message).join(', ')
-                                || 'Something went wrong sending your message.';
-                            showError(`${errText} You can also email <a href="mailto:Farbod.J.Jahan@gmail.com">Farbod.J.Jahan@gmail.com</a> directly.`);
-                        }
+                        if (!res.ok) throw new Error('Submission failed');
+                        form.reset();
+                        form.hidden = true;
+                        if (successState) successState.hidden = false;
                     } catch {
-                        showError('Network error — please try again or email <a href="mailto:Farbod.J.Jahan@gmail.com">Farbod.J.Jahan@gmail.com</a> directly.');
+                        if (errorBanner) errorBanner.hidden = false;
                     } finally {
                         if (submitBtn) submitBtn.disabled = false;
-                        if (btnText) btnText.textContent = 'Send Message';
+                        if (submitText) submitText.textContent = 'Send Message';
                     }
                 });
             }
 
-            if (sendAnotherBtn && form && successEl) {
-                sendAnotherBtn.addEventListener('click', () => {
-                    successEl.hidden = true;
+            if (resetBtn && form && successState) {
+                resetBtn.addEventListener('click', () => {
+                    successState.hidden = true;
                     form.hidden = false;
-                    document.getElementById('full-name')?.focus();
                 });
             }
         })();

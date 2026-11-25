@@ -2,41 +2,42 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139551000-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-139551000-1');
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farbod Jahan | Realtor </title>
+    <title>Farbod Jahan | Bay Area Luxury Real Estate (DRE #02114368)</title>
+    <meta name="description" content="Farbod Jahan — Licensed California Real Estate Advisor (DRE #02114368). Data-driven home buying, luxury residential advisory, and investment strategy across San Francisco, Palo Alto, and Silicon Valley.">
+    <link rel="canonical" href="https://farbodjahan.com/real-estate/">
+
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link href="../css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="./js/simpleLightbox.css">
-    <link rel="stylesheet" href="../css/realestate.css">
-    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Farbod Jahan | Bay Area Real Estate Advisory">
+    <meta property="og:description" content="Architectural homes, data-backed valuation, and seamless representation across San Francisco, Palo Alto, and Silicon Valley.">
+    <meta property="og:image" content="https://farbodjahan.com/real-estate/assets/optimized/real-estate.webp">
+    <meta property="og:url" content="https://farbodjahan.com/real-estate/">
 
-    <meta name="description" content="Farbod Jahan - Product Manager, Technologist, and Designer. Explore my portfolio, resume, and interests.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/realestate.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="realestate-page">
     <div class="external-wrapper">
         <!-- HEADER START -->
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../images/FarbodJahan.png" alt="" loading="lazy">
+                    <a class="navbar-brand" href="../">
+                        <img src="../images/FarbodJahan.png" alt="Farbod Jahan">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,12 +49,12 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="../index.html">
+                                <a class="nav-link" href="../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="index.html">About</a>
+                                <a class="nav-link" href="../about/">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../resume/">Resume</a>
@@ -62,13 +63,12 @@
                                 <a class="nav-link" href="../contact/">Contact</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link active" href="#" data-bs-toggle="dropdown"
-                                    aria-expanded="false">Interests</a>
+                                <a class="nav-link active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../dj">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../cooking/">Cooking</a></li>
-                                        <li><a class="dropdownitem" href="index.html">Real Estate</a></li>
+                                        <li><a class="dropdownitem" href="./">Real Estate</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -78,271 +78,253 @@
             </nav>
         </header>
         <!-- HEADER END -->
-        <!-- SECTION HERO MAIN START -->
-        <section class="hero-main">
-            <video style="object-fit: cover; width:100%; height:100vh;" src="./assets/mainbgvideo.mp4" id="video-slider"
-                loop autoplay muted playsinline></video>
-            <div class="container">
-                <div class="text-hero text-center">
-                    <img src="/Logo/V1/FarbodJahan-Gold.png" alt="" loading="lazy">
-               <!--     <h1 data-aos="fade-up" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Farbod Jahan
-                    </h1> -->
-                    <p data-aos="fade-up" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Real Estate Agent</p>
-                    <a href="../contact/" class="btn cta-primary" data-aos="fade-up" data-aos="fade-up"
-                        data-aos-easing="ease" data-aos-delay="400">Contact Me</a>
+
+        <main>
+            <!-- ARCHITECTURAL HERO -->
+            <section class="re-hero">
+                <video data-smart-video data-src="./assets/mainbgvideo.mp4" poster="./assets/optimized/real-estate.webp"
+                    id="video-slider" loop muted playsinline preload="none"></video>
+
+                <div class="container">
+                    <div class="re-hero-inner" data-reveal>
+                        <div class="fj-eyebrow re-eyebrow">
+                            <span class="fj-eyebrow-dot"></span>
+                            <span>California Real Estate Advisory &middot; DRE #02114368</span>
+                        </div>
+
+                        <h1 class="re-hero-title">
+                            Timeless residences, guided with <span class="re-serif-italic">analytical precision.</span>
+                        </h1>
+
+                        <p class="re-hero-lead">
+                            Bringing a senior tech executive’s rigor in data, valuation, and negotiation to luxury residential buying and investing across San Francisco and Silicon Valley.
+                        </p>
+
+                        <div class="re-hero-actions">
+                            <a href="../contact/?topic=real-estate" class="fj-btn fj-btn-accent">
+                                <span>Schedule a Consultation</span>
+                                <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+                            </a>
+                            <a href="#markets" class="fj-btn fj-btn-glass">
+                                <span>Explore Bay Area Markets</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- SECTION HERO MAIN END -->
-        <section class="cooking-main">
-            <div class="container">
-                <div class="caption">
-                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">Inventory</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="1000">Find your Dream Home </h3>
-                            <p data-aos="fade-up" data-aos-duration="1000">Farbod Jahan offers a collection of best homes all in one convenient location.
-                                With expert knowledge and state-of-the-art virtual reality, come experience and discover your dream home today.
-                                
+            </section>
+
+            <!-- ADVISORY PILLARS + GPU GALLERY -->
+            <section class="re-pillars-section">
+                <div class="container">
+                    <div class="fj-section-header" data-reveal>
+                        <div>
+                            <span class="fj-kicker">Private Client Advisory</span>
+                            <h2 class="re-display-heading">A modern, zero-friction path to ownership.</h2>
+                            <p>Every search, comp model, and offer strategy is tailored around architectural quality and long-term value.</p>
+                        </div>
+                    </div>
+
+                    <div class="re-showcase-list">
+                        <!-- Row 1 -->
+                        <div class="re-showcase-row" data-reveal>
+                            <div class="re-showcase-copy">
+                                <span class="re-step-num">01 &middot; Discovery &amp; Access</span>
+                                <h3>Find Your Signature Home</h3>
+                                <p>
+                                    Curated access to standout Bay Area residences — pairing private network intelligence, immersive virtual walkthroughs, and neighborhood-level micro-comp analysis so you only tour homes worth your time.
                                 </p>
+                                <ul class="re-highlights">
+                                    <li>Off-market &amp; coming-soon deal sourcing</li>
+                                    <li>3D virtual touring &amp; architectural vetting</li>
+                                </ul>
+                            </div>
+                            <div class="re-gallery-frame" data-re-gallery="0">
+                                <img class="re-gallery-layer is-visible" src="./assets/optimized/real-estate.webp" alt="Modern luxury living room" loading="lazy">
+                                <img class="re-gallery-layer" src="./assets/optimized/real-estate-2.webp" alt="" aria-hidden="true" loading="lazy">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="img-box">
-                            <div class="custom-border" id="dynamic-border-1"></div>
-                            <img id="dynamic-image-1" src="./assets/real-estate.jpg"
-                                style="height:500px;object-fit: cover " / loading="lazy">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 order-lg-1 order-2">
-                        <div class="img-box">
-                            <div class="custom-border" id="dynamic-border-2"></div>
-                            <img id="dynamic-image-2" src="./assets/real-estate-4.jpg"
-                                style="height:280px;object-fit: cover; " / loading="lazy">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-2 order-1">
-                        <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="1000">World Class Luxury Homes</h3>
-                            <p data-aos="fade-up" data-aos-duration="1000">My passion is to provide residents with a timeless home that gives happiness to its occupants through
-                                 innovative designs with the finest craftsmanship in the most sought after locations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="1000">Remove Complicaitons</h3>
-                            <p data-aos="fade-up" data-aos-duration="1000">Purchasing a home is one of the hardest things you will ever do. 
-                                By choosing Farbod Jahan as your realtor, I promise to remove the complexities with finding and purchasing a home. 
-                                I will make the experience as seamless as possible so that you can begin your new chapter today.
-                            </p>
-                    </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="img-box">
-                            <div class="custom-border" id="dynamic-border-3"></div>
-                            <img id="dynamic-image-3" src="./assets/real-estate-3.jpg"
-                                style="height:500px;object-fit: cover " / loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Section Our Collection Start -->
-        <section class="our-collection">
-            <div class="container">
-                <div class="caption">
-                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">My Locations</h2>
-                </div>
 
-                <div class="c-wrapper">
-                    <div class="swiper collectionSlider" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="swiper-wrapper">
-                
-                            <div class="swiper-slide">
-                                <div class="img-collection">
-                                    <img src="./assets/San Jose Logo.png" alt="" class="logo" loading="lazy">
-                                    <img src="./assets/San Jose.jpeg" alt="" class="w-100" loading="lazy">
-                                </div>
+                        <!-- Row 2 -->
+                        <div class="re-showcase-row is-reversed" data-reveal>
+                            <div class="re-showcase-copy">
+                                <span class="re-step-num">02 &middot; Craft &amp; Location</span>
+                                <h3>World-Class Luxury Residences</h3>
+                                <p>
+                                    My focus is connecting discerning buyers with timeless homes built with enduring craftsmanship, natural light, and modern design in Northern California’s most sought-after enclaves.
+                                </p>
+                                <ul class="re-highlights">
+                                    <li>Architectural &amp; structural disclosure review</li>
+                                    <li>Resale liquidity &amp; appreciation modeling</li>
+                                </ul>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="img-collection">
-                                    <img src="./assets/San Francisco Logo.png" alt="" class="logo" loading="lazy">
-                                    <img src="./assets/San Francisco.jpeg" alt="" class="w-100" loading="lazy">
-                                </div>
+                            <div class="re-gallery-frame" data-re-gallery="1">
+                                <img class="re-gallery-layer is-visible" src="./assets/optimized/real-estate-4.webp" alt="Contemporary Bay Area home exterior" loading="lazy">
+                                <img class="re-gallery-layer" src="./assets/optimized/real-estate-5.webp" alt="" aria-hidden="true" loading="lazy">
                             </div>
-                            <div class="swiper-slide">
-                                <div class="img-collection">
-                                    <img src="./assets/Palo Alto Logo.png" alt="" class="logo" loading="lazy">
-                                    <img src="./assets/Palo Alto.jpeg" alt="" class="w-100" loading="lazy">
-                                </div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="re-showcase-row" data-reveal>
+                            <div class="re-showcase-copy">
+                                <span class="re-step-num">03 &middot; Execution &amp; Closing</span>
+                                <h3>Remove Every Complication</h3>
+                                <p>
+                                    Purchasing a home in the Bay Area is one of the highest-stakes transactions you’ll ever make. I handle the diligence, lender coordination, and negotiation mechanics end-to-end so you step into your next chapter with total confidence.
+                                </p>
+                                <ul class="re-highlights">
+                                    <li>Data-backed offer structuring &amp; negotiation</li>
+                                    <li>White-glove escrow, inspection &amp; closing management</li>
+                                </ul>
                             </div>
-                           
-                        
+                            <div class="re-gallery-frame" data-re-gallery="2">
+                                <img class="re-gallery-layer is-visible" src="./assets/optimized/real-estate-3.webp" alt="Designer kitchen and dining space" loading="lazy">
+                                <img class="re-gallery-layer" src="./assets/optimized/real-estate-7.webp" alt="" aria-hidden="true" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BAY AREA MARKETS BENTO -->
+            <section class="re-markets-section" id="markets">
+                <div class="container">
+                    <div class="fj-section-header" data-reveal>
+                        <div>
+                            <span class="fj-kicker">Core Markets</span>
+                            <h2 class="re-display-heading">San Francisco to Silicon Valley.</h2>
+                            <p>Focused local expertise across the Peninsula and South Bay’s premier residential neighborhoods.</p>
                         </div>
                     </div>
 
-                    <div class="swiper-button-next"><iconify-icon icon="icons8:arrows-long-right"></iconify-icon></div>
-                    <div class="swiper-button-prev"><iconify-icon icon="icons8:arrows-long-left"></iconify-icon></div>
-                </div>
-            </div>
-        </section>
-        <!-- Section Our Collection End -->
-        <!-- Comment this out
-        Section Our Journal Start 
-        <section class="our-journal">
-            <div class="container">
-                <div class="caption">
-                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">OUR JOURNAL</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="cardJournal">
-                            <div class="date">21/01/22</div>
-                            <div class="img-wrapper">
-                                <img src="./assets/journel1.webp" alt="" class="w-100" loading="lazy">
+                    <div class="re-markets-grid">
+                        <article class="re-market-card" data-reveal>
+                            <img src="./assets/optimized/san-francisco.webp" alt="San Francisco skyline and residences" loading="lazy">
+                            <span class="re-market-pill">Urban Luxury</span>
+                            <div class="re-market-body">
+                                <h3>San Francisco</h3>
+                                <p>Pacific Heights, Marina, Noe Valley, Russian Hill &amp; SOMA view penthouses.</p>
                             </div>
-                            <h4><a href="#">Sanctuary SOLD OUT & Progress Update.</a> </h4>
-                            <p>The Sanctuary residences in Mount Pleasant by DevelopWise is now sold out!...</p>
-                            <a href="#" class="cta">MORE</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="cardJournal">
-                            <div class="date">09/08/21</div>
-                            <div class="img-wrapper">
-                                <img src="./assets/journel2.webp" alt="" class="w-100" loading="lazy">
-                            </div>
-                            <h4><a href="#">Sanctuary Construction now at 60% and progressing impressively!</a> </h4>
-                            <p>Sanctuary construction at 60% and gaining momentum as they finish level six and pour slab
-                                for level seven....</p>
-                            <a href="#" class="cta">MORE</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="cardJournal">
-                            <div class="date">21/01/22</div>
-                            <div class="img-wrapper">
-                                <img src="./assets/journel3.webp" alt="" class="w-100" loading="lazy">
-                            </div>
-                            <h4><a href="#">Sanctuary Construction at Halfway!</a> </h4>
-                            <p>DevelopWise has announced that Sanctuary Mount Pleasant is NOW 95% SOLD with construction
-                                at halfway and gaining momentum as they form up the ground floor AFS walls ...</p>
-                            <a href="#" class="cta">MORE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-       Section Our Journal End -->
-        <!-- About Me Start -->
-        <section>
-            <div class="container">
-                <div class="mediaBox">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <div class="avatar">
-                                <img src="../about/assets/Profile.jpg" alt="Farbod Jahan" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="mediaUser text-start">
-                                <div class="name">Farbod Jahan <span>(Agent)</span></div>
-                                <div class="location"><iconify-icon icon="akar-icons:location"></iconify-icon> San Francisco</div>
-                                    <div class="location"><iconify-icon icon="fa-solid:id-card"></iconify-icon> License ID: 02114368</div>
-                                        <div class="location"><iconify-icon icon="ic:round-email"></iconify-icon> Farbod.J.Jahan@gmail.com </div> <br><br>
-                                        <a href="../contact/" class="btn cta-primary" data-aos="fade-up" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
 
+                        <article class="re-market-card" data-reveal data-reveal-delay="50">
+                            <img src="./assets/optimized/palo-alto.webp" alt="Palo Alto residential neighborhood" loading="lazy">
+                            <span class="re-market-pill">Peninsula Estates</span>
+                            <div class="re-market-body">
+                                <h3>Palo Alto</h3>
+                                <p>Old Palo Alto, Crescent Park, Professorville &amp; top-tier Peninsula school districts.</p>
+                            </div>
+                        </article>
+
+                        <article class="re-market-card" data-reveal data-reveal-delay="100">
+                            <img src="./assets/optimized/san-jose.webp" alt="San Jose and Silicon Valley homes" loading="lazy">
+                            <span class="re-market-pill">South Bay</span>
+                            <div class="re-market-body">
+                                <h3>San Jose</h3>
+                                <p>Willow Glen, Almaden Valley, Rose Garden &amp; high-growth tech corridors.</p>
+                            </div>
+                        </article>
+
+                        <article class="re-market-card" data-reveal data-reveal-delay="150">
+                            <img src="./assets/optimized/santa-clara.webp" alt="Santa Clara and Silicon Valley core" loading="lazy">
+                            <span class="re-market-pill">Silicon Valley Core</span>
+                            <div class="re-market-body">
+                                <h3>Santa Clara &amp; Environs</h3>
+                                <p>Modern townhomes, single-family residences &amp; strategic long-term rentals.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- About Me End -->
-        <!-- Footer Start -->
+            </section>
+
+            <!-- ADVISOR PROFILE CARD -->
+            <section class="re-advisor-section">
+                <div class="container">
+                    <div class="re-advisor-card" data-reveal>
+                        <div class="re-advisor-portrait">
+                            <picture>
+                                <source srcset="./assets/Profile.webp" type="image/webp">
+                                <img src="../about/assets/Profile.jpg" alt="Farbod Jahan, California Real Estate Agent" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="re-advisor-info">
+                            <span class="fj-kicker">Your Advisor</span>
+                            <h2>Farbod Jahan</h2>
+                            <p class="re-advisor-sub">Licensed California Real Estate Professional &amp; Tech Executive</p>
+
+                            <div class="re-credentials-row">
+                                <span class="re-cred-badge">
+                                    <iconify-icon icon="lucide:shield-check"></iconify-icon>
+                                    CA DRE License #02114368
+                                </span>
+                                <span class="re-cred-badge">
+                                    <iconify-icon icon="lucide:map-pin"></iconify-icon>
+                                    San Francisco &amp; Silicon Valley
+                                </span>
+                            </div>
+
+                            <div class="re-advisor-actions">
+                                <a href="../contact/?topic=real-estate" class="fj-btn fj-btn-accent">
+                                    <span>Inquire Privately</span>
+                                    <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+                                </a>
+                                <button type="button" class="fj-btn fj-btn-glass" data-copy-text="Farbod.J.Jahan@gmail.com" data-copied-text="Email Copied!">
+                                    <iconify-icon icon="lucide:mail"></iconify-icon>
+                                    <span data-copy-label>Farbod.J.Jahan@gmail.com</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan &middot; CA DRE #02114368</div>
+                        <p class="footer-tagline">Bay Area Real Estate Advisory &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../about/">About</a></li>
+                        <li><a href="../resume/">Resume</a></li>
+                        <li><a href="../cooking/">Cooking</a></li>
+                        <li><a href="./">Real Estate</a></li>
+                        <li><a href="../dj/">DJ</a></li>
+                        <li><a href="../contact/?topic=real-estate">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
-        <!-- Footer End -->
-        <div id="loading">
-            <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-                <div class="ldio-xo4z6m7kfv">
-                    <div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <button class="top-btn" aria-label="Scroll to top">
-            <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
-        </button>
-
+        <!-- FOOTER END -->
     </div>
-    <script src="../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="../js/simpleparallax.js" defer></script>
-    <script src="./js/imageSlide.js"></script>
-    <script src="../js/main.js" defer></script>
-    <script>
-        var swiper = new Swiper(".collectionSlider", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop:true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                300: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 0,
-                },
-                992: {
-                    slidesPerView: 2,
-                    spaceBetween: 0,
-                },
-            },
-        });
-    </script>
 
+    <button class="top-btn" aria-label="Scroll to top">
+        <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
+    </button>
+
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="./js/imageSlide.js" defer></script>
 </body>
 
 </html>

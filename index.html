@@ -1,190 +1,380 @@
 <!doctype html>
 <html lang="en">
-<!-- testing sync-->
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139551000-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'UA-139551000-1');
-    </script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farbod Jahan | Product Manager &amp; Technologist</title>
+    <title>Farbod Jahan | Sr. Director of Product at Visa &middot; DJ, Cook &amp; Realtor</title>
+    <meta name="description" content="Farbod Jahan — Senior Director of Product at Visa in San Francisco, and off the clock a part-time DJ, home cooking specialist, and licensed California Realtor.">
+    <link rel="canonical" href="https://farbodjahan.com/">
+
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Farbod Jahan | Sr. Director of Product at Visa">
+    <meta property="og:description" content="Senior Director of Product at Visa — and part-time DJ, cooking specialist, and Bay Area Realtor in San Francisco.">
+    <meta property="og:image" content="https://farbodjahan.com/about/assets/Profile.jpg">
+    <meta property="og:url" content="https://farbodjahan.com/">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="description" content="Farbod Jahan - Product Manager, Technologist, and Designer. Explore my portfolio, resume, and interests.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- HEADER START -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/FarbodJahan.png" alt="" loading="lazy">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <button class="closeIcon" aria-label="Close menu"><iconify-icon icon="ep:close"></iconify-icon></button>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">
-                                <iconify-icon icon="fa:home"></iconify-icon>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about/">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./resume/">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact/">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interests</a>
-                            <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdownitem" href="./dj/">Dj</a></li>
-                                <li><a class="dropdownitem" href="./cooking/">Cooking</a></li>
-                                <li><a class="dropdownitem" href="./real-estate/">Real Estate</a></li>
-                              </ul>
+    <div class="external-wrapper">
+        <!-- HEADER START -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="./">
+                        <img src="images/FarbodJahan.png" alt="Farbod Jahan">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <button class="closeIcon" aria-label="Close menu">
+                            <iconify-icon icon="ep:close"></iconify-icon>
+                        </button>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./" aria-label="Home">
+                                    <iconify-icon icon="fa:home"></iconify-icon>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about/">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./resume/">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact/">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interests</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a class="dropdownitem" href="./dj/">DJ &amp; Music</a></li>
+                                        <li><a class="dropdownitem" href="./cooking/">Cooking</a></li>
+                                        <li><a class="dropdownitem" href="./real-estate/">Real Estate</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- HEADER END -->
+
+        <main>
+            <!-- EDITORIAL PERSONAL HERO -->
+            <section class="home-hero">
+                <div class="container">
+                    <div class="hero-editorial-grid">
+                        <div class="hero-copy-col" data-reveal>
+                            <span class="fj-kicker">San Francisco, California</span>
+
+                            <h1 class="hero-name">Farbod Jahan</h1>
+
+                            <p class="hero-headline">
+                                <strong>Senior Director of Product at <a href="https://www.visa.com/en-us" target="_blank" rel="noopener">Visa</a></strong> — <span class="hero-serif-phrase">and off the clock, a part-time DJ, cooking specialist, and Bay Area Realtor.</span>
+                            </p>
+
+                            <p class="hero-bio">
+                                My work sits at the intersection of technology, design, and business. Over 15+ years in engineering and product leadership, I’ve loved shipping intuitive, data-driven products at global scale — while bringing that same obsession for craft to my home kitchen, the DJ decks, and California real estate.
+                            </p>
+
+                            <!-- Clickable Identity Roles -->
+                            <div class="identity-tags" aria-label="Explore my roles">
+                                <a href="./resume/" class="id-tag is-primary">
+                                    <span class="id-dot"></span>
+                                    Sr. Director of Product @ Visa
+                                </a>
+                                <a href="./dj/" class="id-tag">
+                                    <iconify-icon icon="lucide:disc-3"></iconify-icon>
+                                    Part-Time DJ
+                                </a>
+                                <a href="./cooking/" class="id-tag">
+                                    <iconify-icon icon="lucide:utensils"></iconify-icon>
+                                    Cooking Specialist
+                                </a>
+                                <a href="./real-estate/" class="id-tag">
+                                    <iconify-icon icon="lucide:home"></iconify-icon>
+                                    Licensed Realtor
+                                </a>
                             </div>
-                        </li>
+
+                            <div class="hero-cta-row">
+                                <a href="./resume/" class="fj-btn fj-btn-primary">
+                                    <span>View My Resume</span>
+                                    <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+                                </a>
+                                <a href="./about/" class="fj-btn fj-btn-secondary">More About Me</a>
+                                <a href="./contact/" class="hero-inline-link">Get in touch &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="hero-portrait-col" data-reveal data-reveal-delay="60">
+                            <figure class="hero-portrait-figure">
+                                <picture>
+                                    <source srcset="./about/assets/Profile.webp" type="image/webp">
+                                    <img src="./about/assets/Profile.jpg" alt="Farbod Jahan — Senior Director of Product at Visa" fetchpriority="high">
+                                </picture>
+                                <figcaption>
+                                    <span>Farbod Jahan</span>
+                                    <span>MBA, Santa Clara &middot; B.S. Computer Eng, SJSU</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- EDITORIAL NUMBERS LEDGER -->
+                    <div class="impact-ledger" data-reveal data-reveal-delay="100">
+                        <div class="ledger-item">
+                            <span class="ledger-num">$135M+</span>
+                            <span class="ledger-desc">Annual platform P&amp;L directed at Visa</span>
+                        </div>
+                        <div class="ledger-item">
+                            <span class="ledger-num">300M+</span>
+                            <span class="ledger-desc">Global ecosystem users reached</span>
+                        </div>
+                        <div class="ledger-item">
+                            <span class="ledger-num">47</span>
+                            <span class="ledger-desc">Scratch-tested recipes in my cookbook</span>
+                        </div>
+                        <div class="ledger-item">
+                            <span class="ledger-num">15+ Yrs</span>
+                            <span class="ledger-desc">Engineering &amp; product leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHERE I WORK (EDITORIAL LEDGER) -->
+            <section class="where-section" id="career">
+                <div class="container">
+                    <div class="fj-section-header" data-reveal>
+                        <div>
+                            <span class="fj-kicker">Where I Work</span>
+                            <h2>Leading product at global scale.</h2>
+                            <p>From hands-on software engineering and 0&rarr;1 startups to enterprise AI platforms serving thousands of institutions worldwide.</p>
+                        </div>
+                        <a href="./resume/" class="fj-link-arrow">
+                            <span>Full resume &amp; metrics</span>
+                            <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+                        </a>
+                    </div>
+
+                    <div class="career-ledger-list">
+                        <article class="career-row is-featured" data-reveal>
+                            <div class="career-meta">
+                                <span class="career-years">2026 — Present</span>
+                                <span class="career-badge">Current Role</span>
+                            </div>
+                            <div class="career-main">
+                                <h3><a href="https://www.visa.com/en-us" target="_blank" rel="noopener">Visa</a> <span class="role-sep">&mdash;</span> <span class="role-title">Senior Director of Product</span></h3>
+                                <p>Leading global product strategy and P&amp;L for the AI-native <strong>Visa Analytic Platform</strong> — delivering $135M in FY26 revenue, conversational &amp; agentic analytics, and instantaneous data intelligence across 8,000+ financial institutions and merchants.</p>
+                            </div>
+                        </article>
+
+                        <article class="career-row" data-reveal>
+                            <div class="career-meta">
+                                <span class="career-years">2024 — 2025</span>
+                            </div>
+                            <div class="career-main">
+                                <h3><a href="https://www.abbvie.com/" target="_blank" rel="noopener">AbbVie (Allergan Aesthetics)</a> <span class="role-sep">&mdash;</span> <span class="role-title">Director of Product</span></h3>
+                                <p>Scaled a 15-PM organization powering global consumer &amp; B2B aesthetics platforms, shipping 10+ AI capabilities that generated $48M in net-new revenue and unified 7 legacy tools.</p>
+                            </div>
+                        </article>
+
+                        <article class="career-row" data-reveal>
+                            <div class="career-meta">
+                                <span class="career-years">2023 — 2024</span>
+                            </div>
+                            <div class="career-main">
+                                <h3><a href="https://www.swiftly.com/" target="_blank" rel="noopener">Swiftly</a> <span class="role-sep">&mdash;</span> <span class="role-title">Director of Product</span></h3>
+                                <p>Grew the core product team from 4 to 12 PMs, launched three 0&rarr;1 retail media platform products ($5M revenue in 4 months), and cut delivery cycles in half through shared design systems.</p>
+                            </div>
+                        </article>
+
+                        <article class="career-row" data-reveal>
+                            <div class="career-meta">
+                                <span class="career-years">2021 — 2023</span>
+                            </div>
+                            <div class="career-main">
+                                <h3><a href="https://www.paypal.com/" target="_blank" rel="noopener">PayPal</a> <span class="role-sep">&mdash;</span> <span class="role-title">Group Product Manager</span></h3>
+                                <p>Led 7 PMs overseeing B2B/B2C platform experiences across PayPal’s 300M+ user ecosystem — reducing developer onboarding time by 37% and cutting SLA breaches by 40%.</p>
+                            </div>
+                        </article>
+
+                        <article class="career-row" data-reveal>
+                            <div class="career-meta">
+                                <span class="career-years">2015 — 2021</span>
+                            </div>
+                            <div class="career-main">
+                                <h3><a href="https://www.screenmeet.com/" target="_blank" rel="noopener">ScreenMeet</a>, Guidewire &amp; SpellTrain <span class="role-sep">&mdash;</span> <span class="role-title">Sr. Technical PM &amp; Software Engineer</span></h3>
+                                <p>Built ScreenMeet’s cloud remote-support platform from scratch ($1.25M Year-1 ARR; Dell, Salesforce &amp; ServiceNow integrations), following Software Engineering at Guidewire and ML EdTech PM work at SpellTrain (+35% cognitive retention).</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HOW I WORK (AUTHENTIC VOICE, SWISS HAIRLINE GRID) -->
+            <section class="how-section">
+                <div class="container">
+                    <div class="fj-section-header" data-reveal>
+                        <div>
+                            <span class="fj-kicker">How I Work</span>
+                            <h2>Rigorous thinking, obsessive craft.</h2>
+                            <p>Working closely with customers, designers, and engineers to translate real human needs into products people love.</p>
+                        </div>
+                    </div>
+
+                    <div class="how-grid">
+                        <div class="how-col" data-reveal>
+                            <span class="how-step">01 / Research</span>
+                            <h3>Empathize first</h3>
+                            <p>Understand the problem and the person behind it. Map the competitive landscape, spot strategic leverage, and define crisp product goals.</p>
+                        </div>
+
+                        <div class="how-col" data-reveal data-reveal-delay="50">
+                            <span class="how-step">02 / Design</span>
+                            <h3>Shape the experience</h3>
+                            <p>Combine intuitive workflows, smart interactions, and a cohesive visual language into interfaces that feel immediately natural.</p>
+                        </div>
+
+                        <div class="how-col" data-reveal data-reveal-delay="100">
+                            <span class="how-step">03 / Build</span>
+                            <h3>Sweat every detail</h3>
+                            <p>Map design to code. Smooth constraints and edge cases. Move that button 3 pixels to the left. Fill the gap between functional and delightful.</p>
+                        </div>
+
+                        <div class="how-col" data-reveal data-reveal-delay="150">
+                            <span class="how-step">04 / Refine</span>
+                            <h3>Test &amp; iterate</h3>
+                            <p>Put work in front of real people solving real problems. Pair hard telemetry with intuition and experience to keep raising the bar.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OFF THE CLOCK: COOKING SPECIALIST, PART-TIME DJ, REALTOR -->
+            <section class="worlds-section">
+                <div class="container">
+                    <div class="fj-section-header" data-reveal>
+                        <div>
+                            <span class="fj-kicker">Off the Clock</span>
+                            <h2>Three passions I actively practice.</h2>
+                            <p>Outside of Visa, here’s where I spend my nights and weekends — step inside any of the three.</p>
+                        </div>
+                    </div>
+
+                    <div class="worlds-triptych">
+                        <!-- Cooking Specialist -->
+                        <a href="./cooking/" class="world-card" data-reveal>
+                            <div class="world-photo">
+                                <img src="./cooking/assets/optimized/tonkotsu.webp" alt="Homemade 3-Day Tonkotsu Ramen" loading="lazy">
+                                <span class="world-pill">47 Scratch Recipes</span>
+                            </div>
+                            <div class="world-body">
+                                <span class="world-eyebrow">Cooking Specialist</span>
+                                <h3>The Personal Cookbook</h3>
+                                <p>Every dish dialed in from my own kitchen — from 3-day Tonkotsu ramen and laminated croissants to quick salsas and craft cocktails.</p>
+                                <span class="world-link">Browse Recipes <iconify-icon icon="mdi:arrow-right"></iconify-icon></span>
+                            </div>
+                        </a>
+
+                        <!-- Part-Time DJ -->
+                        <a href="./dj/" class="world-card" data-reveal data-reveal-delay="60">
+                            <div class="world-photo">
+                                <img src="./dj/assets/optimized/dj-photo.webp" alt="Farbod Jahan mixing as DJ FJ" loading="lazy">
+                                <span class="world-pill">Thursdays 8 PM PT</span>
+                            </div>
+                            <div class="world-body">
+                                <span class="world-eyebrow">Part-Time DJ &middot; DJ FJ</span>
+                                <h3>House Mixes &amp; Live Sets</h3>
+                                <p>Deep house, vocal edits, and club grooves — streamed live from San Francisco and booked for weddings, launches, and private events.</p>
+                                <span class="world-link">Listen &amp; Book <iconify-icon icon="mdi:arrow-right"></iconify-icon></span>
+                            </div>
+                        </a>
+
+                        <!-- Realtor -->
+                        <a href="./real-estate/" class="world-card" data-reveal data-reveal-delay="120">
+                            <div class="world-photo">
+                                <img src="./real-estate/assets/optimized/real-estate.webp" alt="Bay Area Luxury Residence" loading="lazy">
+                                <span class="world-pill">CA DRE #02114368</span>
+                            </div>
+                            <div class="world-body">
+                                <span class="world-eyebrow">Licensed California Realtor</span>
+                                <h3>Bay Area Real Estate</h3>
+                                <p>Helping buyers and investors navigate San Francisco, Palo Alto, and Silicon Valley with analytical comp modeling and zero friction.</p>
+                                <span class="world-link">Explore Advisory <iconify-icon icon="mdi:arrow-right"></iconify-icon></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER START -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Sr. Director of Product @ Visa &middot; DJ, Cook &amp; Realtor &middot; San Francisco</p>
+                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="./about/">About</a></li>
+                        <li><a href="./resume/">Resume</a></li>
+                        <li><a href="./cooking/">Cooking</a></li>
+                        <li><a href="./real-estate/">Real Estate</a></li>
+                        <li><a href="./dj/">DJ</a></li>
+                        <li><a href="./contact/">Contact</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- HEADER END -->
-    <!-- HERO MAIN START -->
-    <section class="hero-main para">
-        <div class="container">
-            <div class="hero-content"  data-aos="fade-up">
-            <img src="images/Transparent-White.png" alt="" loading="lazy">
-            <h1>Technologist, Designer, & Product Manager</h1>
-        </div>
-        </div>
-    </section>
-    <!-- HERO MAIN END -->
-    <!-- Section Who I AM Start -->
-    <section class="whoAm para">
-        <div class="container">
-            <div class="content">
-                <h2 class="text-white" data-aos="fade-up">WHO I AM</h2>
-                <p class="text-white" data-aos="fade-up"> My professional interest lies at the intersection of Technology, Design, and Business. I love shipping intuitive and delightful user experiences with data driven and user centric mindset. I enjoy building, tinkering and story telling, working with stakeholders to identify user needs and translating them into engineering requirements so that we can build successful products that people love.</p>
-                <a href="./about/index.html" class="btn cta-primary" data-aos="fade-up">MORE ABOUT ME</a>
-            </div>
-        </div>
-    </section>
-    <!-- Section Who I AM END -->
-    <!-- Section How I Work Start -->
-    <section class="how-work para">
-        <div class="container">
-            <h2 class="text-white text-center"data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">HOW I WORK</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card-icon">
-                        <div class="icon" data-aos="fade-up" data-aos-duration="1000"><iconify-icon icon="ion:search"></iconify-icon></div>
-                        <h3 data-aos="fade-up" data-aos-duration="1000">RESEARCH</h3>
-                        <p data-aos="fade-up" data-aos-duration="1000">Understand the problem, empathize with the person. Explore the competitive landscape. Identify strategic opportunities. Define design goals and requirements.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card-icon">
-                        <div class="icon" data-aos="fade-up" data-aos-duration="1000"><iconify-icon icon="fa:flask"></iconify-icon></div>
-                        <h3 data-aos="fade-up" data-aos-duration="1000">DESIGN</h3>
-                        <p data-aos="fade-up" data-aos-duration="1000">Combine effective interfaces, smart interactions, and consistent visual language into a captivating design that resonates with the target audience.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card-icon">
-                        <div class="icon" data-aos="fade-up" data-aos-duration="1000"><iconify-icon icon="bx:code-alt"></iconify-icon></div>
-                        <h3 data-aos="fade-up" data-aos-duration="1000">BUILD</h3>
-                        <p data-aos="fade-up" data-aos-duration="1000">Map design to code. Smooth constraints. Solve edge cases. Move that button 3 pixels to the left. Fill the gap between functional and delightful.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card-icon">
-                        <div class="icon" data-aos="fade-up" data-aos-duration="1000"><iconify-icon icon="ps:retweet"></iconify-icon></div>
-                        <h3 data-aos="fade-up" data-aos-duration="1000">REFINE</h3>
-                        <p data-aos="fade-up" data-aos-duration="1000">Test prototypes with real people against actual problems. Combine insights with gut intuition and experience. Iterate and improve in pursuit of perfection.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Section How I Work End -->
-    <!-- Section Where I Work Start -->
-    <section class="where-work para">
-        <div class="container">
-                <div class="content">
-                    <h2 data-aos="fade-up" data-aos-duration="1000">WHERE I WORK</h2>
-                    <p data-aos="fade-up" data-aos-duration="1000">I’m a Sr. Director of Product at <strong><a href="https://www.visa.com/en-us" target="_blank">Visa</a></strong>, a global payment network. Visa leads to a secure, near instantaneous, and global exchange of digital currency between consumers, merchants, and 
-                        financial institutions. Previously I worked at  <strong><a href="https://www.abbvie.com/" target="_blank">Abbvie</a></strong> which leads the aesthetics industry with innovate tech and marketing, backed by powerful data.
-                         Prior to Swiftly, I worked at  <strong><a href="https://www.paypal.com/" target="_blank">PayPal</a></strong> a financial service, and <strong><a href="https://www.screenmeet.com/" target="_blank">ScreenMeet</a></strong>, which offers remote service that is always available, easily accessible, continulously secure, and zero to no latency.</p>
-                    <p data-aos="fade-up" data-aos-duration="1000">In 2017, I was a Software Engineer at Guidewire Software, focused on delivering a platform that P&C insurers rely on to adapt and succeed in a time of accelerating change- and to ensure that every customer succeeds in the journey. Before that I was a 
-                        Product Manager at <strong><a href="https://spelltrain.com/" target="_blank">SpellTrain</a></strong>. SpellTrain provided a new approach to education by integrating machine learning algorithms that increased users cognitive abilities 35% more than traditional study methods.</p>
-                    <a href="./resume/index.html" class="btn cta-primary" data-aos="fade-up" data-aos-duration="1000">View my Resume</a>
-                </div>
-        </div>
-    </section>
-    <!-- Section Where I Work END -->
-    <!-- Footer Start -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="copyright">
-                        © 2010 - 2026 Farbod Jahan
-                    </div>
-                </div>
-                <div class="col-sm-6">
+
                     <ul class="social-link">
-                        <li><a href="https://www.facebook.com/farbods0" target="_blank" aria-label="Facebook">
-                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
                             </a></li>
-                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" aria-label="LinkedIn">
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
                                 <iconify-icon icon="jam:linkedin"></iconify-icon>
                             </a></li>
-                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" aria-label="Instagram">
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
                                 <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
                             </a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </footer>
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div>
-                </div>
-            </div>
-        </div>
+        </footer>
+        <!-- FOOTER END -->
     </div>
 
-    <button class="top-btn" aria-label="Scroll to top"><iconify-icon icon="bx:up-arrow-alt"></iconify-icon></button>
-    <!-- Footer End -->
+    <button class="top-btn" aria-label="Scroll to top">
+        <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
+    </button>
+
     <script src="js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="js/simpleparallax.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
     <script src="js/main.js" defer></script>
 </body>
 

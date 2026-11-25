@@ -169,7 +169,7 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="../../">
                         <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -182,7 +182,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                <a class="nav-link" href="../../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -200,7 +200,7 @@
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -272,7 +272,7 @@
                                         <iconify-icon icon="mdi:food-steak"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>8–10 servings</span>
+                                    <span id="recipe-yield-val" data-base-yield="8–10 servings">8–10 servings</span>
                                 </div>
                             </div>
                         </div>
@@ -287,61 +287,69 @@
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
                                 </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
+                                </div>
                                 <div class="ingredient-group">
   <h5>The Roast &amp; Seasoning</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">1 (6 to 7.6 lb) bone-in prime rib roast (3 ribs), cut and tied by butcher</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">3 tbsp Worcestershire sauce (binder)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">2.5 to 3 tbsp Rosemary Salt (from batch below; up to 1/3 cup for 7.6 lb roast)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3">1/2 tsp MSG (or 1 tbsp finely ground dried porcini mushroom powder)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4">2 tbsp neutral high-heat oil (avocado or grapeseed)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5">1 to 2 tbsp coarse freshly cracked black pepper</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6">1/2 cup water (for bottom of sheet pan during final sear)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="1 (6 to 7.6 lb) bone-in prime rib roast (3 ribs), cut and tied by butcher">1 (6 to 7.6 lb) bone-in prime rib roast (3 ribs), cut and tied by butcher</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="3 tbsp Worcestershire sauce (binder)">3 tbsp Worcestershire sauce (binder)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="2.5 to 3 tbsp Rosemary Salt (from batch below; up to 1/3 cup for 7.6 lb roast)">2.5 to 3 tbsp Rosemary Salt (from batch below; up to 1/3 cup for 7.6 lb roast)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="1/2 tsp MSG (or 1 tbsp finely ground dried porcini mushroom powder)">1/2 tsp MSG (or 1 tbsp finely ground dried porcini mushroom powder)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4" data-raw-text="2 tbsp neutral high-heat oil (avocado or grapeseed)">2 tbsp neutral high-heat oil (avocado or grapeseed)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5" data-raw-text="1 to 2 tbsp coarse freshly cracked black pepper">1 to 2 tbsp coarse freshly cracked black pepper</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6" data-raw-text="1/2 cup water (for bottom of sheet pan during final sear)">1/2 cup water (for bottom of sheet pan during final sear)</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Rosemary Salt (Full Batch)</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">1 cup kosher salt</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1">Leaves stripped from 14 fresh rosemary sprigs</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2">Leaves stripped from 8 fresh sage sprigs</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3">3 to 5 garlic cloves, peeled</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4">Zest of 1 lemon (yellow part only)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0" data-raw-text="1 cup kosher salt">1 cup kosher salt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1" data-raw-text="Leaves stripped from 14 fresh rosemary sprigs">Leaves stripped from 14 fresh rosemary sprigs</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2" data-raw-text="Leaves stripped from 8 fresh sage sprigs">Leaves stripped from 8 fresh sage sprigs</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3" data-raw-text="3 to 5 garlic cloves, peeled">3 to 5 garlic cloves, peeled</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4" data-raw-text="Zest of 1 lemon (yellow part only)">Zest of 1 lemon (yellow part only)</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Melted Onions</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">2 large white or yellow onions, halved &amp; thinly sliced root-to-tip</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1">2 tsp kosher salt</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2">6 oz (1.5 sticks / 12 tbsp) unsalted butter, cold and cubed</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3">1 to 2 tbsp water, as needed</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0" data-raw-text="2 large white or yellow onions, halved &amp; thinly sliced root-to-tip">2 large white or yellow onions, halved &amp; thinly sliced root-to-tip</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1" data-raw-text="2 tsp kosher salt">2 tsp kosher salt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2" data-raw-text="6 oz (1.5 sticks / 12 tbsp) unsalted butter, cold and cubed">6 oz (1.5 sticks / 12 tbsp) unsalted butter, cold and cubed</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3" data-raw-text="1 to 2 tbsp water, as needed">1 to 2 tbsp water, as needed</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Steakhouse Creme Fraiche Horseradish Sauce</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0">1/3 cup mayonnaise</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-1">1/4 cup full-fat sour cream</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2">1/4 cup creme fraiche</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-3">1/4 cup prepared horseradish, drained (1/3 cup for extra heat)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-4">2 tsp fresh lemon juice</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-5">2 tsp Worcestershire sauce</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-6">1 tsp white wine vinegar</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-7">2 tbsp fresh chives, finely chopped</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-8">Kosher salt and black pepper to taste</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0" data-raw-text="1/3 cup mayonnaise">1/3 cup mayonnaise</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-1" data-raw-text="1/4 cup full-fat sour cream">1/4 cup full-fat sour cream</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2" data-raw-text="1/4 cup creme fraiche">1/4 cup creme fraiche</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-3" data-raw-text="1/4 cup prepared horseradish, drained (1/3 cup for extra heat)">1/4 cup prepared horseradish, drained (1/3 cup for extra heat)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-4" data-raw-text="2 tsp fresh lemon juice">2 tsp fresh lemon juice</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-5" data-raw-text="2 tsp Worcestershire sauce">2 tsp Worcestershire sauce</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-6" data-raw-text="1 tsp white wine vinegar">1 tsp white wine vinegar</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-7" data-raw-text="2 tbsp fresh chives, finely chopped">2 tbsp fresh chives, finely chopped</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-8" data-raw-text="Kosher salt and black pepper to taste">Kosher salt and black pepper to taste</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Stovetop Rosemary-Garlic Au Jus</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-4-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-0">2 cups high-quality beef bone broth</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-4-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-1">1/2 cup dry red wine (Cabernet Sauvignon or Pinot Noir)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-4-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-2">1 tbsp regular soy sauce</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-4-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-3">1 tbsp Worcestershire sauce</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-4-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-4">2 sprigs fresh rosemary</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-4-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-5">3 cloves garlic, smashed</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-4-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-6">1 tbsp cold unsalted butter (whisked in right before serving)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-4-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-0" data-raw-text="2 cups high-quality beef bone broth">2 cups high-quality beef bone broth</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-4-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-1" data-raw-text="1/2 cup dry red wine (Cabernet Sauvignon or Pinot Noir)">1/2 cup dry red wine (Cabernet Sauvignon or Pinot Noir)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-4-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-2" data-raw-text="1 tbsp regular soy sauce">1 tbsp regular soy sauce</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-4-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-3" data-raw-text="1 tbsp Worcestershire sauce">1 tbsp Worcestershire sauce</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-4-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-4" data-raw-text="2 sprigs fresh rosemary">2 sprigs fresh rosemary</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-4-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-5" data-raw-text="3 cloves garlic, smashed">3 cloves garlic, smashed</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-4-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-6" data-raw-text="1 tbsp cold unsalted butter (whisked in right before serving)">1 tbsp cold unsalted butter (whisked in right before serving)</label></li>
   </ul>
 </div>
                             </div>
@@ -451,25 +459,35 @@
         <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../resume/">Resume</a></li>
+                        <li><a href="../">Cooking</a></li>
+                        <li><a href="../../real-estate/">Real Estate</a></li>
+                        <li><a href="../../dj/">DJ</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

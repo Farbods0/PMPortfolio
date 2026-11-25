@@ -17,12 +17,12 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Soup Dumpling (Xiaolongbao) | Farbod Jahan Recipes">
     <meta property="og:description" content="Delicate steamed dumpling filled with pork and soup often thought to have originated in Shanghai.">
-    <meta property="og:image" content="https://farbodjahan.com/cooking/assets/Food/SoupDumpling.jpg">
+    <meta property="og:image" content="https://farbodjahan.com/cooking/assets/optimized/SoupDumpling.webp">
     <meta property="og:url" content="https://farbodjahan.com/cooking/xiao-long-bao/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Soup Dumpling (Xiaolongbao) | Farbod Jahan Recipes">
     <meta name="twitter:description" content="Delicate steamed dumpling filled with pork and soup often thought to have originated in Shanghai.">
-    <meta name="twitter:image" content="https://farbodjahan.com/cooking/assets/Food/SoupDumpling.jpg">
+    <meta name="twitter:image" content="https://farbodjahan.com/cooking/assets/optimized/SoupDumpling.webp">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
   "name": "Soup Dumpling (Xiaolongbao)",
   "description": "Delicate steamed dumpling filled with pork and soup often thought to have originated in Shanghai.",
   "image": [
-    "https://farbodjahan.com/cooking/assets/Food/SoupDumpling.jpg"
+    "https://farbodjahan.com/cooking/assets/optimized/SoupDumpling.webp"
   ],
   "author": {
     "@type": "Person",
@@ -168,7 +168,7 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="../../">
                         <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -181,7 +181,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                <a class="nav-link" href="../../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -199,7 +199,7 @@
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -243,7 +243,7 @@
                     <div class="row g-4 align-items-center recipe-hero-row">
                         <div class="col-lg-5">
                             <div class="recipe-hero-img">
-                                <img src="../assets/Food/SoupDumpling.jpg" alt="Soup Dumpling (Xiaolongbao)" fetchpriority="high">
+                                <img src="../assets/optimized/SoupDumpling.webp" alt="Soup Dumpling (Xiaolongbao)" fetchpriority="high">
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -271,7 +271,7 @@
                                         <iconify-icon icon="fluent-emoji-high-contrast:dumpling"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>30 dumplings</span>
+                                    <span id="recipe-yield-val" data-base-yield="30 dumplings">30 dumplings</span>
                                 </div>
                             </div>
                         </div>
@@ -286,47 +286,55 @@
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
                                 </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
+                                </div>
                                 <div class="ingredient-group">
   <h5>Broth Gel (Aspic) V1</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">green onions, cut into pieces</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">1/2 lb (8oz) pork Boston butt (browned)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">1.5 lbs (24oz) pork neck bones</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3">3/4 lb (12oz) pork skin</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4">1-inch knob ginger sliced</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5">5 cups (1.1L) water</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6">salt to taste</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="green onions, cut into pieces">green onions, cut into pieces</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="1/2 lb (8oz) pork Boston butt (browned)">1/2 lb (8oz) pork Boston butt (browned)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="1.5 lbs (24oz) pork neck bones">1.5 lbs (24oz) pork neck bones</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="3/4 lb (12oz) pork skin">3/4 lb (12oz) pork skin</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4" data-raw-text="1-inch knob ginger sliced">1-inch knob ginger sliced</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5" data-raw-text="5 cups (1.1L) water">5 cups (1.1L) water</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6" data-raw-text="salt to taste">salt to taste</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Dumpling Dough</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">170g all-purpose flour</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1">50g (50ml) of hot water</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2">40g (40ml) room temp water</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0" data-raw-text="170g all-purpose flour">170g all-purpose flour</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1" data-raw-text="50g (50ml) of hot water">50g (50ml) of hot water</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2" data-raw-text="40g (40ml) room temp water">40g (40ml) room temp water</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Pork Filling</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">3lbs (48oz) boneless pork Boston Butt</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1">1lb (16oz) pork belly</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2">3 green onions, very finely minced</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3">pinch ground white pepper</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-4">1/2 teaspoon (2g) sugar</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-5">1/2 teaspoon (2g) salt</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-6">1 tablespoon (15g) light soy sauce</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-7">1.5 tablespoons (22g) Shaoxing wine</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-8">1/2 teaspoon (3g) sesame oil</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-9">1 cup (235g) aspic, diced into 1/2 inch pieces</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0" data-raw-text="3lbs (48oz) boneless pork Boston Butt">3lbs (48oz) boneless pork Boston Butt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1" data-raw-text="1lb (16oz) pork belly">1lb (16oz) pork belly</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2" data-raw-text="3 green onions, very finely minced">3 green onions, very finely minced</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3" data-raw-text="pinch ground white pepper">pinch ground white pepper</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-4" data-raw-text="1/2 teaspoon (2g) sugar">1/2 teaspoon (2g) sugar</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-5" data-raw-text="1/2 teaspoon (2g) salt">1/2 teaspoon (2g) salt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-6" data-raw-text="1 tablespoon (15g) light soy sauce">1 tablespoon (15g) light soy sauce</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-7" data-raw-text="1.5 tablespoons (22g) Shaoxing wine">1.5 tablespoons (22g) Shaoxing wine</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-8" data-raw-text="1/2 teaspoon (3g) sesame oil">1/2 teaspoon (3g) sesame oil</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-9" data-raw-text="1 cup (235g) aspic, diced into 1/2 inch pieces">1 cup (235g) aspic, diced into 1/2 inch pieces</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Dipping Sauce</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0">2 tablespoons (17g) spicy chili crisp</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-1">1/3 cup (88g) black vinegar</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2">2-inch knob ginger, julienned</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0" data-raw-text="2 tablespoons (17g) spicy chili crisp">2 tablespoons (17g) spicy chili crisp</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-1" data-raw-text="1/3 cup (88g) black vinegar">1/3 cup (88g) black vinegar</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2" data-raw-text="2-inch knob ginger, julienned">2-inch knob ginger, julienned</label></li>
   </ul>
 </div>
                             </div>
@@ -376,7 +384,7 @@
                                 <div class="col-md-6 col-lg-4">
             <a class="card-food" href="../mozzarella-cheese/">
                 <div class="img-wrapper">
-                    <img src="../assets/Food/mozzarrella.jpg" alt="Mozzarella Cheese" loading="lazy">
+                    <img src="../assets/optimized/mozzarrella.webp" alt="Mozzarella Cheese" loading="lazy">
                     <span class="card-cat-badge">Appetizer</span>
                 </div>
                 <div class="cardBody">
@@ -438,25 +446,35 @@
         <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../resume/">Resume</a></li>
+                        <li><a href="../">Cooking</a></li>
+                        <li><a href="../../real-estate/">Real Estate</a></li>
+                        <li><a href="../../dj/">DJ</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

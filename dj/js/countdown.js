@@ -1,106 +1,96 @@
-async function CountDown(id, day, time) {
-  const clientId = '5lwetyy2p80wrzka5rirlx2udd9h9n';
-  let token;
-  let dataTwitch;
+(() => {
+    // Clean countdown to Thursday 8:00 PM America/Los_Angeles (no exposed client secrets or 1s API spam)
+    const countdownEl = document.getElementById('toFriday');
+    const titleEl = document.getElementById('live-stream-title');
+    const pillEl = document.getElementById('live-status-pill');
+    const pillLabelEl = document.getElementById('live-pill-label');
+    const toggleBtn = document.getElementById('toggle-twitch-embed');
+    const toggleLabel = document.getElementById('toggle-twitch-label');
+    const embedSlot = document.getElementById('twitch-embed-slot');
 
-  function update() {
-    // Get current date and time
-    var todayLocal = new Date();
-    var todayPst = new Date(todayLocal.toLocaleString("en-US", {
-      timeZone: "America/Los_Angeles"
-    }));
+    if (!countdownEl) return;
 
-    // Get number of days to Thursday
-    var dayNum = todayPst.getDay();
-    var daysToThur = 4 - (dayNum < 5 ? dayNum : dayNum - 7);
+    const pad = (n) => (n < 10 ? `0${n}` : String(n));
 
-    // Get milliseconds to noon Thursday
-    var ThursdayNight = new Date(+todayPst);
-    ThursdayNight.setDate(ThursdayNight.getDate() + daysToThur);
-    ThursdayNight.setHours(20, 0, 0, 0);
-    // Round up ms remaining so seconds remaining matches clock
-    var ms = Math.ceil((ThursdayNight - todayPst) / 1000) * 1000;
-    var d = ms / 8.64e7 | 0;
-    var h = (ms % 8.64e7) / 3.6e6 | 0;
-    var m = (ms % 3.6e6) / 6e4 | 0;
-    var s = (ms % 6e4) / 1e3 | 0;
+    const getPtParts = () => {
+        const now = new Date();
+        const ptDate = new Date(now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+        const day = ptDate.getDay(); // 0 = Sun, 4 = Thu
+        const hour = ptDate.getHours();
+        const isLiveWindow = day === 4 && hour >= 20 && hour < 23;
 
-    d = d < 10 ? "0" + d : d;
-    h = h < 10 ? "0" + h : h;
-    m = m < 10 ? "0" + m : m;
-    s = s < 10 ? "0" + s : s;
+        const target = new Date(ptDate);
+        let daysAhead = (4 - day + 7) % 7;
+        if (daysAhead === 0 && (hour > 20 || (hour === 20 && (ptDate.getMinutes() > 0 || ptDate.getSeconds() > 0)))) {
+            daysAhead = 7;
+        }
+        target.setDate(target.getDate() + daysAhead);
+        target.setHours(20, 0, 0, 0);
 
-    // Return remaining 
-    return `<div class='clabel'> <p class='countertext'> DAYS </p><h1 class='cnumber days' >${d} </h1></div><div class='clabel'> <p class='countertext'>HOURS</p><h1 class='cnumber hours'>${h}</h1></div><div class='clabel'> <P class='countertext'>MINUTES</P><h1 class='cnumber'>${m}</h1></div><div class='clabel'><P class='countertext'>SECONDS</p><h1 class='cnumber'>${s}</h1></div>`;
-  }
+        const diffMs = Math.max(0, Math.ceil((target - ptDate) / 1000) * 1000);
+        const days = Math.floor(diffMs / 86400000);
+        const hours = Math.floor((diffMs % 86400000) / 3600000);
+        const mins = Math.floor((diffMs % 3600000) / 60000);
+        const secs = Math.floor((diffMs % 60000) / 1000);
 
-  // Run update just after next full second
-  async function runUpdate() {
-    var title = document.getElementById('live-stream-title');
-    var livestreamButton = document.getElementById('livestream');
-    var el = document.getElementById('toFriday');
-    if (dataTwitch && dataTwitch.length > 0) {
-      title.innerHTML = "WE ARE NOW LIVE";
-      el.classList.add('justify-content-center');
-      livestreamButton.classList.add('mt-5');
-      el.innerHTML = '<iframe src="https://player.twitch.tv/?channel=fjahan&parent=farbodjahan.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>'
-    } else {
-      title.innerHTML = "NEXT LIVE STREAM";
-      el.innerHTML = update();
-      setTimeout(runUpdate, 1020 - (Date.now() % 1000));
-    }
-  }
-
-  async function fetchTwitchToken() {
-    var body = {
-      'client_id': clientId,
-      'client_secret': 'f8xmnttagea745m8dyi5v25auqdfpf',
-      'grant_type': 'client_credentials',
+        return { days, hours, mins, secs, isLiveWindow };
     };
 
-    var formBody = [];
-    for (var property in body) {
-      var encodedKey = encodeURIComponent(property);
-      var encodedValue = encodeURIComponent(body[property]);
-      formBody.push(encodedKey + "=" + encodedValue);
-    }
-    formBody = formBody.join("&");
+    const renderTick = () => {
+        const { days, hours, mins, secs, isLiveWindow } = getPtParts();
 
-    var res = await fetch('https://id.twitch.tv/oauth2/token', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-      },
-      body: formBody,
-    });
-    var resJson = await res.json();
-    if (res.status === 200 && resJson.access_token) {
-      token = resJson.access_token
-    }
-  }
+        if (pillEl && pillLabelEl && titleEl) {
+            pillEl.classList.toggle('is-live', isLiveWindow);
+            pillLabelEl.textContent = isLiveWindow
+                ? 'Live Stream Window Now Open'
+                : 'Thursdays · 8:00 PM PT';
+            titleEl.textContent = isLiveWindow
+                ? 'Casa de DJ FJ — Thursday Night Session'
+                : 'Next Casa de DJ FJ Livestream';
+        }
 
-  async function fetchTwitchLive() {
-    var res = await fetch('https://api.twitch.tv/helix/streams?user_login=fjahan', {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Client-Id': clientId,
-      },
-    });
-    var resJson = await res.json();
-    if (res.status === 200) {
-      dataTwitch = resJson.data;
-      if (dataTwitch && dataTwitch.length === 0) {
-        runUpdate()
-      }
-    }
-    if (res.status === 401) {
-      await fetchTwitchToken();
-      await fetchTwitchLive();
-    }
-  }
+        countdownEl.innerHTML = `
+            <div class="cd-unit">
+                <span class="cd-value">${pad(days)}</span>
+                <span class="cd-label">Days</span>
+            </div>
+            <div class="cd-unit">
+                <span class="cd-value">${pad(hours)}</span>
+                <span class="cd-label">Hours</span>
+            </div>
+            <div class="cd-unit">
+                <span class="cd-value">${pad(mins)}</span>
+                <span class="cd-label">Minutes</span>
+            </div>
+            <div class="cd-unit">
+                <span class="cd-value">${pad(secs)}</span>
+                <span class="cd-label">Seconds</span>
+            </div>
+        `;
+    };
 
-  await fetchTwitchToken();
-  await fetchTwitchLive();
-  setInterval(fetchTwitchLive, 1000);
-  runUpdate();
-}
+    renderTick();
+    setInterval(() => {
+        if (!document.hidden) renderTick();
+    }, 1000);
+
+    // Optional on-demand Twitch player embed (loads iframe only when requested)
+    if (toggleBtn && embedSlot) {
+        let opened = false;
+        toggleBtn.addEventListener('click', () => {
+            opened = !opened;
+            embedSlot.hidden = !opened;
+            if (toggleLabel) {
+                toggleLabel.textContent = opened ? 'Hide Live Player' : 'Preview Live Player';
+            }
+            if (opened && !embedSlot.querySelector('iframe')) {
+                const parentHost = window.location.hostname || 'farbodjahan.com';
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://player.twitch.tv/?channel=fjahan&parent=${encodeURIComponent(parentHost)}&muted=false`;
+                iframe.allowFullscreen = true;
+                iframe.title = 'DJ FJ Twitch Livestream';
+                embedSlot.appendChild(iframe);
+            }
+        });
+    }
+})();

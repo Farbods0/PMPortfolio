@@ -90,7 +90,7 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="../../">
                         <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -103,7 +103,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                <a class="nav-link" href="../../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -121,7 +121,7 @@
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -193,7 +193,7 @@
                                         <iconify-icon icon="mdi:glass-cocktail"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>12–16 drinks</span>
+                                    <span id="recipe-yield-val" data-base-yield="12–16 drinks">12–16 drinks</span>
                                 </div>
                             </div>
                         </div>
@@ -208,16 +208,24 @@
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
                                 </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
+                                </div>
                                 <div class="ingredient-group">
   <h5>Batched Dispenser / Pitcher</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">750 ml (3 cups) vodka</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">2 large English cucumbers, chopped with peel on (for emerald color)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">1 cup (packed) fresh mint leaves</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3">1.5 cups fresh lime juice</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4">0.5 to 0.75 cup simple syrup (to balance the lime)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5">2.5 cups cold water (or omit and let guests top with club soda)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6">Optional: 1/2 seeded jalapeño for a subtle warming kick</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="750 ml (3 cups) vodka">750 ml (3 cups) vodka</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="2 large English cucumbers, chopped with peel on (for emerald color)">2 large English cucumbers, chopped with peel on (for emerald color)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="1 cup (packed) fresh mint leaves">1 cup (packed) fresh mint leaves</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="1.5 cups fresh lime juice">1.5 cups fresh lime juice</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4" data-raw-text="0.5 to 0.75 cup simple syrup (to balance the lime)">0.5 to 0.75 cup simple syrup (to balance the lime)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5" data-raw-text="2.5 cups cold water (or omit and let guests top with club soda)">2.5 cups cold water (or omit and let guests top with club soda)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6" data-raw-text="Optional: 1/2 seeded jalapeño for a subtle warming kick">Optional: 1/2 seeded jalapeño for a subtle warming kick</label></li>
   </ul>
 </div>
                             </div>
@@ -309,25 +317,35 @@
         <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../resume/">Resume</a></li>
+                        <li><a href="../">Cooking</a></li>
+                        <li><a href="../../real-estate/">Real Estate</a></li>
+                        <li><a href="../../dj/">DJ</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

@@ -1,92 +1,60 @@
-const real_estate_image_list = [
-    "assets/real-estate.jpg",
-    "assets/real-estate-2.jpg",
-    "assets/real-estate-3.jpg",
-    "assets/real-estate-4.jpg",
-    "assets/real-estate-5.jpg",
-    "assets/real-estate-7.jpg",
-    "assets/real-estate-8.jpg",
-    "assets/real-estate-9.jpg",
-    "assets/real-estate-10.jpg",
-    "assets/real-estate-11.jpg"
-]
-const food_image_list = [
-    "assets/Food/food-1.jpeg",
-    "assets/Food/food-2.jpeg",
-    "assets/Food/food-3.jpeg",
-    "assets/Food/food-4.jpeg",
-    "assets/Food/food-5.jpeg",
-    "assets/Food/food-6.jpeg",
-    "assets/food-1.jpg",
-    "assets/food-2.jpg",
-    "assets/food-3.jpg",
-    "assets/food-4.jpg",
-    "assets/food-5.jpg",
-    "assets/food-6.jpg"
-]
+(() => {
+    // GPU-only dual-layer architectural photo crossfades (zero layout reflow)
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
 
-function dynamicImage(id, borderId, interval, delay, images) {
-    const image = document.getElementById(id)
-    const border = document.getElementById(borderId)
+    const imagePools = [
+        [
+            './assets/optimized/real-estate.webp',
+            './assets/optimized/real-estate-2.webp',
+            './assets/optimized/real-estate-8.webp',
+            './assets/optimized/real-estate-10.webp',
+        ],
+        [
+            './assets/optimized/real-estate-4.webp',
+            './assets/optimized/real-estate-5.webp',
+            './assets/optimized/real-estate-9.webp',
+        ],
+        [
+            './assets/optimized/real-estate-3.webp',
+            './assets/optimized/real-estate-7.webp',
+            './assets/optimized/real-estate-11.webp',
+        ],
+    ];
 
+    document.querySelectorAll('[data-re-gallery]').forEach((frame, frameIdx) => {
+        const pool = imagePools[frameIdx] || imagePools[0];
+        const layers = frame.querySelectorAll('.re-gallery-layer');
+        if (pool.length < 2 || layers.length < 2) return;
 
-    setTimeout(function() {
-        setTimeout(function() {
-            image.classList.remove('fade-in-right')
-            image.classList.add('fade-out-right')
-            border.classList.remove('fade-in-right')
-            border.classList.add('fade-out-right')
-        }, interval - 1500)
-        var x = setInterval(function() {
-            const random_int = Math.floor(Math.random() * images.length)
-            image.src = images[random_int]
-            image.classList.remove('fade-out-right')
-            image.classList.add('fade-in-right')
-            border.classList.remove('fade-out-right')
-            border.classList.add('fade-in-right')
+        let activeLayer = 0;
+        let idx = 0;
+        let paused = false;
 
-            setTimeout(function() {
-                image.classList.remove('fade-in-right')
-                image.classList.add('fade-out-right')
-                border.classList.remove('fade-in-right')
-                border.classList.add('fade-out-right')
-            }, interval - 1500)
-        }, interval)
-    }, delay)
-}
+        frame.addEventListener('mouseenter', () => { paused = true; });
+        frame.addEventListener('mouseleave', () => { paused = false; });
 
-function dynamicImage_left(id, borderId, interval, delay, images) {
-    const image = document.getElementById(id)
-    const border = document.getElementById(borderId)
+        const advance = () => {
+            if (paused || document.hidden) return;
+            const nextIdx = (idx + 1) % pool.length;
+            const nextSrc = pool[nextIdx];
+            const nextLayer = 1 - activeLayer;
 
+            const preloader = new Image();
+            preloader.onload = () => {
+                layers[nextLayer].src = nextSrc;
+                requestAnimationFrame(() => {
+                    layers[nextLayer].classList.add('is-visible');
+                    layers[activeLayer].classList.remove('is-visible');
+                    activeLayer = nextLayer;
+                    idx = nextIdx;
+                });
+            };
+            preloader.src = nextSrc;
+        };
 
-    setTimeout(function() {
-        setTimeout(function() {
-            image.classList.remove('fade-in-left')
-            image.classList.add('fade-out-left')
-            border.classList.remove('fade-in-left')
-            border.classList.add('fade-out-left')
-        }, interval - 1500)
-        var x = setInterval(function() {
-            const random_int = Math.floor(Math.random() * images.length)
-            image.src = images[random_int]
-            image.classList.remove('fade-out-left')
-            image.classList.add('fade-in-left')
-            border.classList.remove('fade-out-left')
-            border.classList.add('fade-in-left')
-
-            setTimeout(function() {
-                image.classList.remove('fade-in-left')
-                image.classList.add('fade-out-left')
-                border.classList.remove('fade-in-left')
-                border.classList.add('fade-out-left')
-            }, interval - 1500)
-        }, interval)
-    }, delay)
-}
-
-
-
-dynamicImage("dynamic-image-1", "dynamic-border-1", 5000, 0, real_estate_image_list)
-dynamicImage_left("dynamic-image-2", "dynamic-border-2", 5000, 1000, real_estate_image_list)
-dynamicImage("dynamic-image-3", "dynamic-border-3", 5000, 500, real_estate_image_list)
+        setTimeout(() => {
+            setInterval(advance, 4800);
+        }, frameIdx * 1300 + 2000);
+    });
+})();

@@ -1,11 +1,90 @@
+/* ==========================================================================
+   Editorial Footer (Clean Paper Default + Dark Adaptation)
+   ========================================================================== */
+
 footer {
-    padding: 24px 0;
-    background-color: #272727;
+    padding: 44px 0;
+    background-color: var(--fj-bg-alt, #f2efe9);
+    border-top: 1px solid var(--fj-rule, #e4e0d8);
+    font-family: var(--fj-font-sans);
+    position: relative;
+    z-index: 5;
+}
+
+body.dj-page footer,
+body.cooking-page footer {
+    background-color: #08080a;
+    border-top-color: rgba(255, 255, 255, 0.09);
+}
+
+footer .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .footer-brand-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 footer .copyright {
-    color: #fff;
-    font-size: 14px;
+    color: var(--fj-ink, #111318);
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+body.dj-page footer .copyright,
+body.cooking-page footer .copyright {
+    color: #f5f5f7;
+}
+
+footer .footer-tagline {
+    color: var(--fj-ink-muted, #5c6270);
+    font-size: 13px;
+    margin: 0;
+}
+
+body.dj-page footer .footer-tagline,
+body.cooking-page footer .footer-tagline {
+    color: #8e8e98;
+}
+
+footer .footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 22px;
+}
+
+footer .footer-nav a {
+    color: var(--fj-ink-muted, #5c6270);
+    font-size: 13.5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 150ms ease-out;
+}
+
+body.dj-page footer .footer-nav a,
+body.cooking-page footer .footer-nav a {
+    color: #a1a1aa;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    footer .footer-nav a:hover {
+        color: var(--fj-ink, #111318);
+    }
+
+    body.dj-page footer .footer-nav a:hover,
+    body.cooking-page footer .footer-nav a:hover {
+        color: #ffffff;
+    }
 }
 
 footer .social-link {
@@ -15,27 +94,73 @@ footer .social-link {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 0 -5px;
+    gap: 8px;
 }
 
 footer .social-link li {
-    padding: 0 5px;
+    padding: 0;
 }
+
 footer .social-link li a {
-    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: var(--fj-surface, #ffffff);
+    border: 1px solid var(--fj-rule-strong, #cbc5b9);
+    color: var(--fj-ink, #111318);
     font-size: 15px;
-    line-height: 15px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out, transform 130ms var(--fj-ease-out);
 }
 
+body.dj-page footer .social-link li a,
+body.cooking-page footer .social-link li a {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #f5f5f7;
+}
 
-@media(max-width:575px){
-    footer .copyright{
+footer .social-link li a:active {
+    transform: scale(0.94);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    footer .social-link li a:hover {
+        background: var(--fj-ink, #111318);
+        border-color: var(--fj-ink, #111318);
+        color: #ffffff;
+        transform: translateY(-1px);
+    }
+
+    body.dj-page footer .social-link li a:hover,
+    body.cooking-page footer .social-link li a:hover {
+        background: rgba(255, 255, 255, 0.16);
+        border-color: rgba(255, 255, 255, 0.28);
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: 32px 0;
+    }
+
+    footer .footer-grid {
+        flex-direction: column;
         text-align: center;
     }
-    footer .social-link{
+
+    footer .footer-nav {
         justify-content: center;
+        gap: 14px 18px;
     }
-    footer{
-        padding: 12px 0;
+
+    footer .social-link {
+        justify-content: center;
+        margin-top: 6px;
     }
 }

@@ -93,7 +93,7 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="../../">
                         <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -106,7 +106,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                <a class="nav-link" href="../../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -124,7 +124,7 @@
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -196,7 +196,7 @@
                                         <iconify-icon icon="mdi:fish"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>4 servings</span>
+                                    <span id="recipe-yield-val" data-base-yield="4 servings">4 servings</span>
                                 </div>
                             </div>
                         </div>
@@ -211,20 +211,28 @@
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
                                 </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
+                                </div>
                                 <div class="ingredient-group">
   <h5>Sashimi &amp; Garnish</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">1/2 lb sushi-grade yellowtail (hamachi), thinly sliced</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">1 small clove fresh garlic, puréed into a smooth paste</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">1 fresh jalapeño pepper, sliced paper-thin</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3">Fresh cilantro leaves (1 tender leaf per slice)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="1/2 lb sushi-grade yellowtail (hamachi), thinly sliced">1/2 lb sushi-grade yellowtail (hamachi), thinly sliced</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="1 small clove fresh garlic, puréed into a smooth paste">1 small clove fresh garlic, puréed into a smooth paste</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="1 fresh jalapeño pepper, sliced paper-thin">1 fresh jalapeño pepper, sliced paper-thin</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="Fresh cilantro leaves (1 tender leaf per slice)">Fresh cilantro leaves (1 tender leaf per slice)</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Yuzu Soy Dressing (2:1 Ratio)</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">60 ml (1/4 cup) yuzu juice</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1">30 ml (2 tbsp) soy sauce</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0" data-raw-text="60 ml (1/4 cup) yuzu juice">60 ml (1/4 cup) yuzu juice</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1" data-raw-text="30 ml (2 tbsp) soy sauce">30 ml (2 tbsp) soy sauce</label></li>
   </ul>
 </div>
                             </div>
@@ -274,7 +282,7 @@
         <div class="col-md-6 col-lg-4">
             <a class="card-food" href="../xiao-long-bao/">
                 <div class="img-wrapper">
-                    <img src="../assets/Food/SoupDumpling.jpg" alt="Soup Dumpling (Xiaolongbao)" loading="lazy">
+                    <img src="../assets/optimized/SoupDumpling.webp" alt="Soup Dumpling (Xiaolongbao)" loading="lazy">
                     <span class="card-cat-badge">Appetizer</span>
                 </div>
                 <div class="cardBody">
@@ -317,25 +325,35 @@
         <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../resume/">Resume</a></li>
+                        <li><a href="../">Cooking</a></li>
+                        <li><a href="../../real-estate/">Real Estate</a></li>
+                        <li><a href="../../dj/">DJ</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

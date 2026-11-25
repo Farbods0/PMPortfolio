@@ -121,7 +121,7 @@ def render_ingredients_html(groups: list) -> str:
             items_html.append(
                 f'<li class="ingredient-item">'
                 f'<input type="checkbox" id="{cb_id}" class="ingredient-check" aria-label="Mark ingredient used">'
-                f'<label for="{cb_id}">{esc(item)}</label>'
+                f'<label for="{cb_id}" data-raw-text="{esc(item)}">{esc(item)}</label>'
                 f"</li>"
             )
         blocks.append(
@@ -207,7 +207,7 @@ def render_navbar(root_prefix: str, cooking_href: str) -> str:
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="{root_prefix}index.html">
+                    <a class="navbar-brand" href="{root_prefix}">
                         <img src="{root_prefix}images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -220,7 +220,7 @@ def render_navbar(root_prefix: str, cooking_href: str) -> str:
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="{root_prefix}index.html" aria-label="Home">
+                                <a class="nav-link" href="{root_prefix}" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -238,7 +238,7 @@ def render_navbar(root_prefix: str, cooking_href: str) -> str:
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="{root_prefix}dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="{root_prefix}dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="{cooking_href}">Cooking</a></li>
                                         <li><a class="dropdownitem" href="{root_prefix}real-estate/">Real Estate</a></li>
                                     </ul>
@@ -252,29 +252,39 @@ def render_navbar(root_prefix: str, cooking_href: str) -> str:
         <!-- HEADER END -->"""
 
 
-def render_footer() -> str:
-    return """        <!-- FOOTER START -->
+def render_footer(root_prefix: str = "../../", cooking_href: str = "../") -> str:
+    return f"""        <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="{root_prefix}about/">About</a></li>
+                        <li><a href="{root_prefix}resume/">Resume</a></li>
+                        <li><a href="{cooking_href}">Cooking</a></li>
+                        <li><a href="{root_prefix}real-estate/">Real Estate</a></li>
+                        <li><a href="{root_prefix}dj/">DJ</a></li>
+                        <li><a href="{root_prefix}contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
@@ -512,7 +522,7 @@ def render_recipe_page(recipe: dict, all_recipes: list) -> str:
                                         <iconify-icon icon="{esc(recipe['yieldIcon'])}"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>{esc(recipe['yield'])}</span>
+                                    <span id="recipe-yield-val" data-base-yield="{esc(recipe['yield'])}">{esc(recipe['yield'])}</span>
                                 </div>
                             </div>
                         </div>
@@ -526,6 +536,14 @@ def render_recipe_page(recipe: dict, all_recipes: list) -> str:
                                 <div class="section-heading-row">
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
+                                </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
                                 </div>
                                 {ingredients_html}
                             </div>

@@ -17,12 +17,12 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Blooming Onion | Farbod Jahan Recipes">
     <meta property="og:description" content="A crispy deep-fried blooming onion served with spicy mayo aioli for extra flavor.">
-    <meta property="og:image" content="https://farbodjahan.com/cooking/assets/Food/BloominOnion.jpeg">
+    <meta property="og:image" content="https://farbodjahan.com/cooking/assets/optimized/BloominOnion.webp">
     <meta property="og:url" content="https://farbodjahan.com/cooking/blooming-onion/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Blooming Onion | Farbod Jahan Recipes">
     <meta name="twitter:description" content="A crispy deep-fried blooming onion served with spicy mayo aioli for extra flavor.">
-    <meta name="twitter:image" content="https://farbodjahan.com/cooking/assets/Food/BloominOnion.jpeg">
+    <meta name="twitter:image" content="https://farbodjahan.com/cooking/assets/optimized/BloominOnion.webp">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
   "name": "Blooming Onion",
   "description": "A crispy deep-fried blooming onion served with spicy mayo aioli for extra flavor.",
   "image": [
-    "https://farbodjahan.com/cooking/assets/Food/BloominOnion.jpeg"
+    "https://farbodjahan.com/cooking/assets/optimized/BloominOnion.webp"
   ],
   "author": {
     "@type": "Person",
@@ -111,7 +111,7 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="../../">
                         <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -124,7 +124,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                <a class="nav-link" href="../../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -142,7 +142,7 @@
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -186,7 +186,7 @@
                     <div class="row g-4 align-items-center recipe-hero-row">
                         <div class="col-lg-5">
                             <div class="recipe-hero-img">
-                                <img src="../assets/Food/BloominOnion.jpeg" alt="Blooming Onion" fetchpriority="high">
+                                <img src="../assets/optimized/BloominOnion.webp" alt="Blooming Onion" fetchpriority="high">
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -214,7 +214,7 @@
                                         <iconify-icon icon="fluent-emoji-high-contrast:onion"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>1 Large Onion</span>
+                                    <span id="recipe-yield-val" data-base-yield="1 Large Onion">1 Large Onion</span>
                                 </div>
                             </div>
                         </div>
@@ -229,34 +229,42 @@
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
                                 </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
+                                </div>
                                 <div class="ingredient-group">
   <h5>Spicy Mayo Aioli</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">2 tablespoons mayonnaise</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">2 tablespoons sour cream</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">1 1/2 teaspoons ketchup</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3">1/2 teaspoon Worcestershire sauce</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4">1 tablespoon drained horseradish</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5">1/4 teaspoon paprika</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6">Pinch of cayenne pepper</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-7">Kosher salt and freshly ground black pepper</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="2 tablespoons mayonnaise">2 tablespoons mayonnaise</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="2 tablespoons sour cream">2 tablespoons sour cream</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="1 1/2 teaspoons ketchup">1 1/2 teaspoons ketchup</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="1/2 teaspoon Worcestershire sauce">1/2 teaspoon Worcestershire sauce</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4" data-raw-text="1 tablespoon drained horseradish">1 tablespoon drained horseradish</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5" data-raw-text="1/4 teaspoon paprika">1/4 teaspoon paprika</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6" data-raw-text="Pinch of cayenne pepper">Pinch of cayenne pepper</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-7" data-raw-text="Kosher salt and freshly ground black pepper">Kosher salt and freshly ground black pepper</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Blooming Onion</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">1 large sweet onion, such as Vidalia (about 1 pound)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1">2 1/2 cups all-purpose flour</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2">1 teaspoon cayenne pepper</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3">2 tablespoons paprika</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4">1/2 teaspoon dried thyme</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-5">1/2 teaspoon dried oregano</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-6">1/2 teaspoon ground cumin</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-7">Freshly ground black pepper</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-8">2 large eggs</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-9">1 cup whole milk</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-10" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-10">1 gallon soy or corn oil, as needed, for frying</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-11" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-11">Kosher salt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0" data-raw-text="1 large sweet onion, such as Vidalia (about 1 pound)">1 large sweet onion, such as Vidalia (about 1 pound)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1" data-raw-text="2 1/2 cups all-purpose flour">2 1/2 cups all-purpose flour</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2" data-raw-text="1 teaspoon cayenne pepper">1 teaspoon cayenne pepper</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3" data-raw-text="2 tablespoons paprika">2 tablespoons paprika</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4" data-raw-text="1/2 teaspoon dried thyme">1/2 teaspoon dried thyme</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-5" data-raw-text="1/2 teaspoon dried oregano">1/2 teaspoon dried oregano</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-6" data-raw-text="1/2 teaspoon ground cumin">1/2 teaspoon ground cumin</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-7" data-raw-text="Freshly ground black pepper">Freshly ground black pepper</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-8" data-raw-text="2 large eggs">2 large eggs</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-9" data-raw-text="1 cup whole milk">1 cup whole milk</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-10" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-10" data-raw-text="1 gallon soy or corn oil, as needed, for frying">1 gallon soy or corn oil, as needed, for frying</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-11" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-11" data-raw-text="Kosher salt">Kosher salt</label></li>
   </ul>
 </div>
                             </div>
@@ -350,25 +358,35 @@
         <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../resume/">Resume</a></li>
+                        <li><a href="../">Cooking</a></li>
+                        <li><a href="../../real-estate/">Real Estate</a></li>
+                        <li><a href="../../dj/">DJ</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

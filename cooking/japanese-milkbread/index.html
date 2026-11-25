@@ -107,7 +107,7 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="../../">
                         <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -120,7 +120,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                <a class="nav-link" href="../../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -138,7 +138,7 @@
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -210,7 +210,7 @@
                                         <iconify-icon icon="mingcute:bread-fill"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>2 loafs (2lbs)</span>
+                                    <span id="recipe-yield-val" data-base-yield="2 loafs (2lbs)">2 loafs (2lbs)</span>
                                 </div>
                             </div>
                         </div>
@@ -225,31 +225,39 @@
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
                                 </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
+                                </div>
                                 <div class="ingredient-group">
   <h5>Tangzhong</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">4 tbsp (40g) bread flour</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">2 tbsp (54g) water</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">8 tbsp (120g) whole milk</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="4 tbsp (40g) bread flour">4 tbsp (40g) bread flour</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="2 tbsp (54g) water">2 tbsp (54g) water</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="8 tbsp (120g) whole milk">8 tbsp (120g) whole milk</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Bread Dough</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">5 cups (640g) bread flour</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1">2 Tbsp (18g) active dry yeast (instant works as well)</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2">0.5 tbsp (6g) fine sea salt</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3">1 cup (240g) whole milk</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4">1/2 cup (112g) granulated sugar</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-5">6 Tbsp (84g) unsalted butter, softened</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-6">2 whole egg, room temperature</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0" data-raw-text="5 cups (640g) bread flour">5 cups (640g) bread flour</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1" data-raw-text="2 Tbsp (18g) active dry yeast (instant works as well)">2 Tbsp (18g) active dry yeast (instant works as well)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2" data-raw-text="0.5 tbsp (6g) fine sea salt">0.5 tbsp (6g) fine sea salt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3" data-raw-text="1 cup (240g) whole milk">1 cup (240g) whole milk</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4" data-raw-text="1/2 cup (112g) granulated sugar">1/2 cup (112g) granulated sugar</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-5" data-raw-text="6 Tbsp (84g) unsalted butter, softened">6 Tbsp (84g) unsalted butter, softened</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-6" data-raw-text="2 whole egg, room temperature">2 whole egg, room temperature</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Egg Wash</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">1 egg</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1">Splash of whole milk (2tbsp)</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0" data-raw-text="1 egg">1 egg</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1" data-raw-text="Splash of whole milk (2tbsp)">Splash of whole milk (2tbsp)</label></li>
   </ul>
 </div>
                             </div>
@@ -344,25 +352,35 @@
         <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../resume/">Resume</a></li>
+                        <li><a href="../">Cooking</a></li>
+                        <li><a href="../../real-estate/">Real Estate</a></li>
+                        <li><a href="../../dj/">DJ</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

@@ -238,7 +238,7 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="../../">
                         <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -251,7 +251,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                <a class="nav-link" href="../../" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -269,7 +269,7 @@
                                     aria-expanded="false">Interests</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../../dj/">DJ &amp; Music</a></li>
                                         <li><a class="dropdownitem" href="../">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
                                     </ul>
@@ -341,7 +341,7 @@
                                         <iconify-icon icon="emojione-monotone:burrito"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span>6 Burritos</span>
+                                    <span id="recipe-yield-val" data-base-yield="6 Burritos">6 Burritos</span>
                                 </div>
                             </div>
                         </div>
@@ -356,55 +356,63 @@
                                     <h2 class="subTitle">Ingredients</h2>
                                     <span class="interactive-hint">Tap to check off</span>
                                 </div>
+                                <div class="batch-scaler-bar" role="group" aria-label="Scale batch size">
+                                    <span class="batch-scaler-label">Batch Scale</span>
+                                    <div class="batch-scaler-pills">
+                                        <button type="button" class="scale-pill" data-scale="0.5">0.5&times;</button>
+                                        <button type="button" class="scale-pill is-active" data-scale="1">1&times;</button>
+                                        <button type="button" class="scale-pill" data-scale="2">2&times;</button>
+                                    </div>
+                                </div>
                                 <div class="ingredient-group">
   <h5>Chipotle Marinated Chicken</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">2 dried guajillo chilies</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">2 dried ancho chilies</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">4 dried mushrooms</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3">1.5 cups boiling water</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4">2 tsp (4g) coriander seeds, toasted</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5">2 tsp (4g) cumin seeds, toasted</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6">7oz (200g) can chipotle peppers in adobo</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-7">4 cloves garlic</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-8">1 tsp (3g) ground cinnamon</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-9">2 tsp (12g) kosher salt</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-10" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-10">4 Tbsp chili oil o just neutral flavored oil</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-11" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-11">1.5 lbs boneless skinless chicken thigh</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="2 dried guajillo chilies">2 dried guajillo chilies</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="2 dried ancho chilies">2 dried ancho chilies</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="4 dried mushrooms">4 dried mushrooms</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="1.5 cups boiling water">1.5 cups boiling water</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4" data-raw-text="2 tsp (4g) coriander seeds, toasted">2 tsp (4g) coriander seeds, toasted</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5" data-raw-text="2 tsp (4g) cumin seeds, toasted">2 tsp (4g) cumin seeds, toasted</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6" data-raw-text="7oz (200g) can chipotle peppers in adobo">7oz (200g) can chipotle peppers in adobo</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-7" data-raw-text="4 cloves garlic">4 cloves garlic</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-8" data-raw-text="1 tsp (3g) ground cinnamon">1 tsp (3g) ground cinnamon</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-9" data-raw-text="2 tsp (12g) kosher salt">2 tsp (12g) kosher salt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-10" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-10" data-raw-text="4 Tbsp chili oil o just neutral flavored oil">4 Tbsp chili oil o just neutral flavored oil</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-11" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-11" data-raw-text="1.5 lbs boneless skinless chicken thigh">1.5 lbs boneless skinless chicken thigh</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Homemade Flour Tortillas</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">2 cups (300g) all purpose flour</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1">1 tsp (4g) salt</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2">1/2 tsp 2g baking powder</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3">1/4 cup vegetable oil</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4">3/4 cup warm water</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0" data-raw-text="2 cups (300g) all purpose flour">2 cups (300g) all purpose flour</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-1" data-raw-text="1 tsp (4g) salt">1 tsp (4g) salt</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2" data-raw-text="1/2 tsp 2g baking powder">1/2 tsp 2g baking powder</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-3" data-raw-text="1/4 cup vegetable oil">1/4 cup vegetable oil</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4" data-raw-text="3/4 cup warm water">3/4 cup warm water</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Beans</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">4-5 slices bacon</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1">1 yellow onion</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2">4 cloves garlic</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3">1 large jalapeno thinly sliced</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-4">1 can black beans, drained</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-5">1/2 cup (120ml) chicken stock</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-6">2 Tbsp (24g) unsalted butter</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-2-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-7">Salt and pepper to taste</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0" data-raw-text="4-5 slices bacon">4-5 slices bacon</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1" data-raw-text="1 yellow onion">1 yellow onion</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2" data-raw-text="4 cloves garlic">4 cloves garlic</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3" data-raw-text="1 large jalapeno thinly sliced">1 large jalapeno thinly sliced</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-4" data-raw-text="1 can black beans, drained">1 can black beans, drained</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-5" data-raw-text="1/2 cup (120ml) chicken stock">1/2 cup (120ml) chicken stock</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-6" data-raw-text="2 Tbsp (24g) unsalted butter">2 Tbsp (24g) unsalted butter</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-2-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-7" data-raw-text="Salt and pepper to taste">Salt and pepper to taste</label></li>
   </ul>
 </div>
 <div class="ingredient-group">
   <h5>Cilantro Lime Rice</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0">4 cups cooked rice</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-1">and juice of 1 lime</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2">Zest of 1 lemon</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-3">1/4-1/2 cup Fresh chopped cilantro</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-4">2 Tbsp unsalted butter</label></li>
-    <li class="ingredient-item"><input type="checkbox" id="ing-3-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-5">Salt to taste</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0" data-raw-text="4 cups cooked rice">4 cups cooked rice</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-1" data-raw-text="and juice of 1 lime">and juice of 1 lime</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2" data-raw-text="Zest of 1 lemon">Zest of 1 lemon</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-3" data-raw-text="1/4-1/2 cup Fresh chopped cilantro">1/4-1/2 cup Fresh chopped cilantro</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-4" data-raw-text="2 Tbsp unsalted butter">2 Tbsp unsalted butter</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-3-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-5" data-raw-text="Salt to taste">Salt to taste</label></li>
   </ul>
 </div>
                             </div>
@@ -533,25 +541,35 @@
         <!-- FOOTER START -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">
-                            © 2010 - 2026 Farbod Jahan
-                        </div>
+                <div class="footer-grid">
+                    <div class="footer-brand-meta">
+                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
-                    <div class="col-sm-6">
-                        <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
-                                </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
-                                    <iconify-icon icon="fa:instagram"></iconify-icon>
-                                </a></li>
-                        </ul>
-                    </div>
+
+                    <ul class="footer-nav">
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../resume/">Resume</a></li>
+                        <li><a href="../">Cooking</a></li>
+                        <li><a href="../../real-estate/">Real Estate</a></li>
+                        <li><a href="../../dj/">DJ</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+
+                    <ul class="social-link">
+                        <li><a href="mailto:Farbod.J.Jahan@gmail.com" aria-label="Email">
+                                <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <iconify-icon icon="jam:linkedin"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <iconify-icon icon="fa:instagram"></iconify-icon>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

@@ -1,30 +1,35 @@
-var trackDiv = document.querySelector('#latest-music-tracks');
-// Change the soundtrackid if you want to update the list
-// 1. click share on your selected track at soundcloud 
-// 2. open the embed tab
-// 3. on the code section there will be something like this
-//    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1459944949&color=%23ff5500
-// 4. at the src after /tracks/ there will be your track id
-// 5. copy that id and paste it to the array below
-const soundCloudTrackIds = ['2054831012', '1829599182', '1438807573'];
+(() => {
+    const trackContainer = document.getElementById('latest-music-tracks');
+    if (!trackContainer) return;
 
-for (var i = 0; i < soundCloudTrackIds.length; i++) {
-    trackDiv.innerHTML += generateIframe(soundCloudTrackIds[i], i)
-}
+    // Update SoundCloud track IDs here as new mixes drop
+    const tracks = [
+        { id: '2054831012', tag: 'Featured Set · 01', genre: 'House & Melodic' },
+        { id: '1829599182', tag: 'Featured Set · 02', genre: 'Deep & Vocal House' },
+        { id: '1438807573', tag: 'Featured Set · 03', genre: 'Club Grooves' },
+    ];
 
-//this function generates a embedded link
-function generateEmbeddedUrl(key) {
-    return `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${key}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`;
-}
+    const buildEmbedUrl = (id) =>
+        `https://w.soundcloud.com/player/?url=${encodeURIComponent(
+            `https://api.soundcloud.com/tracks/${id}`
+        )}&color=%23a855f7&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true`;
 
-function myFunction(element) {
-    console.log(element);
-    console.log(element.contentWindow.document.getElementByClassName("widget-controls"));
-}
-
-//generates the iframe
-function generateIframe(key, i) {
-    return `<iframe src="${generateEmbeddedUrl(key)}" class="track-item" style="width: 100%; height: 150px" frameborder="0" id=${'iframe' + i} onload="myFunction(this)"></iframe>`
-}
-
-
+    trackContainer.innerHTML = tracks
+        .map(
+            (t, idx) => `
+            <article class="dj-mix-card">
+                <div class="dj-mix-meta">
+                    <span class="dj-mix-tag">${t.tag}</span>
+                    <span>${t.genre}</span>
+                </div>
+                <iframe
+                    src="${buildEmbedUrl(t.id)}"
+                    loading="lazy"
+                    allow="autoplay; encrypted-media"
+                    title="DJ FJ SoundCloud Mix ${idx + 1}">
+                </iframe>
+            </article>
+        `
+        )
+        .join('');
+})();
