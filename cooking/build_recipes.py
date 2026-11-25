@@ -205,7 +205,11 @@ def render_recipe_page(recipe: dict, all_recipes: list) -> str:
     <title>{title_esc} Recipe | Farbod Jahan</title>
     <meta name="description" content="{desc_esc}">
     <link rel="canonical" href="{canonical}">
-    <link rel="icon" type="image/x-icon" href="/Logo/Icon/V2/FarbodJahan-White.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="article">
