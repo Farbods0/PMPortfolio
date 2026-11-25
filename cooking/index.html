@@ -2,33 +2,33 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139551000-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-139551000-1');
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farbod Jahan | Chef </title>
+    <title>Farbod Jahan | Cooking &amp; Recipes</title>
+    <meta name="description" content="Explore Farbod Jahan's favorite homemade recipes — appetizers, entrees, and desserts with step-by-step instructions and ingredients.">
+    <link rel="canonical" href="https://farbodjahan.com/cooking/">
     <link rel="icon" type="image/x-icon" href="/Logo/Icon/V2/FarbodJahan-White.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Farbod Jahan | Cooking &amp; Recipes">
+    <meta property="og:description" content="Explore 27 homemade recipes across appetizers, entrees, and desserts.">
+    <meta property="og:image" content="https://farbodjahan.com/cooking/assets/optimized/cooking.webp">
+    <meta property="og:url" content="https://farbodjahan.com/cooking/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="../css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="./js/simpleLightbox.css">
     <link rel="stylesheet" href="../css/cooking.css">
     <style>
         .swiper-slide {
             padding: 0 10px;
         }
     </style>
-
-    <meta name="description" content="Farbod Jahan - Product Manager, Technologist, and Designer. Explore my portfolio, resume, and interests.">
 </head>
 
 <body class="cooking-page">
@@ -38,7 +38,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="../index.html">
-                        <img src="../images/FarbodJahan.png" alt="" loading="lazy">
+                        <img src="../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,12 +50,12 @@
                         </button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="../index.html">
+                                <a class="nav-link" aria-current="page" href="../index.html" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../about/">About</a>
+                                <a class="nav-link" href="../about/">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../resume/">Resume</a>
@@ -69,7 +69,7 @@
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a class="dropdownitem" href="../dj/">Dj</a></li>
-                                        <li><a class="dropdownitem" href="index.html">Cooking</a></li>
+                                        <li><a class="dropdownitem" href="./">Cooking</a></li>
                                         <li><a class="dropdownitem" href="../real-estate/">Real Estate</a></li>
                                     </ul>
                                 </div>
@@ -80,21 +80,24 @@
             </nav>
         </header>
         <!---HEADER END -->
+
         <!---SECTION HERO MAIN START -->
         <section class="hero-main">
-            <video style="object-fit: cover; width:100%; height:100vh;" src="./assets/cookingbg.mp4" id="video-slider"
-                loop="" autoplay="" muted=""></video>
+            <video style="object-fit: cover; width:100%; height:100vh;" src="./assets/cookingbg.mp4"
+                poster="./assets/optimized/cooking.webp" id="video-slider"
+                loop autoplay muted playsinline preload="metadata"></video>
             <div class="container text-center">
-                <span data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Welcome to my delicious
+                <span data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">Welcome to my delicious
                     corner</span>
-                <h2 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Cooking</h2>
-                <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">I have a passion for cooking and want
+                <h1 class="hero-cooking-title" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">Cooking</h1>
+                <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">I have a passion for cooking and want
                     you to join me and my cooking journey.</p>
-                <a href="#cooking" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400"><small>View
-                        More</small></a>
+                <a href="#cooking" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="350"><small>View
+                        Recipes</small></a>
             </div>
         </section>
         <!--SECTION HERO MAIN END -->
+
         <!--Section Cooking Main Start -->
         <section class="cooking-main">
             <div class="container">
@@ -106,17 +109,16 @@
                         <div class="content">
                             <h3 data-aos="fade-up" data-aos-duration="1000">Appetizer</h3>
                             <p data-aos="fade-up" data-aos-duration="1000">A small portion of food served before the
-                                main part of a meal in order
-                                to stimulate the appetite. Recipes are intended to be made quickly so that you can
-                                entertain guests while preparing for the main course.
-                                They should, therefore, be made attractive in appearance and tempting in flavor </p>
+                                main part of a meal in order to stimulate the appetite. Recipes are intended to be made
+                                quickly so that you can entertain guests while preparing for the main course. They
+                                should, therefore, be made attractive in appearance and tempting in flavor.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="img-box">
                             <div class="custom-border" id="dynamic-border-1"></div>
-                            <img id="dynamic-image-1" src="./assets/Food/Bruscetta.jpg"
-                                style="height:300px;object-fit: cover " / loading="lazy">
+                            <img id="dynamic-image-1" src="./assets/optimized/Bruscetta.webp" alt="Appetizer dishes"
+                                style="height:300px;object-fit: cover;" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -124,17 +126,16 @@
                     <div class="col-lg-6 order-lg-1 order-2">
                         <div class="img-box">
                             <div class="custom-border" id="dynamic-border-2"></div>
-                            <img id="dynamic-image-2" src="./assets/Food/spaghetti.jpg"
-                                style="height:400px;object-fit: cover; " / loading="lazy">
+                            <img id="dynamic-image-2" src="./assets/Food/spaghetti.jpg" alt="Entree dishes"
+                                style="height:400px;object-fit: cover;" loading="lazy">
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2 order-1">
                         <div class="content">
                             <h3 data-aos="fade-up" data-aos-duration="1000">Entree</h3>
                             <p data-aos="fade-up" data-aos-duration="1000">The main event! Recipes are from around the
-                                world to satisify any
-                                craving and occasion. Some recipes can be whipped up in a day some take a few, but all
-                                will taste great.</p>
+                                world to satisfy any craving and occasion. Some recipes can be whipped up in a day and
+                                some take a few, but all will taste great.</p>
                         </div>
                     </div>
                 </div>
@@ -142,48 +143,73 @@
                     <div class="col-lg-6">
                         <div class="content">
                             <h3 data-aos="fade-up" data-aos-duration="1000">Dessert</h3>
-                            <p data-aos="fade-up" data-aos-duration="1000"> The end of the party. Desserts can be
-                                smooth, tangy, crumbly, decadent, etc. Choose a
-                                dessert that fits your need and always save room!
-                            </p>
-
+                            <p data-aos="fade-up" data-aos-duration="1000">The end of the party. Desserts can be
+                                smooth, tangy, crumbly, decadent, and everything in between. Choose a dessert that fits
+                                your mood and always save room!</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="img-box">
                             <div class="custom-border" id="dynamic-border-3"></div>
-                            <img id="dynamic-image-3" src="./assets/Food/pumpkinBread.png"
-                                style="height:380px;object-fit: cover " / loading="lazy">
+                            <img id="dynamic-image-3" src="./assets/optimized/pumpkinBread.webp" alt="Dessert dishes"
+                                style="height:380px;object-fit: cover;" loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Section Cooking Main End -->
+
         <!--Section What We Make Start -->
         <section class="what-we-make para" id="cooking">
             <div class="container">
                 <div class="caption">
                     <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">What I Make</h2>
-                    <p data-aos="fade-up" data-aos-duration="1000">All recipes are below. Find a recipe to fit your need
-                        whether it be a Appetizer, Entree, or Dessert.</p>
+                    <p data-aos="fade-up" data-aos-duration="1000">All recipes are below. Search by name or ingredient,
+                        or filter by Appetizer, Entree, or Dessert.</p>
                 </div>
 
-                <div class="input-group mb-5">
-                    <input id="recipes-search-input" type="text" class="form-control" placeholder="Search recipes"
-                        aria-label="recipe" aria-describedby="basic-addon1">
+                <div class="recipes-toolbar">
+                    <div class="recipe-search-wrap">
+                        <iconify-icon icon="mdi:magnify" class="search-icon"></iconify-icon>
+                        <input id="recipes-search-input" type="search" class="form-control recipe-search-input"
+                            placeholder="Search recipes or ingredients (e.g., pumpkin, garlic, ramen)..."
+                            aria-label="Search recipes or ingredients">
+                        <button type="button" id="recipes-search-clear" class="search-clear-btn"
+                            aria-label="Clear search" hidden>
+                            <iconify-icon icon="ep:close"></iconify-icon>
+                        </button>
+                    </div>
+
+                    <div class="recipe-filter-pills" role="tablist" aria-label="Filter recipes by category">
+                        <button type="button" class="filter-pill is-active" data-category="All" role="tab"
+                            aria-selected="true">All</button>
+                        <button type="button" class="filter-pill" data-category="Appetizer" role="tab"
+                            aria-selected="false">Appetizer</button>
+                        <button type="button" class="filter-pill" data-category="Entree" role="tab"
+                            aria-selected="false">Entree</button>
+                        <button type="button" class="filter-pill" data-category="Dessert" role="tab"
+                            aria-selected="false">Dessert</button>
+                    </div>
+
+                    <p id="recipes-count" class="recipes-count" aria-live="polite"></p>
                 </div>
 
-                <div class="sliderWrapper">
+                <div id="recipes-empty-state" class="recipes-empty-state" hidden>
+                    <p>No recipes matched your search.</p>
+                    <button type="button" id="recipes-reset-btn" class="recipe-action-btn">Reset filters</button>
+                </div>
+
+                <div class="sliderWrapper" id="recipes-slider-wrapper">
                     <div class="swiper mySwiper">
                         <div id="recipes-swiper" class="swiper-wrapper imageGallery1">
                         </div>
                     </div>
                     <div class="control">
-                        <div class="swiper-button-prev">
+                        <div class="swiper-button-prev" aria-label="Previous recipes">
                             <iconify-icon icon="icons8:arrows-long-left"></iconify-icon>
                         </div>
-                        <div class="swiper-button-next">
+                        <div class="swiper-button-next" aria-label="Next recipes">
                             <iconify-icon icon="icons8:arrows-long-right"></iconify-icon>
                         </div>
                     </div>
@@ -191,6 +217,7 @@
             </div>
         </section>
         <!--Section What We Make END -->
+
         <!--About Cooking start -->
         <section class="about-cooking para">
             <div class="container">
@@ -202,6 +229,7 @@
             </div>
         </section>
         <!--About Cooking End -->
+
         <!--Footer Start -->
         <footer>
             <div class="container">
@@ -213,13 +241,13 @@
                     </div>
                     <div class="col-sm-6">
                         <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" aria-label="Facebook">
+                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
                                     <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
                                 </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" aria-label="LinkedIn">
+                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
                                     <iconify-icon icon="jam:linkedin"></iconify-icon>
                                 </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" aria-label="Instagram">
+                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
                                     <iconify-icon icon="fa:instagram"></iconify-icon>
                                 </a></li>
                         </ul>
@@ -230,152 +258,10 @@
         <!--Footer End -->
     </div>
 
-    <!--Modal -->
-    <div class="modal fade" id="cookinkModal" tabindex="-1" aria-hidden="true">
-        <button type="button" class="btnclose" data-bs-dismiss="modal" aria-label="Close">
-            <iconify-icon icon="eva:close-outline"></iconify-icon>
-        </button>
-
-        <div class="modal-dialog modal-dialog-centered">
-
-            <div class="modal-content">
-                <div class="innerModal">
-                    <div class="media">
-                        <div class="img-holder">
-                            <img src="./assets/Food/food-4.jpeg" alt="" class="w-100" loading="lazy">
-                        </div>
-                        <div class="media-body">
-                            <h2>LOREM IPSUM DOLOR</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vero, quis quo
-                                laboriosam ratione molestias dolores alias tenetur ducimus repellendus excepturi
-                                error tempora iure vitae sunt nihil incidunt. Rerum, odio!</p>
-                            <p>Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Faucibus
-                                purus in massa tempor nec feugiat nisl. Consectetur adipiscing elit duis tristique
-                                sollicitudin nibh sit amet. Nisi est sit amet facilisis magna. Magna fringilla urna
-                                porttitor rhoncus. Elit scelerisque mauris pellentesque pulvinar pellentesque
-                                habitant. Arcu cursus euismod quis viverra nibh cras pulvinar. Pellentesque habitant
-                                morbi tristique senectus et netus. Egestas quis ipsum suspendisse ultrices gravida
-                                dictum fusce. Aliquet bibendum enim facilisis gravida neque convallis. Velit
-                                scelerisque in dictum non consectetur a erat nam. Interdum velit euismod in
-                                pellentesque massa. Leo urna molestie at elementum eu facilisis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--RECIPE Content-->
-    <div class="modal fade readMore" id="read-more-pico-de-gallo" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-japanese-milkbread" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-chicken-soup" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-xiao-long-bao" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-fajita-guacamole" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-chicken-tikka-naan" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-potato-crispy-aioli" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-blooming-onion" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-croissants" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-tonkotsu-ramen" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-pork-bao-buns" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-birria-quesa-tacos" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-ash-reshteh" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-churros" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-macaroni-and-cheese" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-spaghetti-meat-sauce" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-pumpkin-bread-salted-maple-butter" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-burrito" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-popeyes-chicken-sandwhich" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-masala-fries" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-pasta-dough" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-bread" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-bruscetta" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-in-n-out-burger" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-rasberry-danish" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-mozzarella-cheese" tabindex="-1" aria-hidden="true"></div>
-    <div class="modal fade readMore" id="read-more-brussel-sprouts" tabindex="-1" aria-hidden="true"></div>
-    <!-- <div class="modal fade readMore" id="readMore20" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="food-detail">
-                    <div class="modalHeader">
-                        <a href="#" class="arrowback" data-bs-dismiss="modal" aria-label="Close"><i>
-                                <iconify-icon icon="cil:arrow-left"></iconify-icon>
-                            </i> Back to home</a>
-                    </div>
-                    <div class="modalBody">
-                        <h2>Artisan Bread Dutch Oven</h2>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="img-holder">
-                                    <img src="./assets/Food/pastadough.jpg" alt="" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <h3 class="subTitle">INGREDIENTS</h3>
-                                <ul>
-                                    <li><span>600 grams all-purpose flour (about 4 cups, lightly packed and leveled
-                                            off) </span></li>
-                                    <li><span>2 cups lukewarm water (between 90˚-110˚F) </span></li>
-                                    <li><span>1½ tablespoons salt </span></li>
-                                    <li><span>1 envelope dry active yeast (7 grams) </span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h3 class="subTitle">INSTRUCTIONS: <a
-                                        href="https://www.youtube.com/watch?v=91ZXVw58Ths">Video</a></h3>
-                                <p><img src="./assets/Food/art01.png" alt="" class="img-fluid" loading="lazy"></p>
-                                <p>1. Instant yeast does NOT need to be bloomed just dump into flour mixture </p>
-                            </div>
-                            <p>2. <img src="./assets/Food/art02.png" alt="" class="img-fluid" loading="lazy"></p>
-                            <p>3. In a large bowl, mix flour, yeast, and salt by hand. Once incorporated, create a
-                                small well in the middle and pour in the water mixture.</p>
-                            <p> 4. Mix by hand, wetting your working hand before mixing so the dough doesn’t stick
-                                to your fingers. The water and flour should come together and a form rough dough
-                                that pulls away from the sides of the bowl. If the dough is too sticky, add more
-                                flour in small increments, about 1 tablespoon at a time. If the dough is L dry, add
-                                more water, 1 tablespoon at a time. Once the dough has come together, cover it and
-                                let it rise until it doubles in size (about 1.5 to 2 hours).</p>
-                            <p> 5. Uncover the dough and give it a few pokes with your finger. If the dough has
-                                risen properly it should indent under the pressure of your fingers and slowly
-                                deflate. </p>
-                            <p>6. <img src="./assets/Food/art03.png" alt="" class="img-fluid" loading="lazy"></p>
-                            <p>Using your hand or a rubber spatula fold the dough. Starting from the rim of the
-                                bowl, work the dough loose from the sides and fold it up and towards the center of
-                                the bowl. Turn the bowl 90 degrees, and repeat until all the dough has been pulled
-                                from the sides and folded towards the center. Once finished, cover and allow the
-                                dough to continue to rise for another <strong>1.5-2 hours.</strong></p>
-                            <p>7. <img src="./assets/Food/art04.png" alt="" class="img-fluid" loading="lazy"></p>
-                            <p>Once the dough has doubled in size again, gently remove it from the bowl onto a
-                                lightly floured surface and sprinkle a small amount of flour on top of the dough.
-                                Using your hands, begin to shape the loaf. Fold the dough under itself several times
-                                to form a ball, then claps together the seams of dough underneath. Place the dough
-                                seam-side down in a clean bowl that has been coated with olive oil and flour. Cover
-                                and let rise for 1 hour. </p>
-                            <p>8. Meanwhile, take a 6-quart dutch oven (or heavy cooking pot with oven-safe lid) and
-                                place it inside the oven. Preheat the oven to 450˚F/230˚C and allow it to heat up
-                                with the pot inside for 45 minutes. </p>
-                            <p>9. Remove the pot from the oven and place it on a trivet or heat-safe surface. (Be
-                                careful! It’ll be VERY HOT.) Turn the proofed dough over onto a lightly floured
-                                surface and carefully place it inside of the pot. Cover with the lid and return the
-                                pot to the oven. </p>
-                            <p>10. Bake at 450˚F/230˚C for 30 <strong>minutes,removing</strong> the lid for
-                                <strong>15 minutes</strong>.
-                            </p>
-                            <p>11. Remove bread from pot and allow to cool for 10 minutes before cutting.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div id="loading">
         <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
             <div class="ldio-xo4z6m7kfv">
-                <div>
-                </div>
+                <div></div>
             </div>
         </div>
     </div>
@@ -383,55 +269,15 @@
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
+
     <script src="../js/bootstrap.bundle.min.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script src="../js/simpleparallax.js" defer></script>
-    <script src="./js/imageSlide.js"></script>
-    <script src="./js/simpleLightbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
-
     <script src="../js/main.js" defer></script>
-    <script src="./js/recipes.js"></script>
-    <script>
-        let swiper = new Swiper(".mySwiper", {
-            observer: true,
-            observeParents: true,
-            spaceBetween: 0,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
-            breakpoints: {
-                300: {
-                    grid: {
-                        fill: 'row',
-                        rows: 1,
-                    },
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-                768: {
-                    grid: {
-                        fill: 'row',
-                        rows: 1,
-                    },
-                    slidesPerView: 2,
-                    spaceBetween: 0,
-                },
-                992: {
-                    grid: {
-                        fill: 'row',
-                        rows: 2,
-                    },
-                    slidesPerView: 3,
-                    spaceBetween: 0,
-                },
-            },
-        });
-    </script>
-    <script src="./js/searchRecipe.js"></script>
+    <script src="./js/imageSlide.js" defer></script>
+    <script src="./js/recipes.js" defer></script>
 </body>
 
 </html>

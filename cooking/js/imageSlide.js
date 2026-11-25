@@ -1,104 +1,66 @@
-const real_estate_image_list = [
-    "real-estate.jpg",
-    "real-estate-2.jpg",
-    "real-estate-3.jpg",
-    "real-estate-4.jpg",
-    "real-estate-5.jpg",
-    "real-estate-7.jpg",
-    "real-estate-8.jpg",
-    "real-estate-9.jpg",
-    "real-estate-10.jpg",
-    "real-estate-11.jpg"
-]
-/* Appetizers */
-const food_image_list1 = [
-    "assets/Food/Bruscetta.jpg",
-    "assets/Food/artisanbreaddutch.png",
-    "assets/Food/BloominOnion.jpeg",
-    "assets/Food/bread.png",
-    "assets/Food/brussel.jpg",
-    "assets/Food/crispy-salt-and-pepper-smashed-potatoes-3.jpeg",
-]
-/* Entree */
-const food_image_list2 = [
-    "assets/Food/burrito.png",
-    "assets/Food/birriaQuesaTacos.jpeg",
-    "assets/Food/ashReshteh.jpg",
-    "assets/Food/Popeyes.png",
-    "assets/Food/spaghetti.jpg",
-    "assets/Food/tonkotsu.jpg"
-    
-]
-/* Dessert */
-const food_image_list3 = [
-    "assets/Food/rasberry.png",
-    "assets/Food/croissants.jpeg",
-    "assets/Food/churros.png",
-    "assets/Food/artisanbreaddutch.png"
-]
+(() => {
+    /* Appetizers */
+    const foodImageList1 = [
+        'assets/optimized/Bruscetta.webp',
+        'assets/optimized/artisanbreaddutch.webp',
+        'assets/Food/BloominOnion.jpeg',
+        'assets/optimized/bread.webp',
+        'assets/optimized/brussel.webp',
+        'assets/optimized/crispy-salt-and-pepper-smashed-potatoes-3.webp',
+    ];
+    /* Entree */
+    const foodImageList2 = [
+        'assets/Food/spaghetti.jpg',
+        'assets/optimized/burrito.webp',
+        'assets/Food/birriaQuesaTacos.jpeg',
+        'assets/optimized/ashReshteh.webp',
+        'assets/optimized/Popeyes.webp',
+        'assets/optimized/tonkotsu.webp',
+    ];
+    /* Dessert */
+    const foodImageList3 = [
+        'assets/optimized/pumpkinBread.webp',
+        'assets/optimized/rasberry.webp',
+        'assets/optimized/croissants.webp',
+        'assets/optimized/churros.webp',
+    ];
 
-function dynamicImage(id, borderId, interval, delay, images) {
-    const image = document.getElementById(id)
-    const border = document.getElementById(borderId)
+    function setupDynamicImage(id, borderId, interval, delay, images, direction) {
+        const image = document.getElementById(id);
+        const border = document.getElementById(borderId);
+        if (!image || !border || !images.length) return;
 
+        const inClass = direction === 'left' ? 'fade-in-left' : 'fade-in-right';
+        const outClass = direction === 'left' ? 'fade-out-left' : 'fade-out-right';
+        let index = 0;
 
-    setTimeout(function() {
-        setTimeout(function() {
-            image.classList.remove('fade-in-right')
-            image.classList.add('fade-out-right')
-            border.classList.remove('fade-in-right')
-            border.classList.add('fade-out-right')
-        }, interval - 1500)
-        var x = setInterval(function() {
-            const random_int = Math.floor(Math.random() * images.length)
-            image.src = images[random_int]
-            image.classList.remove('fade-out-right')
-            image.classList.add('fade-in-right')
-            border.classList.remove('fade-out-right')
-            border.classList.add('fade-in-right')
+        setTimeout(() => {
+            setTimeout(() => {
+                image.classList.remove(inClass);
+                image.classList.add(outClass);
+                border.classList.remove(inClass);
+                border.classList.add(outClass);
+            }, interval - 1500);
 
-            setTimeout(function() {
-                image.classList.remove('fade-in-right')
-                image.classList.add('fade-out-right')
-                border.classList.remove('fade-in-right')
-                border.classList.add('fade-out-right')
-            }, interval - 1500)
-        }, interval)
-    }, delay)
-}
+            setInterval(() => {
+                index = (index + 1) % images.length;
+                image.src = images[index];
+                image.classList.remove(outClass);
+                image.classList.add(inClass);
+                border.classList.remove(outClass);
+                border.classList.add(inClass);
 
-function dynamicImage_left(id, borderId, interval, delay, images) {
-    const image = document.getElementById(id)
-    const border = document.getElementById(borderId)
+                setTimeout(() => {
+                    image.classList.remove(inClass);
+                    image.classList.add(outClass);
+                    border.classList.remove(inClass);
+                    border.classList.add(outClass);
+                }, interval - 1500);
+            }, interval);
+        }, delay);
+    }
 
-
-    setTimeout(function() {
-        setTimeout(function() {
-            image.classList.remove('fade-in-left')
-            image.classList.add('fade-out-left')
-            border.classList.remove('fade-in-left')
-            border.classList.add('fade-out-left')
-        }, interval - 1500)
-        var x = setInterval(function() {
-            const random_int = Math.floor(Math.random() * images.length)
-            image.src = images[random_int]
-            image.classList.remove('fade-out-left')
-            image.classList.add('fade-in-left')
-            border.classList.remove('fade-out-left')
-            border.classList.add('fade-in-left')
-
-            setTimeout(function() {
-                image.classList.remove('fade-in-left')
-                image.classList.add('fade-out-left')
-                border.classList.remove('fade-in-left')
-                border.classList.add('fade-out-left')
-            }, interval - 1500)
-        }, interval)
-    }, delay)
-}
-
-
-
-dynamicImage("dynamic-image-1", "dynamic-border-1", 5000, 0, food_image_list1)
-dynamicImage_left("dynamic-image-2", "dynamic-border-2", 5000, 1000, food_image_list2)
-dynamicImage("dynamic-image-3", "dynamic-border-3", 5000, 500, food_image_list3)
+    setupDynamicImage('dynamic-image-1', 'dynamic-border-1', 5000, 0, foodImageList1, 'right');
+    setupDynamicImage('dynamic-image-2', 'dynamic-border-2', 5000, 1000, foodImageList2, 'left');
+    setupDynamicImage('dynamic-image-3', 'dynamic-border-3', 5000, 500, foodImageList3, 'right');
+})();

@@ -1,0 +1,3487 @@
+[
+  {
+    "slug": "tonkotsu-ramen",
+    "legacySlug": "tonkotsu-ramen",
+    "aliases": [
+      "ramen"
+    ],
+    "title": "Tonkotsu Ramen",
+    "category": "Entree",
+    "description": "A unique style of ramen consisting of an extremely rich, fatty pork broth.",
+    "image": "assets/optimized/tonkotsu.webp",
+    "prepTime": "30 mins",
+    "totalTime": "3 days",
+    "yield": "6 servings",
+    "yieldIcon": "ic:outline-ramen-dining",
+    "ingredientGroups": [
+      {
+        "title": "Tonkotsu broth",
+        "items": [
+          "4 lb femur",
+          "4 lb neck bone (if not availble, get skull)",
+          "1-2 lb trotter",
+          "bunch green onion",
+          "1 large yellow onion",
+          "2 shallots",
+          "2 inch knob ginger",
+          "water to cover"
+        ]
+      },
+      {
+        "title": "Noodles (6 servings)",
+        "items": [
+          "500 g pead flour",
+          "5 g vital wheat gluten",
+          "185g water",
+          "5 g baked soda",
+          "5 g salt"
+        ]
+      },
+      {
+        "title": "Marinated Soft boiled Eggs",
+        "items": [
+          "6 minutes cook boiling water then ice bath",
+          "Eggs (soft boiled)",
+          "Soy sauce",
+          "Mirin"
+        ]
+      },
+      {
+        "title": "Chashu",
+        "items": [
+          "2 pound pork belly (skin on or off)",
+          "1/2 cup soy sauce or tamari",
+          "1/2 cup mirin",
+          "1/2 cup sugar",
+          "2 inch knob ginger",
+          "1 bunch green onion",
+          "4-5 cloves garlic"
+        ]
+      },
+      {
+        "title": "Lighter color Shoyu Tare",
+        "items": [
+          "225 g water",
+          "225 g usukuchi soy sauce",
+          "15 g kombu",
+          "20 g niboshi",
+          "15 g katsuobushi",
+          "20 g sake",
+          "30 g mirin",
+          "30 g pown sugar"
+        ]
+      },
+      {
+        "title": "Shoyu Tare",
+        "items": [
+          "5 3 inch by 3 inch squares of kombu",
+          "Water to cover (around 1-2 cups)",
+          "3/4cup dried niboshi",
+          "1 tbs sesame oil",
+          "1 cup loosely packed bonito",
+          "1/4 cup sake",
+          "1/4 cup mirin",
+          "1 cup soy sauce (I use a combination of usukuchi, good ol’standard kikkoman, and a white soy sauce)",
+          "Salt to taste"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Broth (3 days)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Before any cooking, soak the bones in cold water in a large, non-reactive vessel, for at least 6 hours, and up to 24 hours. (I use a large plastic container)."
+          },
+          {
+            "type": "step",
+            "html": "2. The night before you want your poth ready, drain the bones, add them to a pot with fresh water covering them by 2 inches, and ping to a boil over high heat."
+          },
+          {
+            "type": "step",
+            "html": "3. Drop the heat to medium, and blanch the bones, at a simmer, for 15-30 minutes, or until little to no scum rises."
+          },
+          {
+            "type": "step",
+            "html": "4. Strain the bones again, and scrub away any black material, such as coagulated blood, from the bones and pot."
+          },
+          {
+            "type": "step",
+            "html": "5. Return the bones to the pot. Add fresh water, and add in the fatback. If doing the night before, ping this to a boil, then down to the lowest setting on your stove, and cover. Then go to bed. If not, continue to step 7."
+          },
+          {
+            "type": "step",
+            "html": "6. In the morning, ping the pot back up to a full boil, then back down to the lowest setting possible to mantain that jostling boil while covered. (For me, this is medium on my stove)."
+          },
+          {
+            "type": "step",
+            "html": "7. Depending on when you started cooking, continue to boil the poth for 12-18 hours, or until desired consistency and color is reached, meat has completely separated and poken down in the poth, and fatback pieces have mostly melted. Optionally, you can stir every 1-2 hours just to check up on things and promote more churning. Please feel free to add back water if the level gets too low."
+          },
+          {
+            "type": "step",
+            "html": "8. Once cooked to your liking, strain the poth, discarding the solids, and reserve poth until needed over low heat. This poth keeps for around a week in the fridge."
+          },
+          {
+            "type": "step",
+            "html": "9. If poth is not a creamy white, you can use a blender on high for 10 seconds to help with emulsion."
+          },
+          {
+            "type": "subheading",
+            "html": "Aromatics (Optional)"
+          },
+          {
+            "type": "step",
+            "html": "1. Add to the stock pot (aromatics) in the last 30 min-1 hour of cooking."
+          },
+          {
+            "type": "step",
+            "html": "2. 1 whole bunch of green onions cut into 3 inch sections"
+          },
+          {
+            "type": "step",
+            "html": "3. 2 medium shallots cut into quarters, with skin on"
+          },
+          {
+            "type": "step",
+            "html": "4. 1 large yellow onion cut into quarters"
+          },
+          {
+            "type": "step",
+            "html": "5. 2, 3 inch knobs of ginger with skin peeled off (use a spoon)"
+          },
+          {
+            "type": "step",
+            "html": "6. 4 whole cloves of garlic, peeled skin off"
+          }
+        ]
+      },
+      {
+        "title": "Chashu/Pork Belly (7 Hours)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. 1-2 green onions chopped"
+          },
+          {
+            "type": "step",
+            "html": "2. 2-3 cloves garlic chopped"
+          },
+          {
+            "type": "step",
+            "html": "3. 2 inch knob of ginger"
+          },
+          {
+            "type": "step",
+            "html": "4. 1/2 cup soy sauce"
+          },
+          {
+            "type": "step",
+            "html": "5. 1/2 cup mirin"
+          },
+          {
+            "type": "step",
+            "html": "6. 1/2 cup plain white sugar"
+          },
+          {
+            "type": "step",
+            "html": "7. Stir all into 1 bowl"
+          },
+          {
+            "type": "step",
+            "html": "8. 2 lb pork belly skin on"
+          },
+          {
+            "type": "step",
+            "html": "9. Get butcher twine out"
+          },
+          {
+            "type": "step",
+            "html": "10. Roll pork belly into itself and wrap butcher twine into a knot every half inch"
+          },
+          {
+            "type": "step",
+            "html": "11. Trim off extra twine"
+          },
+          {
+            "type": "step",
+            "html": "12. Put into ziplock bag and circulate pork belly to full coat it"
+          },
+          {
+            "type": "step",
+            "html": "13. Drop into sous vide at 170 F* 7 hours"
+          },
+          {
+            "type": "step",
+            "html": "14. Take out bag and place in oven to poil"
+          }
+        ]
+      },
+      {
+        "title": "Marinated Soft Boiled Eggs (24 Hours)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. 5 soft boiled eggs"
+          },
+          {
+            "type": "step",
+            "html": "2. Shock in ice bath"
+          },
+          {
+            "type": "step",
+            "html": "3. Peel"
+          },
+          {
+            "type": "step",
+            "html": "4. 1/4 cup soy sauce"
+          },
+          {
+            "type": "step",
+            "html": "5. 1/4 cup mirin"
+          },
+          {
+            "type": "step",
+            "html": "6. 1 cup water"
+          },
+          {
+            "type": "step",
+            "html": "7. Have in boil, make sure that they are fully submerged (add more water,mirin, soy sauce if needed)"
+          },
+          {
+            "type": "step",
+            "html": "8. Cover in saran wrap"
+          },
+          {
+            "type": "step",
+            "html": "9. 4-24 hours of marinate (agitate occasionally)"
+          }
+        ]
+      },
+      {
+        "title": "Light Color Shoyu Tare",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine the water, soy sauce, kombu, and niboshi in a sealed container."
+          },
+          {
+            "type": "step",
+            "html": "2. Place in the fridge and rest at least 6 hours or up to 2 days."
+          },
+          {
+            "type": "step",
+            "html": "3. Add the mixture to a small saucepan."
+          },
+          {
+            "type": "step",
+            "html": "4. Heat the contents to 71 °C/160 °F, hold for 10 minutes."
+          },
+          {
+            "type": "step",
+            "html": "5. Remove the kombu and discard."
+          },
+          {
+            "type": "step",
+            "html": "6. ping 180F (or just below a boil) and hold for 15 minutes."
+          },
+          {
+            "type": "step",
+            "html": "7. Add the katsuobushi, hold at 82 °C/180 °F for 5 more minutes."
+          },
+          {
+            "type": "step",
+            "html": "8. Strain and reserve liquid on the side."
+          },
+          {
+            "type": "step",
+            "html": "9. In a new clean pot, add your mirin, sake, and pown sugar. ping to a boil, and simmer for 5 minutes."
+          },
+          {
+            "type": "step",
+            "html": "10. Add this mixture to your mixture from step 9. You can store this in the fridge for up to 6 months."
+          },
+          {
+            "type": "step",
+            "html": "11. Add 30 mL of tare per 350 mL soup."
+          },
+          {
+            "type": "step",
+            "html": "12. Done. Taste it with your poth and adjust as needed. Maybe it needs more soy? Maybe it needs more salt? Maybe some extra umami. Only you can judge."
+          }
+        ]
+      },
+      {
+        "title": "Noodles",
+        "steps": [
+          {
+            "type": "step",
+            "html": "Hakata noodles are low moisture, low protein, lower alkalinity. The recipe has been adjusted to fit this; I’ve played around with making a true Hakata noodle, but hydration for those is around 22%. At home, this is almost impossible to manage. So the below recipe is more in line with other regions of Kyushu, but it pairs nicely. More taut than a standard noodle, and less alkaline.<i>Also… feel free to buy sun noodles for this. Seriously, noodles are hard. And Tonkotsu is a time consuming endeavor.</i>"
+          },
+          {
+            "type": "step",
+            "html": "Also… feel free to buy sun noodles for this. Seriously, noodles are hard. And Tonkotsu is a time consuming endeavor."
+          },
+          {
+            "type": "step",
+            "html": "1. Add kansui powder and salt to the water, dissolve completely. If using both sodium carbonate and potassium carbonate, add them one at a time. Go slowly, stir constantly until clear. This will take a while, but eventually, the contents will dissolve. You can make the solution several days before to get a jumpstart, just hold the liquid in an airtight container."
+          },
+          {
+            "type": "step",
+            "html": "2. In a standing mixer with a paddle attachment, add your flour and wheat gluten. Turn the mixer to “stir” and run for 30 seconds to aerate the mix."
+          },
+          {
+            "type": "step",
+            "html": "3. While running the mixer on stir mode, add two thirds of your water mixture slowly in an even stream. Let the mixer stir the flour and water mixture for 5 minutes."
+          },
+          {
+            "type": "step",
+            "html": "4. Add in the remaining water mixture with the mixer running, run for 2 minutes."
+          },
+          {
+            "type": "step",
+            "html": "5. Turn off the mixer, and add the mixture to a sealable bag. Close, and let this rest for 2 hours at room temperature. Don’t skip this."
+          },
+          {
+            "type": "step",
+            "html": "6. Knead it, by using an electric pasta machine to sheet the dough, going through the largest setting, then the 2nd, then the 3rd. Take the dough and fold it, sheeting under the 2nd widest setting, then fold it again and sheet it under the widest setting. Repeat this until the sheet is quite smooth and not ragged."
+          },
+          {
+            "type": "step",
+            "html": "7. After kneading, put the dough back in the plastic bag, and rest at room temp for another 30 minutes."
+          },
+          {
+            "type": "step",
+            "html": "8. Pull out your dough. Portion into workable sizes, and roll out to desired thickness with the pasta machine, using potato or cornstarch as you go to prevent sticking."
+          },
+          {
+            "type": "step",
+            "html": "9. Cut your noodles to your desired thickness. 1.0 mm by 1.0 mm (setting 6) is around standard for these."
+          },
+          {
+            "type": "step",
+            "html": "10. Bundle the noodles into 120 g portions and place them in a sealable bag. Put the bag in the fridge and allow it to rest for at least a day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pork-bao-buns",
+    "legacySlug": "pork-bao-buns",
+    "aliases": [
+      "baobuns",
+      "bao-buns"
+    ],
+    "title": "Pork Bao Buns",
+    "category": "Entree",
+    "description": "A homemade pork bao buns sweet and spicy.",
+    "image": "assets/optimized/porkbaobuns.webp",
+    "prepTime": "45 mins",
+    "totalTime": "4 Hours",
+    "yield": "20 servings",
+    "yieldIcon": "ic:outline-ramen-dining",
+    "ingredientGroups": [
+      {
+        "title": "Bao Buns",
+        "items": [
+          "900g all-purpose flour",
+          "4 tbsp sugar",
+          "2 packets instant dried yeast",
+          "6 tbsp whole milk",
+          "420ml (1.5 cups + 4tbsp) warm water",
+          "6 tbsp softened unsalted butter",
+          "2 tbsp olive oil"
+        ]
+      },
+      {
+        "title": "Pork Belly",
+        "items": [
+          "2.2lbs pork belly slicked and chopped finger length",
+          "4.25 cups chicken stock",
+          "1 tbsp minced ginger",
+          "1 tbsp rice wine",
+          "3 garlic gloves peeled and chopped",
+          "1 tbsp sugar"
+        ]
+      },
+      {
+        "title": "Pork Belly Glaze",
+        "items": [
+          "2 tbsp vegtable oil",
+          "Pinch of salt and pepper",
+          "1 tbsp minced ginger",
+          "2 tbsp honey",
+          "1 red chili finely chopped",
+          "2 tbsp brown sugar",
+          "3 tbsp dark soy sauce",
+          "1 tsp lemon grass paste (option)"
+        ]
+      },
+      {
+        "title": "Toppings",
+        "items": [
+          "1 bunch of coriander or cilantro roughly torn",
+          "2 red chillies sliced into thin strips",
+          "4 green onions sliced into thin strips",
+          "1 tbsp sesame seeds",
+          "2 tbsp toasted cashew nuts, chopped"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Broth (3 days)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Before any cooking, soak the bones in cold water in a large, non-reactive vessel, for at least 6 hours, and up to 24 hours. (I use a large plastic container)."
+          },
+          {
+            "type": "step",
+            "html": "2. The night before you want your poth ready, drain the bones, add them to a pot with fresh water covering them by 2 inches, and ping to a boil over high heat."
+          },
+          {
+            "type": "step",
+            "html": "3. Drop the heat to medium, and blanch the bones, at a simmer, for 15-30 minutes, or until little to no scum rises."
+          },
+          {
+            "type": "step",
+            "html": "4. Strain the bones again, and scrub away any black material, such as coagulated blood, from the bones and pot."
+          },
+          {
+            "type": "step",
+            "html": "5. Return the bones to the pot. Add fresh water, and add in the fatback. If doing the night before, ping this to a boil, then down to the lowest setting on your stove, and cover. Then go to bed. If not, continue to step 7."
+          },
+          {
+            "type": "step",
+            "html": "6. In the morning, ping the pot back up to a full boil, then back down to the lowest setting possible to mantain that jostling boil while covered. (For me, this is medium on my stove)."
+          },
+          {
+            "type": "step",
+            "html": "7. Depending on when you started cooking, continue to boil the poth for 12-18 hours, or until desired consistency and color is reached, meat has completely separated and poken down in the poth, and fatback pieces have mostly melted. Optionally, you can stir every 1-2 hours just to check up on things and promote more churning. Please feel free to add back water if the level gets too low."
+          },
+          {
+            "type": "step",
+            "html": "8. Once cooked to your liking, strain the poth, discarding the solids, and reserve poth until needed over low heat. This poth keeps for around a week in the fridge."
+          },
+          {
+            "type": "step",
+            "html": "9. If poth is not a creamy white, you can use a blender on high for 10 seconds to help with emulsion."
+          },
+          {
+            "type": "subheading",
+            "html": "Aromatics (Optional)"
+          },
+          {
+            "type": "step",
+            "html": "1. Add to the stock pot (aromatics) in the last 30 min-1 hour of cooking."
+          },
+          {
+            "type": "step",
+            "html": "2. 1 whole bunch of green onions cut into 3 inch sections"
+          },
+          {
+            "type": "step",
+            "html": "3. 2 medium shallots cut into quarters, with skin on"
+          },
+          {
+            "type": "step",
+            "html": "4. 1 large yellow onion cut into quarters"
+          },
+          {
+            "type": "step",
+            "html": "5. 2, 3 inch knobs of ginger with skin peeled off (use a spoon)"
+          },
+          {
+            "type": "step",
+            "html": "6. 4 whole cloves of garlic, peeled skin off"
+          }
+        ]
+      },
+      {
+        "title": "Chashu/Pork Belly (7 Hours)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. 1-2 green onions chopped"
+          },
+          {
+            "type": "step",
+            "html": "2. 2-3 cloves garlic chopped"
+          },
+          {
+            "type": "step",
+            "html": "3. 2 inch knob of ginger"
+          },
+          {
+            "type": "step",
+            "html": "4. 1/2 cup soy sauce"
+          },
+          {
+            "type": "step",
+            "html": "5. 1/2 cup mirin"
+          },
+          {
+            "type": "step",
+            "html": "6. 1/2 cup plain white sugar"
+          },
+          {
+            "type": "step",
+            "html": "7. Stir all into 1 bowl"
+          },
+          {
+            "type": "step",
+            "html": "8. 2 lb pork belly skin on"
+          },
+          {
+            "type": "step",
+            "html": "9. Get butcher twine out"
+          },
+          {
+            "type": "step",
+            "html": "10. Roll pork belly into itself and wrap butcher twine into a knot every half inch"
+          },
+          {
+            "type": "step",
+            "html": "11. Trim off extra twine"
+          },
+          {
+            "type": "step",
+            "html": "12. Put into ziplock bag and circulate pork belly to full coat it"
+          },
+          {
+            "type": "step",
+            "html": "13. Drop into sous vide at 170 F* 7 hours"
+          },
+          {
+            "type": "step",
+            "html": "14. Take out bag and place in oven to poil"
+          }
+        ]
+      },
+      {
+        "title": "Marinated Soft Boiled Eggs (24 Hours)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. 5 soft boiled eggs"
+          },
+          {
+            "type": "step",
+            "html": "2. Shock in ice bath"
+          },
+          {
+            "type": "step",
+            "html": "3. Peel"
+          },
+          {
+            "type": "step",
+            "html": "4. 1/4 cup soy sauce"
+          },
+          {
+            "type": "step",
+            "html": "5. 1/4 cup mirin"
+          },
+          {
+            "type": "step",
+            "html": "6. 1 cup water"
+          },
+          {
+            "type": "step",
+            "html": "7. Have in boil, make sure that they are fully submerged (add more water,mirin, soy sauce if needed)"
+          },
+          {
+            "type": "step",
+            "html": "8. Cover in saran wrap"
+          },
+          {
+            "type": "step",
+            "html": "9. 4-24 hours of marinate (agitate occasionally)"
+          }
+        ]
+      },
+      {
+        "title": "Light Color Shoyu Tare",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine the water, soy sauce, kombu, and niboshi in a sealed container."
+          },
+          {
+            "type": "step",
+            "html": "2. Place in the fridge and rest at least 6 hours or up to 2 days."
+          },
+          {
+            "type": "step",
+            "html": "3. Add the mixture to a small saucepan."
+          },
+          {
+            "type": "step",
+            "html": "4. Heat the contents to 71 °C/160 °F, hold for 10 minutes."
+          },
+          {
+            "type": "step",
+            "html": "5. Remove the kombu and discard."
+          },
+          {
+            "type": "step",
+            "html": "6. ping 180F (or just below a boil) and hold for 15 minutes."
+          },
+          {
+            "type": "step",
+            "html": "7. Add the katsuobushi, hold at 82 °C/180 °F for 5 more minutes."
+          },
+          {
+            "type": "step",
+            "html": "8. Strain and reserve liquid on the side."
+          },
+          {
+            "type": "step",
+            "html": "9. In a new clean pot, add your mirin, sake, and pown sugar. ping to a boil, and simmer for 5 minutes."
+          },
+          {
+            "type": "step",
+            "html": "10. Add this mixture to your mixture from step 9. You can store this in the fridge for up to 6 months."
+          },
+          {
+            "type": "step",
+            "html": "11. Add 30 mL of tare per 350 mL soup."
+          },
+          {
+            "type": "step",
+            "html": "12. Done. Taste it with your poth and adjust as needed. Maybe it needs more soy? Maybe it needs more salt? Maybe some extra umami. Only you can judge."
+          }
+        ]
+      },
+      {
+        "title": "Noodles",
+        "steps": [
+          {
+            "type": "step",
+            "html": "Hakata noodles are low moisture, low protein, lower alkalinity. The recipe has been adjusted to fit this; I’ve played around with making a true Hakata noodle, but hydration for those is around 22%. At home, this is almost impossible to manage. So the below recipe is more in line with other regions of Kyushu, but it pairs nicely. More taut than a standard noodle, and less alkaline.<i>Also… feel free to buy sun noodles for this. Seriously, noodles are hard. And Tonkotsu is a time consuming endeavor.</i>"
+          },
+          {
+            "type": "step",
+            "html": "Also… feel free to buy sun noodles for this. Seriously, noodles are hard. And Tonkotsu is a time consuming endeavor."
+          },
+          {
+            "type": "step",
+            "html": "1. Add kansui powder and salt to the water, dissolve completely. If using both sodium carbonate and potassium carbonate, add them one at a time. Go slowly, stir constantly until clear. This will take a while, but eventually, the contents will dissolve. You can make the solution several days before to get a jumpstart, just hold the liquid in an airtight container."
+          },
+          {
+            "type": "step",
+            "html": "2. In a standing mixer with a paddle attachment, add your flour and wheat gluten. Turn the mixer to “stir” and run for 30 seconds to aerate the mix."
+          },
+          {
+            "type": "step",
+            "html": "3. While running the mixer on stir mode, add two thirds of your water mixture slowly in an even stream. Let the mixer stir the flour and water mixture for 5 minutes."
+          },
+          {
+            "type": "step",
+            "html": "4. Add in the remaining water mixture with the mixer running, run for 2 minutes."
+          },
+          {
+            "type": "step",
+            "html": "5. Turn off the mixer, and add the mixture to a sealable bag. Close, and let this rest for 2 hours at room temperature. Don’t skip this."
+          },
+          {
+            "type": "step",
+            "html": "6. Knead it, by using an electric pasta machine to sheet the dough, going through the largest setting, then the 2nd, then the 3rd. Take the dough and fold it, sheeting under the 2nd widest setting, then fold it again and sheet it under the widest setting. Repeat this until the sheet is quite smooth and not ragged."
+          },
+          {
+            "type": "step",
+            "html": "7. After kneading, put the dough back in the plastic bag, and rest at room temp for another 30 minutes."
+          },
+          {
+            "type": "step",
+            "html": "8. Pull out your dough. Portion into workable sizes, and roll out to desired thickness with the pasta machine, using potato or cornstarch as you go to prevent sticking."
+          },
+          {
+            "type": "step",
+            "html": "9. Cut your noodles to your desired thickness. 1.0 mm by 1.0 mm (setting 6) is around standard for these."
+          },
+          {
+            "type": "step",
+            "html": "10. Bundle the noodles into 120 g portions and place them in a sealable bag. Put the bag in the fridge and allow it to rest for at least a day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chicken-tikka-naan",
+    "legacySlug": "chicken-tikka-naan",
+    "aliases": [
+      "chickentikka",
+      "tikka-masala"
+    ],
+    "title": "Chicken Tikka Masala with Naan Bread",
+    "category": "Entree",
+    "description": "A traditional Indian dish made up of chicken that's been marinated in yogurt, served with rice.",
+    "image": "assets/optimized/chickenTikka.webp",
+    "prepTime": "3 hours",
+    "totalTime": "24 hours",
+    "yield": "6 Servings",
+    "yieldIcon": "fluent:food-chicken-leg-24-filled",
+    "ingredientGroups": [
+      {
+        "title": "Chicken Marinade",
+        "items": [
+          "8 oz (800g) boneless and skinless chicken thighs cut into bite-sized pieces",
+          "1 cup plain yogurt",
+          "1 1/2 tablespoons minced garlic",
+          "1 tablespoon ginger",
+          "2 teaspoons garam masala",
+          "1 teaspoon turmeric",
+          "1 teaspoon ground cumin",
+          "1 teaspoon Kashmiri chili (or 1/2 teaspoon ground red chili powder)",
+          "1 teaspoon of salt"
+        ]
+      },
+      {
+        "title": "Naan",
+        "items": [
+          "1 cup warm water",
+          "2 tablespoons honey",
+          "1 (.25 ounce) package active dry yeast (about 2 1/4 teaspoons)",
+          "3 1/2 cups all-purpose flour (or 2 cups white whole wheat flour + 1 1/2 cups all-purpose flour)",
+          "1/4 cup plain yogurt",
+          "2 teaspoons salt",
+          "1/2 teaspoon baking powder",
+          "1 egg",
+          "1/4 cup (4 tablespoons) butter",
+          "3 cloves garlic, minced",
+          "(optional topping: chopped fresh cilantro"
+        ]
+      },
+      {
+        "title": "Sauce",
+        "items": [
+          "2 tablespoons of vegetable/canola oil",
+          "2 tablespoons butter",
+          "2 small onions (or 1 large onion) finely diced",
+          "1 1/2 tablespoons garlic finely grated",
+          "1 tablespoon ginger finely grated",
+          "1 1/2 teaspoons garam masala",
+          "1 1/2 teaspoons ground cumin",
+          "1 teaspoon turmeric powder",
+          "1 teaspoon ground coriander",
+          "14 oz (400g) tomato puree (tomato sauce/Passata)",
+          "1 teaspoon Kashmiri chili (optional for colour and flavour)",
+          "teaspoon ground red chili powder (adjust to your taste preference)",
+          "1 teaspoon salt",
+          "1 1/4 cups of heavy or thickened cream (use evaporated milk for lower calories)",
+          "1 teaspoon brown sugar",
+          "1/4 cup water if needed",
+          "4 tablespoons Fresh cilantro or coriander to garnish"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Chicken (24 Hours)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. In a bowl, combine chicken with all of the ingredients for the chicken marinade; let marinate for 10 minutes to an hour (or overnight if time allows)."
+          },
+          {
+            "type": "step",
+            "html": "2. Heat oil in a large skillet or pot over medium-high heat. When sizzling, add chicken pieces in batches of two or three, making sure not to crowd the pan. Fry until browned for only 3 minutes on each side. Set aside and keep warm. (You will finish cooking the chicken in the sauce.)"
+          },
+          {
+            "type": "step",
+            "html": "3. Melt the butter in the same pan. Fry the onions until soft (about 3 minutes) while scraping up any browned bits stuck on the bottom of the pan."
+          },
+          {
+            "type": "step",
+            "html": "4. Add garlic and ginger and sauté for 1 minute until fragrant, then add garam masala, cumin, turmeric and coriander. Fry for about 20 seconds until fragrant, while stirring occasionally."
+          },
+          {
+            "type": "step",
+            "html": "5. Pour in the tomato puree, chili powders and salt. Let simmer for about 10-15 minutes, stirring occasionally until sauce thickens and becomes a deep brown red colour."
+          },
+          {
+            "type": "step",
+            "html": "6. Stir the cream and sugar through the sauce. Add the chicken and its juices back into the pan and cook for an additional 8-10 minutes until chicken is cooked through and the sauce is thick and bubbling. Pour in the water to thin out the sauce, if needed."
+          },
+          {
+            "type": "step",
+            "html": "7. Garnish with cilantro (coriander) and serve with hot garlic butter rice and fresh homemade Naan bread!"
+          }
+        ]
+      },
+      {
+        "title": "Naan (2 hours)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Stir together warm water and honey until the honey has dissolved."
+          },
+          {
+            "type": "step",
+            "html": "2. Add the water mixture to the bowl of a stand mixer with the dough attachment, and sprinkle the yeast on top of the water. Give the yeast a quick stir to mix it in with the water. Then let it sit for 5-10 minute until the yeast is foamy."
+          },
+          {
+            "type": "step",
+            "html": "3. Turn the mixer onto low speed, and add gradually flour, yogurt, salt, baking powder, and egg. Increase speed to medium-low, and continue mixing the dough for 2-3 minutes, or until the dough is smooth. (The dough will still be slightly sticky, but should form into a ball that pulls away from the sides of the mixing bowl.)"
+          },
+          {
+            "type": "step",
+            "html": "4. Remove dough from the mixing bowl, and use your hands to shape it into a ball. Grease the mixing bowl (or a separate bowl) with olive oil or cooking spray, then place the dough ball back in the bowl and cover it with a damp towel. Place in a warm location (I set mine by the sunny window) and let it rise for 1 hour until the dough has nearly doubled in size."
+          },
+          {
+            "type": "step",
+            "html": "5. Meanwhile, heat the butter in a small saute pan over medium heat until melted. Add garlic and cook for 1-2 minutes until fragrant. Then remove butter from heat, strain out and discard the garlic, leaving the infused melted butter behind. Set aside."
+          },
+          {
+            "type": "step",
+            "html": "6. Once the dough is ready, transfer it to a floured work surface. Then cut the dough into 8 separate pieces. Roll each into a ball with your hands, then place on the floured surface and use a rolling pin to roll out the dough into a large circle (or oval, or whatever shape it takes) until the dough is a little less than 1/4-inch thick. Brush dough lightly with the garlic-infused butter on both sides."
+          },
+          {
+            "type": "step",
+            "html": "7. Heat a large cast-iron skillet or heavy saute pan over medium-high heat. Add a piece of the rolled-out dough to the pan and cook for 1 minute, or until the dough begins to bubble and the bottom turns lightly golden. Flip the dough and cook on the second side for 30-60 seconds, or until the bottom is golden. Then transfer the naan to a separate plate, and cover with a towel. Repeat with remaining dough until all of the naan pieces are cooked."
+          },
+          {
+            "type": "step",
+            "html": "8. Keep the naan covered with the towel until ready to serve, so that it doesn’t dry out. Serve sprinkled with fresh cilantro, if desired."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "birria-quesa-tacos",
+    "legacySlug": "birria-quesa-tacos",
+    "aliases": [
+      "birria",
+      "birriatacos"
+    ],
+    "title": "Birria Quesa Tacos",
+    "category": "Entree",
+    "description": "Tortillas filled with the stew's tender, juicy meat dipped in meat broth.",
+    "image": "assets/Food/birriaQuesaTacos.jpeg",
+    "prepTime": "30 mins",
+    "totalTime": "2 hours",
+    "yield": "30 tacos",
+    "yieldIcon": "emojione-monotone:taco",
+    "ingredientGroups": [
+      {
+        "title": "Birria De Res",
+        "items": [
+          "1 lb boneless chuck roast",
+          "3 beef short rib",
+          "1 lb oxtail",
+          "5 ancho chilies (dark red chilies)",
+          "5 guajillo chilies (fat red)",
+          "2 chilies de arbol (red small)",
+          "2.5 quarts rich beef stock",
+          "1 cinnamon stick",
+          "6 bay leaves (dry leaves)",
+          "1 Tbsp 5g toasted coriander",
+          "1 Tbsp 8g toasted black peppercorns",
+          "2 Tbsp fresh oregano, chopped",
+          "1 Tbsp 12g tomato paste",
+          "1 yellow onion",
+          "8 cloves garlic",
+          "Salt to taste"
+        ]
+      },
+      {
+        "title": "Quesatacos",
+        "items": [
+          "6 inch corn tortillas (a large pack will do)",
+          "1 lb Oaxaca cheese, shredded",
+          "Consomme",
+          "Shredded beef"
+        ]
+      },
+      {
+        "title": "Consomme Serving",
+        "items": [
+          "Consomme",
+          "Sweet onion, finely diced",
+          "Fresh cilantro, finely chopped"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Birria De Res Method",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Start by removing the stems and seeds of ancho and guajilo chilies, as well as chilies de arbol."
+          },
+          {
+            "type": "step",
+            "html": "2. Season all the meat generously with salt. In a large oiled pot heated over medium heat, add the meat in batches and sear 2-3 minutes on all sides. Once seared, take out the meat and leave on the side."
+          },
+          {
+            "type": "step",
+            "html": "3. Add a bit more oil to the pot back on medium heat and add chopped onions. Saute until just softened."
+          },
+          {
+            "type": "step",
+            "html": "4. Once softened, add tomato paste and cook down until paste starts to darken."
+          },
+          {
+            "type": "step",
+            "html": "5. At which point, add sliced garlic and saute until fragrant and add rich beef stock. Mix together and add in chilies."
+          },
+          {
+            "type": "step",
+            "html": "6. Add the meat back in."
+          },
+          {
+            "type": "step",
+            "html": "7. Separately in cheesecloth, add black pepper corns, toasted coriander, cinnamon stick, and bay leaves. Fold together and tie tightly."
+          },
+          {
+            "type": "step",
+            "html": "8. Toss the spice bag mixture into the stock and bring to a light simmer and cover. Braise for 1 hour stirring occasionally."
+          },
+          {
+            "type": "step",
+            "html": "9. After 1 hour, remove the chilies and place into a blender with a little of stock liquid and blend until smooth."
+          },
+          {
+            "type": "step",
+            "html": "10. Pour back into the stew and bring back to a simmer. Cover and braise for 90 minutes."
+          },
+          {
+            "type": "step",
+            "html": "11. Remove the meat (and any bones) and shred using a fork."
+          },
+          {
+            "type": "step",
+            "html": "12. Season the rest of the broth with salt and place to the side."
+          }
+        ]
+      },
+      {
+        "title": "Assembly",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Take a fresh tortilla and dunk in the broth completely."
+          },
+          {
+            "type": "step",
+            "html": "2. Place tortilla in a cast iron skillet set over medium heat."
+          },
+          {
+            "type": "step",
+            "html": "3. Top with shredded cheese (preferably oaxaca cheese) and cook until just melted."
+          },
+          {
+            "type": "step",
+            "html": "4. On one side add the braised shredded meat with a drizzle of consomme."
+          },
+          {
+            "type": "step",
+            "html": "5. Fold the taco over cooking for 1-2 minutes. Flip and cook for another 1-2 minutes."
+          },
+          {
+            "type": "step",
+            "html": "6. Serve with a ramekin filled with consomme topped with diced onions and chopped cilantro."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ash-reshteh",
+    "legacySlug": "ash-reshteh",
+    "aliases": [
+      "ashreshteh"
+    ],
+    "title": "Ash Reshteh",
+    "category": "Entree",
+    "description": "A classic Persian noodle soup with beans and herbs that is intensely aromatic and amazingly delicious",
+    "image": "assets/optimized/ashReshteh.webp",
+    "prepTime": "20 mins",
+    "totalTime": "2 hours",
+    "yield": "8 servings",
+    "yieldIcon": "tabler:soup",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "1/4 cup dried chickpeas",
+          "1/4 cup dried white beans, such as navy or cannellini",
+          "Fine sea salt and freshly ground black pepper",
+          "2 pounds spinach",
+          "1 pound cilantro (about 3 large bunches)",
+          "1 pound Italian parsley (about 3 large bunches)",
+          "2 large bunches dill",
+          "1 large bunch chives",
+          "About 20 large fresh mint leaves"
+        ]
+      },
+      {
+        "title": "",
+        "items": [
+          "6 tablespoons plus 1/3 cup extra-virgin olive oil",
+          "2 large yellow onions, 1 finely chopped and 1 thinly sliced",
+          "2 garlic cloves, minced",
+          "1 cup dried green or brown lentils",
+          "1/2 teaspoon ground turmeric",
+          "2 quarts chicken or beef stock (preferably homemade), or water",
+          "1 1/2 cups liquid kashk (Persian sun-dried yogurt or whey), plus 1/2 cup, for serving",
+          "8 ounces reshteh (Persian soup noodles)",
+          "1 tablespoon dried mint"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Ash Reshteh",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. The night before you plan to cook, place chickpeas and white beans in a medium bowl. Add a generous pinch of salt and 2 cups water. Refrigerate overnight."
+          },
+          {
+            "type": "step",
+            "html": "2. The night before or just before cooking, prepare the herbs and greens: Wash spinach, cilantro and parsley, then use a salad spinner to dry very well. Run a knife through the spinach to cut leaves into large pieces. Trim the woody ends from cilantro, parsley and dill so that only leaves and tender stems remain. Roughly chop cilantro, parsley, dill, chives and mint leaves into pieces no larger than a quarter. If preparing ahead of time, wrap chopped greens and herbs in plastic bags and refrigerate overnight."
+          },
+          {
+            "type": "step",
+            "html": "3. To cook, set a large (at least 10-quart) Dutch oven or stockpot over medium heat and add 4 tablespoons oil. When the oil shimmers, add the chopped onion and a generous pinch of salt. Cook, stirring regularly, until the onion is tender and golden brown, 16 to 18 minutes. Add garlic and cook, stirring constantly, for 1 minute."
+          },
+          {
+            "type": "step",
+            "html": "4. Drain the beans and add to onion along with the lentils, turmeric and 1 teaspoon pepper. Cook for 2 minutes, stirring to coat the beans with oil and spices. Add the chopped spinach and herbs, along with stock or water, and stir to combine. Partly cover the pot with a lid and bring to a boil, then reduce the heat to simmer the soup for 1 hour, stirring regularly to prevent the greens from sticking and burning. If the soup remains very thick even after the greens have wilted, add another 1 to 2 cups water, as needed to thin it."
+          },
+          {
+            "type": "step",
+            "html": "5. Place 1 1/2 cups kashk in a medium bowl. Add a ladle or two of hot soup and whisk to dissolve, then add the mixture to the pot. The kashk will change the color of the soup from bright to milky green. Increase the heat and bring the soup to a boil, then break the noodles in half and add to the pot. Stir gently to mix in the noodles and keep them from sticking together, then reduce heat and simmer, stirring occasionally, until noodles are soft and chewy and the beans are completely tender, about 30 minutes."
+          }
+        ]
+      },
+      {
+        "title": "Garnish",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. In the meantime, prepare the garnishes: Set a medium frying pan over medium-high heat. When the pan is hot, add 2 tablespoons oil. When the oil shimmers, add sliced onion and a generous pinch of salt. Cook, stirring regularly, until golden brown and caramelized, 16 to 18 minutes. Spread cooked onion onto a paper towel-lined plate to absorb excess oil; let cool. Wipe out pan and return to medium heat. Add remaining 1/3 cup oil and warm gently over low heat, then stir in dried mint and remove from heat. Set mint oil aside and allow to steep for at least 5 minutes."
+          },
+          {
+            "type": "step",
+            "html": "2. Place remaining 1/2 cup kashk in a small bowl and thin out with a few tablespoons of water until it’s the texture of thin yogurt. Set aside."
+          },
+          {
+            "type": "step",
+            "html": "3. The soup should be as thick as a hearty chili. If it’s any thicker, thin it with water, 1/2 cup at a time. Taste and adjust the seasoning with salt as needed, accounting for the fact that both the noodles and the kashk are well salted."
+          },
+          {
+            "type": "step",
+            "html": "4. To serve, ladle soup into individual bowls. Drizzle with reserved kashk and mint oil, then top with a sprinkling of golden onions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pico-de-gallo",
+    "legacySlug": "pico-de-gallo",
+    "aliases": [
+      "picodegallo",
+      "pico"
+    ],
+    "title": "Pico de Gallo",
+    "category": "Appetizer",
+    "description": "A popular Mexican salsa made traditionally with tomatoes, onion, cilantro, and lime juice.",
+    "image": "assets/optimized/recepie1.webp",
+    "prepTime": "15 mins",
+    "totalTime": "20 mins",
+    "yield": "2 Cups Salsa",
+    "yieldIcon": "fluent-emoji-high-contrast:tomato",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "1 cup finely chopped white onion (about 1 small onion)",
+          "1 medium jalapeño or serrano pepper, ribs and seeds removed, finely chopped (decrease or omit if sensitive to spice, or add another if you love heat)",
+          "1/4 cup lime juice",
+          "3/4 teaspoon fine sea salt, more to taste",
+          "1 1/2 pounds ripe red tomatoes (about 8 small or 4 large), chopped",
+          "1/2 cup finely chopped fresh cilantro (about 1 bunch)"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Pico de Gallo",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine chopped tomatoes, white onion, jalapeño, and cilantro in a medium bowl. Add lime juice and sea salt, toss gently to combine, and let sit 10–15 minutes before serving so the flavors meld."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chicken-soup",
+    "legacySlug": "chicken-soup",
+    "aliases": [
+      "chickensoup"
+    ],
+    "title": "Chicken Soup",
+    "category": "Entree",
+    "description": "The best chicken soup you’ll ever eat is the perfect recipe to make when you’re feeling sick.",
+    "image": "assets/optimized/chickenSoup.webp",
+    "prepTime": "30 mins",
+    "totalTime": "3 hours",
+    "yield": "6 Servings",
+    "yieldIcon": "tabler:soup",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "1 whole Chicken breast",
+          "1 Onion",
+          "6 cloves of Garlic",
+          "2 turnips washed and grated or chopped",
+          "3 carrots sliced",
+          "3 potatoes cut in pieces",
+          "2 zucchini sliced",
+          "2 celery sliced",
+          "2 table spoons of pearlbarley",
+          "1 bunch of parsley chopped",
+          "1 bag Egg Soup noodle"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Soup",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1) Add chicken, onion, garlic, ginger, and barley into a large dutch oven"
+          },
+          {
+            "type": "step",
+            "html": "2) Cook chicken almost all the way"
+          },
+          {
+            "type": "step",
+            "html": "3) Add rest of the ingredients EXCEPT noodles"
+          },
+          {
+            "type": "step",
+            "html": "4) Put on a simmer for 3-4 hours."
+          },
+          {
+            "type": "step",
+            "html": "5) Add salt, pepper, lemon juice to taste"
+          },
+          {
+            "type": "step",
+            "html": "6) 10 minutes before serving add noodles and cook for 10 minutes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "xiao-long-bao",
+    "legacySlug": "xiao-long-bao",
+    "aliases": [
+      "xiaolongbao",
+      "soup-dumplings",
+      "soupdumplings"
+    ],
+    "title": "Soup Dumpling (Xiaolongbao)",
+    "category": "Appetizer",
+    "description": "Delicate steamed dumpling filled with pork and soup often thought to have originated in Shanghai.",
+    "image": "assets/Food/SoupDumpling.jpg",
+    "prepTime": "20 mins",
+    "totalTime": "9 hours",
+    "yield": "30 dumplings",
+    "yieldIcon": "fluent-emoji-high-contrast:dumpling",
+    "ingredientGroups": [
+      {
+        "title": "Broth Gel (Aspic) V1",
+        "items": [
+          "green onions, cut into pieces",
+          "1/2 lb (8oz) pork Boston butt (browned)",
+          "1.5 lbs (24oz) pork neck bones",
+          "3/4 lb (12oz) pork skin",
+          "1-inch knob ginger sliced",
+          "5 cups (1.1L) water",
+          "salt to taste"
+        ]
+      },
+      {
+        "title": "Dumpling Dough",
+        "items": [
+          "170g all-purpose flour",
+          "50g (50ml) of hot water",
+          "40g (40ml) room temp water"
+        ]
+      },
+      {
+        "title": "Pork Filling",
+        "items": [
+          "3lbs (48oz) boneless pork Boston Butt",
+          "1lb (16oz) pork belly",
+          "3 green onions, very finely minced",
+          "pinch ground white pepper",
+          "1/2 teaspoon (2g) sugar",
+          "1/2 teaspoon (2g) salt",
+          "1 tablespoon (15g) light soy sauce",
+          "1.5 tablespoons (22g) Shaoxing wine",
+          "1/2 teaspoon (3g) sesame oil",
+          "1 cup (235g) aspic, diced into 1/2 inch pieces"
+        ]
+      },
+      {
+        "title": "Dipping Sauce",
+        "items": [
+          "2 tablespoons (17g) spicy chili crisp",
+          "1/3 cup (88g) black vinegar",
+          "2-inch knob ginger, julienned"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Broth Gel (Aspic) V1",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. In a medium-size pot, add enough oil to coat the bottom of the pan, and heat to medium-high; add green onion, occasionally tossing for two to three minutes, or until lightly charred. Remove from the pan."
+          },
+          {
+            "type": "step",
+            "html": "2. Add pork (cut into two to three chunks), sear for two to three minutes per side, and remove from the pan."
+          },
+          {
+            "type": "step",
+            "html": "3. Add neck pork bones (previously rinsed under cold water), pork butt, pork skin, green onion, and ginger; cover with water and set it over medium-high. Then bring it to a boil, lower the heat to a simmer (skim off any scum that rises to the top), and reduce for two to three hours or until you have left with 2 to three cups of broth."
+          },
+          {
+            "type": "step",
+            "html": "4. Remove all the bones, strain everything through a strainer and pour into a flat container; season generously with salt, and let it cool down to room temperature. Wrap with plastic wrap and chill in the fridge for at least four hours (ideally overnight)."
+          },
+          {
+            "type": "step",
+            "html": "5. Once it is thoroughly chilled, scrape off any solidified fat from the top; then, using a spatula, separate the sides from the container, place it onto a cutting board, and cut your broth sheet into 1” cubes."
+          }
+        ]
+      },
+      {
+        "title": "Dumpling Dough",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Place flour in a mixing bowl. Begin stirring that with a fork while constantly stirring in hot water; stir until the flour absorbs it, then stir in room temperature water."
+          },
+          {
+            "type": "step",
+            "html": "2. Once it forms a dough, start kneading by hand for five to eight minutes. Next, wrap it in plastic wrap and let it rest at room temperature for 45 minutes."
+          },
+          {
+            "type": "step",
+            "html": "3. Separate your dough into 2 pieces, and roll those into long rods, about 1” thick. Cut off segments weighing 1015 grams each."
+          },
+          {
+            "type": "step",
+            "html": "4. Take one of your balls, dust it with flour, and roll it into a round disc about 2.5” in diameter; then grab a heaping tablespoon of filling, and add it to the center of the disc. Fold it over to create a pleat, stick that fold onto itself and then repeat each little pleat on next o the other as close to the previous pleat until you have made the whole dumpling; gently twist and pinch the hole. Repeat with the rest of the dough."
+          },
+          {
+            "type": "step",
+            "html": "5. You are cooking the dumplings.Cut up parchment paper squares (4”x4”), and place your dumplings on each piece of parchment individually. Add water about 1.5” depth to a pot, bring that to a boil over medium-high, and then reduce the temperature to medium-low."
+          },
+          {
+            "type": "step",
+            "html": "6. Load a bamboo steamer with as many dumplings as possible, leaving .5” of space in between. Put the lid on, place your basket on your steaming pot, and let it steam for eight minutes."
+          }
+        ]
+      },
+      {
+        "title": "Pork Filling",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine ground pork meat (70% lean), green onion, white pepper, sugar, salt, soy sauce, Shaoxing wine, and sesame oil in a medium-sized bowl. Start kneading until thoroughly combined and homogenous."
+          },
+          {
+            "type": "step",
+            "html": "2. Add aspic (solidified broth) and gently fold it until evenly incorporated."
+          }
+        ]
+      },
+      {
+        "title": "Dipping Sauce",
+        "steps": [
+          {
+            "type": "step",
+            "html": "Combine chili crisp and black vinegar, serve that in a small ramekin, and mix to combine. Finally, add fresh julienned ginger before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "potato-crispy-aioli",
+    "legacySlug": "potato-crispy-aioli",
+    "aliases": [
+      "crispy-potatoes",
+      "potatoes"
+    ],
+    "title": "Potato Crisp w/ Aioli",
+    "category": "Appetizer",
+    "description": "A quick and easy appetizer to make in replace of french fries. Add a side of aioli for extra flavor.",
+    "image": "assets/optimized/crispy-salt-and-pepper-smashed-potatoes-3.webp",
+    "prepTime": "10 mins",
+    "totalTime": "45 mins",
+    "yield": "6 servings",
+    "yieldIcon": "emojione-monotone:potato",
+    "ingredientGroups": [
+      {
+        "title": "Potato",
+        "items": [
+          "1 bag of small colored potatoes",
+          "1 cup olive oil",
+          "1 tbsp garlic powder",
+          "1 tbsp oregano",
+          "1 tbsp paprika",
+          "1/2 tbsp oniown powder",
+          "1/2 tsp cajun",
+          "1/4 tsp cayenne",
+          "1/4 tsp black pepper"
+        ]
+      },
+      {
+        "title": "Aioli",
+        "items": [
+          "Aioli",
+          "1/2 cup mayo",
+          "1/2 tbsp",
+          "1/2 tbsp garlic powder",
+          "1/2 tbsp paprika",
+          "1/4 tbsp onion powder",
+          "1/4 tsp cayenne",
+          "1 tbsp honey",
+          "salt/pepper to taste"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Potatoes",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Boil potatoes with kosher salt for 15min until tender"
+          },
+          {
+            "type": "step",
+            "html": "2. Throw potatoes in smash potatoes down Bake 400 f for 30 min each side"
+          }
+        ]
+      },
+      {
+        "title": "Aioli",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Mix all ingredients for aioli"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "blooming-onion",
+    "legacySlug": "blooming-onion",
+    "aliases": [
+      "bloomingonion"
+    ],
+    "title": "Blooming Onion",
+    "category": "Appetizer",
+    "description": "A crispy deep-fried blooming onion served with spicy mayo aioli for extra flavor.",
+    "image": "assets/Food/BloominOnion.jpeg",
+    "prepTime": "10 mins",
+    "totalTime": "20 mins",
+    "yield": "1 Large Onion",
+    "yieldIcon": "fluent-emoji-high-contrast:onion",
+    "ingredientGroups": [
+      {
+        "title": "Spicy Mayo Aioli",
+        "items": [
+          "2 tablespoons mayonnaise",
+          "2 tablespoons sour cream",
+          "1 1/2 teaspoons ketchup",
+          "1/2 teaspoon Worcestershire sauce",
+          "1 tablespoon drained horseradish",
+          "1/4 teaspoon paprika",
+          "Pinch of cayenne pepper",
+          "Kosher salt and freshly ground black pepper"
+        ]
+      },
+      {
+        "title": "Blooming Onion",
+        "items": [
+          "1 large sweet onion, such as Vidalia (about 1 pound)",
+          "2 1/2 cups all-purpose flour",
+          "1 teaspoon cayenne pepper",
+          "2 tablespoons paprika",
+          "1/2 teaspoon dried thyme",
+          "1/2 teaspoon dried oregano",
+          "1/2 teaspoon ground cumin",
+          "Freshly ground black pepper",
+          "2 large eggs",
+          "1 cup whole milk",
+          "1 gallon soy or corn oil, as needed, for frying",
+          "Kosher salt"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Blooming Onion",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine all of the dip ingredients in a bowl, cover and refrigerate."
+          },
+          {
+            "type": "step",
+            "html": "2. Slice the onion (see Cook's Note). Whisk the flour, cayenne, paprika, thyme, oregano, cumin and 1/2 teaspoon black pepper in a bowl. In a small deep bowl, whisk the eggs, milk and 1 cup water."
+          },
+          {
+            "type": "step",
+            "html": "3. Place the onion in a separate bowl, cut-side up, and pour all of the flour mixture on top. Cover the bowl with a plate, then shake back and forth to distribute the flour. Check to make sure the onion is fully coated, especially between the \"petals.\" Lift the onion by the core, turn over and pat off the excess flour; reserve the bowl of flour."
+          },
+          {
+            "type": "step",
+            "html": "4. Using a slotted spoon, fully submerge the onion in the egg mixture (spoon on top, if necessary). Remove and let the excess egg drip off, then repeat the flouring process. Refrigerate the onion while you heat the oil."
+          },
+          {
+            "type": "step",
+            "html": "5. Fill a large deep pot with at least 3 inches of the oil, leaving 2 inches of space at the top. Heat the oil over medium-high heat until a deep-fry thermometer registers 400 degrees. Pat off excess flour from the onion. Using a wire skimmer, carefully lower the onion into the oil, cut-side down. Adjust the heat so the oil temperature stays close to 350 degrees. Fry about 3 minutes, then turn the onion over and cook until golden, about 3 more minutes; drain on paper towels. Season with salt and serve with the dip."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "fajita-guacamole",
+    "legacySlug": "fajita-guacamole",
+    "aliases": [
+      "fajita",
+      "guacamole"
+    ],
+    "title": "Fajita & Guacamole",
+    "category": "Entree",
+    "description": "The best combination of Fajita and Guacamole for a fun filled Mexican night.",
+    "image": "assets/optimized/mexiannight.webp",
+    "prepTime": "30 mins",
+    "totalTime": "30 mins",
+    "yield": "6 Servings",
+    "yieldIcon": "emojione-monotone:burrito",
+    "ingredientGroups": [
+      {
+        "title": "Fajita's",
+        "items": [
+          "4 Large boneless skinless chicken breasts",
+          "1 tablespoon cornstarch",
+          "2 teaspoons chili powder",
+          "1 teaspoon salt",
+          "1 teaspoon paprika",
+          "1 teaspoon white sugar",
+          "1/2 teaspoon onion powder",
+          "1/2 teaspoon garlic powder",
+          "1/4 teaspoon cayenne pepper",
+          "1 bag of tortillas",
+          "1 Bellpepper (yellow, orange, red, green)",
+          "1 Large yellow onion"
+        ]
+      },
+      {
+        "title": "Guacamole Recipe",
+        "items": [
+          "3 avocado, NS as to Florida or Californias avocadospeeled, pitted, and mashed",
+          "1 lime, juiced",
+          "1 teaspoon salt",
+          "1/2 cup diced onion",
+          "3 tablespoons chopped fresh cilantro",
+          "2 plum tomato (blank)s roma (plum) tomatoes, diced",
+          "1 teaspoon minced garlic",
+          "1 pinch ground cayenne pepper"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Fajita's",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Mix all the fajita spices together"
+          },
+          {
+            "type": "step",
+            "html": "2. Cut chicken breasts into strips and season chicken with fajita spices"
+          },
+          {
+            "type": "step",
+            "html": "3. Heat up a cast iron skillet until warm."
+          },
+          {
+            "type": "step",
+            "html": "4. Add some canola oil or neutral oil to the cast iron when hot"
+          },
+          {
+            "type": "step",
+            "html": "5. Add chicken to cast iron and leave until cooked all the way through"
+          },
+          {
+            "type": "step",
+            "html": "6. Once chicken is complete, remove from pan and add bell peppers first and season with salt & pepper"
+          },
+          {
+            "type": "step",
+            "html": "7. Add onions when bell peppers are halfway cooked and leave in cast iron with lid for 5-10min"
+          },
+          {
+            "type": "step",
+            "html": "8. Once vegtables are soft add the chicken and mix together"
+          },
+          {
+            "type": "step",
+            "html": "9. Serve in tortilla with your favorite toppings."
+          }
+        ]
+      },
+      {
+        "title": "Guacamole",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Grab a large bowl and add avocados"
+          },
+          {
+            "type": "step",
+            "html": "2. Dice tomatos and onion and add to bowl"
+          },
+          {
+            "type": "step",
+            "html": "3. Add minced garlic & cilantro"
+          },
+          {
+            "type": "step",
+            "html": "4. Squeeze lime into bowl"
+          },
+          {
+            "type": "step",
+            "html": "5. Add salt to taste"
+          },
+          {
+            "type": "step",
+            "html": "6. Feel free to add more lime juice however more lime will liquify Guacamole"
+          },
+          {
+            "type": "step",
+            "html": "7. If too salty or lime, add a pinch of sugar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "croissants",
+    "legacySlug": "croissants",
+    "aliases": [
+      "croissant"
+    ],
+    "title": "Croissants",
+    "category": "Dessert",
+    "description": "A bakery product that contains dough/roll-in fat layers to create a flaky, crispy texture",
+    "image": "assets/optimized/croissants.webp",
+    "prepTime": "10 mins",
+    "totalTime": "2 days",
+    "yield": "8 croissants",
+    "yieldIcon": "emojione-monotone:croissant",
+    "ingredientGroups": [
+      {
+        "title": "FOR THE DÉTREMPE (DOUGH)",
+        "items": [
+          "4 ⅔ cups/605 grams all-purpose or bread flour, plus more for dustingd",
+          "⅓ cup/66 grams granulated sugard",
+          "1 tablespoon plus 1/2 teaspoon/12 grams kosher saltd",
+          "2 1/4 teaspoons/7 grams active dry yeastd",
+          "3/4cup plus 2 tablespoons/214 grams water, at room temperatured",
+          "1/2 cup/120 grams whole milk, at room temperatured",
+          "1/4 cup/57 grams unsalted butter, cut into 1/2-inch pieces, chilled"
+        ]
+      },
+      {
+        "title": "FOR THE BUTTER BLOCK AND ASSEMBLY",
+        "items": [
+          "1 1/2 cups/340 grams unsalted European or European-style butter (3 sticks), chilled",
+          "All-purpose flour, for rolling",
+          "large egg yolk",
+          "1 tablespoon heavy cream"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Day 1",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Twenty-four hours before serving, start the détrempe: In the bowl of a stand mixer fitted with the dough hook, combine the flour, sugar, salt and yeast, and stir to combine. Create a well in the center, and pour in the water and milk. Mix on low speed until a tight, smooth dough comes together around the hook, about 5 minutes. Remove the hook and cover the bowl with a damp towel. Set aside for 10 minutes."
+          },
+          {
+            "type": "step",
+            "html": "2. Reattach the dough hook and turn the mixer on medium-low speed. Add the butter pieces all at once and continue to mix, scraping down the bowl and hook once or twice, until the dough has formed a very smooth, stretchy ball that is not the least bit sticky, 8 to 10 minutes."
+          },
+          {
+            "type": "step",
+            "html": "3. Form the dough into a ball and place seam-side down on a lightly floured work surface. Using a sharp knife, cut two deep perpendicular slashes in the dough, forming a “+.” (This will help the dough expand into a square shape as it rises, making it easier to roll out later.) Place the dough slashed-side up inside the same mixing bowl, cover with plastic wrap and let rise at room temperature until about 1 1/2 times its original size, 45 minutes to 1 hour. Transfer the bowl to the refrigerator and chill for at least 4 hours and up to 12."
+          }
+        ]
+      },
+      {
+        "title": "Day 2",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. As the dough chills, make the butter block: Place the sticks of butter side-by-side in the center of a large sheet of parchment paper, then loosely fold all four sides of the parchment over the butter to form a packet. Turn the packet over and use a rolling pin to lightly beat the cold butter into a flat scant 1/2-inch-thick layer, fusing the sticks and making it pliable. (Don’t worry about the shape at this point.) The parchment may tear. Turn over the packet and unwrap, replacing the parchment with a new sheet if needed. Fold the parchment paper over the butter again, this time making neat, clean folds at right angles (like you’re wrapping a present), forming an 8-inch square. Turn the packet over again and roll the pin across the packet, further flattening the butter into a thin layer that fills the entire packet while forcing out any air pockets. The goal is a level and straight-edged square of butter. Transfer the butter block to the refrigerator."
+          },
+          {
+            "type": "step",
+            "html": "2. Eighteen hours before serving, remove the dough from the refrigerator, uncover and transfer to a clean work surface. (It will have doubled in size.) Deflate the dough with the heel of your hand. Using the four points that formed where you slashed the dough, stretch the dough outward and flatten into a rough square measuring no more than 8 inches on one side."
+          },
+          {
+            "type": "step",
+            "html": "3. Place 2 pieces of plastic wrap on the work surface perpendicular to each other, and place the dough on top. Wrap the dough rectangle, maintaining the squared-off edges, then roll your pin over top as you did for the butter, forcing the dough to fill in the plastic and form an 8-inch square with straight sides and right angles. Freeze for 20 minutes."
+          },
+          {
+            "type": "step",
+            "html": "4. Remove the butter from the refrigerator and the dough from the freezer. Set aside the butter. Unwrap the dough (save the plastic, as you’ll use it again) and place on a lightly floured surface. Roll the dough, dusting with flour if necessary, until 16 inches long, maintaining a width of 8 inches (barely wider than the butter block). With a pastry brush, brush off any flour from the surface of the dough and make sure none sticks to the surface."
+          },
+          {
+            "type": "step",
+            "html": "5. You’re going to enclose the butter block in the dough and roll them out together. To ensure they do so evenly, they should have the same firmness, with the dough being slightly colder than the butter. The butter should be chilled but able to bend without breaking. If it feels stiff or brittle, let sit at room temperature for a few minutes. Unwrap the butter just so the top is exposed, then use the parchment paper to carefully invert the block in the center of the dough rectangle, ensuring all sides are parallel. Press the butter gently into the dough and peel off the parchment paper. You should have a block of butter with overhanging dough on two opposite sides and a thin border of dough along the other two."
+          },
+          {
+            "type": "step",
+            "html": "6. Grasp the overhanging dough on one side and bring it over the butter toward the center, then repeat with the other side of the dough, enclosing the butter. You don’t need the dough to overlap, but you want the two sides to meet, so stretch it if necessary, and pinch the dough together along all seams so no butter peeks out anywhere. Lift the whole block and dust a bit of flour underneath, then rotate the dough 90 degrees, so the center seam is oriented vertically."
+          },
+          {
+            "type": "step",
+            "html": "7. Orient the rolling pin perpendicular to the seam and lightly beat the dough all along the surface to lengthen and flatten. Roll out the dough lengthwise along the seam into a 24-inch-long, 1/4-inch-thick narrow slab, lightly dusting underneath and over top with more flour as needed to prevent sticking. Rather than applying pressure downward, try to push the dough toward and away from you with the pin, which will help maintain even layers of dough and butter. Remember to periodically lift the dough and make sure it’s not sticking to the surface, and try your best to maintain straight, parallel sides. (It’s OK if the shorter sides round a bit — you’re going to trim them.)"
+          },
+          {
+            "type": "step",
+            "html": "8. Use a wheel cutter or long, sharp knife to trim the shorter ends, removing excess dough where the butter doesn’t fully extend and squaring off the corners for a very straight-edged, even rectangle of dough. Maintaining the rectangular shape, especially at this stage, will lead to the most consistent and even lamination. If at any point in the process you see air bubbles in the dough while rolling, pierce them with a cake tester or the tip of a paring knife to deflate and proceed."
+          },
+          {
+            "type": "step",
+            "html": "9. Dust any flour off the dough’s surface. Grasp the short side of the rectangle farther from you and fold it toward the midline of the dough slab, aligning the sides. Press gently so the dough adheres to itself. Repeat with the other side of the dough, leaving an 1/8-inch gap where the ends meet in the middle. Now, fold the entire slab in half crosswise along the gap in the center. You should now have a rectangular packet of dough, called a “book,” that’s four layers thick. This is a “double turn,” and it has now quadrupled the number of layers of butter inside the dough."
+          },
+          {
+            "type": "step",
+            "html": "10. Wrap the book tightly in the reserved plastic. If it is thicker than about 1 1/2 inches, or if it’s lost some of its rectangularity, roll over the plastic-wrapped dough to flatten it and reshape it. Freeze the book for 15 minutes, then refrigerate for 1 hour."
+          },
+          {
+            "type": "step",
+            "html": "11. Let the dough sit at room temperature for about 5 minutes. Unwrap and place on a lightly floured surface. Beat the dough and roll out as before (Step 10) into another long, narrow 3/8-inch-thick slab. It should be nice and relaxed, and extend easily. Dust off any excess flour."
+          },
+          {
+            "type": "step",
+            "html": "12. Fold the dough in thirds like a letter, bringing the top third of the slab down and over the center third, then the bottom third up and over. This is a “simple turn,” tripling the layers. Press gently so the layers adhere. Wrap tightly in plastic again and freeze for 15 minutes, then refrigerate for 1 hour."
+          },
+          {
+            "type": "step",
+            "html": "13. Let the dough sit at room temperature for about 5 minutes, then unwrap and place on a lightly floured surface. Beat the dough and roll out as before, but into a 14-by-17-inch slab (15-by-16-inch for pain au chocolat or ham and cheese croissants). The dough will start to spring back, but try to get it as close to those dimensions as possible. Brush off any excess flour, wrap tightly in plastic, and slide onto a baking sheet or cutting board. Freeze for 20 minutes, then chill overnight (8 to 12 hours). If making pain au chocolat or ham and cheese croissants, see recipes."
+          },
+          {
+            "type": "step",
+            "html": "14. Four and a half hours before serving, arrange racks in the upper and lower thirds of the oven. Bring a skillet of water to a simmer over medium-high heat. Transfer the skillet to the floor of the oven and close the door. (The steam released inside the oven will create an ideal proofing environment.)"
+          },
+          {
+            "type": "step",
+            "html": "15. As the steam releases in the oven, line two rimmed baking sheets with parchment paper and set aside. Let the dough sit at room temperature for about 5 minutes. Unwrap (save the plastic for proofing), place on a very lightly floured surface, and, if necessary, roll out to 17-by-14 inches. Very thoroughly dust off any excess flour with a pastry brush. Use a wheel cutter or long knife and ruler to cut the shorter sides, trimming any irregular edges where not all the layers of dough fully extend and creating a rectangle that’s exactly 16 inches long, then cut into four 4-by-14-inch rectangles."
+          },
+          {
+            "type": "step",
+            "html": "16. Separate the rectangles, then use the ruler and wheel cutter to slice a straight line from opposite corners of one rectangle to form two long, equal triangles. Repeat with the remaining rectangles to make 8 triangles. Trim the short side of each triangle at a slight angle, making them into triangles with longer sides of equal length."
+          },
+          {
+            "type": "step",
+            "html": "17. Working one triangle at a time, grasp the two corners of the shorter end, the base of the crescent, and tug gently outward to extend the points and widen the base to about 3 inches. Then, gently tug outward from about halfway down the triangle all the way to the point, to both lengthen the triangle and thin the dough as it narrows. Starting at the base (the short end), snugly roll up the dough, keeping the point centered and applying light pressure. Try not to roll tightly or stretch the dough around itself. Place the crescent on one of the parchment-lined baking sheets, resting it on the point of the triangle. If the dough gets too soft while you’re working, cover the triangles and freeze for a few minutes before resuming rolling. Space them evenly on the baking sheets, four per sheet. Very loosely cover the baking sheets with plastic wrap, so the croissants have some room to expand."
+          },
+          {
+            "type": "step",
+            "html": "18. Three and a half hours before serving, open the oven and stick your hand inside: It should be humid but not hot, as the water in the skillet will have cooled. You want the croissants to proof at 70 to 75 degrees. (Any hotter and the butter will start to melt, leading to a denser croissant.) Place the baking sheets inside the oven and let the croissants proof until they’re about doubled in size, extremely puffy, and jiggle delicately when the baking sheet is gently shaken, 2 to 2 1/2 hours. Resist the urge to touch or poke the croissants as they proof: They’re very delicate. Try not to rush this process, either, as an underproofed croissant will not be as light and ethereal."
+          },
+          {
+            "type": "step",
+            "html": "19. Remove the baking sheets from the oven and carefully uncover them, then transfer to the refrigerator and chill for 20 minutes while you heat the oven. Remove the skillet from the oven and heat to 375 degrees."
+          },
+          {
+            "type": "step",
+            "html": "20. In a small bowl, stir the yolk and heavy cream until streak-free. Using a pastry brush, gently brush the smooth surfaces of each crescent with the yolk and cream mixture, doing your best to avoid the cut sides with exposed layers of dough."
+          },
+          {
+            "type": "step",
+            "html": "21. Transfer the sheets to the oven and bake for 20 minutes. Rotate the baking sheets and switch racks, and continue to bake until the croissants are deeply browned, another 10 to 15 minutes. Remove from the oven and let cool completely on the baking sheets."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "churros",
+    "legacySlug": "churros",
+    "aliases": [
+      "churro"
+    ],
+    "title": "Churros",
+    "category": "Dessert",
+    "description": "Crispy Mexican pastry made from deep-fried choux dough, rolled in cinnamon sugar with chocolate ganache.",
+    "image": "assets/optimized/churros.webp",
+    "prepTime": "10 mins",
+    "totalTime": "30 mins",
+    "yield": "15 churros",
+    "yieldIcon": "icon-park-twotone:bread-one",
+    "ingredientGroups": [
+      {
+        "title": "Churros",
+        "items": [
+          "1 cup (250ml) water",
+          "1/4 cup (56g) unsalted butter, diced into small cubes",
+          "1 Tbsp (13g) granulated sugar",
+          "1/4 tsp salt",
+          "1 cup (141g) all-purpose flour (scoop and level to measure)",
+          "1 large egg",
+          "1/2 tsp vanilla extract",
+          "Vegetable oil, for frying"
+        ]
+      },
+      {
+        "title": "For coating",
+        "items": [
+          "1/2 cup (100g) granulated sugar",
+          "3/4 tsp ground cinnamon"
+        ]
+      },
+      {
+        "title": "Chocolate Ganache",
+        "items": [
+          "1 cup chocolate175g, semisweet or bittersweet",
+          "1/2cup heavy cream"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Churros",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. For the coating whisk together 1/2 cup sugar and cinnamon in a shallow dish, set aside."
+          },
+          {
+            "type": "step",
+            "html": "2. Heat about 1 1/2 inches vegetable oil in a large pot or deep skillet"
+          },
+          {
+            "type": "step",
+            "html": "3. Add water, butter, sugar and salt to a large saucepan, bring to a boil over medium-high heat."
+          },
+          {
+            "type": "step",
+            "html": "4. Add flour reduce heat to medium-low and cook and stir constantly with a rubber spatula until mixture comes together and is smooth (a few lumps in it are fine)."
+          },
+          {
+            "type": "step",
+            "html": "5. Transfer mixture to a large mixing bowl, let cool 5 minutes."
+          },
+          {
+            "type": "step",
+            "html": "6. Add vanilla and egg to flour mixture then blend immediately with an electric mixer. Blend until mixture comes together and is smooth (it will separate at first but keep mixing it will come together)."
+          },
+          {
+            "type": "step",
+            "html": "7. Transfer to a 16-inch piping bag fitted with a rounded star tip (no bigger than 1/2-inch). I recommend using the Ateco 845 or 846."
+          },
+          {
+            "type": "step",
+            "html": "8. Carefully pipe mixture into preheated oil, into about 6-inch lengths, cut end with clean scissors."
+          },
+          {
+            "type": "step",
+            "html": "9. Let fry until golden brown, about 2 minutes per side. Transfer to paper towels to dry briefly then transfer to cinnamon sugar mixture and roll to coat."
+          },
+          {
+            "type": "step",
+            "html": "10. Repeat process with remaining dough (frying no more than 5 at once). Serve warm with chocolate ganache or caramel sauce for dipping if desired."
+          }
+        ]
+      },
+      {
+        "title": "Chocolate Ganache",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Chop chocolate roughly. If using chocolate chips you can skip this step or give them a few swipes with the knife. Chopping chocolate into finer pieces adds surface area and lets the hot liquid melt it with less additional heat and chance of burning. Place in medium bowl and set aside."
+          },
+          {
+            "type": "step",
+            "html": "2. Heat cream either on the stovetop or in the microwave until just about to boil."
+          },
+          {
+            "type": "step",
+            "html": "3. Pour cream over chocolate, cover bowl with a plate and set aside for a minute."
+          },
+          {
+            "type": "step",
+            "html": "4. Mix chocolate until dissolved and glossy. If there are a few pieces of chocolate left unmelted microwave at 50% power for about 10 seconds and mix again."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "macaroni-and-cheese",
+    "legacySlug": "macaroni-and-cheese",
+    "aliases": [
+      "macandcheese",
+      "mac-and-cheese"
+    ],
+    "title": "Macaroni and Cheese",
+    "category": "Entree",
+    "description": "An American dish of cooked macaroni pasta and a cheese sauce",
+    "image": "assets/optimized/macroni.webp",
+    "prepTime": "30 mins",
+    "totalTime": "1 hour 10 mins",
+    "yield": "8 servings",
+    "yieldIcon": "fluent-emoji-high-contrast:cheese-wedge",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "4 tablespoons unsalted butter, divided",
+          "3/4 cup panko (Japanese breadcrumbs)",
+          "1/4 ounce Parmesan, finely grated (about 1/4 cup)",
+          "2 teaspoons fresh thyme leaves",
+          "1 teaspoon kosher salt, divided, plus more",
+          "8 ounces cavatappi or other short curly pasta",
+          "2 1/2 cups whole milk",
+          "1/2 small onion, grated",
+          "1 garlic clove, finely grated",
+          "2 tablespoons all-purpose flour",
+          "4 ounces Fontina cheese, grated (about 1 cup)",
+          "4 ounces Gruyère, grated (about 1 cup)",
+          "4 ounces sharp white cheddar, grated (about 1 cup)",
+          "1/2 teaspoon English mustard powder (such as Colman’s)"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Mac 'N Cheese",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Preheat oven to 350°. Melt 2 Tbsp. butter in a medium skillet over medium heat. Add panko and cook, stirring, until crumbs are golden brown, 6–8 minutes (make sure to get them toasty brown; they won’t darken much during baking). Transfer to a small bowl and toss with Parmesan, thyme leaves, and ¼ tsp. salt."
+          },
+          {
+            "type": "step",
+            "html": "2. Cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente (the noodles will continue to cook in the cheese sauce, so take them out a minute or two before you think they’re actually done). Drain pasta; let cool while you make the sauce."
+          },
+          {
+            "type": "step",
+            "html": "3. Bring milk to a bare simmer in a small saucepan; keep warm. Melt remaining 2 Tbsp. butter in a medium saucepan over medium-high. Add onion and garlic and cook, stirring, until onions are fragrant and beginning to soften, about 2 minutes. Sprinkle flour over and cook, stirring constantly, until mixture starts to stick to bottom of saucepan, about 1 minute. Add warm milk in a few additions, whisking to combine after each addition."
+          },
+          {
+            "type": "step",
+            "html": "4. Bring béchamel sauce to a boil, then reduce heat and simmer, stirring, until sauce is thickened and doesn’t feel grainy when a little bit is rubbed between your fingers, 6–8 minutes (cooking the flour thoroughly at this stage ensures a creamy sauce). Add Fontina, Gruyère, cheddar, mustard powder, cayenne, and ¾ tsp. salt and stir until cheeses are melted and sauce is smooth. Remove from heat and mix in pasta; transfer to a 2-qt. baking dish."
+          },
+          {
+            "type": "step",
+            "html": "5. Bake 10 minutes. Top with Parmesan breadcrumbs and bake until sauce is bubbling around the edges, 8–10 minutes longer. Let cool in pan 15 minutes before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "spaghetti-meat-sauce",
+    "legacySlug": "spaghetti-meat-sauce",
+    "aliases": [
+      "spaghetti"
+    ],
+    "title": "Spaghetti and Meat Sauce",
+    "category": "Entree",
+    "description": "Is a long, thin, solid, cylindrical pasta. It is a staple food of traditional Italian cuisine.",
+    "image": "assets/Food/spaghetti.jpg",
+    "prepTime": "30 mins",
+    "totalTime": "4 hours",
+    "yield": "6 Servings",
+    "yieldIcon": "emojione-monotone:spaghetti",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "1 pound ground beef",
+          "1 onion, chopped",
+          "4 cloves garlic, minced",
+          "1 (28 ounce) can diced tomatoes",
+          "1 (16 ounce) can tomato sauce",
+          "1 (6 ounce) can tomato paste",
+          "2 teaspoons dried oregano",
+          "2 teaspoons dried basil",
+          "1 teaspoon salt",
+          "1/2 teaspoon black pepper"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Meat Sauce",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. In a large pot or Dutch oven over medium heat, cook the sausage, beef, onion, and garlic until well browned."
+          },
+          {
+            "type": "step",
+            "html": "2. Drain fat."
+          },
+          {
+            "type": "step",
+            "html": "3. Stir in crushed tomatoes, tomato paste tomato sauce, and water"
+          },
+          {
+            "type": "step",
+            "html": "4. Mix in sugar and season with basil, fennel seed Italian seasoning, salt, and pepper."
+          },
+          {
+            "type": "step",
+            "html": "5. Reduce heat to low, cover, and simmer 33 1/2 hours, stirring occasionally."
+          }
+        ]
+      },
+      {
+        "title": "Noodles",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Refer to dough recipe for fresh noodles"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pumpkin-bread",
+    "legacySlug": "pumpkin-bread-salted-maple-butter",
+    "aliases": [
+      "pumpkinbread",
+      "pumpkin-bread-salted-maple-butter"
+    ],
+    "title": "Pumpkin Bread with Salted Maple Butter",
+    "category": "Dessert",
+    "description": "A sweet moist quick bread made with pumpkin. Paired with salted maple butter.",
+    "image": "assets/optimized/pumpkinBread.webp",
+    "prepTime": "20 mins",
+    "totalTime": "2 hours",
+    "yield": "1 loaf",
+    "yieldIcon": "emojione-monotone:bread",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "Nonstick vegetable oil spray",
+          "2 1/2 cups all-purpose flour",
+          "2 tsp. ground cinnamon",
+          "2 tsp. kosher salt",
+          "1 tsp. baking powder",
+          "1/2 tsp. baking soda",
+          "1/2 tsp. freshly grated nutmeg",
+          "⅛ tsp. ground cloves",
+          "2 large eggs",
+          "1 15-oz. can pumpkin purée",
+          "1 Tbsp. plus 1 tsp finely grated ginger (from about one 3\" piece fresh ginger)",
+          "1 1/2 cups plus 1 Tbsp. sugar",
+          "1 cup extra-virgin olive oil",
+          "1/2 cup raw pumpkin seeds"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Pumpkin Bread",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Preheat oven to 325°. Lightly coat a 9x5\" loaf pan with nonstick spray. Line bottom of pan with parchment, leaving a generous overhang on both long sides."
+          },
+          {
+            "type": "step",
+            "html": "2. Whisk flour, cinnamon, kosher salt, baking powder, baking soda, nutmeg, and cloves in a medium bowl."
+          },
+          {
+            "type": "step",
+            "html": "3. Whisk eggs, pumpkin purée, ginger, and 1 1/2 cups sugar in a large bowl. Stream in oil, whisking constantly until mixture is homogeneous. Gently fold half of dry ingredients into egg mixture until no dry spots remain. Repeat with remaining dry ingredients."
+          },
+          {
+            "type": "step",
+            "html": "4. Transfer batter to prepared pan; smooth top with a spatula. Scatter pumpkin seeds over batter, pressing lightly to adhere. Sprinkle seeds with remaining 1 Tbsp. sugar. Bake bread, rotating pan once halfway through, until a tester inserted into the center comes out clean, 80–90 minutes."
+          },
+          {
+            "type": "step",
+            "html": "5. Let cool slightly, then run a knife or small offset spatula around pan to help loosen bread. Using overhang, transfer bread to a wire rack and let cool."
+          }
+        ]
+      },
+      {
+        "title": "Maple Butter",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Using an electric mixer on medium-high speed, beat butter in a large bowl, scraping down sides, until light and fluffy, 5–6 minutes. Add maple syrup and ¾ tsp. sea salt and beat, scraping down sides of bowl once more, just until incorporated."
+          },
+          {
+            "type": "step",
+            "html": "2. Transfer maple butter to a small bowl; season with more sea salt."
+          },
+          {
+            "type": "step",
+            "html": "<i>Maple butter can be made 5 days ahead. Cover tightly with plastic wrap and chill. Let come to room temperature before using.</i>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "burrito",
+    "legacySlug": "burrito",
+    "aliases": [
+      "burritos"
+    ],
+    "title": "Burrito",
+    "category": "Entree",
+    "description": "Meaning \"little donkey\", warm tortilla filled with meat, beans, cheese, etc.",
+    "image": "assets/optimized/burrito.webp",
+    "prepTime": "30 mins",
+    "totalTime": "24 Hours",
+    "yield": "6 Burritos",
+    "yieldIcon": "emojione-monotone:burrito",
+    "ingredientGroups": [
+      {
+        "title": "Chipotle Marinated Chicken",
+        "items": [
+          "2 dried guajillo chilies",
+          "2 dried ancho chilies",
+          "4 dried mushrooms",
+          "1.5 cups boiling water",
+          "2 tsp (4g) coriander seeds, toasted",
+          "2 tsp (4g) cumin seeds, toasted",
+          "7oz (200g) can chipotle peppers in adobo",
+          "4 cloves garlic",
+          "1 tsp (3g) ground cinnamon",
+          "2 tsp (12g) kosher salt",
+          "4 Tbsp chili oil o just neutral flavored oil",
+          "1.5 lbs boneless skinless chicken thigh"
+        ]
+      },
+      {
+        "title": "Homemade Flour Tortillas",
+        "items": [
+          "2 cups (300g) all purpose flour",
+          "1 tsp (4g) salt",
+          "1/2 tsp 2g baking powder",
+          "1/4 cup vegetable oil",
+          "3/4 cup warm water"
+        ]
+      },
+      {
+        "title": "Beans",
+        "items": [
+          "4-5 slices bacon",
+          "1 yellow onion",
+          "4 cloves garlic",
+          "1 large jalapeno thinly sliced",
+          "1 can black beans, drained",
+          "1/2 cup (120ml) chicken stock",
+          "2 Tbsp (24g) unsalted butter",
+          "Salt and pepper to taste"
+        ]
+      },
+      {
+        "title": "Cilantro Lime Rice",
+        "items": [
+          "4 cups cooked rice",
+          "and juice of 1 lime",
+          "Zest of 1 lemon",
+          "1/4-1/2 cup Fresh chopped cilantro",
+          "2 Tbsp unsalted butter",
+          "Salt to taste"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Marinated Chicken (1 hourovernight)",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Start by removing the seeds and tops of the chilis. Place skins in a bowl along with mushrooms and cover with boiling water. Cover with plastic wrap and let steep."
+          },
+          {
+            "type": "step",
+            "html": "2. In a small dry pan, add in the coriander seeds and cumin seeds. Set over medium heat and heat until fragrant. 1-2 minutes."
+          },
+          {
+            "type": "step",
+            "html": "3. Add toasted seeds into a blender and blend on high speed until a powder forms."
+          },
+          {
+            "type": "step",
+            "html": "4. To that add rehydrated chilis, mushrooms, some soaking liquid, chipotle peppers, ground cinnamon, kosher salt, and juice of 1 lime. Blend until smooth."
+          },
+          {
+            "type": "step",
+            "html": "5. While vortexing and blending, stream in chili oil. Blend until oil emulsifies."
+          },
+          {
+            "type": "step",
+            "html": "6. Add the chicken into a medium bowl, cover and toss in the marinade, cover with plastic wrap and marinate in the refrigerator for at least 1 hour to overnight."
+          },
+          {
+            "type": "step",
+            "html": "7. In a large pan, coat the bottom with enough oil and heat over medium-high heat."
+          },
+          {
+            "type": "step",
+            "html": "8. Add in the chicken. Flip often until the chicken is cooked through and browned on the outside."
+          },
+          {
+            "type": "step",
+            "html": "9. Optionally, sear the chicken on both sides then add to a sheet tray and into the oven set to 400F until fully cooked through (165 F)."
+          }
+        ]
+      },
+      {
+        "title": "Tortilla",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. In a medium bowl, add and combine all-purpose flour, kosher salt, baking powder, and whisk together."
+          },
+          {
+            "type": "step",
+            "html": "2. While mixing with a spoon or fork, gently stream in hot water and immediately followed by vegetable oil. Mix until it forms a dough."
+          },
+          {
+            "type": "step",
+            "html": "3. Knead by hand on a work surface until it forms a smooth dough."
+          },
+          {
+            "type": "step",
+            "html": "4. Cover with plastic wrap and let rest 1-2 hours."
+          },
+          {
+            "type": "step",
+            "html": "5. Divide dough into six even pieces. Roll into a ball and generously flour. On a generously floured surface, roll the ball out to 12” in diameter."
+          },
+          {
+            "type": "step",
+            "html": "6. Heat a 12” cast iron pan over medium-high heat. Once ripping hot, add in the tortilla and cook 15-30 seconds. Flip and repeat."
+          },
+          {
+            "type": "step",
+            "html": "7. Place on a plate covered with towels then rinse and repeat."
+          }
+        ]
+      },
+      {
+        "title": "Beans",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Start by cutting the bacon into 1/2” segments. Place in a skillet over medium heat and cook, stirring occasionally, until crispy."
+          },
+          {
+            "type": "step",
+            "html": "2. Remove the bacon, and add in thinly sliced onion into the bacon grease. Season with salt and cook over medium heat until soft."
+          },
+          {
+            "type": "step",
+            "html": "3. Add in garlic saute until fragrant then add in sliced jalapenos and cook for 30 seconds."
+          },
+          {
+            "type": "step",
+            "html": "4. Add in can of drained black beans and chicken stock bringing up to heat and simmering. Simmer until almost all chicken stock has reduced."
+          },
+          {
+            "type": "step",
+            "html": "5. Remove from heat and stir in the unsalted butter until melted."
+          },
+          {
+            "type": "step",
+            "html": "6. Pour into a container or bowl until ready to use."
+          }
+        ]
+      },
+      {
+        "title": "Rice",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Start by rinsing and washing the rice twice through."
+          },
+          {
+            "type": "step",
+            "html": "2. If using a rice cooker, add in equal parts rice to water and let cook."
+          },
+          {
+            "type": "step",
+            "html": "3. Place cooked rice into a bowl and add zest of a lime and lemon, chopped cilantro, juice of 2 limes, unsalted butter, and salt to taste. Stir until thoroughly combined."
+          }
+        ]
+      },
+      {
+        "title": "Assembly",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Start by slicing the chicken into bite size pieces."
+          },
+          {
+            "type": "step",
+            "html": "2. Lay the tortilla down. Add a layer of rice followed by the beans, chicken, diced tomatoes, sliced avocado (optional), flaky salt, grated cheese, and crumbled cotija cheese."
+          },
+          {
+            "type": "step",
+            "html": "3. Wrap by folding sides in and rolling from the bottom up before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "popeyes-chicken-sandwich",
+    "legacySlug": "popeyes-chicken-sandwhich",
+    "aliases": [
+      "popeyes",
+      "popeyeschickensandwich",
+      "popeyes-chicken-sandwhich"
+    ],
+    "title": "Popeyes Chicken Sandwich",
+    "category": "Entree",
+    "description": "A delicious crispy fried chicken sandwich on a homemade Japanese milk bun with spicy mayo.",
+    "image": "assets/optimized/Popeyes.webp",
+    "prepTime": "1 Hour",
+    "totalTime": "3 hours",
+    "yield": "6 Sandwiches",
+    "yieldIcon": "cil:burger",
+    "ingredientGroups": [
+      {
+        "title": "Japanese Milk Bun (Tangzhong)",
+        "items": [
+          "2 tablespoons (20g) bread flour",
+          "2 tablespoons (27g) water",
+          "4 tablespoons (60g) whole milk"
+        ]
+      },
+      {
+        "title": "Dough",
+        "items": [
+          "1/2 cup(120g) whole milk @ 95f (30c)",
+          "1 tablespoons (9g) instant yeast 2.5 cups (320g) Bread flour",
+          "1 teaspoon (7g) fine sea salt",
+          "2.5 tablespoons (35g) granulated sugar",
+          "1 whole egg",
+          "egg yolk",
+          "tablespoons (42g) unsalted butter, softened"
+        ]
+      },
+      {
+        "title": "Egg wash",
+        "items": [
+          "1 whole egg splash of whole milk"
+        ]
+      },
+      {
+        "title": "Chicken Marinade (Overnight)",
+        "items": [
+          "1/2 cup(120g) whole milk @ 95f (30c)",
+          "1 tablespoons (9g) instant yeast 2.5 cups (320g) Bread flour",
+          "1 teaspoon (7g) fine sea salt",
+          "2.5 tablespoons (35g) granulated sugar",
+          "1 whole egg",
+          "egg yolk",
+          "tablespoons (42g) unsalted butter, softened"
+        ]
+      },
+      {
+        "title": "Mayo Aioli",
+        "items": [
+          "3/4 cup mayo",
+          "8 cloves black garlic puree",
+          "1 tbsp (16g) hot sauce",
+          "Kosher salt to taste",
+          "1tsp (5g) smoked paprika",
+          "Lemon juice to taste"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Milk Bun",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine 60g whole milk + 2tbs water + 2tbs bread flour"
+          },
+          {
+            "type": "step",
+            "html": "2. Wisk together"
+          },
+          {
+            "type": "step",
+            "html": "3. Put over medium heat and whisk until it becomes gelation and put to side"
+          },
+          {
+            "type": "step",
+            "html": "4. Take half a cup whole milk and heat to 95 Degree F"
+          },
+          {
+            "type": "step",
+            "html": "5. Mix in 1 tbs instant yeast"
+          },
+          {
+            "type": "step",
+            "html": "6. Let it sit for 8 min"
+          },
+          {
+            "type": "step",
+            "html": "7. Combine in stand mixer 2 1/2 cups bread flour + 2.5 sugar + 1 tsp sea salt"
+          },
+          {
+            "type": "step",
+            "html": "8. Add milk yeast mixture let it run for a couple seconds"
+          },
+          {
+            "type": "step",
+            "html": "9. Stand mixer low speed add the dry mixture then add tazong + 1 whole egg + 1 egg yolk (room temperature)"
+          },
+          {
+            "type": "step",
+            "html": "10. Scrape down side intermittenly"
+          },
+          {
+            "type": "step",
+            "html": "11. Add 3 tablespoons unsalted softened butter not all at once"
+          },
+          {
+            "type": "step",
+            "html": "12. knead dough for 5-8 min"
+          },
+          {
+            "type": "step",
+            "html": "13. Take dough out and put into a ball and make smooth"
+          },
+          {
+            "type": "step",
+            "html": "14. Put in a grease bowl and cover with damp bowl and let it rest for 1-1.5 hours or until double in size <i>can put in turned off oven with light on</i>"
+          },
+          {
+            "type": "step",
+            "html": "15. Take dough and punch it down"
+          },
+          {
+            "type": "step",
+            "html": "16. Light flour workspace"
+          },
+          {
+            "type": "step",
+            "html": "17. Divide dough to 6 even pieces (95g-105g each)"
+          },
+          {
+            "type": "step",
+            "html": "18. Shape the pieces and fold into itself then rotate the dough"
+          },
+          {
+            "type": "step",
+            "html": "19. Repeat with all the doughs"
+          },
+          {
+            "type": "step",
+            "html": "20. Put on greased baking sheet with paper on bottom (space them apart)"
+          },
+          {
+            "type": "step",
+            "html": "21. Put another baking sheet on top and let it rise in room temperature for 1-2hours or double in size"
+          },
+          {
+            "type": "step",
+            "html": "22. Make egg wash (1 whole egg + splash water) and brush the doughs"
+          },
+          {
+            "type": "step",
+            "html": "23. Bake 375 F for 16-18min until brown"
+          }
+        ]
+      },
+      {
+        "title": "Chicken Marinade",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Add chicken to marinade"
+          },
+          {
+            "type": "step",
+            "html": "2. Let it sit 3 hours minimum, preferrably overnight"
+          },
+          {
+            "type": "step",
+            "html": "3. Once marinated, grab a dutch oven and fill with neutral oil"
+          },
+          {
+            "type": "step",
+            "html": "4. Heat to 350 Degrees"
+          },
+          {
+            "type": "step",
+            "html": "5. Add droplets of marinade into flour mixture"
+          },
+          {
+            "type": "step",
+            "html": "6. Coat chicken in flour and place on baking sheet"
+          },
+          {
+            "type": "step",
+            "html": "7. Cook chicken in oil until 165 Degrees F"
+          },
+          {
+            "type": "step",
+            "html": "8. Assemble with buns, chicken, aioli, pickle"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "masala-fries",
+    "legacySlug": "masala-fries",
+    "aliases": [
+      "masalafries"
+    ],
+    "title": "Masala Fries",
+    "category": "Appetizer",
+    "description": "Crispy spiced masala fries served with a creamy sriracha mayo dipping sauce.",
+    "image": "assets/Food/maslafood.jpg",
+    "prepTime": "30 min",
+    "totalTime": "45 mins",
+    "yield": "6 servings",
+    "yieldIcon": "mdi:french-fries",
+    "ingredientGroups": [
+      {
+        "title": "Masala Fries",
+        "items": [
+          "2 medium russet potatoes",
+          "4 cups water for soaking",
+          "2 tablespoons oil>",
+          "1 teaspoon garlic powder",
+          "1 teaspoon kosher salt",
+          "1 teaspoon kashmiri red chili powder",
+          "1/4 teaspoon ground turmeric",
+          "1/4 teaspoongaram masala",
+          "1/4 teaspoon chat masala optional"
+        ]
+      },
+      {
+        "title": "Siracha Mayo",
+        "items": [
+          "1 cup mayo",
+          "3 tablespoons Sriracha chili sauce",
+          "Juice from 1/2 a lemon (about 2 tablespoons)",
+          "1 garlic clove, finely minced",
+          "Salt to taste",
+          "Ketchup"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Masala Fries",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Rinse and pat dry the potatoes before you slice them (photo 1)."
+          },
+          {
+            "type": "step",
+            "html": "2. Cut the potatoes into 4-inch long and ⅓-inch thick sticks that are all the same size (photos 2 and 3)."
+          },
+          {
+            "type": "step",
+            "html": "3. Soak the cut potato in a bowl of water for at least 15 minutes (photo 4)."
+          },
+          {
+            "type": "step",
+            "html": "4. After 15 minutes, drain the potatoes, wipe them dry, and place them in a large mixing bowl (photos 5 and 6)."
+          },
+          {
+            "type": "step",
+            "html": "5. Add the spices on top of the potato slices and stir to combine evenly over them (photos 7 and 8)."
+          },
+          {
+            "type": "step",
+            "html": "6. Preheat airfryer 400 F"
+          },
+          {
+            "type": "step",
+            "html": "7. Bake the fries in the air fryer at 380°F or 190°C for 25 minutes, shaking the basket halfway through cooking (photos 9 and 10)."
+          },
+          {
+            "type": "step",
+            "html": "8. Enjoy the fries hot!"
+          }
+        ]
+      },
+      {
+        "title": "Dipping Sauce",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine siracha mayo ingredients"
+          },
+          {
+            "type": "step",
+            "html": "2. Serve siracha mayo or ketchup"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pasta-dough",
+    "legacySlug": "pasta-dough",
+    "aliases": [
+      "pastadough",
+      "pasta"
+    ],
+    "title": "Pasta Dough",
+    "category": "Appetizer",
+    "description": "Homemade fresh pasta dough for spaghetti, linguine, fettuccine, and more.",
+    "image": "assets/optimized/pastadough.webp",
+    "prepTime": "5 mins",
+    "totalTime": "30 mins",
+    "yield": "6 servings",
+    "yieldIcon": "mdi:pasta",
+    "ingredientGroups": [
+      {
+        "title": "Pasta Dough",
+        "items": [
+          "4 large eggs",
+          "3-1/2 cups all-purpose flour sifted",
+          "1/2 tsp salt",
+          "1/4 cup water *start with 2 tablespoons"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Making the Pasta Dough",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. In the stand mixer bowl, place the eggs, flour, salt and 2 tablespoons of water. Using the flat beater, attach it to the bowl and mix the ingredients on speed 2 for 30 seconds."
+          },
+          {
+            "type": "step",
+            "html": "2. Remove the flat beater and replace it with the dough hook. Turn the dough on to speed 2 and let it knead for 2 minutes. At this time if the mixture looks too dry add 1 tablespoon of water at a time."
+          },
+          {
+            "type": "step",
+            "html": "3. Remove the dough from the bowl and knead with your hands for 1-2 minutes. Form the dough into a ball, place plastic wrap over the top of the dough, and let it rest for 20 minutes."
+          }
+        ]
+      },
+      {
+        "title": "Spaghetti Noodles",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Divide the dough into 4 pieces."
+          },
+          {
+            "type": "step",
+            "html": "2. Attach the Pasta Sheet Roller attachment to you stand mixer."
+          },
+          {
+            "type": "step",
+            "html": "3. Take 1 of the 4 pieces of dough and flatten it until its about a half-inch thick."
+          },
+          {
+            "type": "step",
+            "html": "4. Set the Pasta Sheet Roller to setting 1 and your stand mixer to Speed 2/4 and begin to carefully feed the dough through the attachment."
+          },
+          {
+            "type": "step",
+            "html": "5. Once this is done you'll want to fold the dough in half and then half again."
+          },
+          {
+            "type": "step",
+            "html": "6. Make sure it fits in the top of the attachment. Then run it through the Pasta Sheet Roller again."
+          },
+          {
+            "type": "step",
+            "html": "7. Next, move your Pasta Sheet Roller to setting 2 and then carefully run the dough through. Repeat this moving the setting all the way up to 5 until you have a thin sheet of pasta. <i>I typically cut the pasta sheet in half by setting 2 or 3-it is much easier to work with.</i>"
+          },
+          {
+            "type": "step",
+            "html": "8. Once you have 2 sheets of pasta, remove the Pasta Sheet Roller and add the Spaghetti attachment to the stand mixer."
+          },
+          {
+            "type": "step",
+            "html": "9. Place the mixer on Speed 2 and carefully begin to feed the sheet of pasta through the attachment."
+          },
+          {
+            "type": "step",
+            "html": "10. Once you have spaghetti twirl it into a \"nest\". Repeat these steps until all of your dough has been transformed into spaghetti."
+          }
+        ]
+      },
+      {
+        "title": "Cook the Spaghetti",
+        "steps": [
+          {
+            "type": "step",
+            "html": "Cook the spaghetti in a pot of boiling water with 1 tablespoon of salt and 1 tablespoon of olive oil for 3-4 minutes or until al dente"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bread",
+    "legacySlug": "bread",
+    "aliases": [
+      "artisan-bread"
+    ],
+    "title": "Bread",
+    "category": "Appetizer",
+    "description": "Food consisting of flour that is moistened, kneaded into dough, and often fermented.",
+    "image": "assets/optimized/bread.webp",
+    "prepTime": "15 mins",
+    "totalTime": "2 hours",
+    "yield": "1 loaf",
+    "yieldIcon": "mingcute:bread-fill",
+    "ingredientGroups": [
+      {
+        "title": "Bread",
+        "items": [
+          "1 package (7 grams) active dry yeast",
+          "2 cup (500 ml) of water (~100 degrees)",
+          "4 1/2 cups (571 grams) bread or all-purpose flour",
+          "1 teaspoon (5.7 grams) salt"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Making the Bread",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Activate the yeast by mixing it with water and a tablespoon of sugar You want the water to be at about 100 degrees, which you can check with a thermometer (or just heat up the water in the microwave for about 30 seconds at full power to get it to this temp). The yeast takes about 10 minutes to activate."
+          },
+          {
+            "type": "step",
+            "html": "2. Mix all the dry ingredients together —flour (add about 90% and reserve 10% of it to add as you go)and salt."
+          },
+          {
+            "type": "step",
+            "html": "3.Mix the activated yeast with the dry ingredients and mix until it forms a shaggy dough ball."
+          },
+          {
+            "type": "step",
+            "html": "4. Transfer dough into a lightly-oiled bowl."
+          },
+          {
+            "type": "step",
+            "html": "5. Cover bowl with cling film and allow dough to proof for ~ 1 hour at room temp."
+          },
+          {
+            "type": "step",
+            "html": "6. Lightly flour countertop and turn dough out onto the counter. Add a bit more flour on top to reduce stickiness."
+          },
+          {
+            "type": "step",
+            "html": "7. Start folding and shaping dough. Remember this is no-knead bread. All we are looking to do here is shape the dough into a taut boule."
+          },
+          {
+            "type": "step",
+            "html": "8. Flour a bowl/banneton and transfer shaped dough, smooth side down."
+          },
+          {
+            "type": "step",
+            "html": "9. Sprinkle a bit more flour on the bottom."
+          },
+          {
+            "type": "step",
+            "html": "10. Cover with towel and rest for ~30 minutes, preheat your oven 500 degrees. Make sure cast-iron pans are in the oven while preheating."
+          },
+          {
+            "type": "step",
+            "html": "11. Flip dough from bowl/banneton into pan. <strong>BE CAREFUL</strong> as the pan will be <strong>HOT!</strong>"
+          },
+          {
+            "type": "step",
+            "html": "12. Score bread with razor blade, creating your desired pattern."
+          },
+          {
+            "type": "step",
+            "html": "13. Cover with top half of cast-iron pan and place in oven; immediately reduce heat to 450 degrees."
+          },
+          {
+            "type": "step",
+            "html": "14. Bake for 20 minutes, uncover and place back in oven for an additional 20 minutes."
+          },
+          {
+            "type": "step",
+            "html": "15. Place on cooling rack and let rest for ~1 hour."
+          },
+          {
+            "type": "step",
+            "html": "16. Enjoy!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bruschetta",
+    "legacySlug": "bruscetta",
+    "aliases": [
+      "bruscetta"
+    ],
+    "title": "Bruschetta",
+    "category": "Appetizer",
+    "description": "Thick slices of bread, rubbed with garlic, drizzled with olive oil, often topped with tomatoes and herbs.",
+    "image": "assets/optimized/Bruscetta.webp",
+    "prepTime": "5 mins",
+    "totalTime": "10 mins",
+    "yield": "30 servings",
+    "yieldIcon": "mingcute:bread-fill",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "6-7 ripe plum or beefsteak tomatoes, diced",
+          "2 cloves garlic, minced",
+          "1/4 small red onion, chopped",
+          "1 tbsp extra virgin olive oil",
+          "2 tbsp balsamic vinegar",
+          "olive oil spray",
+          "6-8 fresh basil leaves, chopped",
+          "kosher salt",
+          "freshly ground black pepper to taste",
+          "16 oz baguette or French bread",
+          "1-2 garlic cloves, peeled"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Bruschetta",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine tomatoes, chopped garlic, red onion, vinegar, oil, salt, pepper, and basil."
+          },
+          {
+            "type": "step",
+            "html": "2. Set aside"
+          },
+          {
+            "type": "step",
+            "html": "3. Preheat oven on broil"
+          },
+          {
+            "type": "step",
+            "html": "4. Slice bread into 1/2 inch thick slices."
+          },
+          {
+            "type": "step",
+            "html": "5. Place on a tray and spray lightly with olive oil."
+          },
+          {
+            "type": "step",
+            "html": "6. Toast bread under broiler, until golden, watching closely not to let it burn."
+          },
+          {
+            "type": "step",
+            "html": "7. When bread is toasted, rub each piece with whole garlic clove."
+          },
+          {
+            "type": "step",
+            "html": "8. Place bread on a platter and top with tomato mixture."
+          },
+          {
+            "type": "step",
+            "html": "9. Serve immediately or the bread will become soggy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "in-n-out-burger",
+    "legacySlug": "in-n-out-burger",
+    "aliases": [
+      "innout",
+      "innoutburger",
+      "burger"
+    ],
+    "title": "In-N-Out Burger",
+    "category": "Entree",
+    "description": "Staple California-style smash burger with homemade buns, caramelized onions, and burger sauce.",
+    "image": "assets/optimized/burger.webp",
+    "prepTime": "15 mins",
+    "totalTime": "1 hour",
+    "yield": "6 Burgers",
+    "yieldIcon": "ph:hamburger-fill",
+    "ingredientGroups": [
+      {
+        "title": "Burger Buns",
+        "items": [
+          "1tbsp (9g) instant yeast",
+          "1/2 cup (120g) whole milk",
+          "2.25 cups (320g) bread flour",
+          "1 teaspoon (7g) fine sea salt",
+          "2 tablespoons (20g) granulated sugar",
+          "1 egg",
+          "1 egg yolk",
+          "2 tablespoons (28g) unsalted butter, softened"
+        ]
+      },
+      {
+        "title": "Burger Sauce",
+        "items": [
+          "2 onions",
+          "2tbsp (28g) unsalted butter",
+          "2 dill pickles, finely diced",
+          "3/4 cup (180g) mayonnaise",
+          "1/2 cup (130g) ketchup",
+          "1/3 cup (15g) chives half bunch",
+          "2 tbsp (27g) worstechirsire sauce",
+          "salt and pepper to taste"
+        ]
+      },
+      {
+        "title": "Assembly",
+        "items": [
+          "1 lb ground beef",
+          "1 tomato, sliced",
+          "1 iceberg lettuce"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Burger Bun",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine 60g whole milk + 2tbs water + 2tbs bread flour"
+          },
+          {
+            "type": "step",
+            "html": "2. Wisk together"
+          },
+          {
+            "type": "step",
+            "html": "3. Put over medium heat and whisk until it becomes gelation and put to side"
+          },
+          {
+            "type": "step",
+            "html": "4. Take half a cup whole milk and heat to 95 Degree F"
+          },
+          {
+            "type": "step",
+            "html": "5. Mix in 1 tbs instant yeast"
+          },
+          {
+            "type": "step",
+            "html": "6. Let it sit for 8 min"
+          },
+          {
+            "type": "step",
+            "html": "7. Combine in stand mixer 2 1/2 cups bread flour + 2.5 sugar + 1 tsp sea salt"
+          },
+          {
+            "type": "step",
+            "html": "8. Add milk yeast mixture let it run for a couple seconds"
+          },
+          {
+            "type": "step",
+            "html": "9. Stand mixer low speed add the dry mixture then add tazong + 1 whole egg + 1 egg yolk (room temperature)"
+          },
+          {
+            "type": "step",
+            "html": "10. Scrape down side intermittenly"
+          },
+          {
+            "type": "step",
+            "html": "11. Add 3 tablespoons unsalted softened butter not all at once"
+          },
+          {
+            "type": "step",
+            "html": "12. knead dough for 5-8 min"
+          },
+          {
+            "type": "step",
+            "html": "13. Take dough out and put into a ball and make smooth"
+          },
+          {
+            "type": "step",
+            "html": "14. Put in a grease bowl and cover with damp bowl and let it rest for 1-1.5 hours or until double in size <i>can put in turned off oven with light on</i>"
+          },
+          {
+            "type": "step",
+            "html": "15. Take dough and punch it down"
+          },
+          {
+            "type": "step",
+            "html": "16. Light flour workspace"
+          },
+          {
+            "type": "step",
+            "html": "17. Divide dough to 6 even pieces (95g-105g each)"
+          },
+          {
+            "type": "step",
+            "html": "18. Shape the pieces and fold into itself then rotate the dough"
+          },
+          {
+            "type": "step",
+            "html": "19. Repeat with all the doughs"
+          },
+          {
+            "type": "step",
+            "html": "20. Put on greased baking sheet with paper on bottom (space them apart)"
+          },
+          {
+            "type": "step",
+            "html": "21. Put another baking sheet on top and let it rise in room temperature for 1-2hours or double in size"
+          },
+          {
+            "type": "step",
+            "html": "22. Make egg wash (1 whole egg + splash water) and brush the doughs"
+          },
+          {
+            "type": "step",
+            "html": "23. Bake 375 F for 16-18min until brown"
+          }
+        ]
+      },
+      {
+        "title": "Caramelized Onion",
+        "steps": [
+          {
+            "type": "step",
+            "html": "2 onions"
+          },
+          {
+            "type": "step",
+            "html": "2 tbs unsalted butter"
+          },
+          {
+            "type": "step",
+            "html": "Pinch Sugar & salt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "raspberry-danish",
+    "legacySlug": "rasberry-danish",
+    "aliases": [
+      "raspberrydanish",
+      "rasberry-danish",
+      "danish"
+    ],
+    "title": "Raspberry Danish",
+    "category": "Dessert",
+    "description": "A flaky puff pastry filled with creamy cheesecake, sweet fresh raspberries, and a vanilla glaze.",
+    "image": "assets/optimized/rasberry.webp",
+    "prepTime": "30 mins",
+    "totalTime": "1 hour",
+    "yield": "1 danish",
+    "yieldIcon": "icon-park-outline:bread-machine",
+    "ingredientGroups": [
+      {
+        "title": "Raspberry Sauce",
+        "items": [
+          "¾ Cup Frozen Raspberries",
+          "3 Tablespoons Water",
+          "1 ½ Tablespoons Cornstarch",
+          "½ Cup Sugar",
+          "Filling",
+          "18 Ounce Package Cream Cheese (Softened at Room Temperature)"
+        ]
+      },
+      {
+        "title": "Frosting",
+        "items": [
+          "½ Cup Sugar",
+          "1 Egg Yolk",
+          "½ Teaspoon Vanilla Extract",
+          "1 Teaspoon Lemon Juice"
+        ]
+      },
+      {
+        "title": "Pastry",
+        "items": [
+          "1 Box Puff Pastry (2 Sheets), Thawed",
+          "1 Cup Powdered Sugar",
+          "¼ Cup Heavy Cream or Milk",
+          "1 Teaspoon Vanilla Extract",
+          "1 Egg for Egg Wash + 1 Tablespoon Water",
+          "2 Teaspoons Coarse Sugar for Sprinkling",
+          "1 ½ Cups Granulated Sugar (I used pure cane sugar)",
+          "2 8 Ounce Bags Organic Frozen Raspberries",
+          "Juice from half a lemon (About 2 Tablespoons)",
+          "Pre-Heat Oven: 375 Degrees F"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Raspberry Sauce",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. In a medium heavy bottomed sauce pan, combine all the sauce ingredients and stir over medium high heat"
+          },
+          {
+            "type": "step",
+            "html": "2. Bring to a simmer and cook for 4-8 minutes or until thickened"
+          },
+          {
+            "type": "step",
+            "html": "3. Set aside"
+          }
+        ]
+      },
+      {
+        "title": "Filling",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. In a standing mixer, beat softened cream cheese until fluffy (About 2 minutes)"
+          },
+          {
+            "type": "step",
+            "html": "2. Add sugar and beat another 2 minutes scraping down the sides of the bowl"
+          },
+          {
+            "type": "step",
+            "html": "3. Add vanilla, lemon juice, egg, and mix until combined."
+          },
+          {
+            "type": "step",
+            "html": "4. Set aside."
+          }
+        ]
+      },
+      {
+        "title": "Pastry",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Unfold puff pastry sheets onto a lightly floured surface."
+          },
+          {
+            "type": "step",
+            "html": "2. Using a rolling pin, lightly roll to make them an even square.<i> You don’t need much pressure, just about 5 rolls here and there should suffice.</i>"
+          },
+          {
+            "type": "step",
+            "html": "3. Divide the cream cheese mixture into halves and smear each half onto the center of the pastries."
+          },
+          {
+            "type": "step",
+            "html": "4. Add a few tablespoons of the raspberry sauce on top lightly spreading it."
+          },
+          {
+            "type": "step",
+            "html": "5. With a butter knife, cut to make a rectangle at the top and bottom of the pastry."
+          },
+          {
+            "type": "step",
+            "html": "6. Fold the flaps over and pinch to seal."
+          },
+          {
+            "type": "step",
+            "html": "7. This will prevent leaks while the pastry bakes"
+          },
+          {
+            "type": "step",
+            "html": "8. Make 5-8 slits on each side, making sure each side has the same amount"
+          },
+          {
+            "type": "step",
+            "html": "9. Starting from the bottom, fold each flap over onto the other side"
+          },
+          {
+            "type": "step",
+            "html": "10. Like a braid, continue until you reach the end and pinch to seal"
+          },
+          {
+            "type": "step",
+            "html": "11. Brush with an egg wash and sprinkle with coarse sugar."
+          },
+          {
+            "type": "step",
+            "html": "12. Bake at 375 degrees F for 25-30 minutes or until golden brown."
+          },
+          {
+            "type": "step",
+            "html": "13.Allow to cool for 10 minutes."
+          }
+        ]
+      },
+      {
+        "title": "Icing",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine powdered Sugar, vanilla, and cream whisking until full incorporated."
+          },
+          {
+            "type": "step",
+            "html": "2. Add more cream until you achieve your desired consistency."
+          },
+          {
+            "type": "step",
+            "html": "3. Make sure it isn’t too thin so it will not run off the Danish."
+          },
+          {
+            "type": "step",
+            "html": "4. Drizzle the icing over the Danishes and enjoy! *Refrigerate if not enjoyed immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mozzarella-cheese",
+    "legacySlug": "mozzarella-cheese",
+    "aliases": [
+      "mozzarella"
+    ],
+    "title": "Mozzarella Cheese",
+    "category": "Appetizer",
+    "description": "Creamy white or pale ivory in colour, mozzarella has a mild, fresh lactic flavour.",
+    "image": "assets/Food/mozzarrella.jpg",
+    "prepTime": "10 mins",
+    "totalTime": "30 mins",
+    "yield": "3 mozzarella balls",
+    "yieldIcon": "fluent-emoji-high-contrast:cheese-wedge",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "1 gallon (3.7l) whole milk (ideally NOT ultra pasteurized)",
+          "1.5 teaspoons (8g) citric acid",
+          "1 cup (250ml) water",
+          "1/2 teaspoon (3g) liquid rennet",
+          "1/4 cup (60ml) water"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Mozzarella",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Stir to dissolve 1.5 teaspoons citric acid with 1 cup of water"
+          },
+          {
+            "type": "step",
+            "html": "2. Make sure completely dissolved"
+          },
+          {
+            "type": "step",
+            "html": "3. Stir to 1/2 teaspoon of liquid rennet with 1/4 cup water"
+          },
+          {
+            "type": "step",
+            "html": "4. Pour 1 gallon of milk in a cold pot"
+          },
+          {
+            "type": "step",
+            "html": "5. Slowly pour citric acid mixture into 1 gallon of milk while CONTINUOUSLY stirring"
+          },
+          {
+            "type": "step",
+            "html": "6. Heat milk to medium low heat"
+          },
+          {
+            "type": "step",
+            "html": "7. Stir occasionally to not form crust on top"
+          },
+          {
+            "type": "step",
+            "html": "8. Reach 90 Degrees F or 32 Degree C"
+          },
+          {
+            "type": "step",
+            "html": "9. Immediately remove milk from heat and slowly pour rennet mixture while vigorously stirring"
+          },
+          {
+            "type": "step",
+            "html": "10. As soon as rennet hits milk start counting to 25 and continue stirring till 25 seconds are done"
+          },
+          {
+            "type": "step",
+            "html": "11. Add a lid and let sit for 5 min"
+          },
+          {
+            "type": "step",
+            "html": "12. Should have a separation from curd and whey"
+          },
+          {
+            "type": "step",
+            "html": "13. If no separation let it sit for another 5 minutes"
+          },
+          {
+            "type": "step",
+            "html": "<img src=\"../assets/optimized/mozzarrella1.1.webp\" alt=\"Recipe step photo\" class=\"img-fluid rounded recipe-step-img\" loading=\"lazy\">"
+          },
+          {
+            "type": "step",
+            "html": "14. Begin cutting curd with knife all the way down and all the way across"
+          },
+          {
+            "type": "step",
+            "html": "<img src=\"../assets/optimized/mozzarrella1.2.webp\" alt=\"Recipe step photo\" class=\"img-fluid rounded recipe-step-img\" loading=\"lazy\">"
+          },
+          {
+            "type": "step",
+            "html": "15. After cutting put back on medium low heat and stir occasionally VERY slowly to not break up curds"
+          },
+          {
+            "type": "step",
+            "html": "16. Heat until 105 Degree F or 40 Degree C"
+          },
+          {
+            "type": "step",
+            "html": "17. Remove from heat for 5 minutes"
+          },
+          {
+            "type": "step",
+            "html": "18. Take the curd out of the whey with a spatula, spoon etc. and place in a strainer to let it"
+          },
+          {
+            "type": "note",
+            "html": "Let it strain for about 15 seconds"
+          },
+          {
+            "type": "step",
+            "html": "19. After 15 seconds squeeze the excess whey out, not too hard just to get some of it out"
+          },
+          {
+            "type": "step",
+            "html": "20. Go back to the water mixture in the pot (whey) and season it with 1tbs Kosher salt"
+          },
+          {
+            "type": "step",
+            "html": "21. Pour a small pot of the whey into another pot and heat it up to 180°F (82°C)"
+          },
+          {
+            "type": "step",
+            "html": "22. Place the warm whey on the curd for 15-20 seconds"
+          },
+          {
+            "type": "step",
+            "html": "23. Wear dish gloves and start to fold over itself"
+          },
+          {
+            "type": "step",
+            "html": "<img src=\"../assets/optimized/mozzarrella1.3.webp\" alt=\"Recipe step photo\" class=\"img-fluid rounded recipe-step-img\" loading=\"lazy\">"
+          },
+          {
+            "type": "step",
+            "html": "24. Once folded begin to form the curd into balls for eating"
+          },
+          {
+            "type": "step",
+            "html": "<img src=\"../assets/optimized/mozzarrella1.4.webp\" alt=\"Recipe step photo\" class=\"img-fluid rounded recipe-step-img\" loading=\"lazy\">"
+          },
+          {
+            "type": "step",
+            "html": "25. Place in container with room temperature whey and store in fridge till ready to serve"
+          },
+          {
+            "type": "step",
+            "html": "26. Once its settled in the whey you can wrap each ball individually and store for 3-4 days max"
+          },
+          {
+            "type": "step",
+            "html": "27. Serve with olive oil on top and salt for taste"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "brussel-sprouts",
+    "legacySlug": "brussel-sprouts",
+    "aliases": [
+      "brusselsprouts",
+      "brussels-sprouts"
+    ],
+    "title": "Brussel Sprouts",
+    "category": "Appetizer",
+    "description": "Crispy roasted Brussels sprouts — the one vegetable your guests will ask for seconds of.",
+    "image": "assets/optimized/brussel.webp",
+    "prepTime": "10 mins",
+    "totalTime": "30 mins",
+    "yield": "4 servings",
+    "yieldIcon": "icon-park-outline:vegetables",
+    "ingredientGroups": [
+      {
+        "title": "",
+        "items": [
+          "1 lb Brussel Sprouts",
+          "1 tsp olive oil",
+          "1/2 tsp kosher salt",
+          "1/2 tsp garlic powder",
+          "1/2 tsp onion powder (optional)",
+          "3 turns of fresh black pepper"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Brussel Sprouts",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Preheat oven to 400 Degrees F"
+          },
+          {
+            "type": "step",
+            "html": "2. Cut Brussel sprouts stem and in half"
+          },
+          {
+            "type": "step",
+            "html": "3. Place flat (inside on pan)"
+          },
+          {
+            "type": "step",
+            "html": "4. Cook in 400 degree F oven for 15 minutes"
+          },
+          {
+            "type": "step",
+            "html": "5. After 15 min shake pan around then place for additional 11-13 minutes <i>or until outer layer is burnt/crisp</i>"
+          },
+          {
+            "type": "step",
+            "html": "6. Serve in a bowl and sprinkle kosher salt for presentation and taste"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "japanese-milkbread",
+    "legacySlug": "japanese-milkbread",
+    "aliases": [
+      "milkbread",
+      "japanese-milk-bread"
+    ],
+    "title": "Japanese Milk Bread",
+    "category": "Dessert",
+    "description": "A fluffy, pillowy Japanese milk bread perfect for sandwiches or enjoying on its own.",
+    "image": "assets/optimized/milkbread.webp",
+    "prepTime": "20 mins",
+    "totalTime": "3-4 hours",
+    "yield": "2 loafs (2lbs)",
+    "yieldIcon": "mingcute:bread-fill",
+    "ingredientGroups": [
+      {
+        "title": "Tangzhong",
+        "items": [
+          "4 tbsp (40g) bread flour",
+          "2 tbsp (54g) water",
+          "8 tbsp (120g) whole milk"
+        ]
+      },
+      {
+        "title": "Bread Dough",
+        "items": [
+          "5 cups (640g) bread flour",
+          "2 Tbsp (18g) active dry yeast (instant works as well)",
+          "0.5 tbsp (6g) fine sea salt",
+          "1 cup (240g) whole milk",
+          "1/2 cup (112g) granulated sugar",
+          "6 Tbsp (84g) unsalted butter, softened",
+          "2 whole egg, room temperature"
+        ]
+      },
+      {
+        "title": "Egg Wash",
+        "items": [
+          "1 egg",
+          "Splash of whole milk (2tbsp)"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Milk Bread",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. For the tangzhong, add all ingredients together and mix over medium heat, and constantly whisk until it becomes a paste."
+          },
+          {
+            "type": "step",
+            "html": "2. Once thick, remove from heat and let it cool to room temperature."
+          },
+          {
+            "type": "step",
+            "html": "3. In a stand mixer bowl, add the dry ingredients. Add in milk and yeast mixture, the tangzhong mix, and a whole egg. Mix on low speed, scraping the sides occasionally. When dough starts coming together, increase speed to medium-low. Gradually add butter until incorporated and nothing sticks to the sides. About 5-7 minutes."
+          },
+          {
+            "type": "step",
+            "html": "4.Dump dough onto a work surface and roll into a tight ball. Place dough into a lightly greased bowl and cover with a damp towel or plastic wrap. Let rise at room temperature for 1-2 hours, or doubled in size."
+          },
+          {
+            "type": "step",
+            "html": "5.Roll out the dough into an oval shape. Flip it over so the surface (crust) is on the bottom. Letter fold: Fold the top and bottom third over the center. Rotate 90° and roll it up to form a spiral while pressing down. Pinch the seam closed and add three pieces seam side down into a loaf pan. Proof in a warm, humid place until it doubles in size or it's 1cm below the rim of the loaf pan (1-2hours)"
+          },
+          {
+            "type": "step",
+            "html": "6. Preheat oven to 350 F and bake for 30 minutes or until internal temp is 190 F"
+          }
+        ]
+      }
+    ]
+  }
+]

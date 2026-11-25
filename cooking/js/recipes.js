@@ -1,54 +1,279 @@
-const recipes = [
-    'tonkotsu-ramen',
-    'pork-bao-buns',
-    'chicken-tikka-naan',
-    'birria-quesa-tacos',
-    'ash-reshteh',
-    'pico-de-gallo',
-    'chicken-soup',
-    'xiao-long-bao',
-    'potato-crispy-aioli',
-    'blooming-onion',
-    'fajita-guacamole',
-    'croissants',
-    'churros',
-    'macaroni-and-cheese',
-    'spaghetti-meat-sauce',
-    'pumpkin-bread-salted-maple-butter',
-    'burrito',
-    'popeyes-chicken-sandwhich',
-    'masala-fries',
-    'pasta-dough',
-    'bread',
-    'bruscetta',
-    'in-n-out-burger',
-    'rasberry-danish',
-    'mozzarella-cheese',
-    'brussel-sprouts',
-    'japanese-milkbread',
-];
+(() => {
+    const swiperWrapper = document.getElementById('recipes-swiper');
+    const searchInput = document.getElementById('recipes-search-input');
+    const clearBtn = document.getElementById('recipes-search-clear');
+    const filterPills = Array.from(document.querySelectorAll('.filter-pill'));
+    const countEl = document.getElementById('recipes-count');
+    const emptyStateEl = document.getElementById('recipes-empty-state');
+    const sliderWrapperEl = document.getElementById('recipes-slider-wrapper');
+    const resetBtn = document.getElementById('recipes-reset-btn');
 
-// to add new recipe
-// 1. type the name of the recipe to the array above
-// 2. create a new folder inside recipes folder (note: the name of the folder should be exactly the same with the name that you add to the recipes array above)
-// 3. add index.html (for the card component) and recipe-content.html (for the modal component)
-// 4. go to cooking/index.html file
-// 5. add the recipe content section there will be a group of something like this <div class="modal fade readMore" id="read-more-brussel-sprouts" tabindex="-1" aria-hidden="true"></div>
-// 6. add the new one with the id 'read-more-{exact same name as the one before}' <div class="modal fade readMore" id="read-more-{exact same name as the one before}" tabindex="-1" aria-hidden="true"></div>
+    if (!swiperWrapper) return;
 
-$(() => {
-    recipes.forEach(recipe => {
-        // Load the recipe content
-        $(`.${recipe}-recipe-content`).load(`./recipes/${recipe}/recipe-content.html`);
+    let allRecipes = [];
+    let swiperInstance = null;
+    let activeCategory = 'All';
+    let searchQuery = '';
+
+    const escapeHtml = (str) =>
+        String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+
+    const normalizeSlug = (str) =>
+        String(str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    const debounce = (fn, timeout = 200) => {
+        let timer;
+        return (...args) => {
+            clearTimeout(timer);
+            timer = setTimeout(() => fn(...args), timeout);
+        };
+    };
+
+    const getSwiperConfig = (count) => {
+        const useTwoRows = count > 3;
+        return {
+            observer: true,
+            observeParents: true,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                300: {
+                    grid: { fill: 'row', rows: 1 },
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    grid: { fill: 'row', rows: 1 },
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                },
+                992: {
+                    grid: { fill: 'row', rows: useTwoRows ? 2 : 1 },
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+            },
+        };
+    };
+
+    const buildCardHtml = (recipe) => {
+        const href = `./${encodeURIComponent(recipe.slug)}/`;
+        return `
+            <div class="swiper-slide" data-slug="${escapeHtml(recipe.slug)}">
+                <a class="card-food card-food-link" href="${href}">
+                    <div class="imgTitle">
+                        <div class="img-wrapper">
+                            <img src="./${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.title)}" loading="lazy">
+                            <span class="card-cat-badge">${escapeHtml(recipe.category)}</span>
+                        </div>
+                    </div>
+                    <div class="cardBody">
+                        <h4 class="title">${escapeHtml(recipe.title)}</h4>
+                        <p class="card-desc">${escapeHtml(recipe.description)}</p>
+                        <div class="card-meta-footer">
+                            <span class="card-time">
+                                <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                                ${escapeHtml(recipe.totalTime || recipe.prepTime)}
+                            </span>
+                            <span class="btn-read">View Recipe →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        `;
+    };
+
+    const syncUrlParams = () => {
+        const url = new URL(window.location.href);
+        if (searchQuery) {
+            url.searchParams.set('q', searchQuery);
+        } else {
+            url.searchParams.delete('q');
+        }
+        if (activeCategory && activeCategory !== 'All') {
+            url.searchParams.set('category', activeCategory);
+        } else {
+            url.searchParams.delete('category');
+        }
+        window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+    };
+
+    const renderFiltered = () => {
+        const q = searchQuery.trim().toLowerCase();
+        const filtered = allRecipes.filter((r) => {
+            if (activeCategory !== 'All' && r.category !== activeCategory) {
+                return false;
+            }
+            if (!q) return true;
+            return r._searchIndex.includes(q);
+        });
+
+        if (clearBtn) {
+            clearBtn.hidden = !searchQuery;
+        }
+
+        if (countEl) {
+            if (!q && activeCategory === 'All') {
+                countEl.textContent = `Showing all ${filtered.length} recipes`;
+            } else {
+                countEl.textContent = `Showing ${filtered.length} of ${allRecipes.length} recipes`;
+            }
+        }
+
+        if (filtered.length === 0) {
+            if (emptyStateEl) emptyStateEl.hidden = false;
+            if (sliderWrapperEl) sliderWrapperEl.hidden = true;
+            if (swiperInstance) {
+                swiperInstance.destroy(true, true);
+                swiperInstance = null;
+            }
+            swiperWrapper.innerHTML = '';
+            return;
+        }
+
+        if (emptyStateEl) emptyStateEl.hidden = true;
+        if (sliderWrapperEl) sliderWrapperEl.hidden = false;
+
+        if (swiperInstance) {
+            swiperInstance.destroy(true, true);
+            swiperInstance = null;
+        }
+
+        swiperWrapper.innerHTML = filtered.map(buildCardHtml).join('');
+
+        if (typeof Swiper !== 'undefined') {
+            swiperInstance = new Swiper('.mySwiper', getSwiperConfig(filtered.length));
+        }
+    };
+
+    const checkDirectRecipeParam = (recipes) => {
+        const params = new URLSearchParams(window.location.search);
+        const directParam = params.get('recipe') || (window.location.hash && window.location.hash !== '#cooking' ? window.location.hash.slice(1) : '');
+        if (!directParam) return false;
+
+        const target = normalizeSlug(directParam);
+        const match = recipes.find((r) => {
+            const candidates = [r.slug, r.legacySlug, ...(r.aliases || []), r.title];
+            return candidates.some((c) => normalizeSlug(c) === target);
+        });
+
+        if (match) {
+            window.location.replace(`./${match.slug}/`);
+            return true;
+        }
+        return false;
+    };
+
+    const init = async () => {
+        try {
+            const res = await fetch('./data/recipes.json');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+
+            if (checkDirectRecipeParam(data)) return;
+
+            allRecipes = data.map((r) => {
+                const ingredientsText = (r.ingredientGroups || [])
+                    .flatMap((g) => [g.title || '', ...(g.items || [])])
+                    .join(' ');
+                return {
+                    ...r,
+                    _searchIndex: [
+                        r.title,
+                        r.description,
+                        r.category,
+                        r.slug,
+                        ...(r.aliases || []),
+                        ingredientsText,
+                    ]
+                        .join(' ')
+                        .toLowerCase(),
+                };
+            });
+
+            // Restore query/category from URL if present
+            const params = new URLSearchParams(window.location.search);
+            const initialQ = params.get('q');
+            const initialCat = params.get('category');
+            if (initialQ && searchInput) {
+                searchQuery = initialQ;
+                searchInput.value = initialQ;
+            }
+            if (initialCat && ['All', 'Appetizer', 'Entree', 'Dessert'].includes(initialCat)) {
+                activeCategory = initialCat;
+                filterPills.forEach((p) => {
+                    const active = p.dataset.category === activeCategory;
+                    p.classList.toggle('is-active', active);
+                    p.setAttribute('aria-selected', String(active));
+                });
+            }
+
+            renderFiltered();
+        } catch (err) {
+            console.error('Failed to load recipes:', err);
+            if (countEl) {
+                countEl.textContent = 'Unable to load recipes right now.';
+            }
+        }
+    };
+
+    if (searchInput) {
+        searchInput.addEventListener(
+            'input',
+            debounce((e) => {
+                searchQuery = e.target.value;
+                syncUrlParams();
+                renderFiltered();
+            }, 180)
+        );
+    }
+
+    if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            searchQuery = '';
+            if (searchInput) {
+                searchInput.value = '';
+                searchInput.focus();
+            }
+            syncUrlParams();
+            renderFiltered();
+        });
+    }
+
+    filterPills.forEach((pill) => {
+        pill.addEventListener('click', () => {
+            activeCategory = pill.dataset.category || 'All';
+            filterPills.forEach((p) => {
+                const active = p === pill;
+                p.classList.toggle('is-active', active);
+                p.setAttribute('aria-selected', String(active));
+            });
+            syncUrlParams();
+            renderFiltered();
+        });
     });
-});
 
-recipes.forEach(recipe => {
-    // Create a new slide element and use jQuery's .load() method to add the fetched HTML content
-    const slide = $('<div>').attr('id', recipe).addClass('swiper-slide').load(`./recipes/${recipe}`);
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            searchQuery = '';
+            activeCategory = 'All';
+            if (searchInput) searchInput.value = '';
+            filterPills.forEach((p) => {
+                const active = p.dataset.category === 'All';
+                p.classList.toggle('is-active', active);
+                p.setAttribute('aria-selected', String(active));
+            });
+            syncUrlParams();
+            renderFiltered();
+        });
+    }
 
-    // Add the new slide element to the Swiper wrapper
-    $('.swiper-wrapper').append(slide);
-    // Add the recipe content
-    $(`#read-more-${recipe}`).addClass(`${recipe}-recipe-content`);
-});
+    init();
+})();
