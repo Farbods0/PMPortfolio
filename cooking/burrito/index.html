@@ -286,11 +286,18 @@
             <div class="container">
                 <article class="recipe-surface food-detail">
                     <div class="recipe-topbar">
-                        <a href="../#cooking" class="arrowback">
-                            <i><iconify-icon icon="cil:arrow-left"></iconify-icon></i>
-                            Back to all recipes
-                        </a>
+                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                            <a href="../">Cooking</a>
+                            <span class="crumb-sep">/</span>
+                            <a href="../recipes/">All Recipes</a>
+                            <span class="crumb-sep">/</span>
+                            <span aria-current="page">Burrito</span>
+                        </nav>
                         <div class="recipe-actions">
+                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                                <iconify-icon icon="mdi:restore"></iconify-icon>
+                                <span class="btn-label">Reset Checks</span>
+                            </button>
                             <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/burrito/">
                                 <iconify-icon icon="mdi:link-variant"></iconify-icon>
                                 <span class="btn-label">Copy Link</span>
@@ -307,14 +314,14 @@
                     </div>
 
                     <div class="recipe-content-body">
-                        <div class="row g-4 align-items-start">
+                        <div class="row g-4 align-items-center recipe-hero-row">
                             <div class="col-lg-5">
                                 <div class="img-holder recipe-hero-img">
                                     <img src="../assets/optimized/burrito.webp" alt="Burrito" fetchpriority="high">
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <span class="recipe-cat-pill">Entree</span>
+                                <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
                                 <h1 class="recipe-title">Burrito</h1>
                                 <p class="recipe-lead">Meaning &quot;little donkey&quot;, warm tortilla filled with meat, beans, cheese, etc.</p>
 
@@ -347,14 +354,19 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="ingredients-block">
+                        <hr>
+
+                        <div class="row g-5 recipe-cooking-columns">
+                            <aside class="col-lg-4 recipe-ingredients-col">
+                                <div class="ingredients-sticky-card">
                                     <div class="section-heading-row">
                                         <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap items to check off</span>
+                                        <span class="interactive-hint">Tap to check off</span>
                                     </div>
-                                    <div class="row g-3">
-<div class="col-md-6 ingredient-group">
+                                    <div class="ingredient-group">
   <h5>Chipotle Marinated Chicken</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">2 dried guajillo chilies</label></li>
@@ -371,7 +383,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-11" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-11">1.5 lbs boneless skinless chicken thigh</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Homemade Flour Tortillas</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">2 cups (300g) all purpose flour</label></li>
@@ -381,7 +393,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4">3/4 cup warm water</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Beans</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">4-5 slices bacon</label></li>
@@ -394,7 +406,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-2-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-7">Salt and pepper to taste</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Cilantro Lime Rice</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0">4 cups cooked rice</label></li>
@@ -405,19 +417,15 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-3-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-5">Salt to taste</label></li>
   </ul>
 </div>
-</div>
                                 </div>
-                            </div>
-                        </div>
+                            </aside>
 
-                        <hr>
-
-                        <section class="instructions-block">
-                            <div class="section-heading-row">
-                                <h2 class="subTitle">INSTRUCTIONS</h2>
-                                <span class="interactive-hint">Tap a step to mark complete</span>
-                            </div>
-                            <div class="cardSteps">
+                            <section class="col-lg-8 instructions-block">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">INSTRUCTIONS</h2>
+                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                </div>
+                                <div class="cardSteps">
   <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
   <div class="desciption">
     <div class="titleStep"><span>Marinated Chicken (1 hourovernight)</span></div>
@@ -475,49 +483,50 @@
     <p class="recipe-step-item" title="Click to mark step done">3. Wrap by folding sides in and rolling from the bottom up before serving.</p>
   </div>
 </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../#cooking" class="arrowback">View all recipes →</a>
+                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
-  <a href="../chicken-soup/" class="related-recipe-card">
+  <a href="../chicken-marinades/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/chickenSoup.webp" alt="Chicken Soup" loading="lazy">
+      <img src="../assets/optimized/chicken-marinades.webp" alt="Signature Chicken Marinades (7 Flavors)" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Chicken Soup</h4>
-      <p>The best chicken soup you’ll ever eat is the perfect recipe to make when you’re feeling sick.</p>
+      <h4>Signature Chicken Marinades (7 Flavors)</h4>
+      <p>High-flavor bulk meal-prep marinades from Korean Gochujang and Yakitori to Cantonese Char Siu, Vietnamese Lemongrass, Peruvian Pollo a la Brasa, and Fiery Harissa.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../fajita-guacamole/" class="related-recipe-card">
+  <a href="../tonkotsu-ramen/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/mexiannight.webp" alt="Fajita &amp; Guacamole" loading="lazy">
+      <img src="../assets/optimized/tonkotsu.webp" alt="Tonkotsu Ramen" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Fajita &amp; Guacamole</h4>
-      <p>The best combination of Fajita and Guacamole for a fun filled Mexican night.</p>
+      <h4>Tonkotsu Ramen</h4>
+      <p>A unique style of ramen consisting of an extremely rich, fatty pork broth.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../macaroni-and-cheese/" class="related-recipe-card">
+  <a href="../pork-bao-buns/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/macroni.webp" alt="Macaroni and Cheese" loading="lazy">
+      <img src="../assets/optimized/porkbaobuns.webp" alt="Pork Bao Buns" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Macaroni and Cheese</h4>
-      <p>An American dish of cooked macaroni pasta and a cheese sauce</p>
+      <h4>Pork Bao Buns</h4>
+      <p>A homemade pork bao buns sweet and spicy.</p>
     </div>
   </a>
 </div>
@@ -554,21 +563,11 @@
         <!-- FOOTER END -->
     </div>
 
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
 
     <script src="../../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../../js/simpleparallax.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
     <script src="../js/recipe-page.js" defer></script>

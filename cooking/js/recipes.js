@@ -1,4 +1,15 @@
 (() => {
+    // Load background hero video only on desktop & when reduced motion is not requested
+    const heroVideo = document.getElementById('video-slider');
+    if (heroVideo && heroVideo.dataset.src) {
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!prefersReduced && window.innerWidth >= 768) {
+            heroVideo.src = heroVideo.dataset.src;
+            heroVideo.load();
+            heroVideo.play().catch(() => {});
+        }
+    }
+
     const swiperWrapper = document.getElementById('recipes-swiper');
     const searchInput = document.getElementById('recipes-search-input');
     const clearBtn = document.getElementById('recipes-search-clear');
@@ -43,20 +54,27 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
             breakpoints: {
                 300: {
                     grid: { fill: 'row', rows: 1 },
                     slidesPerView: 1,
+                    slidesPerGroup: 1,
                     spaceBetween: 0,
                 },
                 768: {
                     grid: { fill: 'row', rows: 1 },
                     slidesPerView: 2,
+                    slidesPerGroup: 2,
                     spaceBetween: 0,
                 },
                 992: {
                     grid: { fill: 'row', rows: useTwoRows ? 2 : 1 },
                     slidesPerView: 3,
+                    slidesPerGroup: 3,
                     spaceBetween: 0,
                 },
             },

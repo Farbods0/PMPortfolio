@@ -1,4 +1,7 @@
 (() => {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
+
     /* Appetizers */
     const foodImageList1 = [
         'assets/optimized/Bruscetta.webp',
@@ -28,11 +31,17 @@
     function setupDynamicImage(id, borderId, interval, delay, images, direction) {
         const image = document.getElementById(id);
         const border = document.getElementById(borderId);
-        if (!image || !border || !images.length) return;
+        if (!image || !border || images.length < 2) return;
 
         const inClass = direction === 'left' ? 'fade-in-left' : 'fade-in-right';
         const outClass = direction === 'left' ? 'fade-out-left' : 'fade-out-right';
         let index = 0;
+
+        const preload = (idx) => {
+            const img = new Image();
+            img.src = images[idx % images.length];
+        };
+        preload(1);
 
         setTimeout(() => {
             setTimeout(() => {
@@ -45,6 +54,7 @@
             setInterval(() => {
                 index = (index + 1) % images.length;
                 image.src = images[index];
+                preload(index + 1);
                 image.classList.remove(outClass);
                 image.classList.add(inClass);
                 border.classList.remove(outClass);

@@ -153,11 +153,18 @@
             <div class="container">
                 <article class="recipe-surface food-detail">
                     <div class="recipe-topbar">
-                        <a href="../#cooking" class="arrowback">
-                            <i><iconify-icon icon="cil:arrow-left"></iconify-icon></i>
-                            Back to all recipes
-                        </a>
+                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                            <a href="../">Cooking</a>
+                            <span class="crumb-sep">/</span>
+                            <a href="../recipes/">All Recipes</a>
+                            <span class="crumb-sep">/</span>
+                            <span aria-current="page">Macaroni and Cheese</span>
+                        </nav>
                         <div class="recipe-actions">
+                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                                <iconify-icon icon="mdi:restore"></iconify-icon>
+                                <span class="btn-label">Reset Checks</span>
+                            </button>
                             <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/macaroni-and-cheese/">
                                 <iconify-icon icon="mdi:link-variant"></iconify-icon>
                                 <span class="btn-label">Copy Link</span>
@@ -174,14 +181,14 @@
                     </div>
 
                     <div class="recipe-content-body">
-                        <div class="row g-4 align-items-start">
+                        <div class="row g-4 align-items-center recipe-hero-row">
                             <div class="col-lg-5">
                                 <div class="img-holder recipe-hero-img">
                                     <img src="../assets/optimized/macroni.webp" alt="Macaroni and Cheese" fetchpriority="high">
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <span class="recipe-cat-pill">Entree</span>
+                                <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
                                 <h1 class="recipe-title">Macaroni and Cheese</h1>
                                 <p class="recipe-lead">An American dish of cooked macaroni pasta and a cheese sauce</p>
 
@@ -214,14 +221,19 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="ingredients-block">
+                        <hr>
+
+                        <div class="row g-5 recipe-cooking-columns">
+                            <aside class="col-lg-4 recipe-ingredients-col">
+                                <div class="ingredients-sticky-card">
                                     <div class="section-heading-row">
                                         <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap items to check off</span>
+                                        <span class="interactive-hint">Tap to check off</span>
                                     </div>
-                                    <div class="row g-3">
-<div class="col-12 ingredient-group">
+                                    <div class="ingredient-group">
     <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">4 tablespoons unsalted butter, divided</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">3/4 cup panko (Japanese breadcrumbs)</label></li>
@@ -239,19 +251,15 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-13" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-13">1/2 teaspoon English mustard powder (such as Colman’s)</label></li>
   </ul>
 </div>
-</div>
                                 </div>
-                            </div>
-                        </div>
+                            </aside>
 
-                        <hr>
-
-                        <section class="instructions-block">
-                            <div class="section-heading-row">
-                                <h2 class="subTitle">INSTRUCTIONS</h2>
-                                <span class="interactive-hint">Tap a step to mark complete</span>
-                            </div>
-                            <div class="cardSteps">
+                            <section class="col-lg-8 instructions-block">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">INSTRUCTIONS</h2>
+                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                </div>
+                                <div class="cardSteps">
   <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
   <div class="desciption">
     <div class="titleStep"><span>Mac &#x27;N Cheese</span></div>
@@ -262,49 +270,50 @@
     <p class="recipe-step-item" title="Click to mark step done">5. Bake 10 minutes. Top with Parmesan breadcrumbs and bake until sauce is bubbling around the edges, 8–10 minutes longer. Let cool in pan 15 minutes before serving.</p>
   </div>
 </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../#cooking" class="arrowback">View all recipes →</a>
+                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
-  <a href="../chicken-tikka-naan/" class="related-recipe-card">
+  <a href="../biang-biang-braised-pork/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/chickenTikka.webp" alt="Chicken Tikka Masala with Naan Bread" loading="lazy">
+      <img src="../assets/optimized/biang-biang-braised-pork.webp" alt="Biang Biang Braised Pork Noodles" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Chicken Tikka Masala with Naan Bread</h4>
-      <p>A traditional Indian dish made up of chicken that&#x27;s been marinated in yogurt, served with rice.</p>
+      <h4>Biang Biang Braised Pork Noodles</h4>
+      <p>Interactive dinner-party hand-pulled wide belt noodles topped with 3.5-hour star-anise braised pork, sizzling 350°F garlic-chili oil, spicy cucumber salad, and blistered shishitos.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../birria-quesa-tacos/" class="related-recipe-card">
+  <a href="../panang-curry/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/Food/birriaQuesaTacos.jpeg" alt="Birria Quesa Tacos" loading="lazy">
+      <img src="../assets/optimized/panang-curry.webp" alt="Chicken Panang Curry" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Birria Quesa Tacos</h4>
-      <p>Tortillas filled with the stew&#x27;s tender, juicy meat dipped in meat broth.</p>
+      <h4>Chicken Panang Curry</h4>
+      <p>Velvety Thai red coconut curry enriched with creamy peanut butter, tender sliced chicken, sweet bell peppers, fresh ginger, lime juice, and fragrant basil over hot jasmine rice.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../ash-reshteh/" class="related-recipe-card">
+  <a href="../pad-see-eiw/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/ashReshteh.webp" alt="Ash Reshteh" loading="lazy">
+      <img src="../assets/optimized/pad-see-eiw.webp" alt="Beef Pad See Ew" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Ash Reshteh</h4>
-      <p>A classic Persian noodle soup with beans and herbs that is intensely aromatic and amazingly delicious</p>
+      <h4>Beef Pad See Ew</h4>
+      <p>Wok-charred wide rice noodles tossed with soy-marinated flank steak, crisp-tender Chinese broccoli, scrambled eggs, and a caramelized dark soy and oyster sauce glaze.</p>
     </div>
   </a>
 </div>
@@ -341,21 +350,11 @@
         <!-- FOOTER END -->
     </div>
 
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
 
     <script src="../../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../../js/simpleparallax.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
     <script src="../js/recipe-page.js" defer></script>

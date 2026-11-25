@@ -191,11 +191,18 @@
             <div class="container">
                 <article class="recipe-surface food-detail">
                     <div class="recipe-topbar">
-                        <a href="../#cooking" class="arrowback">
-                            <i><iconify-icon icon="cil:arrow-left"></iconify-icon></i>
-                            Back to all recipes
-                        </a>
+                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                            <a href="../">Cooking</a>
+                            <span class="crumb-sep">/</span>
+                            <a href="../recipes/">All Recipes</a>
+                            <span class="crumb-sep">/</span>
+                            <span aria-current="page">Pasta Dough</span>
+                        </nav>
                         <div class="recipe-actions">
+                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                                <iconify-icon icon="mdi:restore"></iconify-icon>
+                                <span class="btn-label">Reset Checks</span>
+                            </button>
                             <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/pasta-dough/">
                                 <iconify-icon icon="mdi:link-variant"></iconify-icon>
                                 <span class="btn-label">Copy Link</span>
@@ -212,14 +219,14 @@
                     </div>
 
                     <div class="recipe-content-body">
-                        <div class="row g-4 align-items-start">
+                        <div class="row g-4 align-items-center recipe-hero-row">
                             <div class="col-lg-5">
                                 <div class="img-holder recipe-hero-img">
                                     <img src="../assets/optimized/pastadough.webp" alt="Pasta Dough" fetchpriority="high">
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <span class="recipe-cat-pill">Appetizer</span>
+                                <a href="../recipes/?category=Appetizer" class="recipe-cat-pill recipe-cat-link">Appetizer</a>
                                 <h1 class="recipe-title">Pasta Dough</h1>
                                 <p class="recipe-lead">Homemade fresh pasta dough for spaghetti, linguine, fettuccine, and more.</p>
 
@@ -252,14 +259,19 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="ingredients-block">
+                        <hr>
+
+                        <div class="row g-5 recipe-cooking-columns">
+                            <aside class="col-lg-4 recipe-ingredients-col">
+                                <div class="ingredients-sticky-card">
                                     <div class="section-heading-row">
                                         <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap items to check off</span>
+                                        <span class="interactive-hint">Tap to check off</span>
                                     </div>
-                                    <div class="row g-3">
-<div class="col-12 ingredient-group">
+                                    <div class="ingredient-group">
   <h5>Pasta Dough</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">4 large eggs</label></li>
@@ -268,19 +280,15 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3">1/4 cup water *start with 2 tablespoons</label></li>
   </ul>
 </div>
-</div>
                                 </div>
-                            </div>
-                        </div>
+                            </aside>
 
-                        <hr>
-
-                        <section class="instructions-block">
-                            <div class="section-heading-row">
-                                <h2 class="subTitle">INSTRUCTIONS</h2>
-                                <span class="interactive-hint">Tap a step to mark complete</span>
-                            </div>
-                            <div class="cardSteps">
+                            <section class="col-lg-8 instructions-block">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">INSTRUCTIONS</h2>
+                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                </div>
+                                <div class="cardSteps">
   <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
   <div class="desciption">
     <div class="titleStep"><span>Making the Pasta Dough</span></div>
@@ -312,49 +320,50 @@
 <p class="recipe-step-item" title="Click to mark step done">Cook the spaghetti in a pot of boiling water with 1 tablespoon of salt and 1 tablespoon of olive oil for 3-4 minutes or until al dente</p>
   </div>
 </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../#cooking" class="arrowback">View all recipes →</a>
+                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
-  <a href="../xiao-long-bao/" class="related-recipe-card">
+  <a href="../masala-fries/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/Food/SoupDumpling.jpg" alt="Soup Dumpling (Xiaolongbao)" loading="lazy">
+      <img src="../assets/Food/maslafood.jpg" alt="Masala Fries" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Appetizer</span>
-      <h4>Soup Dumpling (Xiaolongbao)</h4>
-      <p>Delicate steamed dumpling filled with pork and soup often thought to have originated in Shanghai.</p>
+      <h4>Masala Fries</h4>
+      <p>Crispy spiced masala fries served with a creamy sriracha mayo dipping sauce.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../potato-crispy-aioli/" class="related-recipe-card">
+  <a href="../bread/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/crispy-salt-and-pepper-smashed-potatoes-3.webp" alt="Potato Crisp w/ Aioli" loading="lazy">
+      <img src="../assets/optimized/bread.webp" alt="Bread" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Appetizer</span>
-      <h4>Potato Crisp w/ Aioli</h4>
-      <p>A quick and easy appetizer to make in replace of french fries. Add a side of aioli for extra flavor.</p>
+      <h4>Bread</h4>
+      <p>Food consisting of flour that is moistened, kneaded into dough, and often fermented.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../blooming-onion/" class="related-recipe-card">
+  <a href="../bruschetta/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/Food/BloominOnion.jpeg" alt="Blooming Onion" loading="lazy">
+      <img src="../assets/optimized/Bruscetta.webp" alt="Bruschetta" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Appetizer</span>
-      <h4>Blooming Onion</h4>
-      <p>A crispy deep-fried blooming onion served with spicy mayo aioli for extra flavor.</p>
+      <h4>Bruschetta</h4>
+      <p>Thick slices of bread, rubbed with garlic, drizzled with olive oil, often topped with tomatoes and herbs.</p>
     </div>
   </a>
 </div>
@@ -391,21 +400,11 @@
         <!-- FOOTER END -->
     </div>
 
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
 
     <script src="../../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../../js/simpleparallax.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
     <script src="../js/recipe-page.js" defer></script>

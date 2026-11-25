@@ -273,11 +273,18 @@
             <div class="container">
                 <article class="recipe-surface food-detail">
                     <div class="recipe-topbar">
-                        <a href="../#cooking" class="arrowback">
-                            <i><iconify-icon icon="cil:arrow-left"></iconify-icon></i>
-                            Back to all recipes
-                        </a>
+                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                            <a href="../">Cooking</a>
+                            <span class="crumb-sep">/</span>
+                            <a href="../recipes/">All Recipes</a>
+                            <span class="crumb-sep">/</span>
+                            <span aria-current="page">Popeyes Chicken Sandwich</span>
+                        </nav>
                         <div class="recipe-actions">
+                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                                <iconify-icon icon="mdi:restore"></iconify-icon>
+                                <span class="btn-label">Reset Checks</span>
+                            </button>
                             <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/popeyes-chicken-sandwich/">
                                 <iconify-icon icon="mdi:link-variant"></iconify-icon>
                                 <span class="btn-label">Copy Link</span>
@@ -294,14 +301,14 @@
                     </div>
 
                     <div class="recipe-content-body">
-                        <div class="row g-4 align-items-start">
+                        <div class="row g-4 align-items-center recipe-hero-row">
                             <div class="col-lg-5">
                                 <div class="img-holder recipe-hero-img">
                                     <img src="../assets/optimized/Popeyes.webp" alt="Popeyes Chicken Sandwich" fetchpriority="high">
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <span class="recipe-cat-pill">Entree</span>
+                                <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
                                 <h1 class="recipe-title">Popeyes Chicken Sandwich</h1>
                                 <p class="recipe-lead">A delicious crispy fried chicken sandwich on a homemade Japanese milk bun with spicy mayo.</p>
 
@@ -334,14 +341,19 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="ingredients-block">
+                        <hr>
+
+                        <div class="row g-5 recipe-cooking-columns">
+                            <aside class="col-lg-4 recipe-ingredients-col">
+                                <div class="ingredients-sticky-card">
                                     <div class="section-heading-row">
                                         <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap items to check off</span>
+                                        <span class="interactive-hint">Tap to check off</span>
                                     </div>
-                                    <div class="row g-3">
-<div class="col-md-6 ingredient-group">
+                                    <div class="ingredient-group">
   <h5>Japanese Milk Bun (Tangzhong)</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">2 tablespoons (20g) bread flour</label></li>
@@ -349,7 +361,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">4 tablespoons (60g) whole milk</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Dough</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">1/2 cup(120g) whole milk @ 95f (30c)</label></li>
@@ -361,13 +373,13 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-1-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-6">tablespoons (42g) unsalted butter, softened</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Egg wash</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">1 whole egg splash of whole milk</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Chicken Marinade (Overnight)</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0">1/2 cup(120g) whole milk @ 95f (30c)</label></li>
@@ -379,7 +391,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-3-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-6">tablespoons (42g) unsalted butter, softened</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Mayo Aioli</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-4-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-0">3/4 cup mayo</label></li>
@@ -390,19 +402,15 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-4-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-5">Lemon juice to taste</label></li>
   </ul>
 </div>
-</div>
                                 </div>
-                            </div>
-                        </div>
+                            </aside>
 
-                        <hr>
-
-                        <section class="instructions-block">
-                            <div class="section-heading-row">
-                                <h2 class="subTitle">INSTRUCTIONS</h2>
-                                <span class="interactive-hint">Tap a step to mark complete</span>
-                            </div>
-                            <div class="cardSteps">
+                            <section class="col-lg-8 instructions-block">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">INSTRUCTIONS</h2>
+                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                </div>
+                                <div class="cardSteps">
   <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
   <div class="desciption">
     <div class="titleStep"><span>Milk Bun</span></div>
@@ -445,49 +453,50 @@
     <p class="recipe-step-item" title="Click to mark step done">8. Assemble with buns, chicken, aioli, pickle</p>
   </div>
 </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../#cooking" class="arrowback">View all recipes →</a>
+                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
-  <a href="../fajita-guacamole/" class="related-recipe-card">
+  <a href="../tonkotsu-ramen/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/mexiannight.webp" alt="Fajita &amp; Guacamole" loading="lazy">
+      <img src="../assets/optimized/tonkotsu.webp" alt="Tonkotsu Ramen" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Fajita &amp; Guacamole</h4>
-      <p>The best combination of Fajita and Guacamole for a fun filled Mexican night.</p>
+      <h4>Tonkotsu Ramen</h4>
+      <p>A unique style of ramen consisting of an extremely rich, fatty pork broth.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../macaroni-and-cheese/" class="related-recipe-card">
+  <a href="../pork-bao-buns/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/macroni.webp" alt="Macaroni and Cheese" loading="lazy">
+      <img src="../assets/optimized/porkbaobuns.webp" alt="Pork Bao Buns" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Macaroni and Cheese</h4>
-      <p>An American dish of cooked macaroni pasta and a cheese sauce</p>
+      <h4>Pork Bao Buns</h4>
+      <p>A homemade pork bao buns sweet and spicy.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../spaghetti-meat-sauce/" class="related-recipe-card">
+  <a href="../chicken-tikka-naan/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/Food/spaghetti.jpg" alt="Spaghetti and Meat Sauce" loading="lazy">
+      <img src="../assets/optimized/chickenTikka.webp" alt="Chicken Tikka Masala with Naan Bread" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Spaghetti and Meat Sauce</h4>
-      <p>Is a long, thin, solid, cylindrical pasta. It is a staple food of traditional Italian cuisine.</p>
+      <h4>Chicken Tikka Masala with Naan Bread</h4>
+      <p>A traditional Indian dish made up of chicken that&#x27;s been marinated in yogurt, served with rice.</p>
     </div>
   </a>
 </div>
@@ -524,21 +533,11 @@
         <!-- FOOTER END -->
     </div>
 
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
 
     <script src="../../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../../js/simpleparallax.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
     <script src="../js/recipe-page.js" defer></script>

@@ -159,11 +159,18 @@
             <div class="container">
                 <article class="recipe-surface food-detail">
                     <div class="recipe-topbar">
-                        <a href="../#cooking" class="arrowback">
-                            <i><iconify-icon icon="cil:arrow-left"></iconify-icon></i>
-                            Back to all recipes
-                        </a>
+                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                            <a href="../">Cooking</a>
+                            <span class="crumb-sep">/</span>
+                            <a href="../recipes/">All Recipes</a>
+                            <span class="crumb-sep">/</span>
+                            <span aria-current="page">Spaghetti and Meat Sauce</span>
+                        </nav>
                         <div class="recipe-actions">
+                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                                <iconify-icon icon="mdi:restore"></iconify-icon>
+                                <span class="btn-label">Reset Checks</span>
+                            </button>
                             <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/spaghetti-meat-sauce/">
                                 <iconify-icon icon="mdi:link-variant"></iconify-icon>
                                 <span class="btn-label">Copy Link</span>
@@ -180,14 +187,14 @@
                     </div>
 
                     <div class="recipe-content-body">
-                        <div class="row g-4 align-items-start">
+                        <div class="row g-4 align-items-center recipe-hero-row">
                             <div class="col-lg-5">
                                 <div class="img-holder recipe-hero-img">
                                     <img src="../assets/Food/spaghetti.jpg" alt="Spaghetti and Meat Sauce" fetchpriority="high">
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <span class="recipe-cat-pill">Entree</span>
+                                <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
                                 <h1 class="recipe-title">Spaghetti and Meat Sauce</h1>
                                 <p class="recipe-lead">Is a long, thin, solid, cylindrical pasta. It is a staple food of traditional Italian cuisine.</p>
 
@@ -220,14 +227,19 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="ingredients-block">
+                        <hr>
+
+                        <div class="row g-5 recipe-cooking-columns">
+                            <aside class="col-lg-4 recipe-ingredients-col">
+                                <div class="ingredients-sticky-card">
                                     <div class="section-heading-row">
                                         <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap items to check off</span>
+                                        <span class="interactive-hint">Tap to check off</span>
                                     </div>
-                                    <div class="row g-3">
-<div class="col-12 ingredient-group">
+                                    <div class="ingredient-group">
     <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">1 pound ground beef</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">1 onion, chopped</label></li>
@@ -241,19 +253,15 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-9">1/2 teaspoon black pepper</label></li>
   </ul>
 </div>
-</div>
                                 </div>
-                            </div>
-                        </div>
+                            </aside>
 
-                        <hr>
-
-                        <section class="instructions-block">
-                            <div class="section-heading-row">
-                                <h2 class="subTitle">INSTRUCTIONS</h2>
-                                <span class="interactive-hint">Tap a step to mark complete</span>
-                            </div>
-                            <div class="cardSteps">
+                            <section class="col-lg-8 instructions-block">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">INSTRUCTIONS</h2>
+                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                </div>
+                                <div class="cardSteps">
   <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
   <div class="desciption">
     <div class="titleStep"><span>Meat Sauce</span></div>
@@ -271,49 +279,50 @@
 <p class="recipe-step-item" title="Click to mark step done">1. Refer to dough recipe for fresh noodles</p>
   </div>
 </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../#cooking" class="arrowback">View all recipes →</a>
+                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
-  <a href="../birria-quesa-tacos/" class="related-recipe-card">
+  <a href="../panang-curry/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/Food/birriaQuesaTacos.jpeg" alt="Birria Quesa Tacos" loading="lazy">
+      <img src="../assets/optimized/panang-curry.webp" alt="Chicken Panang Curry" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Birria Quesa Tacos</h4>
-      <p>Tortillas filled with the stew&#x27;s tender, juicy meat dipped in meat broth.</p>
+      <h4>Chicken Panang Curry</h4>
+      <p>Velvety Thai red coconut curry enriched with creamy peanut butter, tender sliced chicken, sweet bell peppers, fresh ginger, lime juice, and fragrant basil over hot jasmine rice.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../ash-reshteh/" class="related-recipe-card">
+  <a href="../pad-see-eiw/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/ashReshteh.webp" alt="Ash Reshteh" loading="lazy">
+      <img src="../assets/optimized/pad-see-eiw.webp" alt="Beef Pad See Ew" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Ash Reshteh</h4>
-      <p>A classic Persian noodle soup with beans and herbs that is intensely aromatic and amazingly delicious</p>
+      <h4>Beef Pad See Ew</h4>
+      <p>Wok-charred wide rice noodles tossed with soy-marinated flank steak, crisp-tender Chinese broccoli, scrambled eggs, and a caramelized dark soy and oyster sauce glaze.</p>
     </div>
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../chicken-soup/" class="related-recipe-card">
+  <a href="../chicken-marinades/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/chickenSoup.webp" alt="Chicken Soup" loading="lazy">
+      <img src="../assets/optimized/chicken-marinades.webp" alt="Signature Chicken Marinades (7 Flavors)" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Entree</span>
-      <h4>Chicken Soup</h4>
-      <p>The best chicken soup you’ll ever eat is the perfect recipe to make when you’re feeling sick.</p>
+      <h4>Signature Chicken Marinades (7 Flavors)</h4>
+      <p>High-flavor bulk meal-prep marinades from Korean Gochujang and Yakitori to Cantonese Char Siu, Vietnamese Lemongrass, Peruvian Pollo a la Brasa, and Fiery Harissa.</p>
     </div>
   </a>
 </div>
@@ -350,21 +359,11 @@
         <!-- FOOTER END -->
     </div>
 
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
 
     <script src="../../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../../js/simpleparallax.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
     <script src="../js/recipe-page.js" defer></script>

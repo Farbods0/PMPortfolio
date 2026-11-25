@@ -155,11 +155,18 @@
             <div class="container">
                 <article class="recipe-surface food-detail">
                     <div class="recipe-topbar">
-                        <a href="../#cooking" class="arrowback">
-                            <i><iconify-icon icon="cil:arrow-left"></iconify-icon></i>
-                            Back to all recipes
-                        </a>
+                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                            <a href="../">Cooking</a>
+                            <span class="crumb-sep">/</span>
+                            <a href="../recipes/">All Recipes</a>
+                            <span class="crumb-sep">/</span>
+                            <span aria-current="page">Japanese Milk Bread</span>
+                        </nav>
                         <div class="recipe-actions">
+                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                                <iconify-icon icon="mdi:restore"></iconify-icon>
+                                <span class="btn-label">Reset Checks</span>
+                            </button>
                             <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/japanese-milkbread/">
                                 <iconify-icon icon="mdi:link-variant"></iconify-icon>
                                 <span class="btn-label">Copy Link</span>
@@ -176,14 +183,14 @@
                     </div>
 
                     <div class="recipe-content-body">
-                        <div class="row g-4 align-items-start">
+                        <div class="row g-4 align-items-center recipe-hero-row">
                             <div class="col-lg-5">
                                 <div class="img-holder recipe-hero-img">
                                     <img src="../assets/optimized/milkbread.webp" alt="Japanese Milk Bread" fetchpriority="high">
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <span class="recipe-cat-pill">Dessert</span>
+                                <a href="../recipes/?category=Dessert" class="recipe-cat-pill recipe-cat-link">Dessert</a>
                                 <h1 class="recipe-title">Japanese Milk Bread</h1>
                                 <p class="recipe-lead">A fluffy, pillowy Japanese milk bread perfect for sandwiches or enjoying on its own.</p>
 
@@ -216,14 +223,19 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="ingredients-block">
+                        <hr>
+
+                        <div class="row g-5 recipe-cooking-columns">
+                            <aside class="col-lg-4 recipe-ingredients-col">
+                                <div class="ingredients-sticky-card">
                                     <div class="section-heading-row">
                                         <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap items to check off</span>
+                                        <span class="interactive-hint">Tap to check off</span>
                                     </div>
-                                    <div class="row g-3">
-<div class="col-md-6 ingredient-group">
+                                    <div class="ingredient-group">
   <h5>Tangzhong</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">4 tbsp (40g) bread flour</label></li>
@@ -231,7 +243,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2">8 tbsp (120g) whole milk</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Bread Dough</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">5 cups (640g) bread flour</label></li>
@@ -243,26 +255,22 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-1-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-6">2 whole egg, room temperature</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Egg Wash</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">1 egg</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-2-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-1">Splash of whole milk (2tbsp)</label></li>
   </ul>
 </div>
-</div>
                                 </div>
-                            </div>
-                        </div>
+                            </aside>
 
-                        <hr>
-
-                        <section class="instructions-block">
-                            <div class="section-heading-row">
-                                <h2 class="subTitle">INSTRUCTIONS</h2>
-                                <span class="interactive-hint">Tap a step to mark complete</span>
-                            </div>
-                            <div class="cardSteps">
+                            <section class="col-lg-8 instructions-block">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">INSTRUCTIONS</h2>
+                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                </div>
+                                <div class="cardSteps">
   <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
   <div class="desciption">
     <div class="titleStep"><span>Milk Bread</span></div>
@@ -274,37 +282,26 @@
     <p class="recipe-step-item" title="Click to mark step done">6. Preheat oven to 350 F and bake for 30 minutes or until internal temp is 190 F</p>
   </div>
 </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../#cooking" class="arrowback">View all recipes →</a>
+                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
-  <a href="../pumpkin-bread/" class="related-recipe-card">
+  <a href="../creami-shamrock-shake/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/pumpkinBread.webp" alt="Pumpkin Bread with Salted Maple Butter" loading="lazy">
+      <img src="../assets/optimized/creami-shamrock-shake.webp" alt="Ninja Creami Shamrock Shake" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Dessert</span>
-      <h4>Pumpkin Bread with Salted Maple Butter</h4>
-      <p>A sweet moist quick bread made with pumpkin. Paired with salted maple butter.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../raspberry-danish/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/rasberry.webp" alt="Raspberry Danish" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Dessert</span>
-      <h4>Raspberry Danish</h4>
-      <p>A flaky puff pastry filled with creamy cheesecake, sweet fresh raspberries, and a vanilla glaze.</p>
+      <h4>Ninja Creami Shamrock Shake</h4>
+      <p>Cool mint and vanilla bean frozen protein soft-serve that nails the classic seasonal Shamrock Shake at just 150 calories, 2g carbs, and 30g protein.</p>
     </div>
   </a>
 </div>
@@ -317,6 +314,18 @@
       <span class="recipe-cat-pill">Dessert</span>
       <h4>Croissants</h4>
       <p>A bakery product that contains dough/roll-in fat layers to create a flaky, crispy texture</p>
+    </div>
+  </a>
+</div>
+<div class="col-md-4">
+  <a href="../churros/" class="related-recipe-card">
+    <div class="related-img-wrap">
+      <img src="../assets/optimized/churros.webp" alt="Churros" loading="lazy">
+    </div>
+    <div class="related-body">
+      <span class="recipe-cat-pill">Dessert</span>
+      <h4>Churros</h4>
+      <p>Crispy Mexican pastry made from deep-fried choux dough, rolled in cinnamon sugar with chocolate ganache.</p>
     </div>
   </a>
 </div>
@@ -353,21 +362,11 @@
         <!-- FOOTER END -->
     </div>
 
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
 
     <script src="../../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../../js/simpleparallax.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
     <script src="../js/recipe-page.js" defer></script>

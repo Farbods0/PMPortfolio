@@ -431,279 +431,51 @@
     ],
     "instructionSections": [
       {
-        "title": "Broth (3 days)",
+        "title": "Bao Buns, Braised Pork Belly & Glaze",
         "steps": [
           {
             "type": "step",
-            "html": "1. Before any cooking, soak the bones in cold water in a large, non-reactive vessel, for at least 6 hours, and up to 24 hours. (I use a large plastic container)."
+            "html": "1. Start by making the bao buns: place the flour, sugar, salt, and instant dried yeast in a bowl and mix together."
           },
           {
             "type": "step",
-            "html": "2. The night before you want your poth ready, drain the bones, add them to a pot with fresh water covering them by 2 inches, and ping to a boil over high heat."
+            "html": "2. Add the milk, warm water, and softened butter to a jug and stir together until melted. Stir the liquid mixture into the flour mixture with a spoon and then by hand. Turn out onto a floured surface and knead for 10 minutes (or use a stand mixer fitted with a dough hook)."
           },
           {
             "type": "step",
-            "html": "3. Drop the heat to medium, and blanch the bones, at a simmer, for 15-30 minutes, or until little to no scum rises."
+            "html": "3. Place the dough in an oiled bowl, cover with clingfilm or a damp towel, and leave to prove until doubled in size (about 90 minutes to 2 hours)."
           },
           {
             "type": "step",
-            "html": "4. Strain the bones again, and scrub away any black material, such as coagulated blood, from the bones and pot."
+            "html": "4. Meanwhile, place all the slow-cooked pork belly ingredients (not the glaze) into a cast-iron casserole pan. Bring to a boil, cover with a lid, turn down the heat, and simmer for 2 hours. Turn off the heat and drain the pork (reserve the flavorful stock for noodle soup if desired)."
           },
           {
             "type": "step",
-            "html": "5. Return the bones to the pot. Add fresh water, and add in the fatback. If doing the night before, ping this to a boil, then down to the lowest setting on your stove, and cover. Then go to bed. If not, continue to step 7."
+            "html": "5. Tip the proved dough onto a floured surface, knead briefly, and divide into balls. Roll each ball into an oval on baking parchment (approx. 12cm x 8cm)."
           },
           {
             "type": "step",
-            "html": "6. In the morning, ping the pot back up to a full boil, then back down to the lowest setting possible to mantain that jostling boil while covered. (For me, this is medium on my stove)."
+            "html": "6. Brush the ovals lightly with olive oil and fold each oval over a chopstick in the middle to leave a little space in the fold, then slide out the chopstick."
           },
           {
             "type": "step",
-            "html": "7. Depending on when you started cooking, continue to boil the poth for 12-18 hours, or until desired consistency and color is reached, meat has completely separated and poken down in the poth, and fatback pieces have mostly melted. Optionally, you can stir every 1-2 hours just to check up on things and promote more churning. Please feel free to add back water if the level gets too low."
+            "html": "7. Transfer the folded buns (still on their parchment squares) onto baking trays, cover loosely, and prove for 1 more hour until puffed up."
           },
           {
             "type": "step",
-            "html": "8. Once cooked to your liking, strain the poth, discarding the solids, and reserve poth until needed over low heat. This poth keeps for around a week in the fridge."
+            "html": "8. Bring a large steamer pan to a boil. Steam the buns in batches on their parchment squares for 15 minutes until pillowy and cooked through."
           },
           {
             "type": "step",
-            "html": "9. If poth is not a creamy white, you can use a blender on high for 10 seconds to help with emulsion."
-          },
-          {
-            "type": "subheading",
-            "html": "Aromatics (Optional)"
+            "html": "9. Chop the braised pork belly into bite-sized chunks and whisk together the glaze ingredients in a small bowl."
           },
           {
             "type": "step",
-            "html": "1. Add to the stock pot (aromatics) in the last 30 min-1 hour of cooking."
+            "html": "10. Heat vegetable oil in a frying pan over high heat. Fry the pork with a pinch of salt and pepper until golden, then pour in the glaze and cook for 6–7 minutes until dark, glossy, and sticky."
           },
           {
             "type": "step",
-            "html": "2. 1 whole bunch of green onions cut into 3 inch sections"
-          },
-          {
-            "type": "step",
-            "html": "3. 2 medium shallots cut into quarters, with skin on"
-          },
-          {
-            "type": "step",
-            "html": "4. 1 large yellow onion cut into quarters"
-          },
-          {
-            "type": "step",
-            "html": "5. 2, 3 inch knobs of ginger with skin peeled off (use a spoon)"
-          },
-          {
-            "type": "step",
-            "html": "6. 4 whole cloves of garlic, peeled skin off"
-          }
-        ]
-      },
-      {
-        "title": "Chashu/Pork Belly (7 Hours)",
-        "steps": [
-          {
-            "type": "step",
-            "html": "1. 1-2 green onions chopped"
-          },
-          {
-            "type": "step",
-            "html": "2. 2-3 cloves garlic chopped"
-          },
-          {
-            "type": "step",
-            "html": "3. 2 inch knob of ginger"
-          },
-          {
-            "type": "step",
-            "html": "4. 1/2 cup soy sauce"
-          },
-          {
-            "type": "step",
-            "html": "5. 1/2 cup mirin"
-          },
-          {
-            "type": "step",
-            "html": "6. 1/2 cup plain white sugar"
-          },
-          {
-            "type": "step",
-            "html": "7. Stir all into 1 bowl"
-          },
-          {
-            "type": "step",
-            "html": "8. 2 lb pork belly skin on"
-          },
-          {
-            "type": "step",
-            "html": "9. Get butcher twine out"
-          },
-          {
-            "type": "step",
-            "html": "10. Roll pork belly into itself and wrap butcher twine into a knot every half inch"
-          },
-          {
-            "type": "step",
-            "html": "11. Trim off extra twine"
-          },
-          {
-            "type": "step",
-            "html": "12. Put into ziplock bag and circulate pork belly to full coat it"
-          },
-          {
-            "type": "step",
-            "html": "13. Drop into sous vide at 170 F* 7 hours"
-          },
-          {
-            "type": "step",
-            "html": "14. Take out bag and place in oven to poil"
-          }
-        ]
-      },
-      {
-        "title": "Marinated Soft Boiled Eggs (24 Hours)",
-        "steps": [
-          {
-            "type": "step",
-            "html": "1. 5 soft boiled eggs"
-          },
-          {
-            "type": "step",
-            "html": "2. Shock in ice bath"
-          },
-          {
-            "type": "step",
-            "html": "3. Peel"
-          },
-          {
-            "type": "step",
-            "html": "4. 1/4 cup soy sauce"
-          },
-          {
-            "type": "step",
-            "html": "5. 1/4 cup mirin"
-          },
-          {
-            "type": "step",
-            "html": "6. 1 cup water"
-          },
-          {
-            "type": "step",
-            "html": "7. Have in boil, make sure that they are fully submerged (add more water,mirin, soy sauce if needed)"
-          },
-          {
-            "type": "step",
-            "html": "8. Cover in saran wrap"
-          },
-          {
-            "type": "step",
-            "html": "9. 4-24 hours of marinate (agitate occasionally)"
-          }
-        ]
-      },
-      {
-        "title": "Light Color Shoyu Tare",
-        "steps": [
-          {
-            "type": "step",
-            "html": "1. Combine the water, soy sauce, kombu, and niboshi in a sealed container."
-          },
-          {
-            "type": "step",
-            "html": "2. Place in the fridge and rest at least 6 hours or up to 2 days."
-          },
-          {
-            "type": "step",
-            "html": "3. Add the mixture to a small saucepan."
-          },
-          {
-            "type": "step",
-            "html": "4. Heat the contents to 71 °C/160 °F, hold for 10 minutes."
-          },
-          {
-            "type": "step",
-            "html": "5. Remove the kombu and discard."
-          },
-          {
-            "type": "step",
-            "html": "6. ping 180F (or just below a boil) and hold for 15 minutes."
-          },
-          {
-            "type": "step",
-            "html": "7. Add the katsuobushi, hold at 82 °C/180 °F for 5 more minutes."
-          },
-          {
-            "type": "step",
-            "html": "8. Strain and reserve liquid on the side."
-          },
-          {
-            "type": "step",
-            "html": "9. In a new clean pot, add your mirin, sake, and pown sugar. ping to a boil, and simmer for 5 minutes."
-          },
-          {
-            "type": "step",
-            "html": "10. Add this mixture to your mixture from step 9. You can store this in the fridge for up to 6 months."
-          },
-          {
-            "type": "step",
-            "html": "11. Add 30 mL of tare per 350 mL soup."
-          },
-          {
-            "type": "step",
-            "html": "12. Done. Taste it with your poth and adjust as needed. Maybe it needs more soy? Maybe it needs more salt? Maybe some extra umami. Only you can judge."
-          }
-        ]
-      },
-      {
-        "title": "Noodles",
-        "steps": [
-          {
-            "type": "step",
-            "html": "Hakata noodles are low moisture, low protein, lower alkalinity. The recipe has been adjusted to fit this; I’ve played around with making a true Hakata noodle, but hydration for those is around 22%. At home, this is almost impossible to manage. So the below recipe is more in line with other regions of Kyushu, but it pairs nicely. More taut than a standard noodle, and less alkaline.<i>Also… feel free to buy sun noodles for this. Seriously, noodles are hard. And Tonkotsu is a time consuming endeavor.</i>"
-          },
-          {
-            "type": "step",
-            "html": "Also… feel free to buy sun noodles for this. Seriously, noodles are hard. And Tonkotsu is a time consuming endeavor."
-          },
-          {
-            "type": "step",
-            "html": "1. Add kansui powder and salt to the water, dissolve completely. If using both sodium carbonate and potassium carbonate, add them one at a time. Go slowly, stir constantly until clear. This will take a while, but eventually, the contents will dissolve. You can make the solution several days before to get a jumpstart, just hold the liquid in an airtight container."
-          },
-          {
-            "type": "step",
-            "html": "2. In a standing mixer with a paddle attachment, add your flour and wheat gluten. Turn the mixer to “stir” and run for 30 seconds to aerate the mix."
-          },
-          {
-            "type": "step",
-            "html": "3. While running the mixer on stir mode, add two thirds of your water mixture slowly in an even stream. Let the mixer stir the flour and water mixture for 5 minutes."
-          },
-          {
-            "type": "step",
-            "html": "4. Add in the remaining water mixture with the mixer running, run for 2 minutes."
-          },
-          {
-            "type": "step",
-            "html": "5. Turn off the mixer, and add the mixture to a sealable bag. Close, and let this rest for 2 hours at room temperature. Don’t skip this."
-          },
-          {
-            "type": "step",
-            "html": "6. Knead it, by using an electric pasta machine to sheet the dough, going through the largest setting, then the 2nd, then the 3rd. Take the dough and fold it, sheeting under the 2nd widest setting, then fold it again and sheet it under the widest setting. Repeat this until the sheet is quite smooth and not ragged."
-          },
-          {
-            "type": "step",
-            "html": "7. After kneading, put the dough back in the plastic bag, and rest at room temp for another 30 minutes."
-          },
-          {
-            "type": "step",
-            "html": "8. Pull out your dough. Portion into workable sizes, and roll out to desired thickness with the pasta machine, using potato or cornstarch as you go to prevent sticking."
-          },
-          {
-            "type": "step",
-            "html": "9. Cut your noodles to your desired thickness. 1.0 mm by 1.0 mm (setting 6) is around standard for these."
-          },
-          {
-            "type": "step",
-            "html": "10. Bundle the noodles into 120 g portions and place them in a sealable bag. Put the bag in the fridge and allow it to rest for at least a day."
+            "html": "11. Open the warm steamed buns and stuff generously with sticky pork belly, fresh torn cilantro, sliced red chillies, spring onion strips, sesame seeds, and chopped toasted cashews."
           }
         ]
       }
@@ -2675,9 +2447,7 @@
   {
     "slug": "bread",
     "legacySlug": "bread",
-    "aliases": [
-      "artisan-bread"
-    ],
+    "aliases": [],
     "title": "Bread",
     "category": "Appetizer",
     "description": "Food consisting of flour that is moistened, kneaded into dough, and often fermented.",
@@ -3479,6 +3249,1316 @@
           {
             "type": "step",
             "html": "6. Preheat oven to 350 F and bake for 30 minutes or until internal temp is 190 F"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "reverse-sear-prime-rib",
+    "aliases": [
+      "prime-rib",
+      "primerib",
+      "prime-rib-roast"
+    ],
+    "title": "Reverse-Sear Prime Rib Roast",
+    "category": "Entree",
+    "description": "48-hour rosemary-umami dry-brined bone-in prime rib roasted low-and-slow for edge-to-edge medium-rare, served with silky melted onions, horseradish cream, and red wine au jus.",
+    "image": "assets/optimized/reverse-sear-prime-rib.webp",
+    "prepTime": "45 mins",
+    "totalTime": "48 hours",
+    "yield": "8–10 servings",
+    "yieldIcon": "mdi:food-steak",
+    "ingredientGroups": [
+      {
+        "title": "The Roast & Seasoning",
+        "items": [
+          "1 (6 to 7.6 lb) bone-in prime rib roast (3 ribs), cut and tied by butcher",
+          "3 tbsp Worcestershire sauce (binder)",
+          "2.5 to 3 tbsp Rosemary Salt (from batch below; up to 1/3 cup for 7.6 lb roast)",
+          "1/2 tsp MSG (or 1 tbsp finely ground dried porcini mushroom powder)",
+          "2 tbsp neutral high-heat oil (avocado or grapeseed)",
+          "1 to 2 tbsp coarse freshly cracked black pepper",
+          "1/2 cup water (for bottom of sheet pan during final sear)"
+        ]
+      },
+      {
+        "title": "Rosemary Salt (Full Batch)",
+        "items": [
+          "1 cup kosher salt",
+          "Leaves stripped from 14 fresh rosemary sprigs",
+          "Leaves stripped from 8 fresh sage sprigs",
+          "3 to 5 garlic cloves, peeled",
+          "Zest of 1 lemon (yellow part only)"
+        ]
+      },
+      {
+        "title": "Melted Onions",
+        "items": [
+          "2 large white or yellow onions, halved & thinly sliced root-to-tip",
+          "2 tsp kosher salt",
+          "6 oz (1.5 sticks / 12 tbsp) unsalted butter, cold and cubed",
+          "1 to 2 tbsp water, as needed"
+        ]
+      },
+      {
+        "title": "Steakhouse Creme Fraiche Horseradish Sauce",
+        "items": [
+          "1/3 cup mayonnaise",
+          "1/4 cup full-fat sour cream",
+          "1/4 cup creme fraiche",
+          "1/4 cup prepared horseradish, drained (1/3 cup for extra heat)",
+          "2 tsp fresh lemon juice",
+          "2 tsp Worcestershire sauce",
+          "1 tsp white wine vinegar",
+          "2 tbsp fresh chives, finely chopped",
+          "Kosher salt and black pepper to taste"
+        ]
+      },
+      {
+        "title": "Stovetop Rosemary-Garlic Au Jus",
+        "items": [
+          "2 cups high-quality beef bone broth",
+          "1/2 cup dry red wine (Cabernet Sauvignon or Pinot Noir)",
+          "1 tbsp regular soy sauce",
+          "1 tbsp Worcestershire sauce",
+          "2 sprigs fresh rosemary",
+          "3 cloves garlic, smashed",
+          "1 tbsp cold unsalted butter (whisked in right before serving)"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "24–48 Hours Ahead: Rosemary-Umami Dry Brine",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Make the Rosemary Salt:</strong> Pulse 14 sprigs stripped rosemary, 8 sprigs stripped sage, 3–5 peeled garlic cloves, and the zest of 1 lemon in a food processor for 60 seconds until finely minced. Add 1 cup kosher salt and run another 30–45 seconds until it looks like bright-green damp sand."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Mix the Rub:</strong> Scoop 2.5 to 3 tbsp of the rosemary salt into a small bowl and stir in 1/2 tsp MSG (or 1 tbsp porcini powder). Spread leftover rosemary salt on a tray to air-dry overnight, then jar for future cooks."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Prep & Score:</strong> Pat the prime rib completely dry. Trim any hard fat cap down to ~1/2 inch thick and lightly score the fat in a shallow cross-hatch pattern without cutting into the meat."
+          },
+          {
+            "type": "step",
+            "html": "4. <strong>Season & Dry Brine:</strong> Set the roast fat-side up on a wire rack over a rimmed baking sheet. Rub 3 tbsp Worcestershire sauce over every surface, then press the rosemary-umami salt evenly across all sides. Refrigerate <strong>uncovered</strong> for 24 to 48 hours."
+          }
+        ]
+      },
+      {
+        "title": "24 Hours Ahead: Horseradish Cream & Au Jus",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Horseradish Sauce:</strong> Whisk mayonnaise, sour cream, creme fraiche, drained horseradish, lemon juice, Worcestershire sauce, and white wine vinegar until smooth. Fold in chopped chives, season with salt and black pepper, and refrigerate overnight so flavors meld."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Au Jus Base:</strong> Combine beef bone broth, dry red wine, soy sauce, Worcestershire sauce, rosemary sprigs, and smashed garlic in a saucepan over medium heat. Simmer 15–20 minutes until fragrant and slightly reduced. Strain and chill until dinner."
+          }
+        ]
+      },
+      {
+        "title": "Day Of: Low-and-Slow Roast & Melted Onions",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Temper & Pepper:</strong> Pull the roast 1 hour before cooking. Rub lightly with 2 tbsp neutral oil, coat generously with 1–2 tbsp coarse cracked black pepper, and insert a leave-in probe thermometer into the exact geometric center (avoiding bone)."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Low Roast:</strong> Roast fat-side up at <strong>200°F–225°F</strong> (standard bake, no convection) for roughly 3 to 4.5 hours depending on weight, until the center hits <strong>115°F–118°F</strong> for edge-to-edge medium-rare."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Melted Onions:</strong> While the roast cooks, scrunch the thinly sliced onions and 2 tsp kosher salt in a heavy pot with clean hands for 1–2 minutes until juicy. Stew covered/uncovered over low heat for ~60 minutes, stirring every 5–10 minutes (adding a splash of water if dry) until completely soft. Over very low heat, stir in the 6 oz cold cubed butter a few cubes at a time so it emulsifies into a glossy, silky sauce."
+          }
+        ]
+      },
+      {
+        "title": "Rest, 500°F Sear & Carve",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Rest:</strong> Remove the roast at 115°F–118°F and rest 25–35 minutes (carryover brings it to 125°F–132°F). <i>Travel option: vent uncovered 15 mins, wrap snugly in parchment then foil, and hold in a towel-packed insulated cooler up to 3 hours.</i>"
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Blistering Sear:</strong> Crank oven to <strong>475°F–500°F</strong>. Pat the roast exterior dry, pour 1/2 cup water into the bottom of the sheet pan beneath the wire rack to prevent smoke, and sear uncovered for <strong>6–8 minutes</strong> until deeply browned and crisp."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Finish & Carve:</strong> Rewarm the au jus and whisk in 1 tbsp cold butter off the heat until glossy. Snip the twine, slice the rib eye off the bone in 1/2-inch slabs, and serve immediately with warm au jus, melted onions, and cold horseradish cream."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nobu-miso-black-cod",
+    "aliases": [
+      "miso-black-cod",
+      "black-cod",
+      "nobu-cod"
+    ],
+    "title": "Nobu Miso Black Cod",
+    "category": "Entree",
+    "description": "Silky, buttery black cod marinated for 48 hours in sweet Saikyo miso and broiled on high until the edges blister into Nobu's signature mahogany caramelization.",
+    "image": "assets/optimized/nobuMisoBlackCod.webp",
+    "prepTime": "15 mins",
+    "totalTime": "48 hours",
+    "yield": "4 fillets",
+    "yieldIcon": "mdi:fish",
+    "ingredientGroups": [
+      {
+        "title": "Fish & Marinade",
+        "items": [
+          "4 black cod (sablefish) fillets, 6–8 oz each, skin-on and pin-bones removed",
+          "1/2 cup sweet white miso paste (Saikyo miso)",
+          "1/4 cup mirin",
+          "1/4 cup sake",
+          "1/4 cup granulated sugar",
+          "Pickled ginger shoots (hajikami) or pickled ginger, for plating"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "48-Hour Miso Cure & High-Heat Broil",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Make the Saikyo Miso Marinade:</strong> Combine sake and mirin in a small saucepan and bring to a boil for 20 seconds to cook off the alcohol. Turn heat to low, whisk in the white miso paste until dissolved, then whisk in the sugar until glossy and smooth. Cool completely to room temperature."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Marinate 48 Hours:</strong> Pat the black cod fillets thoroughly dry with paper towels, coat generously in the cooled miso marinade inside a glass dish or zip-top bag, and refrigerate for 48 hours."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Prep to Broil:</strong> Preheat the oven broiler to HIGH and line a rimmed sheet pan with foil. Gently wipe off excess marinade from each fillet with a paper towel — <strong>do not rinse</strong>, leaving a thin glaze on the fish."
+          },
+          {
+            "type": "step",
+            "html": "4. <strong>Broil:</strong> Arrange fillets skin-side down on the foil-lined pan and broil on high for <strong>8–12 minutes</strong>, watching closely after minute 6."
+          },
+          {
+            "type": "step",
+            "html": "5. <strong>Check for Signature Char:</strong> Look for deep, dark golden-brown caramelization blistering along the edges while the center turns opaque and flakes effortlessly with a fork. Plate immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "crispy-rice-spicy-tuna",
+    "aliases": [
+      "spicy-tuna-crispy-rice",
+      "crispy-rice"
+    ],
+    "title": "Crispy Rice with Spicy Tuna",
+    "category": "Appetizer",
+    "description": "Nobu-style bite-sized blocks of chilled sushi rice deep-fried until shattering and golden, crowned with finely diced sashimi-grade ahi tuna in Kewpie-sriracha dressing.",
+    "image": "assets/optimized/crispy-rice-spicy-tuna.webp",
+    "prepTime": "25 mins",
+    "totalTime": "8 hours",
+    "yield": "16–20 bites",
+    "yieldIcon": "mdi:fish",
+    "ingredientGroups": [
+      {
+        "title": "Crispy Sushi Rice",
+        "items": [
+          "2 cups cooked seasoned short-grain sushi rice, pressed firmly into a pan & chilled overnight",
+          "Neutral high-heat oil for frying (350°F)"
+        ]
+      },
+      {
+        "title": "Spicy Tuna Mixture",
+        "items": [
+          "1/2 lb sushi-grade ahi tuna, very finely diced",
+          "2 tbsp Kewpie mayonnaise",
+          "1 tbsp sriracha",
+          "1 tsp toasted sesame oil",
+          "1.5 tsp soy sauce",
+          "Optional garnish: paper-thin jalapeño or sliced green onion"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Prep, Fry & Assemble",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Press Rice Overnight:</strong> Pack warm seasoned sushi rice firmly into a plastic-lined rectangular pan (~3/4-inch thick), cover, and chill overnight until completely firm."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Mix the Spicy Tuna:</strong> With a sharp knife on a cold cutting board, dice the sushi-grade ahi tuna very finely — uniform tiny cubes with texture, not a paste. Gently fold in Kewpie mayonnaise, sriracha, sesame oil, and soy sauce. Cover and keep chilled."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Cut & Fry Crispy Rice:</strong> Slice the cold rice block into bite-sized rectangles using a wet sharp knife so it doesn't stick. Heat oil to <strong>350°F</strong> and deep-fry in batches for <strong>2–3 minutes</strong> until crisp and golden brown on all sides."
+          },
+          {
+            "type": "step",
+            "html": "4. <strong>Drain & Top:</strong> Drain crispy rice on a wire rack (holds crisp for 30–45 minutes), then spoon a generous mound of chilled spicy tuna onto each warm cake right before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "yellowtail-jalapeno-sashimi",
+    "aliases": [
+      "yellowtail-jalapeno",
+      "hamachi-jalapeno",
+      "yellowtail-sashimi"
+    ],
+    "title": "Yellowtail Sashimi with Jalapeño",
+    "category": "Appetizer",
+    "description": "Chilled ribbons of sushi-grade hamachi brushed with a whisper of garlic purée, topped with paper-thin jalapeño and fresh cilantro in a bright 2:1 yuzu-soy dressing.",
+    "image": "assets/optimized/yellowtail-jalapeno-sashimi.webp",
+    "prepTime": "20 mins",
+    "totalTime": "20 mins",
+    "yield": "4 servings",
+    "yieldIcon": "mdi:fish",
+    "ingredientGroups": [
+      {
+        "title": "Sashimi & Garnish",
+        "items": [
+          "1/2 lb sushi-grade yellowtail (hamachi), thinly sliced",
+          "1 small clove fresh garlic, puréed into a smooth paste",
+          "1 fresh jalapeño pepper, sliced paper-thin",
+          "Fresh cilantro leaves (1 tender leaf per slice)"
+        ]
+      },
+      {
+        "title": "Yuzu Soy Dressing (2:1 Ratio)",
+        "items": [
+          "60 ml (1/4 cup) yuzu juice",
+          "30 ml (2 tbsp) soy sauce"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Sauce & Cold Plating",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Make Yuzu Soy:</strong> Whisk together the 60 ml yuzu juice and 30 ml soy sauce in a small jar and chill thoroughly."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Slice & Garlic-Kiss the Hamachi:</strong> Working on a cold board, slice the yellowtail cleanly. Lightly touch the underside of each slice with a tiny, barely visible dot of garlic purée — just enough for aroma."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Garnish & Chill:</strong> Arrange slices flat on a chilled plate and top each piece with one paper-thin jalapeño ring and a single cilantro leaf. Cover tightly with plastic wrap and keep refrigerated until service."
+          },
+          {
+            "type": "step",
+            "html": "4. <strong>Dress at the Last Second:</strong> Right before serving, drizzle the cold yuzu soy lightly over the fish so it glazes without curing the sashimi, and serve immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "oysters-ponzu-mignonette",
+    "aliases": [
+      "ponzu-oysters",
+      "oysters"
+    ],
+    "title": "Oysters with Ponzu Mignonette",
+    "category": "Appetizer",
+    "description": "Ice-cold freshly shucked oysters dressed with a bright Japanese mignonette of rice wine vinegar, soy sauce, lemon, toasted sesame oil, shallot, and green onion.",
+    "image": "assets/optimized/oysters-ponzu-mignonette.webp",
+    "prepTime": "15 mins",
+    "totalTime": "45 mins",
+    "yield": "8–12 oysters",
+    "yieldIcon": "mdi:fish",
+    "ingredientGroups": [
+      {
+        "title": "Oysters & Ponzu Mignonette",
+        "items": [
+          "8–12 fresh oysters for shucking",
+          "2 tbsp rice wine vinegar",
+          "1 tbsp soy sauce",
+          "2 tsp fresh lemon juice",
+          "1 tsp granulated sugar",
+          "1/2 tsp toasted sesame oil",
+          "2 tsp shallot, very finely minced (~1/3 small shallot)",
+          "1 tbsp green onion (green parts only), thinly sliced"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Mignonette & Service",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Make the Mignonette First:</strong> Whisk the rice wine vinegar, soy sauce, fresh lemon juice, sugar, and sesame oil until the sugar completely dissolves."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Mellow the Aromatics:</strong> Stir in the finely minced shallot and sliced green onion. Refrigerate at least 20–30 minutes (or several hours ahead) so the shallots mellow in the citrus-soy liquid."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Shuck & Serve:</strong> Shuck the oysters clean of any shell grit, nestle level on a platter of crushed ice or rock salt, and spoon ~1/2 teaspoon of chilled ponzu mignonette over each oyster."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "biang-biang-braised-pork",
+    "aliases": [
+      "biang-biang",
+      "biangbiang",
+      "biang-biang-noodles"
+    ],
+    "title": "Biang Biang Braised Pork Noodles",
+    "category": "Entree",
+    "description": "Interactive dinner-party hand-pulled wide belt noodles topped with 3.5-hour star-anise braised pork, sizzling 350°F garlic-chili oil, spicy cucumber salad, and blistered shishitos.",
+    "image": "assets/optimized/biang-biang-braised-pork.webp",
+    "prepTime": "1 hour",
+    "totalTime": "5.5 hours",
+    "yield": "12 servings",
+    "yieldIcon": "ic:outline-ramen-dining",
+    "ingredientGroups": [
+      {
+        "title": "Oven-Braised Pork",
+        "items": [
+          "3.3 lbs pork belly chunks",
+          "1 lb pork shoulder",
+          "2.5 cups pork stock",
+          "1.25 cups Shaoxing wine",
+          "1.25 cups soy sauce",
+          "7 whole star anise",
+          "2.5-inch fresh ginger knob",
+          "8 bruised garlic cloves"
+        ]
+      },
+      {
+        "title": "Triple Hand-Pulled Noodle Dough (38–40 Pieces)",
+        "items": [
+          "1.4 kg all-purpose or bread flour",
+          "20g (4 tsp) kosher salt",
+          "700g (3 cups) water",
+          "Neutral oil (for heavily coating every dough rectangle)"
+        ]
+      },
+      {
+        "title": "Bowl Base, Hot-Oil Sizzle & Greens",
+        "items": [
+          "Per bowl base: 1 tbsp soy sauce, 1 tbsp Chinese black vinegar, pinch sugar, pinch MSG",
+          "30 cloves garlic, minced",
+          "6 scallions, thinly sliced & 2 fresh chillies, sliced",
+          "1 bunch fresh cilantro, torn",
+          "Coarse Sichuan chili flakes, Doubanjiang & toasted sesame seeds",
+          "1 cup lard or neutral cooking oil (heated to 350°F)",
+          "14 oz fresh spinach + 6 garlic cloves cut into slivers"
+        ]
+      },
+      {
+        "title": "Spicy Cucumber Salad & Garlic Shishitos",
+        "items": [
+          "12 cucumbers, spiralized + 4 tsp salt (for salting & rinsing)",
+          "Cucumber dressing: 2 tbsp soy sauce, 4 minced garlic cloves, 2 tbsp rice vinegar, 2 tbsp chili oil, 2 tbsp sugar, 2 tsp sesame oil, 2 tsp sesame seeds",
+          "2.5 lbs shishito peppers",
+          "10 garlic cloves sliced into thin chips, 2.5 tsp sesame oil & 2.5 tsp soy sauce"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Braised Pork & Resting the Belt-Noodle Dough",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Prep Aromatics:</strong> Mince 30 garlic cloves for the noodle station, slice 10 cloves into thin chips for shishitos, and sliver 6 cloves for spinach. Slice chillies and scallions."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Oven-Braise the Pork (3.5 Hours):</strong> Combine pork stock, Shaoxing wine, soy sauce, star anise, ginger, bruised garlic, pork belly chunks, and pork shoulder in a heavy Dutch oven. Cover and braise in a <strong>300°F (150°C)</strong> oven for 3.5 hours until fork-tender, then shred and moisten with braising jus."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Mix & Knead Noodle Dough:</strong> Mix 1.4 kg flour, 20g kosher salt, and 700g water into a shaggy dough. Wrap in plastic and rest 20 minutes, then knead 5 minutes until smooth."
+          },
+          {
+            "type": "step",
+            "html": "4. <strong>Portion & Oil Heavily:</strong> Roll dough into logs and cut into 38–40 pieces (~50g each). Flatten each into a 5–6 inch rectangle, <strong>coat every surface generously in oil</strong> so they never skin over, layer on a tray, wrap tightly in plastic, and rest at room temperature (at least 1–2 hours for effortless stretching)."
+          }
+        ]
+      },
+      {
+        "title": "Sides & The Interactive Hot-Oil Noodle Sizzle",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Chilled Spicy Cucumbers:</strong> Toss spiralized cucumbers with 4 tsp salt, sit 5 minutes, rinse 3 times, and drain well. Toss with soy sauce, minced garlic, rice vinegar, chili oil, sugar, sesame oil, and sesame seeds; chill immediately."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Spinach & Blistered Shishitos:</strong> Sauté the 6 slivered garlic cloves with 14 oz spinach and set aside. Blister shishitos in a smoking-hot wok with oil and salt; crisp the 10 garlic chips, then toss peppers back in with 2.5 tsp sesame oil and 2.5 tsp soy sauce."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Set the Bowl Station:</strong> Line up 12 bowls, each dosed with 1 tbsp soy sauce, 1 tbsp black vinegar, a pinch of sugar, and a pinch of MSG. Set out bowls of chili flakes, Doubanjiang, minced garlic, scallions, and sesame seeds."
+          },
+          {
+            "type": "step",
+            "html": "4. <strong>Pull, Boil & Sizzle:</strong> Bring two large pots of water to a rolling boil and heat 1 cup lard or neutral oil to <strong>350°F</strong>. Indent each oiled dough rectangle lengthwise with a chopstick, stretch and slap against the counter into long wide ribbons, tear down the center seam, and boil 90 seconds."
+          },
+          {
+            "type": "step",
+            "html": "5. <strong>The Finish:</strong> Pile hot noodles into the seasoned bowls, top with shredded braised pork, spinach, scallions, garlic, and chili flakes, then ladle smoking 350°F oil directly over the aromatics so they sizzle and bloom. Toss immediately!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "panang-curry",
+    "aliases": [
+      "panang",
+      "panangcurry"
+    ],
+    "title": "Chicken Panang Curry",
+    "category": "Entree",
+    "description": "Velvety Thai red coconut curry enriched with creamy peanut butter, tender sliced chicken, sweet bell peppers, fresh ginger, lime juice, and fragrant basil over hot jasmine rice.",
+    "image": "assets/optimized/panang-curry.webp",
+    "prepTime": "15 mins",
+    "totalTime": "35 mins",
+    "yield": "8 servings",
+    "yieldIcon": "fluent:food-chicken-leg-24-filled",
+    "ingredientGroups": [
+      {
+        "title": "Panang Curry",
+        "items": [
+          "4 lbs chicken breasts, sliced thin against the grain",
+          "2 tbsp neutral cooking oil",
+          "4 tbsp Panang curry paste",
+          "2 tbsp creamy peanut butter",
+          "2 small onions, sliced",
+          "2 green bell peppers, thinly sliced",
+          "2 red bell peppers, thinly sliced",
+          "4 tsp freshly grated ginger",
+          "8 garlic cloves, minced",
+          "4 (14 oz) cans coconut milk (Chaokoh preferred)",
+          "4 tsp cornstarch",
+          "1/2 cup light brown sugar, packed",
+          "2 tbsp fish sauce",
+          "2 tbsp fresh lime juice",
+          "2 cups loosely packed fresh basil leaves, roughly chopped",
+          "Hot cooked jasmine, white, or brown rice, for serving"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Panang Curry",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Heat oil over medium-high heat in a large skillet or Dutch oven. Sauté sliced onions for 2 minutes, then add bell peppers, minced garlic, and grated ginger and sauté 2 minutes more until fragrant."
+          },
+          {
+            "type": "step",
+            "html": "2. Stir in the Panang curry paste and peanut butter and fry for 1 minute to bloom the spices. Pour in most of the coconut milk, whisk the cornstarch smoothly into the remaining 1/2 can of coconut milk, and stir it into the pot."
+          },
+          {
+            "type": "step",
+            "html": "3. Add the sliced chicken, stirring to coat. Simmer gently for 10–15 minutes until the chicken is cooked through and the coconut-peanut sauce thickens."
+          },
+          {
+            "type": "step",
+            "html": "4. Stir in brown sugar, fish sauce, fresh lime juice, and chopped basil. Simmer 5 minutes more and adjust salt and pepper to taste."
+          },
+          {
+            "type": "step",
+            "html": "5. Ladle generously over steaming hot jasmine rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pad-see-eiw",
+    "aliases": [
+      "pad-see-ew",
+      "padseeew",
+      "padseeeiw"
+    ],
+    "title": "Beef Pad See Ew",
+    "category": "Entree",
+    "description": "Wok-charred wide rice noodles tossed with soy-marinated flank steak, crisp-tender Chinese broccoli, scrambled eggs, and a caramelized dark soy and oyster sauce glaze.",
+    "image": "assets/optimized/pad-see-eiw.webp",
+    "prepTime": "20 mins",
+    "totalTime": "35 mins",
+    "yield": "6–8 servings",
+    "yieldIcon": "ic:outline-ramen-dining",
+    "ingredientGroups": [
+      {
+        "title": "Steak, Noodles & Greens",
+        "items": [
+          "3 lbs flank steak, sliced thin against the grain",
+          "3 lbs fresh wide rice noodles, cut into 1/2-inch ribbons (or dried wide rice noodles)",
+          "18 stalks Chinese broccoli (gai lan), cut into 2-inch pieces",
+          "9 large eggs",
+          "6 tbsp neutral high-heat oil",
+          "Thinly sliced scallions & toasted sesame seeds, for garnish"
+        ]
+      },
+      {
+        "title": "Marinade & Stir-Fry Glaze",
+        "items": [
+          "Light soy sauce (divided between beef marinade and stir-fry sauce)",
+          "9 tbsp dark soy sauce",
+          "6 tbsp oyster sauce",
+          "6 garlic cloves, minced",
+          "3 tbsp rice vinegar",
+          "4.5 tbsp brown sugar",
+          "1.5 tsp MSG",
+          "Fish sauce & kosher salt, to taste"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Prep & High-Heat Wok Stir-Fry",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Toss the thinly sliced flank steak with light soy sauce in a bowl and marinate while prepping the remaining ingredients."
+          },
+          {
+            "type": "step",
+            "html": "2. Boil or soak the wide rice noodles just until tender-pliable (2–3 minutes for fresh), drain thoroughly, and toss with a drizzle of oil so they don't stick together."
+          },
+          {
+            "type": "step",
+            "html": "3. Whisk together the dark soy sauce, remaining light soy sauce, minced garlic, oyster sauce, rice vinegar, brown sugar, and MSG until the sugar dissolves."
+          },
+          {
+            "type": "step",
+            "html": "4. Heat oil in a smoking-hot wok over medium-high to high heat. Sear the beef in batches for 2–3 minutes until browned, toss in the Chinese broccoli for 2 minutes until crisp-tender, and transfer to a bowl."
+          },
+          {
+            "type": "step",
+            "html": "5. Add remaining oil to the wok, crack in the eggs, and scramble for ~1 minute. Add the noodles and sauce, folding gently so the dark soy caramelizes onto the wide noodles, then return the steak and Chinese broccoli for 2 minutes with a dash of fish sauce."
+          },
+          {
+            "type": "step",
+            "html": "6. Plate hot and finish with thinly sliced scallions and toasted sesame seeds."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "artisan-bread-dutch-oven",
+    "aliases": [
+      "artisan-bread",
+      "dutch-oven-bread"
+    ],
+    "title": "Artisan Dutch Oven Bread",
+    "category": "Appetizer",
+    "description": "Crackling golden crust and airy, open-crumb artisan boule made with four pantry staples, gentle stretch-and-folds, and steam-baked inside a blazing-hot Dutch oven.",
+    "image": "assets/optimized/artisanbreaddutch.webp",
+    "prepTime": "20 mins",
+    "totalTime": "5 hours",
+    "yield": "1 boule loaf",
+    "yieldIcon": "mingcute:bread-fill",
+    "ingredientGroups": [
+      {
+        "title": "Dough (5 Hours Total)",
+        "items": [
+          "600g all-purpose flour (about 4 cups, lightly packed and leveled)",
+          "2 cups lukewarm water (90°F–110°F)",
+          "1.5 tbsp salt",
+          "1 envelope instant or active dry yeast (7g)"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Stretch, Fold & Dutch Oven Bake",
+        "steps": [
+          {
+            "type": "step",
+            "html": "Video reference: <a href=\"https://www.youtube.com/watch?v=91ZXVw58Ths\" target=\"_blank\" rel=\"noopener\">Artisan Dutch Oven Bread Walkthrough</a>"
+          },
+          {
+            "type": "step",
+            "html": "<img src=\"../assets/optimized/art01.webp\" alt=\"Mixing dry ingredients\" class=\"img-fluid rounded recipe-step-img\" loading=\"lazy\">"
+          },
+          {
+            "type": "step",
+            "html": "1. Instant yeast does <strong>NOT</strong> need to be bloomed first — mix flour, yeast, and salt directly in a large bowl by hand, make a well in the center, and pour in the lukewarm water."
+          },
+          {
+            "type": "step",
+            "html": "<img src=\"../assets/optimized/art02.webp\" alt=\"Shaggy dough in bowl\" class=\"img-fluid rounded recipe-step-img\" loading=\"lazy\">"
+          },
+          {
+            "type": "step",
+            "html": "2. Wet your working hand so dough doesn't stick and mix until a rough dough pulls away from the sides of the bowl (adjust by 1 tbsp flour if too sticky or 1 tbsp water if dry). Cover and let rise until doubled in size (<strong>1.5 to 2 hours</strong>)."
+          },
+          {
+            "type": "step",
+            "html": "3. Uncover and poke gently with a wet finger — properly risen dough indents and slowly deflates."
+          },
+          {
+            "type": "step",
+            "html": "<img src=\"../assets/optimized/art03.webp\" alt=\"Stretch and fold technique\" class=\"img-fluid rounded recipe-step-img\" loading=\"lazy\">"
+          },
+          {
+            "type": "step",
+            "html": "4. Working around the bowl in 90° turns, pull dough loose from the sides and fold up toward the center until taut. Cover and rise again for <strong>1.5 to 2 hours</strong>."
+          },
+          {
+            "type": "step",
+            "html": "<img src=\"../assets/optimized/art04.webp\" alt=\"Shaped boule proofing\" class=\"img-fluid rounded recipe-step-img\" loading=\"lazy\">"
+          },
+          {
+            "type": "step",
+            "html": "5. Turn out onto a lightly floured counter, fold underneath several times into a tight round boule, pinch seams underneath, and place seam-side down in an oiled, floured bowl. Cover and proof <strong>1 hour</strong>."
+          },
+          {
+            "type": "step",
+            "html": "6. Place an empty 6-quart Dutch oven (with lid) inside the oven and preheat to <strong>450°F (230°C)</strong> for 45 minutes."
+          },
+          {
+            "type": "step",
+            "html": "7. Carefully turn the proofed boule into the screaming-hot pot, cover with the lid, and bake at <strong>450°F for 30 minutes</strong>, then remove the lid and bake <strong>15 minutes more</strong> until deep chestnut brown."
+          },
+          {
+            "type": "step",
+            "html": "8. Cool on a wire rack for at least 10–20 minutes before slicing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chicken-marinades",
+    "aliases": [
+      "chicken-marinade",
+      "gochujang-chicken",
+      "char-siu-chicken",
+      "pollo-a-la-brasa"
+    ],
+    "title": "Signature Chicken Marinades (7 Flavors)",
+    "category": "Entree",
+    "description": "High-flavor bulk meal-prep marinades from Korean Gochujang and Yakitori to Cantonese Char Siu, Vietnamese Lemongrass, Peruvian Pollo a la Brasa, and Fiery Harissa.",
+    "image": "assets/optimized/chicken-marinades.webp",
+    "prepTime": "15 mins",
+    "totalTime": "8–24 hours",
+    "yield": "7 Bulk Marinades",
+    "yieldIcon": "fluent:food-chicken-leg-24-filled",
+    "ingredientGroups": [
+      {
+        "title": "1. Gochujang Chicken (6–8 Hrs Max · 16–20 Thighs)",
+        "items": [
+          "6 to 8 tbsp gochujang",
+          "3 garlic cloves, microplaned",
+          "2 tsp gochugaru (Korean red pepper flakes)",
+          "5 tbsp brown sugar",
+          "4 tbsp low-sodium soy sauce & 2 tbsp toasted sesame oil",
+          "2 tbsp each garlic powder, onion powder & paprika",
+          "1/2 tsp salt & 1/2 tsp black pepper"
+        ]
+      },
+      {
+        "title": "2. Yakitori & 3. Teriyaki Marinades (12 Hrs)",
+        "items": [
+          "Yakitori: 1 cup soy sauce, 1/2 cup mirin, 1/4 cup sake/Shaoxing wine, 2 tbsp brown sugar, 4 cloves garlic, 1 tsp ginger",
+          "Teriyaki: 1/2 cup soy sauce, 2 tbsp honey, 2 tbsp brown sugar, 2 tbsp rice wine vinegar, 2 tbsp sesame oil, 3 cloves garlic, 1 tbsp fresh ginger"
+        ]
+      },
+      {
+        "title": "4. Macro Cantonese Char Siu (12–24 Hrs · 10 lbs Breast)",
+        "items": [
+          "3/4 cup Golden Monkfruit sweetener",
+          "1/3 cup regular soy sauce & 1/4 cup dark soy sauce",
+          "1/3 cup Shaoxing wine & 2 tbsp toasted sesame oil",
+          "3 cubes red fermented bean curd (nam yue) mashed w/ 2 tbsp jar liquid",
+          "12 cloves garlic (microplaned) + 2 tbsp garlic powder + 1 tbsp onion powder",
+          "1.5 tbsp Chinese five-spice & 1.5 tsp white pepper",
+          "1 tsp xanthan gum (whisked in last so marinade clings like a glaze)"
+        ]
+      },
+      {
+        "title": "5. Vietnamese Lemongrass & Garlic (12–24 Hrs · 10 lbs)",
+        "items": [
+          "1/3 cup regular soy sauce & 1/3 cup fish sauce (Red Boat)",
+          "2/3 cup Golden Monkfruit sweetener",
+          "1/4 cup avocado/neutral oil & 3 tbsp unseasoned rice vinegar",
+          "1/2 cup finely minced tender lemongrass",
+          "4 large shallots (grated into paste) & 12 cloves garlic (microplaned)",
+          "1.5 tbsp cracked black pepper, 1 tbsp red pepper flakes (or 6 Thai chilies) & 1 tbsp ground coriander"
+        ]
+      },
+      {
+        "title": "6. Peruvian Pollo a la Brasa (12–24 Hrs · 10 lbs)",
+        "items": [
+          "3/4 cup Aji Amarillo paste",
+          "1/2 cup regular soy sauce & 1/4 cup Dijon mustard",
+          "3 tbsp red wine vinegar, 3 tbsp Golden Monkfruit & 3 tbsp avocado oil",
+          "14 cloves garlic, microplaned",
+          "3.5 tbsp toasted ground cumin & 2.5 tbsp smoked paprika",
+          "1.5 tbsp crushed Mexican oregano, 1 tbsp black pepper & 1.5 tsp kosher salt"
+        ]
+      },
+      {
+        "title": "7. Fiery Harissa & Toasted Spice (8–24 Hrs · 10 lbs)",
+        "items": [
+          "3/4 cup spicy Harissa paste (zero added sugar, e.g., Mina or DEA)",
+          "1/3 cup regular soy sauce & 1/3 cup tomato paste",
+          "1/3 cup Golden Monkfruit, 1/4 cup red wine vinegar & 1/3 cup olive oil",
+          "14 cloves garlic, microplaned",
+          "3 tbsp cumin, 2 tbsp coriander, 2 tbsp smoked paprika & 1 tbsp onion powder",
+          "1.5 tsp ground cinnamon & 1.5 tsp kosher salt"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Marinating & High-Heat Char",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Whisk Smooth:</strong> Whisk all ingredients for your chosen marinade in a large bowl until fully emulsified (if making Cantonese Char Siu, whisk the xanthan gum in last so it thickens into a clingy glaze without clumping)."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Cure & Marinate:</strong> Toss chicken thighs or evenly butterflied/pounded chicken breasts in heavy-duty zip-top bags or Cambro containers, massaging to coat every surface. Respect the window: <strong>6–8 hours max</strong> for Gochujang so it stays tender, and <strong>12–24 hours</strong> for the 10-lb macro marinades."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Grill, Broil, or Air-Fry:</strong> Cook over a medium-high oiled grill, under the oven broiler, or in a 400°F air fryer, flipping until edges blister and caramelize and internal temperature hits 160°F–165°F for breast (175°F for thighs). Rest 5–10 minutes before slicing against the grain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "honey-balsamic-dressing",
+    "aliases": [
+      "honey-balsamic",
+      "balsamic-vinaigrette"
+    ],
+    "title": "Honey Balsamic Vinaigrette",
+    "category": "Appetizer",
+    "description": "Glossy five-ingredient house vinaigrette balancing aged balsamic vinegar, floral honey, smooth Dijon mustard, and extra-virgin olive oil.",
+    "image": "assets/optimized/honey-balsamic-dressing.webp",
+    "prepTime": "5 mins",
+    "totalTime": "5 mins",
+    "yield": "1/2 cup",
+    "yieldIcon": "mdi:bottle-tonic-outline",
+    "ingredientGroups": [
+      {
+        "title": "Vinaigrette",
+        "items": [
+          "2 tbsp balsamic vinegar",
+          "1 tbsp honey",
+          "1 tsp Dijon mustard",
+          "1/4 cup extra-virgin olive oil",
+          "Coarse kosher salt and freshly ground black pepper, to taste"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Whisk or Jar-Shake",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Whisk the balsamic vinegar, honey, and Dijon mustard in a small bowl (or add to a mason jar) until smooth."
+          },
+          {
+            "type": "step",
+            "html": "2. Slowly stream in the extra-virgin olive oil while whisking vigorously — or seal the mason jar and shake hard for 15 seconds — until thick and glossy."
+          },
+          {
+            "type": "step",
+            "html": "3. Season generously with coarse salt and freshly cracked black pepper to taste. Keeps refrigerated in a sealed jar for up to 2 weeks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "honey-mustard-dressing",
+    "aliases": [
+      "honey-mustard",
+      "honeymustard"
+    ],
+    "title": "Homemade Honey Mustard",
+    "category": "Appetizer",
+    "description": "Punchy, textured stone-ground and Dijon honey mustard brightened with fresh lemon juice, minced garlic, and cold-pressed olive oil.",
+    "image": "assets/optimized/honey-mustard-dressing.webp",
+    "prepTime": "5 mins",
+    "totalTime": "5 mins",
+    "yield": "3/4 cup",
+    "yieldIcon": "mdi:bottle-tonic-outline",
+    "ingredientGroups": [
+      {
+        "title": "Dressing & Dip",
+        "items": [
+          "1/3 cup fresh lemon juice",
+          "1/4 cup honey (adjust to taste)",
+          "1 tbsp stone-ground mustard",
+          "3 tbsp Dijon mustard",
+          "2 cloves garlic, finely minced",
+          "1/4 cup extra-virgin or cold-pressed olive oil",
+          "1 tsp kosher salt",
+          "1/2 tsp freshly ground black pepper"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Emulsify & Chill",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Combine fresh lemon juice, honey, stone-ground mustard, Dijon mustard, minced garlic, salt, and black pepper in a bowl or mason jar."
+          },
+          {
+            "type": "step",
+            "html": "2. Whisk while streaming in the extra-virgin olive oil (or shake tightly in a jar) until creamy and emulsified."
+          },
+          {
+            "type": "step",
+            "html": "3. Taste and adjust honey or lemon juice as desired; chill 15 minutes before drizzling over greens, grain bowls, or crispy chicken."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "creami-oreo-mcflurry",
+    "aliases": [
+      "oreo-mcflurry",
+      "creami-mcflurry"
+    ],
+    "title": "Ninja Creami Oreo McFlurry",
+    "category": "Dessert",
+    "description": "Ultra-thick vanilla bean high-protein soft-serve spun in the Ninja Creami with chunky Oreo Thins folded throughout — 281 calories and 23g protein for the entire pint.",
+    "image": "assets/optimized/creami-oreo-mcflurry.webp",
+    "prepTime": "5 mins",
+    "totalTime": "16 hours",
+    "yield": "1 pint (281 cal · 23g P)",
+    "yieldIcon": "lucide:ice-cream-bowl",
+    "ingredientGroups": [
+      {
+        "title": "Ice Cream Base (281 cal · 31g C · 6g F · 23g P)",
+        "items": [
+          "400g Fat-Free Fairlife milk",
+          "40–45g monkfruit sweetener (Lakanto)",
+          "5g (1 tsp) vanilla bean paste (or vanilla extract)",
+          "1g (1/4 tsp) salt",
+          "1g (1/4 tsp) xanthan gum"
+        ]
+      },
+      {
+        "title": "Mix-Ins",
+        "items": [
+          "3 Oreo Thins"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Freeze, Spin & Mix-In",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Blend all base ingredients until completely smooth, pour into a Ninja Creami pint, and freeze flat for at least 16 hours."
+          },
+          {
+            "type": "step",
+            "html": "2. Run the outside of the frozen pint under hot water for 60 seconds."
+          },
+          {
+            "type": "step",
+            "html": "3. Spin on the <strong>Lite Ice Cream</strong> setting, then run a <strong>Respin</strong> cycle (respin once more if still slightly powdery)."
+          },
+          {
+            "type": "step",
+            "html": "4. Carve a tunnel down the center of the pint with a butter knife, pack in the 3 Oreo Thins, and run the <strong>Mix-In</strong> cycle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "creami-thai-tea",
+    "aliases": [
+      "thai-tea-ice-cream",
+      "thai-tea-creami"
+    ],
+    "title": "Ninja Creami Thai Tea Ice Cream",
+    "category": "Dessert",
+    "description": "Fragrant brewed Thai iced tea spun into silky, macro-friendly ice cream and finished with a ribbon of sweetened condensed milk — 172 calories and 18g protein per pint.",
+    "image": "assets/optimized/creami-thai-tea.webp",
+    "prepTime": "5 mins",
+    "totalTime": "16 hours",
+    "yield": "1 pint (172 cal · 18g P)",
+    "yieldIcon": "lucide:ice-cream-bowl",
+    "ingredientGroups": [
+      {
+        "title": "Thai Tea Base (172 cal · 19g C · 2g F · 18g P)",
+        "items": [
+          "300g Fat-Free Fairlife milk",
+          "100g brewed unsweetened Thai tea",
+          "40g monkfruit sweetener (Lakanto)",
+          "5g (1 tsp) vanilla bean paste (or extract)",
+          "1g (1/4 tsp) salt",
+          "1g (1/4 tsp) xanthan gum"
+        ]
+      },
+      {
+        "title": "Topping",
+        "items": [
+          "15g sweetened condensed milk"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Freeze, Spin & Drizzle",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Blend all base ingredients until smooth and freeze level in a Ninja Creami pint for at least 16 hours."
+          },
+          {
+            "type": "step",
+            "html": "2. Run the pint exterior under hot water for at least 60 seconds."
+          },
+          {
+            "type": "step",
+            "html": "3. Spin on <strong>Lite Ice Cream</strong>, followed by <strong>Respin</strong> (and one extra Respin if powdery)."
+          },
+          {
+            "type": "step",
+            "html": "4. Drizzle the 15g sweetened condensed milk over the top and enjoy immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "creami-double-oreo",
+    "aliases": [
+      "double-oreo-creami",
+      "double-oreo"
+    ],
+    "title": "Ninja Creami Double Oreo",
+    "category": "Dessert",
+    "description": "Midnight-dark black cocoa chocolate protein ice cream tasting just like an Oreo wafer, packed with mixed-in and crumbled Oreos — 299 calories and 35g protein per pint.",
+    "image": "assets/optimized/creami-double-oreo.webp",
+    "prepTime": "5 mins",
+    "totalTime": "16 hours",
+    "yield": "1 pint (299 cal · 35g P)",
+    "yieldIcon": "lucide:ice-cream-bowl",
+    "ingredientGroups": [
+      {
+        "title": "Black Cocoa Base (299 cal · 28g C · 9g F · 35g P)",
+        "items": [
+          "1 Chocolate Protein Shake (RAW preferred)",
+          "20g monkfruit sweetener (Lakanto)",
+          "20g black cocoa powder",
+          "1g (1/4 tsp) salt",
+          "1g (1/4 tsp) xanthan gum"
+        ]
+      },
+      {
+        "title": "Mix-Ins & Topping",
+        "items": [
+          "7 Mini Oreos or 3 Oreo Thins"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Freeze, Spin & Double-Load",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Blend the chocolate protein shake, sweetener, black cocoa powder, salt, and xanthan gum until jet-black and lump-free; freeze in a Creami pint at least 16 hours."
+          },
+          {
+            "type": "step",
+            "html": "2. Run under hot water for 60 seconds, spin on <strong>Lite Ice Cream</strong>, and <strong>Respin</strong> until fudgy and smooth."
+          },
+          {
+            "type": "step",
+            "html": "3. Hollow a center well with a butter knife, drop in 3/4 of the Oreos, and run the <strong>Mix-In</strong> cycle."
+          },
+          {
+            "type": "step",
+            "html": "4. Crumble the remaining Oreos right on top before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "creami-cookie-dough",
+    "aliases": [
+      "cookie-dough-creami",
+      "cookie-dough-ice-cream"
+    ],
+    "title": "Ninja Creami Cookie Dough",
+    "category": "Dessert",
+    "description": "Rich vanilla bean protein ice cream loaded with real Ben & Jerry's chocolate chip cookie dough bites — 350 calories and a massive 43g protein per pint.",
+    "image": "assets/optimized/creami-cookie-dough.webp",
+    "prepTime": "5 mins",
+    "totalTime": "16 hours",
+    "yield": "1 pint (350 cal · 43g P)",
+    "yieldIcon": "lucide:ice-cream-bowl",
+    "ingredientGroups": [
+      {
+        "title": "Vanilla Bean Base (350 cal · 27g C · 8g F · 43g P)",
+        "items": [
+          "1 Vanilla Protein Shake (Fairlife Core Power Elite — 230 cal, 42g protein)",
+          "20–25g monkfruit sweetener (Lakanto)",
+          "2.5g (1/2 tsp) vanilla bean paste (or extract)",
+          "1g (1/4 tsp) salt",
+          "1g (1/4 tsp) xanthan gum"
+        ]
+      },
+      {
+        "title": "Mix-Ins",
+        "items": [
+          "28g (1 serving) pre-made edible cookie dough bites (Ben & Jerry's Cookie Dough Pieces)"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Freeze, Spin & Fold Dough",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Blend all base ingredients smoothly and freeze flat for at least 16 hours."
+          },
+          {
+            "type": "step",
+            "html": "2. Run the frozen pint under hot water for 60 seconds, spin on <strong>Lite Ice Cream</strong>, and run <strong>Respin</strong> until dense and creamy."
+          },
+          {
+            "type": "step",
+            "html": "3. Carve a hole down to the bottom with a butter knife, fill with the chilled cookie dough pieces, and run the <strong>Mix-In</strong> cycle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "creami-shamrock-shake",
+    "aliases": [
+      "shamrock-shake",
+      "shamrock-creami"
+    ],
+    "title": "Ninja Creami Shamrock Shake",
+    "category": "Dessert",
+    "description": "Cool mint and vanilla bean frozen protein soft-serve that nails the classic seasonal Shamrock Shake at just 150 calories, 2g carbs, and 30g protein.",
+    "image": "assets/optimized/creami-shamrock-shake.webp",
+    "prepTime": "5 mins",
+    "totalTime": "16 hours",
+    "yield": "1 pint (150 cal · 30g P)",
+    "yieldIcon": "lucide:ice-cream-bowl",
+    "ingredientGroups": [
+      {
+        "title": "Shamrock Base (150 cal · 2g C · 3g F · 30g P)",
+        "items": [
+          "1 Vanilla Protein Shake (RAW preferred)",
+          "20g monkfruit sweetener (Lakanto)",
+          "2.5g (1/2 tsp) vanilla bean paste (or extract)",
+          "1/8 tsp peppermint extract",
+          "1 tsp Peppermint Bark Skinny Syrup (optional)",
+          "2–3 drops green food coloring (optional)",
+          "1g (1/4 tsp) salt",
+          "1g (1/4 tsp) xanthan gum"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Freeze & Spin",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Blend all ingredients until smooth and pastel mint-green, then freeze flat in a Ninja Creami pint for at least 16 hours."
+          },
+          {
+            "type": "step",
+            "html": "2. Rinse the outside of the pint under hot water for 60 seconds."
+          },
+          {
+            "type": "step",
+            "html": "3. Spin on <strong>Lite Ice Cream</strong>, then run <strong>Respin</strong> once or twice until silky soft-serve consistency."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "yuzu-blackberry-caipiroska",
+    "aliases": [
+      "caipiroska",
+      "yuzu-caipiroska"
+    ],
+    "title": "Yuzu Blackberry Caipiroska",
+    "category": "Drinks",
+    "description": "Nobu-inspired cocktail of muddled ripe blackberries, floral Japanese yuzu juice, simple syrup, and chilled vodka poured unstrained over crushed rocks with mint and dried citrus.",
+    "image": "assets/optimized/yuzu-blackberry-caipiroska.webp",
+    "prepTime": "5 mins",
+    "totalTime": "5 mins",
+    "yield": "1 cocktail",
+    "yieldIcon": "mdi:glass-cocktail",
+    "ingredientGroups": [
+      {
+        "title": "Per Cocktail (Made Fresh to Order)",
+        "items": [
+          "5–6 fresh blackberries",
+          "1/2 oz simple syrup",
+          "2 oz premium vodka",
+          "1/2 oz yuzu juice",
+          "1 fresh mint sprig",
+          "1 dried citrus wheel"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Muddle, Shake & Pour",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Muddle:</strong> In a cocktail shaker, muddle the fresh blackberries with simple syrup until completely broken down and juicy."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Shake Hard:</strong> Add the vodka and yuzu juice, fill with ice, and shake hard for 10–15 seconds."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Dirty Dump & Garnish:</strong> Pour the entire contents — ice, crushed berry pulp, and all — straight into a rocks glass. Slap the mint sprig between your palms to release its oils and garnish alongside a dried citrus wheel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "winter-green-cucumber-cooler",
+    "aliases": [
+      "cucumber-cooler",
+      "winter-green-cooler",
+      "cucumber-mint-cooler"
+    ],
+    "title": "\"Winter Green\" Cucumber, Mint & Lime Cooler",
+    "category": "Drinks",
+    "description": "Vibrant emerald-green party pitcher cocktail blending peel-on English cucumbers, fresh mint, razor-sharp lime juice, vodka, and an optional subtle jalapeño kick.",
+    "image": "assets/optimized/winter-green-cucumber-cooler.webp",
+    "prepTime": "10 mins",
+    "totalTime": "15 mins",
+    "yield": "12–16 drinks",
+    "yieldIcon": "mdi:glass-cocktail",
+    "ingredientGroups": [
+      {
+        "title": "Batched Dispenser / Pitcher",
+        "items": [
+          "750 ml (3 cups) vodka",
+          "2 large English cucumbers, chopped with peel on (for emerald color)",
+          "1 cup (packed) fresh mint leaves",
+          "1.5 cups fresh lime juice",
+          "0.5 to 0.75 cup simple syrup (to balance the lime)",
+          "2.5 cups cold water (or omit and let guests top with club soda)",
+          "Optional: 1/2 seeded jalapeño for a subtle warming kick"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Blend, Fine-Strain & Chill",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. Blend the chopped peel-on cucumbers, fresh mint leaves, lime juice, simple syrup, and optional seeded jalapeño on high for 20 seconds until completely liquefied."
+          },
+          {
+            "type": "step",
+            "html": "2. Pour through a fine-mesh strainer into a large pitcher or drink dispenser, pressing the solids firmly to extract every drop of bright emerald juice."
+          },
+          {
+            "type": "step",
+            "html": "3. Stir in the 750 ml vodka and cold water (or serve concentrated over ice topped with club soda) and chill thoroughly before guests arrive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "blackberry-sage-blanco",
+    "aliases": [
+      "blackberry-sage-tequila",
+      "blackberry-margarita"
+    ],
+    "title": "Blackberry Sage Blanco Batch",
+    "category": "Drinks",
+    "description": "Crowd-pleasing 20-drink blanco tequila pitcher infused with blended fresh blackberries, 25 aromatic sage leaves, fresh lime juice, and agave.",
+    "image": "assets/optimized/blackberry-sage-blanco.webp",
+    "prepTime": "15 mins",
+    "totalTime": "3 hours",
+    "yield": "20 drinks",
+    "yieldIcon": "mdi:glass-cocktail",
+    "ingredientGroups": [
+      {
+        "title": "20-Drink Party Batch",
+        "items": [
+          "5 cups (40 oz) blanco tequila",
+          "5 cups fresh blackberries (~26 oz), plus whole berries for picks",
+          "2.5 cups fresh lime juice",
+          "2 cups agave nectar & simple syrup blend",
+          "25 fresh sage leaves (plus extra whole leaves for garnish)"
+        ]
+      }
+    ],
+    "instructionSections": [
+      {
+        "title": "Blend, Strain & Marry",
+        "steps": [
+          {
+            "type": "step",
+            "html": "1. <strong>Blend the Base:</strong> Combine the 5 cups blackberries, fresh lime juice, agave/simple syrup sweetener, and all 25 sage leaves in a blender and blend on high until liquefied."
+          },
+          {
+            "type": "step",
+            "html": "2. <strong>Fine-Strain:</strong> Pour through a fine-mesh strainer directly into a large pitcher, pressing with a spoon to extract all ruby juice while catching seeds and herb bits."
+          },
+          {
+            "type": "step",
+            "html": "3. <strong>Batch & Chill:</strong> Stir in the 5 cups blanco tequila, cover tightly, and refrigerate for a few hours so the earthy sage and berry flavors marry."
+          },
+          {
+            "type": "step",
+            "html": "4. <strong>Serve:</strong> Stir vigorously right before pouring over fresh rocks. Garnish each glass with two skewered blackberries and a single fresh sage leaf resting on the ice."
           }
         ]
       }

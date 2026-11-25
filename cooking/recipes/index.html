@@ -1,0 +1,1179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Recipes (47) | Farbod Jahan</title>
+    <meta name="description" content="Browse all 47 homemade recipes by Farbod Jahan. Filter by appetizer, entree, dessert, cooking time, or ingredient.">
+    <link rel="canonical" href="https://farbodjahan.com/cooking/recipes/">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="All Recipes | Farbod Jahan">
+    <meta property="og:description" content="Browse all 47 homemade recipes — filter by category, time, or ingredient.">
+    <meta property="og:image" content="https://farbodjahan.com/cooking/assets/optimized/cooking.webp">
+    <meta property="og:url" content="https://farbodjahan.com/cooking/recipes/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
+
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/cooking.css" rel="stylesheet">
+</head>
+
+<body class="cooking-page recipes-directory-page">
+    <div class="external-wrapper">
+        <!-- HEADER START -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="../../index.html">
+                        <img src="../../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <button class="closeIcon" aria-label="Close menu">
+                            <iconify-icon icon="ep:close"></iconify-icon>
+                        </button>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html" aria-label="Home">
+                                    <iconify-icon icon="fa:home"></iconify-icon>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../about/">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../resume/">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../contact/">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Interests</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a class="dropdownitem" href="../../dj/">Dj</a></li>
+                                        <li><a class="dropdownitem" href="../">Cooking</a></li>
+                                        <li><a class="dropdownitem" href="../../real-estate/">Real Estate</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- HEADER END -->
+
+        <main class="recipes-dir-main">
+            <div class="container">
+                <div class="dir-header">
+                    <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                        <a href="../">Cooking</a>
+                        <span class="crumb-sep">/</span>
+                        <span aria-current="page">All Recipes</span>
+                    </nav>
+                    <h1 class="dir-title">All Recipes</h1>
+                    <p class="dir-subtitle">Browse all 47 recipes at a glance — search by dish or ingredient, or filter by course and cook time.</p>
+                </div>
+
+                <div class="dir-controls-bar">
+                    <div class="dir-controls-top">
+                        <div class="recipe-search-wrap dir-search-wrap">
+                            <iconify-icon icon="mdi:magnify" class="search-icon"></iconify-icon>
+                            <input id="dir-search-input" type="search" class="form-control recipe-search-input"
+                                placeholder="Search dishes or ingredients (e.g., pumpkin, garlic, ramen)..."
+                                aria-label="Search dishes or ingredients">
+                            <button type="button" id="dir-search-clear" class="search-clear-btn"
+                                aria-label="Clear search" hidden>
+                                <iconify-icon icon="ep:close"></iconify-icon>
+                            </button>
+                        </div>
+
+                        <div class="dir-selects">
+                            <select id="dir-time-filter" class="dir-select" aria-label="Filter by total time">
+                                <option value="all">Any time</option>
+                                <option value="quick">Quick (≤ 45 mins)</option>
+                                <option value="medium">1 – 3 hours</option>
+                                <option value="long">Long projects (3+ hrs)</option>
+                            </select>
+                            <select id="dir-sort-select" class="dir-select" aria-label="Sort recipes">
+                                <option value="featured">Featured order</option>
+                                <option value="alpha">A – Z</option>
+                                <option value="quickest">Quickest first</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="dir-controls-bottom">
+                        <div class="recipe-filter-pills" role="tablist" aria-label="Filter recipes by category">
+                            <button type="button" class="filter-pill dir-cat-pill is-active" data-category="All" role="tab" aria-selected="true">
+                                All <span class="pill-count">47</span>
+                            </button>
+                            <button type="button" class="filter-pill dir-cat-pill" data-category="Appetizer" role="tab" aria-selected="false">
+                                Appetizer <span class="pill-count">16</span>
+                            </button>
+                            <button type="button" class="filter-pill dir-cat-pill" data-category="Entree" role="tab" aria-selected="false">
+                                Entree <span class="pill-count">18</span>
+                            </button>
+                            <button type="button" class="filter-pill dir-cat-pill" data-category="Dessert" role="tab" aria-selected="false">
+                                Dessert <span class="pill-count">10</span>
+                            </button>
+                            <button type="button" class="filter-pill dir-cat-pill" data-category="Drinks" role="tab" aria-selected="false">
+                                Drinks <span class="pill-count">3</span>
+                            </button>
+                        </div>
+                        <p id="dir-recipes-count" class="recipes-count" aria-live="polite">Showing all 47 recipes</p>
+                    </div>
+                </div>
+
+                <div id="dir-empty-state" class="recipes-empty-state" hidden>
+                    <p>No recipes matched your filters.</p>
+                    <button type="button" id="dir-reset-btn" class="recipe-action-btn">Reset all filters</button>
+                </div>
+
+                <div id="all-recipes-grid" class="row g-4 dir-grid">
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../tonkotsu-ramen/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/tonkotsu.webp" alt="Tonkotsu Ramen" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Tonkotsu Ramen</h2>
+                    <p class="card-desc">A unique style of ramen consisting of an extremely rich, fatty pork broth.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            3 days
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../pork-bao-buns/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/porkbaobuns.webp" alt="Pork Bao Buns" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Pork Bao Buns</h2>
+                    <p class="card-desc">A homemade pork bao buns sweet and spicy.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            4 Hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../chicken-tikka-naan/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/chickenTikka.webp" alt="Chicken Tikka Masala with Naan Bread" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Chicken Tikka Masala with Naan Bread</h2>
+                    <p class="card-desc">A traditional Indian dish made up of chicken that&#x27;s been marinated in yogurt, served with rice.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            24 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../birria-quesa-tacos/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/Food/birriaQuesaTacos.jpeg" alt="Birria Quesa Tacos" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Birria Quesa Tacos</h2>
+                    <p class="card-desc">Tortillas filled with the stew&#x27;s tender, juicy meat dipped in meat broth.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            2 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../ash-reshteh/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/ashReshteh.webp" alt="Ash Reshteh" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Ash Reshteh</h2>
+                    <p class="card-desc">A classic Persian noodle soup with beans and herbs that is intensely aromatic and amazingly delicious</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            2 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../pico-de-gallo/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/recepie1.webp" alt="Pico de Gallo" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Pico de Gallo</h2>
+                    <p class="card-desc">A popular Mexican salsa made traditionally with tomatoes, onion, cilantro, and lime juice.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            20 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../chicken-soup/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/chickenSoup.webp" alt="Chicken Soup" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Chicken Soup</h2>
+                    <p class="card-desc">The best chicken soup you’ll ever eat is the perfect recipe to make when you’re feeling sick.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            3 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../xiao-long-bao/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/Food/SoupDumpling.jpg" alt="Soup Dumpling (Xiaolongbao)" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Soup Dumpling (Xiaolongbao)</h2>
+                    <p class="card-desc">Delicate steamed dumpling filled with pork and soup often thought to have originated in Shanghai.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            9 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../potato-crispy-aioli/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/crispy-salt-and-pepper-smashed-potatoes-3.webp" alt="Potato Crisp w/ Aioli" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Potato Crisp w/ Aioli</h2>
+                    <p class="card-desc">A quick and easy appetizer to make in replace of french fries. Add a side of aioli for extra flavor.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            45 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../blooming-onion/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/Food/BloominOnion.jpeg" alt="Blooming Onion" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Blooming Onion</h2>
+                    <p class="card-desc">A crispy deep-fried blooming onion served with spicy mayo aioli for extra flavor.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            20 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../fajita-guacamole/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/mexiannight.webp" alt="Fajita &amp; Guacamole" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Fajita &amp; Guacamole</h2>
+                    <p class="card-desc">The best combination of Fajita and Guacamole for a fun filled Mexican night.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            30 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../croissants/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/croissants.webp" alt="Croissants" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Croissants</h2>
+                    <p class="card-desc">A bakery product that contains dough/roll-in fat layers to create a flaky, crispy texture</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            2 days
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../churros/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/churros.webp" alt="Churros" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Churros</h2>
+                    <p class="card-desc">Crispy Mexican pastry made from deep-fried choux dough, rolled in cinnamon sugar with chocolate ganache.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            30 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../macaroni-and-cheese/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/macroni.webp" alt="Macaroni and Cheese" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Macaroni and Cheese</h2>
+                    <p class="card-desc">An American dish of cooked macaroni pasta and a cheese sauce</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            1 hour 10 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../spaghetti-meat-sauce/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/Food/spaghetti.jpg" alt="Spaghetti and Meat Sauce" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Spaghetti and Meat Sauce</h2>
+                    <p class="card-desc">Is a long, thin, solid, cylindrical pasta. It is a staple food of traditional Italian cuisine.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            4 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../pumpkin-bread/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/pumpkinBread.webp" alt="Pumpkin Bread with Salted Maple Butter" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Pumpkin Bread with Salted Maple Butter</h2>
+                    <p class="card-desc">A sweet moist quick bread made with pumpkin. Paired with salted maple butter.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            2 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../burrito/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/burrito.webp" alt="Burrito" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Burrito</h2>
+                    <p class="card-desc">Meaning &quot;little donkey&quot;, warm tortilla filled with meat, beans, cheese, etc.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            24 Hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../popeyes-chicken-sandwich/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/Popeyes.webp" alt="Popeyes Chicken Sandwich" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Popeyes Chicken Sandwich</h2>
+                    <p class="card-desc">A delicious crispy fried chicken sandwich on a homemade Japanese milk bun with spicy mayo.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            3 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../masala-fries/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/Food/maslafood.jpg" alt="Masala Fries" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Masala Fries</h2>
+                    <p class="card-desc">Crispy spiced masala fries served with a creamy sriracha mayo dipping sauce.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            45 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../pasta-dough/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/pastadough.webp" alt="Pasta Dough" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Pasta Dough</h2>
+                    <p class="card-desc">Homemade fresh pasta dough for spaghetti, linguine, fettuccine, and more.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            30 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../bread/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/bread.webp" alt="Bread" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Bread</h2>
+                    <p class="card-desc">Food consisting of flour that is moistened, kneaded into dough, and often fermented.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            2 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../bruschetta/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/Bruscetta.webp" alt="Bruschetta" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Bruschetta</h2>
+                    <p class="card-desc">Thick slices of bread, rubbed with garlic, drizzled with olive oil, often topped with tomatoes and herbs.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            10 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../in-n-out-burger/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/burger.webp" alt="In-N-Out Burger" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">In-N-Out Burger</h2>
+                    <p class="card-desc">Staple California-style smash burger with homemade buns, caramelized onions, and burger sauce.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            1 hour
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../raspberry-danish/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/rasberry.webp" alt="Raspberry Danish" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Raspberry Danish</h2>
+                    <p class="card-desc">A flaky puff pastry filled with creamy cheesecake, sweet fresh raspberries, and a vanilla glaze.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            1 hour
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../mozzarella-cheese/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/Food/mozzarrella.jpg" alt="Mozzarella Cheese" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Mozzarella Cheese</h2>
+                    <p class="card-desc">Creamy white or pale ivory in colour, mozzarella has a mild, fresh lactic flavour.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            30 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../brussel-sprouts/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/brussel.webp" alt="Brussel Sprouts" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Brussel Sprouts</h2>
+                    <p class="card-desc">Crispy roasted Brussels sprouts — the one vegetable your guests will ask for seconds of.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            30 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../japanese-milkbread/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/milkbread.webp" alt="Japanese Milk Bread" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Japanese Milk Bread</h2>
+                    <p class="card-desc">A fluffy, pillowy Japanese milk bread perfect for sandwiches or enjoying on its own.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            3-4 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../reverse-sear-prime-rib/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/reverse-sear-prime-rib.webp" alt="Reverse-Sear Prime Rib Roast" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Reverse-Sear Prime Rib Roast</h2>
+                    <p class="card-desc">48-hour rosemary-umami dry-brined bone-in prime rib roasted low-and-slow for edge-to-edge medium-rare, served with silky melted onions, horseradish cream, and red wine au jus.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            48 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../nobu-miso-black-cod/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/nobuMisoBlackCod.webp" alt="Nobu Miso Black Cod" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Nobu Miso Black Cod</h2>
+                    <p class="card-desc">Silky, buttery black cod marinated for 48 hours in sweet Saikyo miso and broiled on high until the edges blister into Nobu&#x27;s signature mahogany caramelization.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            48 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../crispy-rice-spicy-tuna/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/crispy-rice-spicy-tuna.webp" alt="Crispy Rice with Spicy Tuna" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Crispy Rice with Spicy Tuna</h2>
+                    <p class="card-desc">Nobu-style bite-sized blocks of chilled sushi rice deep-fried until shattering and golden, crowned with finely diced sashimi-grade ahi tuna in Kewpie-sriracha dressing.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            8 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../yellowtail-jalapeno-sashimi/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/yellowtail-jalapeno-sashimi.webp" alt="Yellowtail Sashimi with Jalapeño" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Yellowtail Sashimi with Jalapeño</h2>
+                    <p class="card-desc">Chilled ribbons of sushi-grade hamachi brushed with a whisper of garlic purée, topped with paper-thin jalapeño and fresh cilantro in a bright 2:1 yuzu-soy dressing.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            20 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../oysters-ponzu-mignonette/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/oysters-ponzu-mignonette.webp" alt="Oysters with Ponzu Mignonette" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Oysters with Ponzu Mignonette</h2>
+                    <p class="card-desc">Ice-cold freshly shucked oysters dressed with a bright Japanese mignonette of rice wine vinegar, soy sauce, lemon, toasted sesame oil, shallot, and green onion.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            45 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../biang-biang-braised-pork/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/biang-biang-braised-pork.webp" alt="Biang Biang Braised Pork Noodles" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Biang Biang Braised Pork Noodles</h2>
+                    <p class="card-desc">Interactive dinner-party hand-pulled wide belt noodles topped with 3.5-hour star-anise braised pork, sizzling 350°F garlic-chili oil, spicy cucumber salad, and blistered shishitos.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            5.5 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../panang-curry/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/panang-curry.webp" alt="Chicken Panang Curry" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Chicken Panang Curry</h2>
+                    <p class="card-desc">Velvety Thai red coconut curry enriched with creamy peanut butter, tender sliced chicken, sweet bell peppers, fresh ginger, lime juice, and fragrant basil over hot jasmine rice.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            35 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../pad-see-eiw/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/pad-see-eiw.webp" alt="Beef Pad See Ew" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Beef Pad See Ew</h2>
+                    <p class="card-desc">Wok-charred wide rice noodles tossed with soy-marinated flank steak, crisp-tender Chinese broccoli, scrambled eggs, and a caramelized dark soy and oyster sauce glaze.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            35 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../artisan-bread-dutch-oven/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/artisanbreaddutch.webp" alt="Artisan Dutch Oven Bread" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Artisan Dutch Oven Bread</h2>
+                    <p class="card-desc">Crackling golden crust and airy, open-crumb artisan boule made with four pantry staples, gentle stretch-and-folds, and steam-baked inside a blazing-hot Dutch oven.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            5 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../chicken-marinades/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/chicken-marinades.webp" alt="Signature Chicken Marinades (7 Flavors)" loading="lazy">
+                        <span class="card-cat-badge">Entree</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Signature Chicken Marinades (7 Flavors)</h2>
+                    <p class="card-desc">High-flavor bulk meal-prep marinades from Korean Gochujang and Yakitori to Cantonese Char Siu, Vietnamese Lemongrass, Peruvian Pollo a la Brasa, and Fiery Harissa.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            8–24 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../honey-balsamic-dressing/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/honey-balsamic-dressing.webp" alt="Honey Balsamic Vinaigrette" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Honey Balsamic Vinaigrette</h2>
+                    <p class="card-desc">Glossy five-ingredient house vinaigrette balancing aged balsamic vinegar, floral honey, smooth Dijon mustard, and extra-virgin olive oil.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            5 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../honey-mustard-dressing/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/honey-mustard-dressing.webp" alt="Homemade Honey Mustard" loading="lazy">
+                        <span class="card-cat-badge">Appetizer</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Homemade Honey Mustard</h2>
+                    <p class="card-desc">Punchy, textured stone-ground and Dijon honey mustard brightened with fresh lemon juice, minced garlic, and cold-pressed olive oil.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            5 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../creami-oreo-mcflurry/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/creami-oreo-mcflurry.webp" alt="Ninja Creami Oreo McFlurry" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Ninja Creami Oreo McFlurry</h2>
+                    <p class="card-desc">Ultra-thick vanilla bean high-protein soft-serve spun in the Ninja Creami with chunky Oreo Thins folded throughout — 281 calories and 23g protein for the entire pint.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            16 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../creami-thai-tea/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/creami-thai-tea.webp" alt="Ninja Creami Thai Tea Ice Cream" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Ninja Creami Thai Tea Ice Cream</h2>
+                    <p class="card-desc">Fragrant brewed Thai iced tea spun into silky, macro-friendly ice cream and finished with a ribbon of sweetened condensed milk — 172 calories and 18g protein per pint.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            16 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../creami-double-oreo/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/creami-double-oreo.webp" alt="Ninja Creami Double Oreo" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Ninja Creami Double Oreo</h2>
+                    <p class="card-desc">Midnight-dark black cocoa chocolate protein ice cream tasting just like an Oreo wafer, packed with mixed-in and crumbled Oreos — 299 calories and 35g protein per pint.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            16 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../creami-cookie-dough/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/creami-cookie-dough.webp" alt="Ninja Creami Cookie Dough" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Ninja Creami Cookie Dough</h2>
+                    <p class="card-desc">Rich vanilla bean protein ice cream loaded with real Ben &amp; Jerry&#x27;s chocolate chip cookie dough bites — 350 calories and a massive 43g protein per pint.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            16 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../creami-shamrock-shake/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/creami-shamrock-shake.webp" alt="Ninja Creami Shamrock Shake" loading="lazy">
+                        <span class="card-cat-badge">Dessert</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Ninja Creami Shamrock Shake</h2>
+                    <p class="card-desc">Cool mint and vanilla bean frozen protein soft-serve that nails the classic seasonal Shamrock Shake at just 150 calories, 2g carbs, and 30g protein.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            16 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../yuzu-blackberry-caipiroska/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/yuzu-blackberry-caipiroska.webp" alt="Yuzu Blackberry Caipiroska" loading="lazy">
+                        <span class="card-cat-badge">Drinks</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Yuzu Blackberry Caipiroska</h2>
+                    <p class="card-desc">Nobu-inspired cocktail of muddled ripe blackberries, floral Japanese yuzu juice, simple syrup, and chilled vodka poured unstrained over crushed rocks with mint and dried citrus.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            5 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../winter-green-cucumber-cooler/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/winter-green-cucumber-cooler.webp" alt="&quot;Winter Green&quot; Cucumber, Mint &amp; Lime Cooler" loading="lazy">
+                        <span class="card-cat-badge">Drinks</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">&quot;Winter Green&quot; Cucumber, Mint &amp; Lime Cooler</h2>
+                    <p class="card-desc">Vibrant emerald-green party pitcher cocktail blending peel-on English cucumbers, fresh mint, razor-sharp lime juice, vodka, and an optional subtle jalapeño kick.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            15 mins
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food card-food-link dir-card" href="../blackberry-sage-blanco/">
+                <div class="imgTitle">
+                    <div class="img-wrapper">
+                        <img src="../assets/optimized/blackberry-sage-blanco.webp" alt="Blackberry Sage Blanco Batch" loading="lazy">
+                        <span class="card-cat-badge">Drinks</span>
+                    </div>
+                </div>
+                <div class="cardBody">
+                    <h2 class="title">Blackberry Sage Blanco Batch</h2>
+                    <p class="card-desc">Crowd-pleasing 20-drink blanco tequila pitcher infused with blended fresh blackberries, 25 aromatic sage leaves, fresh lime juice, and agave.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            3 hours
+                        </span>
+                        <span class="btn-read">View Recipe →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER START -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="copyright">
+                            © 2010 - 2026 Farbod Jahan
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="social-link">
+                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
+                                    <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
+                                </a></li>
+                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <iconify-icon icon="jam:linkedin"></iconify-icon>
+                                </a></li>
+                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <iconify-icon icon="fa:instagram"></iconify-icon>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+
+    <button class="top-btn" aria-label="Scroll to top">
+        <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
+    </button>
+
+    <script src="../../js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../js/all-recipes.js" defer></script>
+</body>
+
+</html>

@@ -87,17 +87,19 @@
 
         <!---SECTION HERO MAIN START -->
         <section class="hero-main">
-            <video style="object-fit: cover; width:100%; height:100vh;" src="./assets/cookingbg.mp4"
+            <video style="object-fit: cover; width:100%; height:100vh;" data-src="./assets/cookingbg.mp4"
                 poster="./assets/optimized/cooking.webp" id="video-slider"
-                loop autoplay muted playsinline preload="metadata"></video>
+                loop autoplay muted playsinline preload="none"></video>
             <div class="container text-center">
-                <span data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">Welcome to my delicious
+                <span data-aos="fade-up" data-aos-easing="ease" data-aos-delay="150">Welcome to my delicious
                     corner</span>
-                <h1 class="hero-cooking-title" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">Cooking</h1>
-                <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">I have a passion for cooking and want
-                    you to join me and my cooking journey.</p>
-                <a href="#cooking" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="350"><small>View
-                        Recipes</small></a>
+                <h1 class="hero-cooking-title" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">Cooking</h1>
+                <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">A personal collection of the recipes I
+                    actually love making — from quick weeknight bites to multi-day kitchen projects.</p>
+                <div class="hero-cta-group" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">
+                    <a href="./recipes/" class="hero-cta-primary"><small>Browse All 27 Recipes</small></a>
+                    <a href="#cooking" class="hero-cta-secondary"><small>Explore Below ↓</small></a>
+                </div>
             </div>
         </section>
         <!--SECTION HERO MAIN END -->
@@ -106,58 +108,66 @@
         <section class="cooking-main">
             <div class="container">
                 <div class="caption">
-                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">Styles of Food</h2>
+                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="900">Styles of Food</h2>
                 </div>
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="1000">Appetizer</h3>
-                            <p data-aos="fade-up" data-aos-duration="1000">A small portion of food served before the
-                                main part of a meal in order to stimulate the appetite. Recipes are intended to be made
-                                quickly so that you can entertain guests while preparing for the main course. They
-                                should, therefore, be made attractive in appearance and tempting in flavor.</p>
+                            <h3 data-aos="fade-up" data-aos-duration="900">Appetizers &amp; Sides</h3>
+                            <p data-aos="fade-up" data-aos-duration="900">Quick starters, homemade breads, dips, and
+                                shareable snacks designed to get people talking before the main course hits the table —
+                                from fresh mozzarella and soup dumplings to crispy smashed potatoes.</p>
+                            <a href="./recipes/?category=Appetizer" class="style-cat-link" data-aos="fade-up" data-aos-duration="900">
+                                Browse 11 Appetizers →
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="img-box">
+                        <a href="./recipes/?category=Appetizer" class="img-box style-img-link" aria-label="Browse Appetizer recipes">
                             <div class="custom-border" id="dynamic-border-1"></div>
                             <img id="dynamic-image-1" src="./assets/optimized/Bruscetta.webp" alt="Appetizer dishes"
-                                style="height:300px;object-fit: cover;" loading="lazy">
-                        </div>
+                                style="height:320px;object-fit: cover;" loading="lazy">
+                        </a>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-1 order-2">
-                        <div class="img-box">
+                        <a href="./recipes/?category=Entree" class="img-box style-img-link" aria-label="Browse Entree recipes">
                             <div class="custom-border" id="dynamic-border-2"></div>
                             <img id="dynamic-image-2" src="./assets/Food/spaghetti.jpg" alt="Entree dishes"
-                                style="height:400px;object-fit: cover;" loading="lazy">
-                        </div>
+                                style="height:380px;object-fit: cover;" loading="lazy">
+                        </a>
                     </div>
                     <div class="col-lg-6 order-lg-2 order-1">
                         <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="1000">Entree</h3>
-                            <p data-aos="fade-up" data-aos-duration="1000">The main event! Recipes are from around the
-                                world to satisfy any craving and occasion. Some recipes can be whipped up in a day and
-                                some take a few, but all will taste great.</p>
+                            <h3 data-aos="fade-up" data-aos-duration="900">Entrees</h3>
+                            <p data-aos="fade-up" data-aos-duration="900">The main event — dishes inspired by kitchens
+                                around the world. Some come together in 30 minutes, others are 3-day labors of love like
+                                Tonkotsu ramen and birria tacos, and every single one is worth it.</p>
+                            <a href="./recipes/?category=Entree" class="style-cat-link" data-aos="fade-up" data-aos-duration="900">
+                                Browse 11 Entrees →
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="1000">Dessert</h3>
-                            <p data-aos="fade-up" data-aos-duration="1000">The end of the party. Desserts can be
-                                smooth, tangy, crumbly, decadent, and everything in between. Choose a dessert that fits
-                                your mood and always save room!</p>
+                            <h3 data-aos="fade-up" data-aos-duration="900">Desserts &amp; Baking</h3>
+                            <p data-aos="fade-up" data-aos-duration="900">Flaky laminated croissants, pumpkin bread with
+                                salted maple butter, pillowy Japanese milk bread, and cinnamon-sugar churros. Always
+                                save room for something sweet.</p>
+                            <a href="./recipes/?category=Dessert" class="style-cat-link" data-aos="fade-up" data-aos-duration="900">
+                                Browse 5 Desserts →
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="img-box">
+                        <a href="./recipes/?category=Dessert" class="img-box style-img-link" aria-label="Browse Dessert recipes">
                             <div class="custom-border" id="dynamic-border-3"></div>
                             <img id="dynamic-image-3" src="./assets/optimized/pumpkinBread.webp" alt="Dessert dishes"
-                                style="height:380px;object-fit: cover;" loading="lazy">
-                        </div>
+                                style="height:360px;object-fit: cover;" loading="lazy">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -168,9 +178,9 @@
         <section class="what-we-make para" id="cooking">
             <div class="container">
                 <div class="caption">
-                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">What I Make</h2>
-                    <p data-aos="fade-up" data-aos-duration="1000">All recipes are below. Search by name or ingredient,
-                        or filter by Appetizer, Entree, or Dessert.</p>
+                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="900">What I Make</h2>
+                    <p data-aos="fade-up" data-aos-duration="900">Flip through the showcase below, search by dish or
+                        ingredient, or open the full cookbook directory.</p>
                 </div>
 
                 <div class="recipes-toolbar">
@@ -209,6 +219,7 @@
                         <div id="recipes-swiper" class="swiper-wrapper imageGallery1">
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                     <div class="control">
                         <div class="swiper-button-prev" aria-label="Previous recipes">
                             <iconify-icon icon="icons8:arrows-long-left"></iconify-icon>
@@ -218,6 +229,12 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="view-all-cta-wrap">
+                    <a href="./recipes/" class="view-all-recipes-btn">
+                        View All 27 Recipes in Grid View →
+                    </a>
+                </div>
             </div>
         </section>
         <!--Section What We Make END -->
@@ -225,10 +242,14 @@
         <!--About Cooking start -->
         <section class="about-cooking para">
             <div class="container">
-                <div class="caption">
-                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000"><strong>Recipes will be
-                            continually added throughout the years!</strong>
-                    </h2>
+                <div class="caption text-center">
+                    <h2 data-aos="fade-up" data-aos-duration="900"><strong>Always experimenting in the kitchen.</strong></h2>
+                    <p data-aos="fade-up" data-aos-duration="900">New recipes get added as I test and dial them in. Want
+                        to browse everything at once or suggest a dish to try next?</p>
+                    <div class="about-cooking-actions" data-aos="fade-up" data-aos-duration="900">
+                        <a href="./recipes/" class="view-all-recipes-btn">Open Full Recipe Directory</a>
+                        <a href="../contact/" class="about-secondary-link">Suggest a Recipe →</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -260,14 +281,6 @@
             </div>
         </footer>
         <!--Footer End -->
-    </div>
-
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
     </div>
 
     <button class="top-btn" aria-label="Scroll to top">

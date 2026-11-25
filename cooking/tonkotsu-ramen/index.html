@@ -432,11 +432,18 @@
             <div class="container">
                 <article class="recipe-surface food-detail">
                     <div class="recipe-topbar">
-                        <a href="../#cooking" class="arrowback">
-                            <i><iconify-icon icon="cil:arrow-left"></iconify-icon></i>
-                            Back to all recipes
-                        </a>
+                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                            <a href="../">Cooking</a>
+                            <span class="crumb-sep">/</span>
+                            <a href="../recipes/">All Recipes</a>
+                            <span class="crumb-sep">/</span>
+                            <span aria-current="page">Tonkotsu Ramen</span>
+                        </nav>
                         <div class="recipe-actions">
+                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                                <iconify-icon icon="mdi:restore"></iconify-icon>
+                                <span class="btn-label">Reset Checks</span>
+                            </button>
                             <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/tonkotsu-ramen/">
                                 <iconify-icon icon="mdi:link-variant"></iconify-icon>
                                 <span class="btn-label">Copy Link</span>
@@ -453,14 +460,14 @@
                     </div>
 
                     <div class="recipe-content-body">
-                        <div class="row g-4 align-items-start">
+                        <div class="row g-4 align-items-center recipe-hero-row">
                             <div class="col-lg-5">
                                 <div class="img-holder recipe-hero-img">
                                     <img src="../assets/optimized/tonkotsu.webp" alt="Tonkotsu Ramen" fetchpriority="high">
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <span class="recipe-cat-pill">Entree</span>
+                                <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
                                 <h1 class="recipe-title">Tonkotsu Ramen</h1>
                                 <p class="recipe-lead">A unique style of ramen consisting of an extremely rich, fatty pork broth.</p>
 
@@ -493,14 +500,19 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="ingredients-block">
+                        <hr>
+
+                        <div class="row g-5 recipe-cooking-columns">
+                            <aside class="col-lg-4 recipe-ingredients-col">
+                                <div class="ingredients-sticky-card">
                                     <div class="section-heading-row">
                                         <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap items to check off</span>
+                                        <span class="interactive-hint">Tap to check off</span>
                                     </div>
-                                    <div class="row g-3">
-<div class="col-md-6 ingredient-group">
+                                    <div class="ingredient-group">
   <h5>Tonkotsu broth</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">4 lb femur</label></li>
@@ -513,7 +525,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-7">water to cover</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Noodles (6 servings)</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">500 g pead flour</label></li>
@@ -523,7 +535,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-1-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-4">5 g salt</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Marinated Soft boiled Eggs</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">6 minutes cook boiling water then ice bath</label></li>
@@ -532,7 +544,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-2-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-3">Mirin</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Chashu</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0">2 pound pork belly (skin on or off)</label></li>
@@ -544,7 +556,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-3-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-6">4-5 cloves garlic</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Lighter color Shoyu Tare</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-4-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-0">225 g water</label></li>
@@ -557,7 +569,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-4-7" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-4-7">30 g pown sugar</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Shoyu Tare</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-5-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-5-0">5 3 inch by 3 inch squares of kombu</label></li>
@@ -571,19 +583,15 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-5-8" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-5-8">Salt to taste</label></li>
   </ul>
 </div>
-</div>
                                 </div>
-                            </div>
-                        </div>
+                            </aside>
 
-                        <hr>
-
-                        <section class="instructions-block">
-                            <div class="section-heading-row">
-                                <h2 class="subTitle">INSTRUCTIONS</h2>
-                                <span class="interactive-hint">Tap a step to mark complete</span>
-                            </div>
-                            <div class="cardSteps">
+                            <section class="col-lg-8 instructions-block">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">INSTRUCTIONS</h2>
+                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                </div>
+                                <div class="cardSteps">
   <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
   <div class="desciption">
     <div class="titleStep"><span>Broth (3 days)</span></div>
@@ -676,14 +684,15 @@
     <p class="recipe-step-item" title="Click to mark step done">10. Bundle the noodles into 120 g portions and place them in a sealable bag. Put the bag in the fridge and allow it to rest for at least a day.</p>
   </div>
 </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../#cooking" class="arrowback">View all recipes →</a>
+                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
@@ -755,21 +764,11 @@
         <!-- FOOTER END -->
     </div>
 
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
 
     <script src="../../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../../js/simpleparallax.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
     <script src="../js/recipe-page.js" defer></script>

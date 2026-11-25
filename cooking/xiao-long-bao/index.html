@@ -216,11 +216,18 @@
             <div class="container">
                 <article class="recipe-surface food-detail">
                     <div class="recipe-topbar">
-                        <a href="../#cooking" class="arrowback">
-                            <i><iconify-icon icon="cil:arrow-left"></iconify-icon></i>
-                            Back to all recipes
-                        </a>
+                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+                            <a href="../">Cooking</a>
+                            <span class="crumb-sep">/</span>
+                            <a href="../recipes/">All Recipes</a>
+                            <span class="crumb-sep">/</span>
+                            <span aria-current="page">Soup Dumpling (Xiaolongbao)</span>
+                        </nav>
                         <div class="recipe-actions">
+                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                                <iconify-icon icon="mdi:restore"></iconify-icon>
+                                <span class="btn-label">Reset Checks</span>
+                            </button>
                             <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/xiao-long-bao/">
                                 <iconify-icon icon="mdi:link-variant"></iconify-icon>
                                 <span class="btn-label">Copy Link</span>
@@ -237,14 +244,14 @@
                     </div>
 
                     <div class="recipe-content-body">
-                        <div class="row g-4 align-items-start">
+                        <div class="row g-4 align-items-center recipe-hero-row">
                             <div class="col-lg-5">
                                 <div class="img-holder recipe-hero-img">
                                     <img src="../assets/Food/SoupDumpling.jpg" alt="Soup Dumpling (Xiaolongbao)" fetchpriority="high">
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <span class="recipe-cat-pill">Appetizer</span>
+                                <a href="../recipes/?category=Appetizer" class="recipe-cat-pill recipe-cat-link">Appetizer</a>
                                 <h1 class="recipe-title">Soup Dumpling (Xiaolongbao)</h1>
                                 <p class="recipe-lead">Delicate steamed dumpling filled with pork and soup often thought to have originated in Shanghai.</p>
 
@@ -277,14 +284,19 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="ingredients-block">
+                        <hr>
+
+                        <div class="row g-5 recipe-cooking-columns">
+                            <aside class="col-lg-4 recipe-ingredients-col">
+                                <div class="ingredients-sticky-card">
                                     <div class="section-heading-row">
                                         <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap items to check off</span>
+                                        <span class="interactive-hint">Tap to check off</span>
                                     </div>
-                                    <div class="row g-3">
-<div class="col-md-6 ingredient-group">
+                                    <div class="ingredient-group">
   <h5>Broth Gel (Aspic) V1</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">green onions, cut into pieces</label></li>
@@ -296,7 +308,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-6" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-6">salt to taste</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Dumpling Dough</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-1-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-0">170g all-purpose flour</label></li>
@@ -304,7 +316,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-1-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-1-2">40g (40ml) room temp water</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Pork Filling</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-2-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-0">3lbs (48oz) boneless pork Boston Butt</label></li>
@@ -319,7 +331,7 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-2-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-9">1 cup (235g) aspic, diced into 1/2 inch pieces</label></li>
   </ul>
 </div>
-<div class="col-md-6 ingredient-group">
+<div class="ingredient-group">
   <h5>Dipping Sauce</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-3-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-0">2 tablespoons (17g) spicy chili crisp</label></li>
@@ -327,19 +339,15 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-3-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-2">2-inch knob ginger, julienned</label></li>
   </ul>
 </div>
-</div>
                                 </div>
-                            </div>
-                        </div>
+                            </aside>
 
-                        <hr>
-
-                        <section class="instructions-block">
-                            <div class="section-heading-row">
-                                <h2 class="subTitle">INSTRUCTIONS</h2>
-                                <span class="interactive-hint">Tap a step to mark complete</span>
-                            </div>
-                            <div class="cardSteps">
+                            <section class="col-lg-8 instructions-block">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">INSTRUCTIONS</h2>
+                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                </div>
+                                <div class="cardSteps">
   <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
   <div class="desciption">
     <div class="titleStep"><span>Broth Gel (Aspic) V1</span></div>
@@ -377,14 +385,15 @@
 <p class="recipe-step-item" title="Click to mark step done">Combine chili crisp and black vinegar, serve that in a small ramekin, and mix to combine. Finally, add fresh julienned ginger before serving.</p>
   </div>
 </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../#cooking" class="arrowback">View all recipes →</a>
+                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
@@ -412,14 +421,14 @@
   </a>
 </div>
 <div class="col-md-4">
-  <a href="../pico-de-gallo/" class="related-recipe-card">
+  <a href="../crispy-rice-spicy-tuna/" class="related-recipe-card">
     <div class="related-img-wrap">
-      <img src="../assets/optimized/recepie1.webp" alt="Pico de Gallo" loading="lazy">
+      <img src="../assets/optimized/crispy-rice-spicy-tuna.webp" alt="Crispy Rice with Spicy Tuna" loading="lazy">
     </div>
     <div class="related-body">
       <span class="recipe-cat-pill">Appetizer</span>
-      <h4>Pico de Gallo</h4>
-      <p>A popular Mexican salsa made traditionally with tomatoes, onion, cilantro, and lime juice.</p>
+      <h4>Crispy Rice with Spicy Tuna</h4>
+      <p>Nobu-style bite-sized blocks of chilled sushi rice deep-fried until shattering and golden, crowned with finely diced sashimi-grade ahi tuna in Kewpie-sriracha dressing.</p>
     </div>
   </a>
 </div>
@@ -456,21 +465,11 @@
         <!-- FOOTER END -->
     </div>
 
-    <div id="loading">
-        <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-            <div class="ldio-xo4z6m7kfv">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>
     </button>
 
     <script src="../../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../../js/simpleparallax.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
     <script src="../js/recipe-page.js" defer></script>

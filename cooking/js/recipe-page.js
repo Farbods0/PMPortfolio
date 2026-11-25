@@ -74,17 +74,47 @@
         }
     }
 
+    // Progress & reset helper
+    const resetChecksBtn = document.getElementById('reset-checks-btn');
+    const updateResetVisibility = () => {
+        if (!resetChecksBtn) return;
+        const checkedIngredients = document.querySelectorAll('.ingredient-check:checked').length;
+        const doneSteps = document.querySelectorAll('.recipe-step-item.is-done').length;
+        const total = checkedIngredients + doneSteps;
+        resetChecksBtn.hidden = total === 0;
+    };
+
+    if (resetChecksBtn) {
+        resetChecksBtn.addEventListener('click', () => {
+            document.querySelectorAll('.ingredient-item').forEach((item) => {
+                const cb = item.querySelector('input[type="checkbox"]');
+                if (cb) cb.checked = false;
+                item.classList.remove('is-checked');
+            });
+            document.querySelectorAll('.recipe-step-item.is-done').forEach((step) => {
+                step.classList.remove('is-done');
+            });
+            updateResetVisibility();
+        });
+    }
+
     // Interactive ingredient checkboxes
     document.querySelectorAll('.ingredient-item').forEach((item) => {
+        const checkbox = item.querySelector('input[type="checkbox"]');
+        if (!checkbox) return;
+
+        const syncChecked = () => {
+            item.classList.toggle('is-checked', checkbox.checked);
+            updateResetVisibility();
+        };
+
+        checkbox.addEventListener('change', syncChecked);
+
         item.addEventListener('click', (e) => {
             if (e.target.tagName === 'A') return;
-            const checkbox = item.querySelector('input[type="checkbox"]');
-            if (checkbox && e.target !== checkbox) {
-                checkbox.checked = !checkbox.checked;
-            }
-            if (checkbox) {
-                item.classList.toggle('is-checked', checkbox.checked);
-            }
+            if (e.target === checkbox || e.target.closest('label')) return;
+            checkbox.checked = !checkbox.checked;
+            syncChecked();
         });
     });
 
@@ -93,7 +123,7 @@
         step.addEventListener('click', (e) => {
             if (e.target.tagName === 'A' || e.target.tagName === 'IMG') return;
             step.classList.toggle('is-done');
+            updateResetVisibility();
         });
     });
 })();
-
