@@ -216,8 +216,11 @@
 
             // Update dynamic count badges on the landing page
             const catCounts = {};
+            const byCategory = {};
             allRecipes.forEach((r) => {
                 catCounts[r.category] = (catCounts[r.category] || 0) + 1;
+                if (!byCategory[r.category]) byCategory[r.category] = [];
+                byCategory[r.category].push(r);
             });
             document.querySelectorAll('[data-count-total]').forEach((el) => {
                 el.textContent = allRecipes.length;
@@ -226,6 +229,62 @@
                 const cat = el.dataset.countCat;
                 if (catCounts[cat] !== undefined) el.textContent = catCounts[cat];
             });
+
+            // Smooth dual-layer recipe photo cycling on the 4 Bento course tiles
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (!prefersReduced) {
+                document.querySelectorAll('.bento-tile[data-bento-category]').forEach((tile, tileIdx) => {
+                    const cat = tile.dataset.bentoCategory;
+                    const list = byCategory[cat] || [];
+                    const layers = tile.querySelectorAll('.bento-img-layer');
+                    const dishPill = tile.querySelector('.bento-dish-pill');
+                    if (list.length < 2 || layers.length < 2) return;
+
+                    let activeLayer = 0;
+                    let idx = 0;
+                    let paused = false;
+
+                    // Start from the initial image's recipe if present
+                    const initialSrc = layers[0].getAttribute('src') || '';
+                    const foundIdx = list.findIndex((r) => initialSrc.includes(r.image));
+                    if (foundIdx >= 0) idx = foundIdx;
+
+                    tile.addEventListener('mouseenter', () => { paused = true; });
+                    tile.addEventListener('mouseleave', () => { paused = false; });
+
+                    const cycleNext = () => {
+                        if (paused || document.hidden) return;
+                        const nextIdx = (idx + 1) % list.length;
+                        const nextRecipe = list[nextIdx];
+                        const nextLayer = 1 - activeLayer;
+                        const nextSrc = `./${nextRecipe.image}`;
+
+                        const preloader = new Image();
+                        preloader.onload = () => {
+                            layers[nextLayer].src = nextSrc;
+                            layers[nextLayer].alt = nextRecipe.title;
+                            requestAnimationFrame(() => {
+                                layers[nextLayer].classList.add('is-visible');
+                                layers[activeLayer].classList.remove('is-visible');
+                                activeLayer = nextLayer;
+                                idx = nextIdx;
+                            });
+                            if (dishPill) {
+                                dishPill.classList.add('is-swapping');
+                                setTimeout(() => {
+                                    dishPill.textContent = nextRecipe.title;
+                                    dishPill.classList.remove('is-swapping');
+                                }, 260);
+                            }
+                        };
+                        preloader.src = nextSrc;
+                    };
+
+                    setTimeout(() => {
+                        setInterval(cycleNext, 4200);
+                    }, tileIdx * 1050 + 1800);
+                });
+            }
 
             // Restore query/category from URL if present
             const params = new URLSearchParams(window.location.search);
