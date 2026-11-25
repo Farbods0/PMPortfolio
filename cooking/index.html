@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Farbod Jahan | Cooking &amp; Recipes</title>
-    <meta name="description" content="Explore Farbod Jahan's favorite homemade recipes — appetizers, entrees, and desserts with step-by-step instructions and ingredients.">
+    <meta name="description" content="Explore Farbod Jahan's favorite homemade recipes — appetizers, entrees, desserts, and craft drinks with step-by-step instructions.">
     <link rel="canonical" href="https://farbodjahan.com/cooking/">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
@@ -16,28 +16,23 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Farbod Jahan | Cooking &amp; Recipes">
-    <meta property="og:description" content="Explore 27 homemade recipes across appetizers, entrees, and desserts.">
+    <meta property="og:description" content="Explore 47 homemade recipes across appetizers, entrees, desserts, and drinks.">
     <meta property="og:image" content="https://farbodjahan.com/cooking/assets/optimized/cooking.webp">
     <meta property="og:url" content="https://farbodjahan.com/cooking/">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/cooking.css">
-    <style>
-        .swiper-slide {
-            padding: 0 10px;
-        }
-    </style>
 </head>
 
 <body class="cooking-page">
     <div class="external-wrapper">
-        <!--- HEADER START -->
+        <!-- HEADER START -->
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -83,127 +78,115 @@
                 </div>
             </nav>
         </header>
-        <!---HEADER END -->
+        <!-- HEADER END -->
 
-        <!---SECTION HERO MAIN START -->
+        <!-- HERO START -->
         <section class="hero-main">
-            <video style="object-fit: cover; width:100%; height:100vh;" data-src="./assets/cookingbg.mp4"
-                poster="./assets/optimized/cooking.webp" id="video-slider"
+            <video data-src="./assets/cookingbg.mp4" poster="./assets/optimized/cooking.webp" id="video-slider"
                 loop autoplay muted playsinline preload="none"></video>
             <div class="container text-center">
-                <span data-aos="fade-up" data-aos-easing="ease" data-aos-delay="150">Welcome to my delicious
-                    corner</span>
-                <h1 class="hero-cooking-title" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">Cooking</h1>
-                <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">A personal collection of the recipes I
-                    actually love making — from quick weeknight bites to multi-day kitchen projects.</p>
-                <div class="hero-cta-group" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">
-                    <a href="./recipes/" class="hero-cta-primary"><small>Browse All 27 Recipes</small></a>
-                    <a href="#cooking" class="hero-cta-secondary"><small>Explore Below ↓</small></a>
+                <div class="hero-eyebrow"><span data-count-total>47</span> Homemade Recipes</div>
+                <h1 class="hero-cooking-title">Cooking.</h1>
+                <p class="hero-subtitle">A personal cookbook of the dishes and drinks I actually love making — from
+                    15-minute starters to multi-day kitchen projects.</p>
+                <div class="hero-cta-group">
+                    <a href="./recipes/" class="ck-btn ck-btn-primary">Browse All Recipes</a>
+                    <a href="#cooking" class="ck-btn ck-btn-glass">Explore Featured ↓</a>
                 </div>
             </div>
         </section>
-        <!--SECTION HERO MAIN END -->
+        <!-- HERO END -->
 
-        <!--Section Cooking Main Start -->
-        <section class="cooking-main">
+        <!-- COURSES BENTO GRID START -->
+        <section class="courses-section">
             <div class="container">
-                <div class="caption">
-                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="900">Styles of Food</h2>
+                <div class="section-header-clean">
+                    <div>
+                        <span class="section-kicker">Explore by Course</span>
+                        <h2>What are you in the mood for?</h2>
+                        <p>Jump straight into a category, or open the full searchable cookbook.</p>
+                    </div>
+                    <a href="./recipes/" class="section-link-subtle">All <span data-count-total>47</span> recipes ›</a>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="900">Appetizers &amp; Sides</h3>
-                            <p data-aos="fade-up" data-aos-duration="900">Quick starters, homemade breads, dips, and
-                                shareable snacks designed to get people talking before the main course hits the table —
-                                from fresh mozzarella and soup dumplings to crispy smashed potatoes.</p>
-                            <a href="./recipes/?category=Appetizer" class="style-cat-link" data-aos="fade-up" data-aos-duration="900">
-                                Browse 11 Appetizers →
-                            </a>
+
+                <div class="bento-grid">
+                    <a href="./recipes/?category=Appetizer" class="bento-tile">
+                        <img src="./assets/optimized/Bruscetta.webp" alt="Appetizers and sides" loading="lazy">
+                        <div class="bento-tile-content">
+                            <span class="bento-count"><span data-count-cat="Appetizer">16</span> recipes</span>
+                            <h3>Appetizers</h3>
+                            <p>Fresh mozzarella, soup dumplings, breads, dips, and shareable starters.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="./recipes/?category=Appetizer" class="img-box style-img-link" aria-label="Browse Appetizer recipes">
-                            <div class="custom-border" id="dynamic-border-1"></div>
-                            <img id="dynamic-image-1" src="./assets/optimized/Bruscetta.webp" alt="Appetizer dishes"
-                                style="height:320px;object-fit: cover;" loading="lazy">
-                        </a>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-1 order-2">
-                        <a href="./recipes/?category=Entree" class="img-box style-img-link" aria-label="Browse Entree recipes">
-                            <div class="custom-border" id="dynamic-border-2"></div>
-                            <img id="dynamic-image-2" src="./assets/Food/spaghetti.jpg" alt="Entree dishes"
-                                style="height:380px;object-fit: cover;" loading="lazy">
-                        </a>
-                    </div>
-                    <div class="col-lg-6 order-lg-2 order-1">
-                        <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="900">Entrees</h3>
-                            <p data-aos="fade-up" data-aos-duration="900">The main event — dishes inspired by kitchens
-                                around the world. Some come together in 30 minutes, others are 3-day labors of love like
-                                Tonkotsu ramen and birria tacos, and every single one is worth it.</p>
-                            <a href="./recipes/?category=Entree" class="style-cat-link" data-aos="fade-up" data-aos-duration="900">
-                                Browse 11 Entrees →
-                            </a>
+                    </a>
+
+                    <a href="./recipes/?category=Entree" class="bento-tile">
+                        <img src="./assets/optimized/tonkotsu.webp" alt="Entrees" loading="lazy">
+                        <div class="bento-tile-content">
+                            <span class="bento-count"><span data-count-cat="Entree">18</span> recipes</span>
+                            <h3>Entrees</h3>
+                            <p>Tonkotsu ramen, birria tacos, smash burgers, and bold mains from scratch.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="content">
-                            <h3 data-aos="fade-up" data-aos-duration="900">Desserts &amp; Baking</h3>
-                            <p data-aos="fade-up" data-aos-duration="900">Flaky laminated croissants, pumpkin bread with
-                                salted maple butter, pillowy Japanese milk bread, and cinnamon-sugar churros. Always
-                                save room for something sweet.</p>
-                            <a href="./recipes/?category=Dessert" class="style-cat-link" data-aos="fade-up" data-aos-duration="900">
-                                Browse 5 Desserts →
-                            </a>
+                    </a>
+
+                    <a href="./recipes/?category=Dessert" class="bento-tile">
+                        <img src="./assets/optimized/pumpkinBread.webp" alt="Desserts and baking" loading="lazy">
+                        <div class="bento-tile-content">
+                            <span class="bento-count"><span data-count-cat="Dessert">10</span> recipes</span>
+                            <h3>Desserts</h3>
+                            <p>Laminated croissants, pumpkin bread, milk bread, and warm churros.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="./recipes/?category=Dessert" class="img-box style-img-link" aria-label="Browse Dessert recipes">
-                            <div class="custom-border" id="dynamic-border-3"></div>
-                            <img id="dynamic-image-3" src="./assets/optimized/pumpkinBread.webp" alt="Dessert dishes"
-                                style="height:360px;object-fit: cover;" loading="lazy">
-                        </a>
-                    </div>
+                    </a>
+
+                    <a href="./recipes/?category=Drinks" class="bento-tile">
+                        <img src="./assets/optimized/yuzu-blackberry-caipiroska.webp" alt="Drinks and cocktails" loading="lazy">
+                        <div class="bento-tile-content">
+                            <span class="bento-count"><span data-count-cat="Drinks">3</span> recipes</span>
+                            <h3>Drinks</h3>
+                            <p>Craft cocktails, yuzu blackberry caipiroskas, and party batch coolers.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
-        <!--Section Cooking Main End -->
+        <!-- COURSES BENTO GRID END -->
 
-        <!--Section What We Make Start -->
-        <section class="what-we-make para" id="cooking">
+        <!-- WHAT I MAKE CAROUSEL START -->
+        <section class="what-we-make" id="cooking">
             <div class="container">
-                <div class="caption">
-                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="900">What I Make</h2>
-                    <p data-aos="fade-up" data-aos-duration="900">Flip through the showcase below, search by dish or
-                        ingredient, or open the full cookbook directory.</p>
+                <div class="section-header-clean">
+                    <div>
+                        <span class="section-kicker">Featured Collection</span>
+                        <h2>What I Make</h2>
+                        <p>Swipe or click through below, filter by course, or search by ingredient.</p>
+                    </div>
+                    <a href="./recipes/" class="section-link-subtle">Open full grid ›</a>
                 </div>
 
                 <div class="recipes-toolbar">
-                    <div class="recipe-search-wrap">
-                        <iconify-icon icon="mdi:magnify" class="search-icon"></iconify-icon>
-                        <input id="recipes-search-input" type="search" class="form-control recipe-search-input"
-                            placeholder="Search recipes or ingredients (e.g., pumpkin, garlic, ramen)..."
-                            aria-label="Search recipes or ingredients">
-                        <button type="button" id="recipes-search-clear" class="search-clear-btn"
-                            aria-label="Clear search" hidden>
-                            <iconify-icon icon="ep:close"></iconify-icon>
-                        </button>
-                    </div>
+                    <div class="recipes-toolbar-row">
+                        <div class="recipe-search-wrap">
+                            <iconify-icon icon="mdi:magnify" class="search-icon"></iconify-icon>
+                            <input id="recipes-search-input" type="search" class="form-control recipe-search-input"
+                                placeholder="Search dishes or ingredients..."
+                                aria-label="Search recipes or ingredients">
+                            <button type="button" id="recipes-search-clear" class="search-clear-btn"
+                                aria-label="Clear search" hidden>
+                                <iconify-icon icon="ep:close"></iconify-icon>
+                            </button>
+                        </div>
 
-                    <div class="recipe-filter-pills" role="tablist" aria-label="Filter recipes by category">
-                        <button type="button" class="filter-pill is-active" data-category="All" role="tab"
-                            aria-selected="true">All</button>
-                        <button type="button" class="filter-pill" data-category="Appetizer" role="tab"
-                            aria-selected="false">Appetizer</button>
-                        <button type="button" class="filter-pill" data-category="Entree" role="tab"
-                            aria-selected="false">Entree</button>
-                        <button type="button" class="filter-pill" data-category="Dessert" role="tab"
-                            aria-selected="false">Dessert</button>
+                        <div class="recipe-filter-pills" role="tablist" aria-label="Filter recipes by category">
+                            <button type="button" class="filter-pill is-active" data-category="All" role="tab"
+                                aria-selected="true">All</button>
+                            <button type="button" class="filter-pill" data-category="Appetizer" role="tab"
+                                aria-selected="false">Appetizer</button>
+                            <button type="button" class="filter-pill" data-category="Entree" role="tab"
+                                aria-selected="false">Entree</button>
+                            <button type="button" class="filter-pill" data-category="Dessert" role="tab"
+                                aria-selected="false">Dessert</button>
+                            <button type="button" class="filter-pill" data-category="Drinks" role="tab"
+                                aria-selected="false">Drinks</button>
+                        </div>
                     </div>
 
                     <p id="recipes-count" class="recipes-count" aria-live="polite"></p>
@@ -211,51 +194,53 @@
 
                 <div id="recipes-empty-state" class="recipes-empty-state" hidden>
                     <p>No recipes matched your search.</p>
-                    <button type="button" id="recipes-reset-btn" class="recipe-action-btn">Reset filters</button>
+                    <button type="button" id="recipes-reset-btn" class="ck-btn ck-btn-primary">Reset filters</button>
                 </div>
 
                 <div class="sliderWrapper" id="recipes-slider-wrapper">
                     <div class="swiper mySwiper">
-                        <div id="recipes-swiper" class="swiper-wrapper imageGallery1">
-                        </div>
+                        <div id="recipes-swiper" class="swiper-wrapper"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="control">
-                        <div class="swiper-button-prev" aria-label="Previous recipes">
-                            <iconify-icon icon="icons8:arrows-long-left"></iconify-icon>
-                        </div>
-                        <div class="swiper-button-next" aria-label="Next recipes">
-                            <iconify-icon icon="icons8:arrows-long-right"></iconify-icon>
+                    <div class="carousel-controls-bar">
+                        <div class="swiper-pagination"></div>
+                        <div class="carousel-nav-btns">
+                            <button type="button" class="swiper-button-prev" aria-label="Previous recipes">
+                                <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                            </button>
+                            <button type="button" class="swiper-button-next" aria-label="Next recipes">
+                                <iconify-icon icon="mdi:chevron-right"></iconify-icon>
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <div class="view-all-cta-wrap">
-                    <a href="./recipes/" class="view-all-recipes-btn">
-                        View All 27 Recipes in Grid View →
+                    <a href="./recipes/" class="ck-btn ck-btn-primary">
+                        Browse All <span data-count-total>47</span> Recipes
                     </a>
                 </div>
             </div>
         </section>
-        <!--Section What We Make END -->
+        <!-- WHAT I MAKE CAROUSEL END -->
 
-        <!--About Cooking start -->
-        <section class="about-cooking para">
+        <!-- CLOSING CALLOUT START -->
+        <section class="about-cooking">
             <div class="container">
-                <div class="caption text-center">
-                    <h2 data-aos="fade-up" data-aos-duration="900"><strong>Always experimenting in the kitchen.</strong></h2>
-                    <p data-aos="fade-up" data-aos-duration="900">New recipes get added as I test and dial them in. Want
-                        to browse everything at once or suggest a dish to try next?</p>
-                    <div class="about-cooking-actions" data-aos="fade-up" data-aos-duration="900">
-                        <a href="./recipes/" class="view-all-recipes-btn">Open Full Recipe Directory</a>
-                        <a href="../contact/" class="about-secondary-link">Suggest a Recipe →</a>
+                <div class="about-cooking-inner">
+                    <span class="section-kicker">Always Cooking</span>
+                    <h2>New recipes added as I dial them in.</h2>
+                    <p>Every dish here is tested in my own kitchen. Browse the full index or send over a dish you think
+                        I should tackle next.</p>
+                    <div class="about-cooking-actions">
+                        <a href="./recipes/" class="ck-btn ck-btn-accent">Open Recipe Directory</a>
+                        <a href="../contact/" class="ck-btn ck-btn-glass">Suggest a Recipe</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!--About Cooking End -->
+        <!-- CLOSING CALLOUT END -->
 
-        <!--Footer Start -->
+        <!-- FOOTER START -->
         <footer>
             <div class="container">
                 <div class="row">
@@ -280,7 +265,7 @@
                 </div>
             </div>
         </footer>
-        <!--Footer End -->
+        <!-- FOOTER END -->
     </div>
 
     <button class="top-btn" aria-label="Scroll to top">
@@ -288,12 +273,9 @@
     </button>
 
     <script src="../js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../js/simpleparallax.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
     <script src="../js/main.js" defer></script>
-    <script src="./js/imageSlide.js" defer></script>
     <script src="./js/recipes.js" defer></script>
 </body>
 

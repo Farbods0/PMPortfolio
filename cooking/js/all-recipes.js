@@ -64,12 +64,10 @@
 
     const buildCard = (r) => `
         <div class="col-md-6 col-lg-4">
-            <a class="card-food card-food-link dir-card" href="../${encodeURIComponent(r.slug)}/">
-                <div class="imgTitle">
-                    <div class="img-wrapper">
-                        <img src="../${escapeHtml(r.image)}" alt="${escapeHtml(r.title)}" loading="lazy">
-                        <span class="card-cat-badge">${escapeHtml(r.category)}</span>
-                    </div>
+            <a class="card-food" href="../${encodeURIComponent(r.slug)}/">
+                <div class="img-wrapper">
+                    <img src="../${escapeHtml(r.image)}" alt="${escapeHtml(r.title)}" loading="lazy">
+                    <span class="card-cat-badge">${escapeHtml(r.category)}</span>
                 </div>
                 <div class="cardBody">
                     <h2 class="title">${escapeHtml(r.title)}</h2>
@@ -79,7 +77,7 @@
                             <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
                             ${escapeHtml(r.totalTime || r.prepTime)}
                         </span>
-                        <span class="btn-read">View Recipe →</span>
+                        <span class="card-open-hint">View ›</span>
                     </div>
                 </div>
             </a>
@@ -163,9 +161,9 @@
             });
 
             // Populate category counts on pills
-            const counts = { All: allRecipes.length, Appetizer: 0, Entree: 0, Dessert: 0, Drinks: 0 };
+            const counts = { All: allRecipes.length };
             allRecipes.forEach((r) => {
-                if (counts[r.category] !== undefined) counts[r.category] += 1;
+                counts[r.category] = (counts[r.category] || 0) + 1;
             });
             categoryPills.forEach((pill) => {
                 const cat = pill.dataset.category;

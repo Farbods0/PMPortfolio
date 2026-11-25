@@ -27,7 +27,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/cooking.css" rel="stylesheet">
@@ -182,89 +182,79 @@
 
         <main class="recipe-page-main">
             <div class="container">
+                <div class="recipe-topbar">
+                    <a href="../recipes/" class="ck-back-pill">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                        <span>All Recipes</span>
+                    </a>
+                    <div class="recipe-actions">
+                        <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                            <iconify-icon icon="mdi:restore"></iconify-icon>
+                            <span class="btn-label">Reset</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/biang-biang-braised-pork/">
+                            <iconify-icon icon="mdi:link-variant"></iconify-icon>
+                            <span class="btn-label">Share</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+                            <span class="btn-label">Keep Awake</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="print-recipe-btn">
+                            <iconify-icon icon="mdi:printer-outline"></iconify-icon>
+                            <span class="btn-label">Print</span>
+                        </button>
+                    </div>
+                </div>
+
                 <article class="recipe-surface food-detail">
-                    <div class="recipe-topbar">
-                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
-                            <a href="../">Cooking</a>
-                            <span class="crumb-sep">/</span>
-                            <a href="../recipes/">All Recipes</a>
-                            <span class="crumb-sep">/</span>
-                            <span aria-current="page">Biang Biang Braised Pork Noodles</span>
-                        </nav>
-                        <div class="recipe-actions">
-                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
-                                <iconify-icon icon="mdi:restore"></iconify-icon>
-                                <span class="btn-label">Reset Checks</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/biang-biang-braised-pork/">
-                                <iconify-icon icon="mdi:link-variant"></iconify-icon>
-                                <span class="btn-label">Copy Link</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
-                                <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                <span class="btn-label">Keep Awake</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="print-recipe-btn">
-                                <iconify-icon icon="mdi:printer-outline"></iconify-icon>
-                                <span class="btn-label">Print</span>
-                            </button>
+                    <div class="row g-4 align-items-center recipe-hero-row">
+                        <div class="col-lg-5">
+                            <div class="recipe-hero-img">
+                                <img src="../assets/optimized/biang-biang-braised-pork.webp" alt="Biang Biang Braised Pork Noodles" fetchpriority="high">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
+                            <h1 class="recipe-title">Biang Biang Braised Pork Noodles</h1>
+                            <p class="recipe-lead">Interactive dinner-party hand-pulled wide belt noodles topped with 3.5-hour star-anise braised pork, sizzling 350°F garlic-chili oil, spicy cucumber salad, and blistered shishitos.</p>
+
+                            <div class="recipe-meta-grid">
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
+                                    </div>
+                                    <h4>Prep</h4>
+                                    <span>1 hour</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                                    </div>
+                                    <h4>Total</h4>
+                                    <span>5.5 hours</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="ic:outline-ramen-dining"></iconify-icon>
+                                    </div>
+                                    <h4>Yield</h4>
+                                    <span>12 servings</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="recipe-content-body">
-                        <div class="row g-4 align-items-center recipe-hero-row">
-                            <div class="col-lg-5">
-                                <div class="img-holder recipe-hero-img">
-                                    <img src="../assets/optimized/biang-biang-braised-pork.webp" alt="Biang Biang Braised Pork Noodles" fetchpriority="high">
+                    <hr class="recipe-divider">
+
+                    <div class="row g-5 recipe-cooking-columns">
+                        <aside class="col-lg-4 recipe-ingredients-col">
+                            <div class="ingredients-sticky-card">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">Ingredients</h2>
+                                    <span class="interactive-hint">Tap to check off</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
-                                <h1 class="recipe-title">Biang Biang Braised Pork Noodles</h1>
-                                <p class="recipe-lead">Interactive dinner-party hand-pulled wide belt noodles topped with 3.5-hour star-anise braised pork, sizzling 350°F garlic-chili oil, spicy cucumber salad, and blistered shishitos.</p>
-
-                                <div class="row recipe-meta-row">
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
-                                            </div>
-                                            <h4>Prep Time</h4>
-                                            <span>1 hour</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
-                                            </div>
-                                            <h4>Total Time</h4>
-                                            <span>5.5 hours</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="ic:outline-ramen-dining"></iconify-icon>
-                                            </div>
-                                            <h4>Yield</h4>
-                                            <span>12 servings</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row g-5 recipe-cooking-columns">
-                            <aside class="col-lg-4 recipe-ingredients-col">
-                                <div class="ingredients-sticky-card">
-                                    <div class="section-heading-row">
-                                        <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap to check off</span>
-                                    </div>
-                                    <div class="ingredient-group">
+                                <div class="ingredient-group">
   <h5>Oven-Braised Pork</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">3.3 lbs pork belly chunks</label></li>
@@ -307,82 +297,96 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-3-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-3-3">10 garlic cloves sliced into thin chips, 2.5 tsp sesame oil &amp; 2.5 tsp soy sauce</label></li>
   </ul>
 </div>
-                                </div>
-                            </aside>
+                            </div>
+                        </aside>
 
-                            <section class="col-lg-8 instructions-block">
-                                <div class="section-heading-row">
-                                    <h2 class="subTitle">INSTRUCTIONS</h2>
-                                    <span class="interactive-hint">Tap a step to mark done</span>
-                                </div>
-                                <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Braised Pork &amp; Resting the Belt-Noodle Dough</span></div>
+                        <section class="col-lg-8 instructions-block">
+                            <div class="section-heading-row">
+                                <h2 class="subTitle">Instructions</h2>
+                                <span class="interactive-hint">Tap a step when done</span>
+                            </div>
+                            <div class="cardSteps">
+  <div class="titleStep">Braised Pork &amp; Resting the Belt-Noodle Dough</div>
 <p class="recipe-step-item" title="Click to mark step done">1. <strong>Prep Aromatics:</strong> Mince 30 garlic cloves for the noodle station, slice 10 cloves into thin chips for shishitos, and sliver 6 cloves for spinach. Slice chillies and scallions.</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. <strong>Oven-Braise the Pork (3.5 Hours):</strong> Combine pork stock, Shaoxing wine, soy sauce, star anise, ginger, bruised garlic, pork belly chunks, and pork shoulder in a heavy Dutch oven. Cover and braise in a <strong>300°F (150°C)</strong> oven for 3.5 hours until fork-tender, then shred and moisten with braising jus.</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. <strong>Mix & Knead Noodle Dough:</strong> Mix 1.4 kg flour, 20g kosher salt, and 700g water into a shaggy dough. Wrap in plastic and rest 20 minutes, then knead 5 minutes until smooth.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. <strong>Portion & Oil Heavily:</strong> Roll dough into logs and cut into 38–40 pieces (~50g each). Flatten each into a 5–6 inch rectangle, <strong>coat every surface generously in oil</strong> so they never skin over, layer on a tray, wrap tightly in plastic, and rest at room temperature (at least 1–2 hours for effortless stretching).</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Oven-Braise the Pork (3.5 Hours):</strong> Combine pork stock, Shaoxing wine, soy sauce, star anise, ginger, bruised garlic, pork belly chunks, and pork shoulder in a heavy Dutch oven. Cover and braise in a <strong>300°F (150°C)</strong> oven for 3.5 hours until fork-tender, then shred and moisten with braising jus.</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. <strong>Mix & Knead Noodle Dough:</strong> Mix 1.4 kg flour, 20g kosher salt, and 700g water into a shaggy dough. Wrap in plastic and rest 20 minutes, then knead 5 minutes until smooth.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. <strong>Portion & Oil Heavily:</strong> Roll dough into logs and cut into 38–40 pieces (~50g each). Flatten each into a 5–6 inch rectangle, <strong>coat every surface generously in oil</strong> so they never skin over, layer on a tray, wrap tightly in plastic, and rest at room temperature (at least 1–2 hours for effortless stretching).</p>
 </div>
 <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Sides &amp; The Interactive Hot-Oil Noodle Sizzle</span></div>
+  <div class="titleStep">Sides &amp; The Interactive Hot-Oil Noodle Sizzle</div>
 <p class="recipe-step-item" title="Click to mark step done">1. <strong>Chilled Spicy Cucumbers:</strong> Toss spiralized cucumbers with 4 tsp salt, sit 5 minutes, rinse 3 times, and drain well. Toss with soy sauce, minced garlic, rice vinegar, chili oil, sugar, sesame oil, and sesame seeds; chill immediately.</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. <strong>Spinach & Blistered Shishitos:</strong> Sauté the 6 slivered garlic cloves with 14 oz spinach and set aside. Blister shishitos in a smoking-hot wok with oil and salt; crisp the 10 garlic chips, then toss peppers back in with 2.5 tsp sesame oil and 2.5 tsp soy sauce.</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. <strong>Set the Bowl Station:</strong> Line up 12 bowls, each dosed with 1 tbsp soy sauce, 1 tbsp black vinegar, a pinch of sugar, and a pinch of MSG. Set out bowls of chili flakes, Doubanjiang, minced garlic, scallions, and sesame seeds.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. <strong>Pull, Boil & Sizzle:</strong> Bring two large pots of water to a rolling boil and heat 1 cup lard or neutral oil to <strong>350°F</strong>. Indent each oiled dough rectangle lengthwise with a chopstick, stretch and slap against the counter into long wide ribbons, tear down the center seam, and boil 90 seconds.</p>
-    <p class="recipe-step-item" title="Click to mark step done">5. <strong>The Finish:</strong> Pile hot noodles into the seasoned bowls, top with shredded braised pork, spinach, scallions, garlic, and chili flakes, then ladle smoking 350°F oil directly over the aromatics so they sizzle and bloom. Toss immediately!</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Spinach & Blistered Shishitos:</strong> Sauté the 6 slivered garlic cloves with 14 oz spinach and set aside. Blister shishitos in a smoking-hot wok with oil and salt; crisp the 10 garlic chips, then toss peppers back in with 2.5 tsp sesame oil and 2.5 tsp soy sauce.</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. <strong>Set the Bowl Station:</strong> Line up 12 bowls, each dosed with 1 tbsp soy sauce, 1 tbsp black vinegar, a pinch of sugar, and a pinch of MSG. Set out bowls of chili flakes, Doubanjiang, minced garlic, scallions, and sesame seeds.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. <strong>Pull, Boil & Sizzle:</strong> Bring two large pots of water to a rolling boil and heat 1 cup lard or neutral oil to <strong>350°F</strong>. Indent each oiled dough rectangle lengthwise with a chopstick, stretch and slap against the counter into long wide ribbons, tear down the center seam, and boil 90 seconds.</p>
+  <p class="recipe-step-item" title="Click to mark step done">5. <strong>The Finish:</strong> Pile hot noodles into the seasoned bowls, top with shredded braised pork, spinach, scallions, garlic, and chili flakes, then ladle smoking 350°F oil directly over the aromatics so they sizzle and bloom. Toss immediately!</p>
 </div>
-                            </section>
-                        </div>
+                        </section>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
+                        <a href="../recipes/" class="section-link-subtle">See all 47 ›</a>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-  <a href="../pad-see-eiw/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/pad-see-eiw.webp" alt="Beef Pad See Ew" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Beef Pad See Ew</h4>
-      <p>Wok-charred wide rice noodles tossed with soy-marinated flank steak, crisp-tender Chinese broccoli, scrambled eggs, and a caramelized dark soy and oyster sauce glaze.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../chicken-marinades/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/chicken-marinades.webp" alt="Signature Chicken Marinades (7 Flavors)" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Signature Chicken Marinades (7 Flavors)</h4>
-      <p>High-flavor bulk meal-prep marinades from Korean Gochujang and Yakitori to Cantonese Char Siu, Vietnamese Lemongrass, Peruvian Pollo a la Brasa, and Fiery Harissa.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../tonkotsu-ramen/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/tonkotsu.webp" alt="Tonkotsu Ramen" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Tonkotsu Ramen</h4>
-      <p>A unique style of ramen consisting of an extremely rich, fatty pork broth.</p>
-    </div>
-  </a>
-</div>
+                    <div class="row dir-grid">
+                                <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../pad-see-eiw/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/pad-see-eiw.webp" alt="Beef Pad See Ew" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Beef Pad See Ew</h4>
+                    <p class="card-desc">Wok-charred wide rice noodles tossed with soy-marinated flank steak, crisp-tender Chinese broccoli, scrambled eggs, and a caramelized dark soy and oyster sauce glaze.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            35 mins
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../chicken-marinades/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/chicken-marinades.webp" alt="Signature Chicken Marinades (7 Flavors)" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Signature Chicken Marinades (7 Flavors)</h4>
+                    <p class="card-desc">High-flavor bulk meal-prep marinades from Korean Gochujang and Yakitori to Cantonese Char Siu, Vietnamese Lemongrass, Peruvian Pollo a la Brasa, and Fiery Harissa.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            8–24 hours
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../tonkotsu-ramen/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/tonkotsu.webp" alt="Tonkotsu Ramen" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Tonkotsu Ramen</h4>
+                    <p class="card-desc">A unique style of ramen consisting of an extremely rich, fatty pork broth.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            3 days
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
                     </div>
                 </section>
             </div>

@@ -27,7 +27,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/cooking.css" rel="stylesheet">
@@ -151,89 +151,79 @@
 
         <main class="recipe-page-main">
             <div class="container">
+                <div class="recipe-topbar">
+                    <a href="../recipes/" class="ck-back-pill">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                        <span>All Recipes</span>
+                    </a>
+                    <div class="recipe-actions">
+                        <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                            <iconify-icon icon="mdi:restore"></iconify-icon>
+                            <span class="btn-label">Reset</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/macaroni-and-cheese/">
+                            <iconify-icon icon="mdi:link-variant"></iconify-icon>
+                            <span class="btn-label">Share</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+                            <span class="btn-label">Keep Awake</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="print-recipe-btn">
+                            <iconify-icon icon="mdi:printer-outline"></iconify-icon>
+                            <span class="btn-label">Print</span>
+                        </button>
+                    </div>
+                </div>
+
                 <article class="recipe-surface food-detail">
-                    <div class="recipe-topbar">
-                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
-                            <a href="../">Cooking</a>
-                            <span class="crumb-sep">/</span>
-                            <a href="../recipes/">All Recipes</a>
-                            <span class="crumb-sep">/</span>
-                            <span aria-current="page">Macaroni and Cheese</span>
-                        </nav>
-                        <div class="recipe-actions">
-                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
-                                <iconify-icon icon="mdi:restore"></iconify-icon>
-                                <span class="btn-label">Reset Checks</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/macaroni-and-cheese/">
-                                <iconify-icon icon="mdi:link-variant"></iconify-icon>
-                                <span class="btn-label">Copy Link</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
-                                <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                <span class="btn-label">Keep Awake</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="print-recipe-btn">
-                                <iconify-icon icon="mdi:printer-outline"></iconify-icon>
-                                <span class="btn-label">Print</span>
-                            </button>
+                    <div class="row g-4 align-items-center recipe-hero-row">
+                        <div class="col-lg-5">
+                            <div class="recipe-hero-img">
+                                <img src="../assets/optimized/macroni.webp" alt="Macaroni and Cheese" fetchpriority="high">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
+                            <h1 class="recipe-title">Macaroni and Cheese</h1>
+                            <p class="recipe-lead">An American dish of cooked macaroni pasta and a cheese sauce</p>
+
+                            <div class="recipe-meta-grid">
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
+                                    </div>
+                                    <h4>Prep</h4>
+                                    <span>30 mins</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                                    </div>
+                                    <h4>Total</h4>
+                                    <span>1 hour 10 mins</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="fluent-emoji-high-contrast:cheese-wedge"></iconify-icon>
+                                    </div>
+                                    <h4>Yield</h4>
+                                    <span>8 servings</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="recipe-content-body">
-                        <div class="row g-4 align-items-center recipe-hero-row">
-                            <div class="col-lg-5">
-                                <div class="img-holder recipe-hero-img">
-                                    <img src="../assets/optimized/macroni.webp" alt="Macaroni and Cheese" fetchpriority="high">
+                    <hr class="recipe-divider">
+
+                    <div class="row g-5 recipe-cooking-columns">
+                        <aside class="col-lg-4 recipe-ingredients-col">
+                            <div class="ingredients-sticky-card">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">Ingredients</h2>
+                                    <span class="interactive-hint">Tap to check off</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
-                                <h1 class="recipe-title">Macaroni and Cheese</h1>
-                                <p class="recipe-lead">An American dish of cooked macaroni pasta and a cheese sauce</p>
-
-                                <div class="row recipe-meta-row">
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
-                                            </div>
-                                            <h4>Prep Time</h4>
-                                            <span>30 mins</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
-                                            </div>
-                                            <h4>Total Time</h4>
-                                            <span>1 hour 10 mins</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="fluent-emoji-high-contrast:cheese-wedge"></iconify-icon>
-                                            </div>
-                                            <h4>Yield</h4>
-                                            <span>8 servings</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row g-5 recipe-cooking-columns">
-                            <aside class="col-lg-4 recipe-ingredients-col">
-                                <div class="ingredients-sticky-card">
-                                    <div class="section-heading-row">
-                                        <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap to check off</span>
-                                    </div>
-                                    <div class="ingredient-group">
+                                <div class="ingredient-group">
     <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">4 tablespoons unsalted butter, divided</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">3/4 cup panko (Japanese breadcrumbs)</label></li>
@@ -251,72 +241,89 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-13" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-13">1/2 teaspoon English mustard powder (such as Colman’s)</label></li>
   </ul>
 </div>
-                                </div>
-                            </aside>
+                            </div>
+                        </aside>
 
-                            <section class="col-lg-8 instructions-block">
-                                <div class="section-heading-row">
-                                    <h2 class="subTitle">INSTRUCTIONS</h2>
-                                    <span class="interactive-hint">Tap a step to mark done</span>
-                                </div>
-                                <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Mac &#x27;N Cheese</span></div>
+                        <section class="col-lg-8 instructions-block">
+                            <div class="section-heading-row">
+                                <h2 class="subTitle">Instructions</h2>
+                                <span class="interactive-hint">Tap a step when done</span>
+                            </div>
+                            <div class="cardSteps">
+  <div class="titleStep">Mac &#x27;N Cheese</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Preheat oven to 350°. Melt 2 Tbsp. butter in a medium skillet over medium heat. Add panko and cook, stirring, until crumbs are golden brown, 6–8 minutes (make sure to get them toasty brown; they won’t darken much during baking). Transfer to a small bowl and toss with Parmesan, thyme leaves, and ¼ tsp. salt.</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. Cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente (the noodles will continue to cook in the cheese sauce, so take them out a minute or two before you think they’re actually done). Drain pasta; let cool while you make the sauce.</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. Bring milk to a bare simmer in a small saucepan; keep warm. Melt remaining 2 Tbsp. butter in a medium saucepan over medium-high. Add onion and garlic and cook, stirring, until onions are fragrant and beginning to soften, about 2 minutes. Sprinkle flour over and cook, stirring constantly, until mixture starts to stick to bottom of saucepan, about 1 minute. Add warm milk in a few additions, whisking to combine after each addition.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. Bring béchamel sauce to a boil, then reduce heat and simmer, stirring, until sauce is thickened and doesn’t feel grainy when a little bit is rubbed between your fingers, 6–8 minutes (cooking the flour thoroughly at this stage ensures a creamy sauce). Add Fontina, Gruyère, cheddar, mustard powder, cayenne, and ¾ tsp. salt and stir until cheeses are melted and sauce is smooth. Remove from heat and mix in pasta; transfer to a 2-qt. baking dish.</p>
-    <p class="recipe-step-item" title="Click to mark step done">5. Bake 10 minutes. Top with Parmesan breadcrumbs and bake until sauce is bubbling around the edges, 8–10 minutes longer. Let cool in pan 15 minutes before serving.</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. Cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente (the noodles will continue to cook in the cheese sauce, so take them out a minute or two before you think they’re actually done). Drain pasta; let cool while you make the sauce.</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. Bring milk to a bare simmer in a small saucepan; keep warm. Melt remaining 2 Tbsp. butter in a medium saucepan over medium-high. Add onion and garlic and cook, stirring, until onions are fragrant and beginning to soften, about 2 minutes. Sprinkle flour over and cook, stirring constantly, until mixture starts to stick to bottom of saucepan, about 1 minute. Add warm milk in a few additions, whisking to combine after each addition.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. Bring béchamel sauce to a boil, then reduce heat and simmer, stirring, until sauce is thickened and doesn’t feel grainy when a little bit is rubbed between your fingers, 6–8 minutes (cooking the flour thoroughly at this stage ensures a creamy sauce). Add Fontina, Gruyère, cheddar, mustard powder, cayenne, and ¾ tsp. salt and stir until cheeses are melted and sauce is smooth. Remove from heat and mix in pasta; transfer to a 2-qt. baking dish.</p>
+  <p class="recipe-step-item" title="Click to mark step done">5. Bake 10 minutes. Top with Parmesan breadcrumbs and bake until sauce is bubbling around the edges, 8–10 minutes longer. Let cool in pan 15 minutes before serving.</p>
 </div>
-                            </section>
-                        </div>
+                        </section>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
+                        <a href="../recipes/" class="section-link-subtle">See all 47 ›</a>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-  <a href="../biang-biang-braised-pork/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/biang-biang-braised-pork.webp" alt="Biang Biang Braised Pork Noodles" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Biang Biang Braised Pork Noodles</h4>
-      <p>Interactive dinner-party hand-pulled wide belt noodles topped with 3.5-hour star-anise braised pork, sizzling 350°F garlic-chili oil, spicy cucumber salad, and blistered shishitos.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../panang-curry/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/panang-curry.webp" alt="Chicken Panang Curry" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Chicken Panang Curry</h4>
-      <p>Velvety Thai red coconut curry enriched with creamy peanut butter, tender sliced chicken, sweet bell peppers, fresh ginger, lime juice, and fragrant basil over hot jasmine rice.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../pad-see-eiw/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/pad-see-eiw.webp" alt="Beef Pad See Ew" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Beef Pad See Ew</h4>
-      <p>Wok-charred wide rice noodles tossed with soy-marinated flank steak, crisp-tender Chinese broccoli, scrambled eggs, and a caramelized dark soy and oyster sauce glaze.</p>
-    </div>
-  </a>
-</div>
+                    <div class="row dir-grid">
+                                <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../biang-biang-braised-pork/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/biang-biang-braised-pork.webp" alt="Biang Biang Braised Pork Noodles" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Biang Biang Braised Pork Noodles</h4>
+                    <p class="card-desc">Interactive dinner-party hand-pulled wide belt noodles topped with 3.5-hour star-anise braised pork, sizzling 350°F garlic-chili oil, spicy cucumber salad, and blistered shishitos.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            5.5 hours
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../panang-curry/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/panang-curry.webp" alt="Chicken Panang Curry" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Chicken Panang Curry</h4>
+                    <p class="card-desc">Velvety Thai red coconut curry enriched with creamy peanut butter, tender sliced chicken, sweet bell peppers, fresh ginger, lime juice, and fragrant basil over hot jasmine rice.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            35 mins
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../pad-see-eiw/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/pad-see-eiw.webp" alt="Beef Pad See Ew" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Beef Pad See Ew</h4>
+                    <p class="card-desc">Wok-charred wide rice noodles tossed with soy-marinated flank steak, crisp-tender Chinese broccoli, scrambled eggs, and a caramelized dark soy and oyster sauce glaze.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            35 mins
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
                     </div>
                 </section>
             </div>

@@ -27,7 +27,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/cooking.css" rel="stylesheet">
@@ -218,89 +218,79 @@
 
         <main class="recipe-page-main">
             <div class="container">
+                <div class="recipe-topbar">
+                    <a href="../recipes/" class="ck-back-pill">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                        <span>All Recipes</span>
+                    </a>
+                    <div class="recipe-actions">
+                        <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                            <iconify-icon icon="mdi:restore"></iconify-icon>
+                            <span class="btn-label">Reset</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/birria-quesa-tacos/">
+                            <iconify-icon icon="mdi:link-variant"></iconify-icon>
+                            <span class="btn-label">Share</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+                            <span class="btn-label">Keep Awake</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="print-recipe-btn">
+                            <iconify-icon icon="mdi:printer-outline"></iconify-icon>
+                            <span class="btn-label">Print</span>
+                        </button>
+                    </div>
+                </div>
+
                 <article class="recipe-surface food-detail">
-                    <div class="recipe-topbar">
-                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
-                            <a href="../">Cooking</a>
-                            <span class="crumb-sep">/</span>
-                            <a href="../recipes/">All Recipes</a>
-                            <span class="crumb-sep">/</span>
-                            <span aria-current="page">Birria Quesa Tacos</span>
-                        </nav>
-                        <div class="recipe-actions">
-                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
-                                <iconify-icon icon="mdi:restore"></iconify-icon>
-                                <span class="btn-label">Reset Checks</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/birria-quesa-tacos/">
-                                <iconify-icon icon="mdi:link-variant"></iconify-icon>
-                                <span class="btn-label">Copy Link</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
-                                <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                <span class="btn-label">Keep Awake</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="print-recipe-btn">
-                                <iconify-icon icon="mdi:printer-outline"></iconify-icon>
-                                <span class="btn-label">Print</span>
-                            </button>
+                    <div class="row g-4 align-items-center recipe-hero-row">
+                        <div class="col-lg-5">
+                            <div class="recipe-hero-img">
+                                <img src="../assets/Food/birriaQuesaTacos.jpeg" alt="Birria Quesa Tacos" fetchpriority="high">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
+                            <h1 class="recipe-title">Birria Quesa Tacos</h1>
+                            <p class="recipe-lead">Tortillas filled with the stew&#x27;s tender, juicy meat dipped in meat broth.</p>
+
+                            <div class="recipe-meta-grid">
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
+                                    </div>
+                                    <h4>Prep</h4>
+                                    <span>30 mins</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                                    </div>
+                                    <h4>Total</h4>
+                                    <span>2 hours</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="emojione-monotone:taco"></iconify-icon>
+                                    </div>
+                                    <h4>Yield</h4>
+                                    <span>30 tacos</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="recipe-content-body">
-                        <div class="row g-4 align-items-center recipe-hero-row">
-                            <div class="col-lg-5">
-                                <div class="img-holder recipe-hero-img">
-                                    <img src="../assets/Food/birriaQuesaTacos.jpeg" alt="Birria Quesa Tacos" fetchpriority="high">
+                    <hr class="recipe-divider">
+
+                    <div class="row g-5 recipe-cooking-columns">
+                        <aside class="col-lg-4 recipe-ingredients-col">
+                            <div class="ingredients-sticky-card">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">Ingredients</h2>
+                                    <span class="interactive-hint">Tap to check off</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="../recipes/?category=Entree" class="recipe-cat-pill recipe-cat-link">Entree</a>
-                                <h1 class="recipe-title">Birria Quesa Tacos</h1>
-                                <p class="recipe-lead">Tortillas filled with the stew&#x27;s tender, juicy meat dipped in meat broth.</p>
-
-                                <div class="row recipe-meta-row">
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
-                                            </div>
-                                            <h4>Prep Time</h4>
-                                            <span>30 mins</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
-                                            </div>
-                                            <h4>Total Time</h4>
-                                            <span>2 hours</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="emojione-monotone:taco"></iconify-icon>
-                                            </div>
-                                            <h4>Yield</h4>
-                                            <span>30 tacos</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row g-5 recipe-cooking-columns">
-                            <aside class="col-lg-4 recipe-ingredients-col">
-                                <div class="ingredients-sticky-card">
-                                    <div class="section-heading-row">
-                                        <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap to check off</span>
-                                    </div>
-                                    <div class="ingredient-group">
+                                <div class="ingredient-group">
   <h5>Birria De Res</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">1 lb boneless chuck roast</label></li>
@@ -338,91 +328,105 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-2-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-2">Fresh cilantro, finely chopped</label></li>
   </ul>
 </div>
-                                </div>
-                            </aside>
+                            </div>
+                        </aside>
 
-                            <section class="col-lg-8 instructions-block">
-                                <div class="section-heading-row">
-                                    <h2 class="subTitle">INSTRUCTIONS</h2>
-                                    <span class="interactive-hint">Tap a step to mark done</span>
-                                </div>
-                                <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Birria De Res Method</span></div>
+                        <section class="col-lg-8 instructions-block">
+                            <div class="section-heading-row">
+                                <h2 class="subTitle">Instructions</h2>
+                                <span class="interactive-hint">Tap a step when done</span>
+                            </div>
+                            <div class="cardSteps">
+  <div class="titleStep">Birria De Res Method</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Start by removing the stems and seeds of ancho and guajilo chilies, as well as chilies de arbol.</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. Season all the meat generously with salt. In a large oiled pot heated over medium heat, add the meat in batches and sear 2-3 minutes on all sides. Once seared, take out the meat and leave on the side.</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. Add a bit more oil to the pot back on medium heat and add chopped onions. Saute until just softened.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. Once softened, add tomato paste and cook down until paste starts to darken.</p>
-    <p class="recipe-step-item" title="Click to mark step done">5. At which point, add sliced garlic and saute until fragrant and add rich beef stock. Mix together and add in chilies.</p>
-    <p class="recipe-step-item" title="Click to mark step done">6. Add the meat back in.</p>
-    <p class="recipe-step-item" title="Click to mark step done">7. Separately in cheesecloth, add black pepper corns, toasted coriander, cinnamon stick, and bay leaves. Fold together and tie tightly.</p>
-    <p class="recipe-step-item" title="Click to mark step done">8. Toss the spice bag mixture into the stock and bring to a light simmer and cover. Braise for 1 hour stirring occasionally.</p>
-    <p class="recipe-step-item" title="Click to mark step done">9. After 1 hour, remove the chilies and place into a blender with a little of stock liquid and blend until smooth.</p>
-    <p class="recipe-step-item" title="Click to mark step done">10. Pour back into the stew and bring back to a simmer. Cover and braise for 90 minutes.</p>
-    <p class="recipe-step-item" title="Click to mark step done">11. Remove the meat (and any bones) and shred using a fork.</p>
-    <p class="recipe-step-item" title="Click to mark step done">12. Season the rest of the broth with salt and place to the side.</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. Season all the meat generously with salt. In a large oiled pot heated over medium heat, add the meat in batches and sear 2-3 minutes on all sides. Once seared, take out the meat and leave on the side.</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. Add a bit more oil to the pot back on medium heat and add chopped onions. Saute until just softened.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. Once softened, add tomato paste and cook down until paste starts to darken.</p>
+  <p class="recipe-step-item" title="Click to mark step done">5. At which point, add sliced garlic and saute until fragrant and add rich beef stock. Mix together and add in chilies.</p>
+  <p class="recipe-step-item" title="Click to mark step done">6. Add the meat back in.</p>
+  <p class="recipe-step-item" title="Click to mark step done">7. Separately in cheesecloth, add black pepper corns, toasted coriander, cinnamon stick, and bay leaves. Fold together and tie tightly.</p>
+  <p class="recipe-step-item" title="Click to mark step done">8. Toss the spice bag mixture into the stock and bring to a light simmer and cover. Braise for 1 hour stirring occasionally.</p>
+  <p class="recipe-step-item" title="Click to mark step done">9. After 1 hour, remove the chilies and place into a blender with a little of stock liquid and blend until smooth.</p>
+  <p class="recipe-step-item" title="Click to mark step done">10. Pour back into the stew and bring back to a simmer. Cover and braise for 90 minutes.</p>
+  <p class="recipe-step-item" title="Click to mark step done">11. Remove the meat (and any bones) and shred using a fork.</p>
+  <p class="recipe-step-item" title="Click to mark step done">12. Season the rest of the broth with salt and place to the side.</p>
 </div>
 <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Assembly</span></div>
+  <div class="titleStep">Assembly</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Take a fresh tortilla and dunk in the broth completely.</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. Place tortilla in a cast iron skillet set over medium heat.</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. Top with shredded cheese (preferably oaxaca cheese) and cook until just melted.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. On one side add the braised shredded meat with a drizzle of consomme.</p>
-    <p class="recipe-step-item" title="Click to mark step done">5. Fold the taco over cooking for 1-2 minutes. Flip and cook for another 1-2 minutes.</p>
-    <p class="recipe-step-item" title="Click to mark step done">6. Serve with a ramekin filled with consomme topped with diced onions and chopped cilantro.</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. Place tortilla in a cast iron skillet set over medium heat.</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. Top with shredded cheese (preferably oaxaca cheese) and cook until just melted.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. On one side add the braised shredded meat with a drizzle of consomme.</p>
+  <p class="recipe-step-item" title="Click to mark step done">5. Fold the taco over cooking for 1-2 minutes. Flip and cook for another 1-2 minutes.</p>
+  <p class="recipe-step-item" title="Click to mark step done">6. Serve with a ramekin filled with consomme topped with diced onions and chopped cilantro.</p>
 </div>
-                            </section>
-                        </div>
+                        </section>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
+                        <a href="../recipes/" class="section-link-subtle">See all 47 ›</a>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-  <a href="../ash-reshteh/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/ashReshteh.webp" alt="Ash Reshteh" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Ash Reshteh</h4>
-      <p>A classic Persian noodle soup with beans and herbs that is intensely aromatic and amazingly delicious</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../chicken-soup/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/chickenSoup.webp" alt="Chicken Soup" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Chicken Soup</h4>
-      <p>The best chicken soup you’ll ever eat is the perfect recipe to make when you’re feeling sick.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../fajita-guacamole/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/mexiannight.webp" alt="Fajita &amp; Guacamole" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Fajita &amp; Guacamole</h4>
-      <p>The best combination of Fajita and Guacamole for a fun filled Mexican night.</p>
-    </div>
-  </a>
-</div>
+                    <div class="row dir-grid">
+                                <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../ash-reshteh/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/ashReshteh.webp" alt="Ash Reshteh" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Ash Reshteh</h4>
+                    <p class="card-desc">A classic Persian noodle soup with beans and herbs that is intensely aromatic and amazingly delicious</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            2 hours
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../chicken-soup/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/chickenSoup.webp" alt="Chicken Soup" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Chicken Soup</h4>
+                    <p class="card-desc">The best chicken soup you’ll ever eat is the perfect recipe to make when you’re feeling sick.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            3 hours
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../fajita-guacamole/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/mexiannight.webp" alt="Fajita &amp; Guacamole" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Fajita &amp; Guacamole</h4>
+                    <p class="card-desc">The best combination of Fajita and Guacamole for a fun filled Mexican night.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            30 mins
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
                     </div>
                 </section>
             </div>

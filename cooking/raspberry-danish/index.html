@@ -27,7 +27,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/cooking.css" rel="stylesheet">
@@ -251,89 +251,79 @@
 
         <main class="recipe-page-main">
             <div class="container">
+                <div class="recipe-topbar">
+                    <a href="../recipes/" class="ck-back-pill">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                        <span>All Recipes</span>
+                    </a>
+                    <div class="recipe-actions">
+                        <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                            <iconify-icon icon="mdi:restore"></iconify-icon>
+                            <span class="btn-label">Reset</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/raspberry-danish/">
+                            <iconify-icon icon="mdi:link-variant"></iconify-icon>
+                            <span class="btn-label">Share</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+                            <span class="btn-label">Keep Awake</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="print-recipe-btn">
+                            <iconify-icon icon="mdi:printer-outline"></iconify-icon>
+                            <span class="btn-label">Print</span>
+                        </button>
+                    </div>
+                </div>
+
                 <article class="recipe-surface food-detail">
-                    <div class="recipe-topbar">
-                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
-                            <a href="../">Cooking</a>
-                            <span class="crumb-sep">/</span>
-                            <a href="../recipes/">All Recipes</a>
-                            <span class="crumb-sep">/</span>
-                            <span aria-current="page">Raspberry Danish</span>
-                        </nav>
-                        <div class="recipe-actions">
-                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
-                                <iconify-icon icon="mdi:restore"></iconify-icon>
-                                <span class="btn-label">Reset Checks</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/raspberry-danish/">
-                                <iconify-icon icon="mdi:link-variant"></iconify-icon>
-                                <span class="btn-label">Copy Link</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
-                                <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                <span class="btn-label">Keep Awake</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="print-recipe-btn">
-                                <iconify-icon icon="mdi:printer-outline"></iconify-icon>
-                                <span class="btn-label">Print</span>
-                            </button>
+                    <div class="row g-4 align-items-center recipe-hero-row">
+                        <div class="col-lg-5">
+                            <div class="recipe-hero-img">
+                                <img src="../assets/optimized/rasberry.webp" alt="Raspberry Danish" fetchpriority="high">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <a href="../recipes/?category=Dessert" class="recipe-cat-pill recipe-cat-link">Dessert</a>
+                            <h1 class="recipe-title">Raspberry Danish</h1>
+                            <p class="recipe-lead">A flaky puff pastry filled with creamy cheesecake, sweet fresh raspberries, and a vanilla glaze.</p>
+
+                            <div class="recipe-meta-grid">
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
+                                    </div>
+                                    <h4>Prep</h4>
+                                    <span>30 mins</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                                    </div>
+                                    <h4>Total</h4>
+                                    <span>1 hour</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="icon-park-outline:bread-machine"></iconify-icon>
+                                    </div>
+                                    <h4>Yield</h4>
+                                    <span>1 danish</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="recipe-content-body">
-                        <div class="row g-4 align-items-center recipe-hero-row">
-                            <div class="col-lg-5">
-                                <div class="img-holder recipe-hero-img">
-                                    <img src="../assets/optimized/rasberry.webp" alt="Raspberry Danish" fetchpriority="high">
+                    <hr class="recipe-divider">
+
+                    <div class="row g-5 recipe-cooking-columns">
+                        <aside class="col-lg-4 recipe-ingredients-col">
+                            <div class="ingredients-sticky-card">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">Ingredients</h2>
+                                    <span class="interactive-hint">Tap to check off</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="../recipes/?category=Dessert" class="recipe-cat-pill recipe-cat-link">Dessert</a>
-                                <h1 class="recipe-title">Raspberry Danish</h1>
-                                <p class="recipe-lead">A flaky puff pastry filled with creamy cheesecake, sweet fresh raspberries, and a vanilla glaze.</p>
-
-                                <div class="row recipe-meta-row">
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
-                                            </div>
-                                            <h4>Prep Time</h4>
-                                            <span>30 mins</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
-                                            </div>
-                                            <h4>Total Time</h4>
-                                            <span>1 hour</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="icon-park-outline:bread-machine"></iconify-icon>
-                                            </div>
-                                            <h4>Yield</h4>
-                                            <span>1 danish</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row g-5 recipe-cooking-columns">
-                            <aside class="col-lg-4 recipe-ingredients-col">
-                                <div class="ingredients-sticky-card">
-                                    <div class="section-heading-row">
-                                        <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap to check off</span>
-                                    </div>
-                                    <div class="ingredient-group">
+                                <div class="ingredient-group">
   <h5>Raspberry Sauce</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">¾ Cup Frozen Raspberries</label></li>
@@ -368,109 +358,117 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-2-9" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-2-9">Pre-Heat Oven: 375 Degrees F</label></li>
   </ul>
 </div>
-                                </div>
-                            </aside>
+                            </div>
+                        </aside>
 
-                            <section class="col-lg-8 instructions-block">
-                                <div class="section-heading-row">
-                                    <h2 class="subTitle">INSTRUCTIONS</h2>
-                                    <span class="interactive-hint">Tap a step to mark done</span>
-                                </div>
-                                <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Raspberry Sauce</span></div>
+                        <section class="col-lg-8 instructions-block">
+                            <div class="section-heading-row">
+                                <h2 class="subTitle">Instructions</h2>
+                                <span class="interactive-hint">Tap a step when done</span>
+                            </div>
+                            <div class="cardSteps">
+  <div class="titleStep">Raspberry Sauce</div>
 <p class="recipe-step-item" title="Click to mark step done">1. In a medium heavy bottomed sauce pan, combine all the sauce ingredients and stir over medium high heat</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. Bring to a simmer and cook for 4-8 minutes or until thickened</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. Set aside</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. Bring to a simmer and cook for 4-8 minutes or until thickened</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. Set aside</p>
 </div>
 <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Filling</span></div>
+  <div class="titleStep">Filling</div>
 <p class="recipe-step-item" title="Click to mark step done">1. In a standing mixer, beat softened cream cheese until fluffy (About 2 minutes)</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. Add sugar and beat another 2 minutes scraping down the sides of the bowl</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. Add vanilla, lemon juice, egg, and mix until combined.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. Set aside.</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. Add sugar and beat another 2 minutes scraping down the sides of the bowl</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. Add vanilla, lemon juice, egg, and mix until combined.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. Set aside.</p>
 </div>
 <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Pastry</span></div>
+  <div class="titleStep">Pastry</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Unfold puff pastry sheets onto a lightly floured surface.</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. Using a rolling pin, lightly roll to make them an even square.<i> You don’t need much pressure, just about 5 rolls here and there should suffice.</i></p>
-    <p class="recipe-step-item" title="Click to mark step done">3. Divide the cream cheese mixture into halves and smear each half onto the center of the pastries.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. Add a few tablespoons of the raspberry sauce on top lightly spreading it.</p>
-    <p class="recipe-step-item" title="Click to mark step done">5. With a butter knife, cut to make a rectangle at the top and bottom of the pastry.</p>
-    <p class="recipe-step-item" title="Click to mark step done">6. Fold the flaps over and pinch to seal.</p>
-    <p class="recipe-step-item" title="Click to mark step done">7. This will prevent leaks while the pastry bakes</p>
-    <p class="recipe-step-item" title="Click to mark step done">8. Make 5-8 slits on each side, making sure each side has the same amount</p>
-    <p class="recipe-step-item" title="Click to mark step done">9. Starting from the bottom, fold each flap over onto the other side</p>
-    <p class="recipe-step-item" title="Click to mark step done">10. Like a braid, continue until you reach the end and pinch to seal</p>
-    <p class="recipe-step-item" title="Click to mark step done">11. Brush with an egg wash and sprinkle with coarse sugar.</p>
-    <p class="recipe-step-item" title="Click to mark step done">12. Bake at 375 degrees F for 25-30 minutes or until golden brown.</p>
-    <p class="recipe-step-item" title="Click to mark step done">13.Allow to cool for 10 minutes.</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. Using a rolling pin, lightly roll to make them an even square.<i> You don’t need much pressure, just about 5 rolls here and there should suffice.</i></p>
+  <p class="recipe-step-item" title="Click to mark step done">3. Divide the cream cheese mixture into halves and smear each half onto the center of the pastries.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. Add a few tablespoons of the raspberry sauce on top lightly spreading it.</p>
+  <p class="recipe-step-item" title="Click to mark step done">5. With a butter knife, cut to make a rectangle at the top and bottom of the pastry.</p>
+  <p class="recipe-step-item" title="Click to mark step done">6. Fold the flaps over and pinch to seal.</p>
+  <p class="recipe-step-item" title="Click to mark step done">7. This will prevent leaks while the pastry bakes</p>
+  <p class="recipe-step-item" title="Click to mark step done">8. Make 5-8 slits on each side, making sure each side has the same amount</p>
+  <p class="recipe-step-item" title="Click to mark step done">9. Starting from the bottom, fold each flap over onto the other side</p>
+  <p class="recipe-step-item" title="Click to mark step done">10. Like a braid, continue until you reach the end and pinch to seal</p>
+  <p class="recipe-step-item" title="Click to mark step done">11. Brush with an egg wash and sprinkle with coarse sugar.</p>
+  <p class="recipe-step-item" title="Click to mark step done">12. Bake at 375 degrees F for 25-30 minutes or until golden brown.</p>
+  <p class="recipe-step-item" title="Click to mark step done">13.Allow to cool for 10 minutes.</p>
 </div>
 <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Icing</span></div>
+  <div class="titleStep">Icing</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Combine powdered Sugar, vanilla, and cream whisking until full incorporated.</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. Add more cream until you achieve your desired consistency.</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. Make sure it isn’t too thin so it will not run off the Danish.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. Drizzle the icing over the Danishes and enjoy! *Refrigerate if not enjoyed immediately.</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. Add more cream until you achieve your desired consistency.</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. Make sure it isn’t too thin so it will not run off the Danish.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. Drizzle the icing over the Danishes and enjoy! *Refrigerate if not enjoyed immediately.</p>
 </div>
-                            </section>
-                        </div>
+                        </section>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
+                        <a href="../recipes/" class="section-link-subtle">See all 47 ›</a>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-  <a href="../creami-thai-tea/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/creami-thai-tea.webp" alt="Ninja Creami Thai Tea Ice Cream" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Dessert</span>
-      <h4>Ninja Creami Thai Tea Ice Cream</h4>
-      <p>Fragrant brewed Thai iced tea spun into silky, macro-friendly ice cream and finished with a ribbon of sweetened condensed milk — 172 calories and 18g protein per pint.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../creami-double-oreo/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/creami-double-oreo.webp" alt="Ninja Creami Double Oreo" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Dessert</span>
-      <h4>Ninja Creami Double Oreo</h4>
-      <p>Midnight-dark black cocoa chocolate protein ice cream tasting just like an Oreo wafer, packed with mixed-in and crumbled Oreos — 299 calories and 35g protein per pint.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../creami-cookie-dough/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/creami-cookie-dough.webp" alt="Ninja Creami Cookie Dough" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Dessert</span>
-      <h4>Ninja Creami Cookie Dough</h4>
-      <p>Rich vanilla bean protein ice cream loaded with real Ben &amp; Jerry&#x27;s chocolate chip cookie dough bites — 350 calories and a massive 43g protein per pint.</p>
-    </div>
-  </a>
-</div>
+                    <div class="row dir-grid">
+                                <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../creami-thai-tea/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/creami-thai-tea.webp" alt="Ninja Creami Thai Tea Ice Cream" loading="lazy">
+                    <span class="card-cat-badge">Dessert</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Ninja Creami Thai Tea Ice Cream</h4>
+                    <p class="card-desc">Fragrant brewed Thai iced tea spun into silky, macro-friendly ice cream and finished with a ribbon of sweetened condensed milk — 172 calories and 18g protein per pint.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            16 hours
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../creami-double-oreo/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/creami-double-oreo.webp" alt="Ninja Creami Double Oreo" loading="lazy">
+                    <span class="card-cat-badge">Dessert</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Ninja Creami Double Oreo</h4>
+                    <p class="card-desc">Midnight-dark black cocoa chocolate protein ice cream tasting just like an Oreo wafer, packed with mixed-in and crumbled Oreos — 299 calories and 35g protein per pint.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            16 hours
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../creami-cookie-dough/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/creami-cookie-dough.webp" alt="Ninja Creami Cookie Dough" loading="lazy">
+                    <span class="card-cat-badge">Dessert</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Ninja Creami Cookie Dough</h4>
+                    <p class="card-desc">Rich vanilla bean protein ice cream loaded with real Ben &amp; Jerry&#x27;s chocolate chip cookie dough bites — 350 calories and a massive 43g protein per pint.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            16 hours
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
                     </div>
                 </section>
             </div>

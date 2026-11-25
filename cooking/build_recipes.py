@@ -30,7 +30,7 @@ FAVICON_LINKS = """    <link rel="icon" type="image/png" sizes="96x96" href="/fa
 
 FONT_LINKS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">"""
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">"""
 
 
 def esc(text: str) -> str:
@@ -42,7 +42,6 @@ def strip_html(text: str) -> str:
 
 
 def to_iso_duration(text: str) -> str:
-    """Convert human duration like '20 mins', '2 hours', '2 days' to ISO-8601 duration."""
     if not text:
         return ""
     t = text.lower()
@@ -138,7 +137,7 @@ def render_instructions_html(sections: list) -> str:
     blocks = []
     for sec in sections:
         title_html = (
-            f'<div class="titleStep"><span>{esc(sec["title"])}</span></div>'
+            f'<div class="titleStep">{esc(sec["title"])}</div>'
             if sec.get("title")
             else ""
         )
@@ -157,13 +156,35 @@ def render_instructions_html(sections: list) -> str:
                 )
         blocks.append(
             f'<div class="cardSteps">\n'
-            f'  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>\n'
-            f'  <div class="desciption">\n'
-            f"    {title_html}\n"
-            + "\n    ".join(steps_html)
-            + "\n  </div>\n</div>"
+            f"  {title_html}\n"
+            + "\n  ".join(steps_html)
+            + "\n</div>"
         )
     return "\n".join(blocks)
+
+
+def render_recipe_card(r: dict, href_prefix: str = "../", img_prefix: str = "../", heading_tag: str = "h3") -> str:
+    return (
+        f'        <div class="col-md-6 col-lg-4">\n'
+        f'            <a class="card-food" href="{href_prefix}{esc(r["slug"])}/">\n'
+        f'                <div class="img-wrapper">\n'
+        f'                    <img src="{img_prefix}{esc(r["image"])}" alt="{esc(r["title"])}" loading="lazy">\n'
+        f'                    <span class="card-cat-badge">{esc(r["category"])}</span>\n'
+        f'                </div>\n'
+        f'                <div class="cardBody">\n'
+        f'                    <{heading_tag} class="title">{esc(r["title"])}</{heading_tag}>\n'
+        f'                    <p class="card-desc">{esc(r["description"])}</p>\n'
+        f'                    <div class="card-meta-footer">\n'
+        f'                        <span class="card-time">\n'
+        f'                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>\n'
+        f'                            {esc(r["totalTime"] or r["prepTime"])}\n'
+        f'                        </span>\n'
+        f'                        <span class="card-open-hint">View ›</span>\n'
+        f'                    </div>\n'
+        f'                </div>\n'
+        f'            </a>\n'
+        f'        </div>'
+    )
 
 
 def render_related_html(recipe: dict, all_recipes: list) -> str:
@@ -178,23 +199,7 @@ def render_related_html(recipe: dict, all_recipes: list) -> str:
     idx = next((i for i, r in enumerate(all_recipes) if r["slug"] == recipe["slug"]), 0)
     rotated = same_cat[idx % len(same_cat):] + same_cat[: idx % len(same_cat)] if same_cat else []
     picks = (rotated + others)[:3]
-    cards = []
-    for p in picks:
-        cards.append(
-            f'<div class="col-md-4">\n'
-            f'  <a href="../{esc(p["slug"])}/" class="related-recipe-card">\n'
-            f'    <div class="related-img-wrap">\n'
-            f'      <img src="../{esc(p["image"])}" alt="{esc(p["title"])}" loading="lazy">\n'
-            f'    </div>\n'
-            f'    <div class="related-body">\n'
-            f'      <span class="recipe-cat-pill">{esc(p["category"])}</span>\n'
-            f'      <h4>{esc(p["title"])}</h4>\n'
-            f'      <p>{esc(p["description"])}</p>\n'
-            f'    </div>\n'
-            f'  </a>\n'
-            f'</div>'
-        )
-    return "\n".join(cards)
+    return "\n".join(render_recipe_card(p, "../", "../", "h4") for p in picks)
 
 
 def render_navbar(root_prefix: str, cooking_href: str) -> str:
@@ -280,38 +285,21 @@ def render_all_recipes_page(recipes: list) -> str:
     canonical = f"{SITE_ORIGIN}/cooking/recipes/"
     og_image = f"{SITE_ORIGIN}/cooking/assets/optimized/cooking.webp"
     total_count = len(recipes)
-    cat_counts = {"Appetizer": 0, "Entree": 0, "Dessert": 0, "Drinks": 0}
+    preferred_order = ["Appetizer", "Entree", "Dessert", "Drinks"]
+    cat_counts = {}
     for r in recipes:
-        if r["category"] in cat_counts:
-            cat_counts[r["category"]] += 1
+        c = r.get("category", "Other")
+        cat_counts[c] = cat_counts.get(c, 0) + 1
+    ordered_cats = [c for c in preferred_order if c in cat_counts] + [
+        c for c in cat_counts if c not in preferred_order
+    ]
+    cat_pills_html = "\n".join(
+        f'                            <button type="button" class="filter-pill dir-cat-pill" data-category="{esc(c)}" role="tab" aria-selected="false">'
+        f'{esc(c)} <span class="pill-count">{cat_counts[c]}</span></button>'
+        for c in ordered_cats
+    )
 
-    # Server-rendered initial grid so it renders immediately without JS flicker and is 100% crawlable
-    initial_cards = []
-    for r in recipes:
-        initial_cards.append(
-            f'        <div class="col-md-6 col-lg-4">\n'
-            f'            <a class="card-food card-food-link dir-card" href="../{esc(r["slug"])}/">\n'
-            f'                <div class="imgTitle">\n'
-            f'                    <div class="img-wrapper">\n'
-            f'                        <img src="../{esc(r["image"])}" alt="{esc(r["title"])}" loading="lazy">\n'
-            f'                        <span class="card-cat-badge">{esc(r["category"])}</span>\n'
-            f'                    </div>\n'
-            f'                </div>\n'
-            f'                <div class="cardBody">\n'
-            f'                    <h2 class="title">{esc(r["title"])}</h2>\n'
-            f'                    <p class="card-desc">{esc(r["description"])}</p>\n'
-            f'                    <div class="card-meta-footer">\n'
-            f'                        <span class="card-time">\n'
-            f'                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>\n'
-            f'                            {esc(r["totalTime"] or r["prepTime"])}\n'
-            f'                        </span>\n'
-            f'                        <span class="btn-read">View Recipe →</span>\n'
-            f'                    </div>\n'
-            f'                </div>\n'
-            f'            </a>\n'
-            f'        </div>'
-        )
-    cards_html = "\n".join(initial_cards)
+    cards_html = "\n".join(render_recipe_card(r, "../", "../", "h2") for r in recipes)
 
     return f"""<!doctype html>
 <html lang="en">
@@ -320,7 +308,7 @@ def render_all_recipes_page(recipes: list) -> str:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>All Recipes ({total_count}) | Farbod Jahan</title>
-    <meta name="description" content="Browse all {total_count} homemade recipes by Farbod Jahan. Filter by appetizer, entree, dessert, cooking time, or ingredient.">
+    <meta name="description" content="Browse all {total_count} homemade recipes by Farbod Jahan. Filter by course, cook time, or ingredient.">
     <link rel="canonical" href="{canonical}">
 {FAVICON_LINKS}
 
@@ -345,13 +333,12 @@ def render_all_recipes_page(recipes: list) -> str:
         <main class="recipes-dir-main">
             <div class="container">
                 <div class="dir-header">
-                    <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
-                        <a href="../">Cooking</a>
-                        <span class="crumb-sep">/</span>
-                        <span aria-current="page">All Recipes</span>
-                    </nav>
+                    <a href="../" class="ck-back-pill">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                        <span>Cooking Home</span>
+                    </a>
                     <h1 class="dir-title">All Recipes</h1>
-                    <p class="dir-subtitle">Browse all {total_count} recipes at a glance — search by dish or ingredient, or filter by course and cook time.</p>
+                    <p class="dir-subtitle">Every dish in one place. Search by name or ingredient, or filter by course and cook time.</p>
                 </div>
 
                 <div class="dir-controls-bar">
@@ -375,7 +362,7 @@ def render_all_recipes_page(recipes: list) -> str:
                                 <option value="long">Long projects (3+ hrs)</option>
                             </select>
                             <select id="dir-sort-select" class="dir-select" aria-label="Sort recipes">
-                                <option value="featured">Featured order</option>
+                                <option value="featured">Featured</option>
                                 <option value="alpha">A – Z</option>
                                 <option value="quickest">Quickest first</option>
                             </select>
@@ -384,21 +371,8 @@ def render_all_recipes_page(recipes: list) -> str:
 
                     <div class="dir-controls-bottom">
                         <div class="recipe-filter-pills" role="tablist" aria-label="Filter recipes by category">
-                            <button type="button" class="filter-pill dir-cat-pill is-active" data-category="All" role="tab" aria-selected="true">
-                                All <span class="pill-count">{total_count}</span>
-                            </button>
-                            <button type="button" class="filter-pill dir-cat-pill" data-category="Appetizer" role="tab" aria-selected="false">
-                                Appetizer <span class="pill-count">{cat_counts['Appetizer']}</span>
-                            </button>
-                            <button type="button" class="filter-pill dir-cat-pill" data-category="Entree" role="tab" aria-selected="false">
-                                Entree <span class="pill-count">{cat_counts['Entree']}</span>
-                            </button>
-                            <button type="button" class="filter-pill dir-cat-pill" data-category="Dessert" role="tab" aria-selected="false">
-                                Dessert <span class="pill-count">{cat_counts['Dessert']}</span>
-                            </button>
-                            <button type="button" class="filter-pill dir-cat-pill" data-category="Drinks" role="tab" aria-selected="false">
-                                Drinks <span class="pill-count">{cat_counts['Drinks']}</span>
-                            </button>
+                            <button type="button" class="filter-pill dir-cat-pill is-active" data-category="All" role="tab" aria-selected="true">All <span class="pill-count">{total_count}</span></button>
+{cat_pills_html}
                         </div>
                         <p id="dir-recipes-count" class="recipes-count" aria-live="polite">Showing all {total_count} recipes</p>
                     </div>
@@ -406,10 +380,10 @@ def render_all_recipes_page(recipes: list) -> str:
 
                 <div id="dir-empty-state" class="recipes-empty-state" hidden>
                     <p>No recipes matched your filters.</p>
-                    <button type="button" id="dir-reset-btn" class="recipe-action-btn">Reset all filters</button>
+                    <button type="button" id="dir-reset-btn" class="ck-btn ck-btn-primary">Reset filters</button>
                 </div>
 
-                <div id="all-recipes-grid" class="row g-4 dir-grid">
+                <div id="all-recipes-grid" class="row dir-grid">
 {cards_html}
                 </div>
             </div>
@@ -481,109 +455,98 @@ def render_recipe_page(recipe: dict, all_recipes: list) -> str:
 
         <main class="recipe-page-main">
             <div class="container">
+                <div class="recipe-topbar">
+                    <a href="../recipes/" class="ck-back-pill">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                        <span>All Recipes</span>
+                    </a>
+                    <div class="recipe-actions">
+                        <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                            <iconify-icon icon="mdi:restore"></iconify-icon>
+                            <span class="btn-label">Reset</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="{canonical}">
+                            <iconify-icon icon="mdi:link-variant"></iconify-icon>
+                            <span class="btn-label">Share</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+                            <span class="btn-label">Keep Awake</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="print-recipe-btn">
+                            <iconify-icon icon="mdi:printer-outline"></iconify-icon>
+                            <span class="btn-label">Print</span>
+                        </button>
+                    </div>
+                </div>
+
                 <article class="recipe-surface food-detail">
-                    <div class="recipe-topbar">
-                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
-                            <a href="../">Cooking</a>
-                            <span class="crumb-sep">/</span>
-                            <a href="../recipes/">All Recipes</a>
-                            <span class="crumb-sep">/</span>
-                            <span aria-current="page">{title_esc}</span>
-                        </nav>
-                        <div class="recipe-actions">
-                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
-                                <iconify-icon icon="mdi:restore"></iconify-icon>
-                                <span class="btn-label">Reset Checks</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="{canonical}">
-                                <iconify-icon icon="mdi:link-variant"></iconify-icon>
-                                <span class="btn-label">Copy Link</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
-                                <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                <span class="btn-label">Keep Awake</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="print-recipe-btn">
-                                <iconify-icon icon="mdi:printer-outline"></iconify-icon>
-                                <span class="btn-label">Print</span>
-                            </button>
+                    <div class="row g-4 align-items-center recipe-hero-row">
+                        <div class="col-lg-5">
+                            <div class="recipe-hero-img">
+                                <img src="../{esc(recipe['image'])}" alt="{title_esc}" fetchpriority="high">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <a href="../recipes/?category={esc(recipe['category'])}" class="recipe-cat-pill recipe-cat-link">{esc(recipe['category'])}</a>
+                            <h1 class="recipe-title">{title_esc}</h1>
+                            <p class="recipe-lead">{desc_esc}</p>
+
+                            <div class="recipe-meta-grid">
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
+                                    </div>
+                                    <h4>Prep</h4>
+                                    <span>{esc(recipe['prepTime'])}</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                                    </div>
+                                    <h4>Total</h4>
+                                    <span>{esc(recipe['totalTime'])}</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="{esc(recipe['yieldIcon'])}"></iconify-icon>
+                                    </div>
+                                    <h4>Yield</h4>
+                                    <span>{esc(recipe['yield'])}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="recipe-content-body">
-                        <div class="row g-4 align-items-center recipe-hero-row">
-                            <div class="col-lg-5">
-                                <div class="img-holder recipe-hero-img">
-                                    <img src="../{esc(recipe['image'])}" alt="{title_esc}" fetchpriority="high">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="../recipes/?category={esc(recipe['category'])}" class="recipe-cat-pill recipe-cat-link">{esc(recipe['category'])}</a>
-                                <h1 class="recipe-title">{title_esc}</h1>
-                                <p class="recipe-lead">{desc_esc}</p>
+                    <hr class="recipe-divider">
 
-                                <div class="row recipe-meta-row">
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
-                                            </div>
-                                            <h4>Prep Time</h4>
-                                            <span>{esc(recipe['prepTime'])}</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
-                                            </div>
-                                            <h4>Total Time</h4>
-                                            <span>{esc(recipe['totalTime'])}</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="{esc(recipe['yieldIcon'])}"></iconify-icon>
-                                            </div>
-                                            <h4>Yield</h4>
-                                            <span>{esc(recipe['yield'])}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row g-5 recipe-cooking-columns">
-                            <aside class="col-lg-4 recipe-ingredients-col">
-                                <div class="ingredients-sticky-card">
-                                    <div class="section-heading-row">
-                                        <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap to check off</span>
-                                    </div>
-                                    {ingredients_html}
-                                </div>
-                            </aside>
-
-                            <section class="col-lg-8 instructions-block">
+                    <div class="row g-5 recipe-cooking-columns">
+                        <aside class="col-lg-4 recipe-ingredients-col">
+                            <div class="ingredients-sticky-card">
                                 <div class="section-heading-row">
-                                    <h2 class="subTitle">INSTRUCTIONS</h2>
-                                    <span class="interactive-hint">Tap a step to mark done</span>
+                                    <h2 class="subTitle">Ingredients</h2>
+                                    <span class="interactive-hint">Tap to check off</span>
                                 </div>
-                                {instructions_html}
-                            </section>
-                        </div>
+                                {ingredients_html}
+                            </div>
+                        </aside>
+
+                        <section class="col-lg-8 instructions-block">
+                            <div class="section-heading-row">
+                                <h2 class="subTitle">Instructions</h2>
+                                <span class="interactive-hint">Tap a step when done</span>
+                            </div>
+                            {instructions_html}
+                        </section>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../recipes/" class="arrowback">Browse all {len(all_recipes)} recipes →</a>
+                        <a href="../recipes/" class="section-link-subtle">See all {len(all_recipes)} ›</a>
                     </div>
-                    <div class="row g-4">
+                    <div class="row dir-grid">
                         {related_html}
                     </div>
                 </section>
@@ -627,8 +590,8 @@ def render_redirect_page(recipe: dict, target_rel: str) -> str:
     <meta http-equiv="refresh" content="0; url={target_rel}">
     <script>window.location.replace({json.dumps(target_rel)});</script>
 </head>
-<body style="background:#000;color:#c9ab81;font-family:sans-serif;padding:2rem;">
-    <p>Redirecting to <a href="{target_rel}" style="color:#c9ab81;">{title_esc}</a>…</p>
+<body style="background:#000;color:#f5f5f7;font-family:-apple-system,sans-serif;padding:2rem;">
+    <p>Redirecting to <a href="{target_rel}" style="color:#e5c07b;">{title_esc}</a>…</p>
 </body>
 </html>
 """
@@ -667,13 +630,11 @@ def main() -> None:
     with open(DATA_PATH, encoding="utf-8") as f:
         recipes = json.load(f)
 
-    # 1. Generate dedicated All-Recipes directory at /cooking/recipes/index.html
     recipes_index_dir = os.path.join(COOKING_DIR, "recipes")
     os.makedirs(recipes_index_dir, exist_ok=True)
     with open(os.path.join(recipes_index_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_all_recipes_page(recipes))
 
-    # 2. Generate dedicated recipe pages, aliases, and legacy redirects
     generated_pages = 0
     generated_aliases = 0
     generated_legacy = 0

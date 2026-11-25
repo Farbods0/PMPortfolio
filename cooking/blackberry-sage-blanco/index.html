@@ -27,7 +27,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/cooking.css" rel="stylesheet">
@@ -138,89 +138,79 @@
 
         <main class="recipe-page-main">
             <div class="container">
+                <div class="recipe-topbar">
+                    <a href="../recipes/" class="ck-back-pill">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                        <span>All Recipes</span>
+                    </a>
+                    <div class="recipe-actions">
+                        <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                            <iconify-icon icon="mdi:restore"></iconify-icon>
+                            <span class="btn-label">Reset</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/blackberry-sage-blanco/">
+                            <iconify-icon icon="mdi:link-variant"></iconify-icon>
+                            <span class="btn-label">Share</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+                            <span class="btn-label">Keep Awake</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="print-recipe-btn">
+                            <iconify-icon icon="mdi:printer-outline"></iconify-icon>
+                            <span class="btn-label">Print</span>
+                        </button>
+                    </div>
+                </div>
+
                 <article class="recipe-surface food-detail">
-                    <div class="recipe-topbar">
-                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
-                            <a href="../">Cooking</a>
-                            <span class="crumb-sep">/</span>
-                            <a href="../recipes/">All Recipes</a>
-                            <span class="crumb-sep">/</span>
-                            <span aria-current="page">Blackberry Sage Blanco Batch</span>
-                        </nav>
-                        <div class="recipe-actions">
-                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
-                                <iconify-icon icon="mdi:restore"></iconify-icon>
-                                <span class="btn-label">Reset Checks</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/blackberry-sage-blanco/">
-                                <iconify-icon icon="mdi:link-variant"></iconify-icon>
-                                <span class="btn-label">Copy Link</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
-                                <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                <span class="btn-label">Keep Awake</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="print-recipe-btn">
-                                <iconify-icon icon="mdi:printer-outline"></iconify-icon>
-                                <span class="btn-label">Print</span>
-                            </button>
+                    <div class="row g-4 align-items-center recipe-hero-row">
+                        <div class="col-lg-5">
+                            <div class="recipe-hero-img">
+                                <img src="../assets/optimized/blackberry-sage-blanco.webp" alt="Blackberry Sage Blanco Batch" fetchpriority="high">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <a href="../recipes/?category=Drinks" class="recipe-cat-pill recipe-cat-link">Drinks</a>
+                            <h1 class="recipe-title">Blackberry Sage Blanco Batch</h1>
+                            <p class="recipe-lead">Crowd-pleasing 20-drink blanco tequila pitcher infused with blended fresh blackberries, 25 aromatic sage leaves, fresh lime juice, and agave.</p>
+
+                            <div class="recipe-meta-grid">
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
+                                    </div>
+                                    <h4>Prep</h4>
+                                    <span>15 mins</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                                    </div>
+                                    <h4>Total</h4>
+                                    <span>3 hours</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="mdi:glass-cocktail"></iconify-icon>
+                                    </div>
+                                    <h4>Yield</h4>
+                                    <span>20 drinks</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="recipe-content-body">
-                        <div class="row g-4 align-items-center recipe-hero-row">
-                            <div class="col-lg-5">
-                                <div class="img-holder recipe-hero-img">
-                                    <img src="../assets/optimized/blackberry-sage-blanco.webp" alt="Blackberry Sage Blanco Batch" fetchpriority="high">
+                    <hr class="recipe-divider">
+
+                    <div class="row g-5 recipe-cooking-columns">
+                        <aside class="col-lg-4 recipe-ingredients-col">
+                            <div class="ingredients-sticky-card">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">Ingredients</h2>
+                                    <span class="interactive-hint">Tap to check off</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="../recipes/?category=Drinks" class="recipe-cat-pill recipe-cat-link">Drinks</a>
-                                <h1 class="recipe-title">Blackberry Sage Blanco Batch</h1>
-                                <p class="recipe-lead">Crowd-pleasing 20-drink blanco tequila pitcher infused with blended fresh blackberries, 25 aromatic sage leaves, fresh lime juice, and agave.</p>
-
-                                <div class="row recipe-meta-row">
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
-                                            </div>
-                                            <h4>Prep Time</h4>
-                                            <span>15 mins</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
-                                            </div>
-                                            <h4>Total Time</h4>
-                                            <span>3 hours</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="mdi:glass-cocktail"></iconify-icon>
-                                            </div>
-                                            <h4>Yield</h4>
-                                            <span>20 drinks</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row g-5 recipe-cooking-columns">
-                            <aside class="col-lg-4 recipe-ingredients-col">
-                                <div class="ingredients-sticky-card">
-                                    <div class="section-heading-row">
-                                        <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap to check off</span>
-                                    </div>
-                                    <div class="ingredient-group">
+                                <div class="ingredient-group">
   <h5>20-Drink Party Batch</h5>
   <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">5 cups (40 oz) blanco tequila</label></li>
@@ -230,71 +220,88 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-4" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-4">25 fresh sage leaves (plus extra whole leaves for garnish)</label></li>
   </ul>
 </div>
-                                </div>
-                            </aside>
+                            </div>
+                        </aside>
 
-                            <section class="col-lg-8 instructions-block">
-                                <div class="section-heading-row">
-                                    <h2 class="subTitle">INSTRUCTIONS</h2>
-                                    <span class="interactive-hint">Tap a step to mark done</span>
-                                </div>
-                                <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Blend, Strain &amp; Marry</span></div>
+                        <section class="col-lg-8 instructions-block">
+                            <div class="section-heading-row">
+                                <h2 class="subTitle">Instructions</h2>
+                                <span class="interactive-hint">Tap a step when done</span>
+                            </div>
+                            <div class="cardSteps">
+  <div class="titleStep">Blend, Strain &amp; Marry</div>
 <p class="recipe-step-item" title="Click to mark step done">1. <strong>Blend the Base:</strong> Combine the 5 cups blackberries, fresh lime juice, agave/simple syrup sweetener, and all 25 sage leaves in a blender and blend on high until liquefied.</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. <strong>Fine-Strain:</strong> Pour through a fine-mesh strainer directly into a large pitcher, pressing with a spoon to extract all ruby juice while catching seeds and herb bits.</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. <strong>Batch & Chill:</strong> Stir in the 5 cups blanco tequila, cover tightly, and refrigerate for a few hours so the earthy sage and berry flavors marry.</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. <strong>Serve:</strong> Stir vigorously right before pouring over fresh rocks. Garnish each glass with two skewered blackberries and a single fresh sage leaf resting on the ice.</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Fine-Strain:</strong> Pour through a fine-mesh strainer directly into a large pitcher, pressing with a spoon to extract all ruby juice while catching seeds and herb bits.</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. <strong>Batch & Chill:</strong> Stir in the 5 cups blanco tequila, cover tightly, and refrigerate for a few hours so the earthy sage and berry flavors marry.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. <strong>Serve:</strong> Stir vigorously right before pouring over fresh rocks. Garnish each glass with two skewered blackberries and a single fresh sage leaf resting on the ice.</p>
 </div>
-                            </section>
-                        </div>
+                        </section>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
+                        <a href="../recipes/" class="section-link-subtle">See all 47 ›</a>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-  <a href="../yuzu-blackberry-caipiroska/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/yuzu-blackberry-caipiroska.webp" alt="Yuzu Blackberry Caipiroska" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Drinks</span>
-      <h4>Yuzu Blackberry Caipiroska</h4>
-      <p>Nobu-inspired cocktail of muddled ripe blackberries, floral Japanese yuzu juice, simple syrup, and chilled vodka poured unstrained over crushed rocks with mint and dried citrus.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../winter-green-cucumber-cooler/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/winter-green-cucumber-cooler.webp" alt="&quot;Winter Green&quot; Cucumber, Mint &amp; Lime Cooler" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Drinks</span>
-      <h4>&quot;Winter Green&quot; Cucumber, Mint &amp; Lime Cooler</h4>
-      <p>Vibrant emerald-green party pitcher cocktail blending peel-on English cucumbers, fresh mint, razor-sharp lime juice, vodka, and an optional subtle jalapeño kick.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../tonkotsu-ramen/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/tonkotsu.webp" alt="Tonkotsu Ramen" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Entree</span>
-      <h4>Tonkotsu Ramen</h4>
-      <p>A unique style of ramen consisting of an extremely rich, fatty pork broth.</p>
-    </div>
-  </a>
-</div>
+                    <div class="row dir-grid">
+                                <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../yuzu-blackberry-caipiroska/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/yuzu-blackberry-caipiroska.webp" alt="Yuzu Blackberry Caipiroska" loading="lazy">
+                    <span class="card-cat-badge">Drinks</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Yuzu Blackberry Caipiroska</h4>
+                    <p class="card-desc">Nobu-inspired cocktail of muddled ripe blackberries, floral Japanese yuzu juice, simple syrup, and chilled vodka poured unstrained over crushed rocks with mint and dried citrus.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            5 mins
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../winter-green-cucumber-cooler/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/winter-green-cucumber-cooler.webp" alt="&quot;Winter Green&quot; Cucumber, Mint &amp; Lime Cooler" loading="lazy">
+                    <span class="card-cat-badge">Drinks</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">&quot;Winter Green&quot; Cucumber, Mint &amp; Lime Cooler</h4>
+                    <p class="card-desc">Vibrant emerald-green party pitcher cocktail blending peel-on English cucumbers, fresh mint, razor-sharp lime juice, vodka, and an optional subtle jalapeño kick.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            15 mins
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../tonkotsu-ramen/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/tonkotsu.webp" alt="Tonkotsu Ramen" loading="lazy">
+                    <span class="card-cat-badge">Entree</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Tonkotsu Ramen</h4>
+                    <p class="card-desc">A unique style of ramen consisting of an extremely rich, fatty pork broth.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            3 days
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
                     </div>
                 </section>
             </div>

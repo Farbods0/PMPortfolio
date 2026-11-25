@@ -85,12 +85,10 @@
         const href = `./${encodeURIComponent(recipe.slug)}/`;
         return `
             <div class="swiper-slide" data-slug="${escapeHtml(recipe.slug)}">
-                <a class="card-food card-food-link" href="${href}">
-                    <div class="imgTitle">
-                        <div class="img-wrapper">
-                            <img src="./${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.title)}" loading="lazy">
-                            <span class="card-cat-badge">${escapeHtml(recipe.category)}</span>
-                        </div>
+                <a class="card-food" href="${href}">
+                    <div class="img-wrapper">
+                        <img src="./${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.title)}" loading="lazy">
+                        <span class="card-cat-badge">${escapeHtml(recipe.category)}</span>
                     </div>
                     <div class="cardBody">
                         <h4 class="title">${escapeHtml(recipe.title)}</h4>
@@ -100,7 +98,7 @@
                                 <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
                                 ${escapeHtml(recipe.totalTime || recipe.prepTime)}
                             </span>
-                            <span class="btn-read">View Recipe →</span>
+                            <span class="card-open-hint">View ›</span>
                         </div>
                     </div>
                 </a>
@@ -216,15 +214,29 @@
                 };
             });
 
+            // Update dynamic count badges on the landing page
+            const catCounts = {};
+            allRecipes.forEach((r) => {
+                catCounts[r.category] = (catCounts[r.category] || 0) + 1;
+            });
+            document.querySelectorAll('[data-count-total]').forEach((el) => {
+                el.textContent = allRecipes.length;
+            });
+            document.querySelectorAll('[data-count-cat]').forEach((el) => {
+                const cat = el.dataset.countCat;
+                if (catCounts[cat] !== undefined) el.textContent = catCounts[cat];
+            });
+
             // Restore query/category from URL if present
             const params = new URLSearchParams(window.location.search);
             const initialQ = params.get('q');
             const initialCat = params.get('category');
+            const validCats = filterPills.map((p) => p.dataset.category);
             if (initialQ && searchInput) {
                 searchQuery = initialQ;
                 searchInput.value = initialQ;
             }
-            if (initialCat && ['All', 'Appetizer', 'Entree', 'Dessert'].includes(initialCat)) {
+            if (initialCat && validCats.includes(initialCat)) {
                 activeCategory = initialCat;
                 filterPills.forEach((p) => {
                     const active = p.dataset.category === activeCategory;

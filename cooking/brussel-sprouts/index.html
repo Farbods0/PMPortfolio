@@ -27,7 +27,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/cooking.css" rel="stylesheet">
@@ -147,89 +147,79 @@
 
         <main class="recipe-page-main">
             <div class="container">
+                <div class="recipe-topbar">
+                    <a href="../recipes/" class="ck-back-pill">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                        <span>All Recipes</span>
+                    </a>
+                    <div class="recipe-actions">
+                        <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
+                            <iconify-icon icon="mdi:restore"></iconify-icon>
+                            <span class="btn-label">Reset</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/brussel-sprouts/">
+                            <iconify-icon icon="mdi:link-variant"></iconify-icon>
+                            <span class="btn-label">Share</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+                            <span class="btn-label">Keep Awake</span>
+                        </button>
+                        <button type="button" class="recipe-action-btn" id="print-recipe-btn">
+                            <iconify-icon icon="mdi:printer-outline"></iconify-icon>
+                            <span class="btn-label">Print</span>
+                        </button>
+                    </div>
+                </div>
+
                 <article class="recipe-surface food-detail">
-                    <div class="recipe-topbar">
-                        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
-                            <a href="../">Cooking</a>
-                            <span class="crumb-sep">/</span>
-                            <a href="../recipes/">All Recipes</a>
-                            <span class="crumb-sep">/</span>
-                            <span aria-current="page">Brussel Sprouts</span>
-                        </nav>
-                        <div class="recipe-actions">
-                            <button type="button" class="recipe-action-btn" id="reset-checks-btn" hidden>
-                                <iconify-icon icon="mdi:restore"></iconify-icon>
-                                <span class="btn-label">Reset Checks</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="copy-link-btn" data-url="https://farbodjahan.com/cooking/brussel-sprouts/">
-                                <iconify-icon icon="mdi:link-variant"></iconify-icon>
-                                <span class="btn-label">Copy Link</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
-                                <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                <span class="btn-label">Keep Awake</span>
-                            </button>
-                            <button type="button" class="recipe-action-btn" id="print-recipe-btn">
-                                <iconify-icon icon="mdi:printer-outline"></iconify-icon>
-                                <span class="btn-label">Print</span>
-                            </button>
+                    <div class="row g-4 align-items-center recipe-hero-row">
+                        <div class="col-lg-5">
+                            <div class="recipe-hero-img">
+                                <img src="../assets/optimized/brussel.webp" alt="Brussel Sprouts" fetchpriority="high">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <a href="../recipes/?category=Appetizer" class="recipe-cat-pill recipe-cat-link">Appetizer</a>
+                            <h1 class="recipe-title">Brussel Sprouts</h1>
+                            <p class="recipe-lead">Crispy roasted Brussels sprouts — the one vegetable your guests will ask for seconds of.</p>
+
+                            <div class="recipe-meta-grid">
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
+                                    </div>
+                                    <h4>Prep</h4>
+                                    <span>10 mins</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                                    </div>
+                                    <h4>Total</h4>
+                                    <span>30 mins</span>
+                                </div>
+                                <div class="cookCard">
+                                    <div class="icon">
+                                        <iconify-icon icon="icon-park-outline:vegetables"></iconify-icon>
+                                    </div>
+                                    <h4>Yield</h4>
+                                    <span>4 servings</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="recipe-content-body">
-                        <div class="row g-4 align-items-center recipe-hero-row">
-                            <div class="col-lg-5">
-                                <div class="img-holder recipe-hero-img">
-                                    <img src="../assets/optimized/brussel.webp" alt="Brussel Sprouts" fetchpriority="high">
+                    <hr class="recipe-divider">
+
+                    <div class="row g-5 recipe-cooking-columns">
+                        <aside class="col-lg-4 recipe-ingredients-col">
+                            <div class="ingredients-sticky-card">
+                                <div class="section-heading-row">
+                                    <h2 class="subTitle">Ingredients</h2>
+                                    <span class="interactive-hint">Tap to check off</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="../recipes/?category=Appetizer" class="recipe-cat-pill recipe-cat-link">Appetizer</a>
-                                <h1 class="recipe-title">Brussel Sprouts</h1>
-                                <p class="recipe-lead">Crispy roasted Brussels sprouts — the one vegetable your guests will ask for seconds of.</p>
-
-                                <div class="row recipe-meta-row">
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="teenyicons:stopwatch-outline"></iconify-icon>
-                                            </div>
-                                            <h4>Prep Time</h4>
-                                            <span>10 mins</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
-                                            </div>
-                                            <h4>Total Time</h4>
-                                            <span>30 mins</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="cookCard">
-                                            <div class="icon">
-                                                <iconify-icon icon="icon-park-outline:vegetables"></iconify-icon>
-                                            </div>
-                                            <h4>Yield</h4>
-                                            <span>4 servings</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row g-5 recipe-cooking-columns">
-                            <aside class="col-lg-4 recipe-ingredients-col">
-                                <div class="ingredients-sticky-card">
-                                    <div class="section-heading-row">
-                                        <h2 class="subTitle">INGREDIENTS</h2>
-                                        <span class="interactive-hint">Tap to check off</span>
-                                    </div>
-                                    <div class="ingredient-group">
+                                <div class="ingredient-group">
     <ul class="ingredient-list">
     <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0">1 lb Brussel Sprouts</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1">1 tsp olive oil</label></li>
@@ -239,73 +229,90 @@
     <li class="ingredient-item"><input type="checkbox" id="ing-0-5" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-5">3 turns of fresh black pepper</label></li>
   </ul>
 </div>
-                                </div>
-                            </aside>
+                            </div>
+                        </aside>
 
-                            <section class="col-lg-8 instructions-block">
-                                <div class="section-heading-row">
-                                    <h2 class="subTitle">INSTRUCTIONS</h2>
-                                    <span class="interactive-hint">Tap a step to mark done</span>
-                                </div>
-                                <div class="cardSteps">
-  <div class="icon"><iconify-icon icon="ic:round-check-circle-outline"></iconify-icon></div>
-  <div class="desciption">
-    <div class="titleStep"><span>Brussel Sprouts</span></div>
+                        <section class="col-lg-8 instructions-block">
+                            <div class="section-heading-row">
+                                <h2 class="subTitle">Instructions</h2>
+                                <span class="interactive-hint">Tap a step when done</span>
+                            </div>
+                            <div class="cardSteps">
+  <div class="titleStep">Brussel Sprouts</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Preheat oven to 400 Degrees F</p>
-    <p class="recipe-step-item" title="Click to mark step done">2. Cut Brussel sprouts stem and in half</p>
-    <p class="recipe-step-item" title="Click to mark step done">3. Place flat (inside on pan)</p>
-    <p class="recipe-step-item" title="Click to mark step done">4. Cook in 400 degree F oven for 15 minutes</p>
-    <p class="recipe-step-item" title="Click to mark step done">5. After 15 min shake pan around then place for additional 11-13 minutes <i>or until outer layer is burnt/crisp</i></p>
-    <p class="recipe-step-item" title="Click to mark step done">6. Serve in a bowl and sprinkle kosher salt for presentation and taste</p>
-  </div>
+  <p class="recipe-step-item" title="Click to mark step done">2. Cut Brussel sprouts stem and in half</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. Place flat (inside on pan)</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. Cook in 400 degree F oven for 15 minutes</p>
+  <p class="recipe-step-item" title="Click to mark step done">5. After 15 min shake pan around then place for additional 11-13 minutes <i>or until outer layer is burnt/crisp</i></p>
+  <p class="recipe-step-item" title="Click to mark step done">6. Serve in a bowl and sprinkle kosher salt for presentation and taste</p>
 </div>
-                            </section>
-                        </div>
+                        </section>
                     </div>
                 </article>
 
                 <section class="related-recipes-section">
                     <div class="related-header">
                         <h3>More Recipes</h3>
-                        <a href="../recipes/" class="arrowback">Browse all 47 recipes →</a>
+                        <a href="../recipes/" class="section-link-subtle">See all 47 ›</a>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-  <a href="../yellowtail-jalapeno-sashimi/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/yellowtail-jalapeno-sashimi.webp" alt="Yellowtail Sashimi with Jalapeño" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Appetizer</span>
-      <h4>Yellowtail Sashimi with Jalapeño</h4>
-      <p>Chilled ribbons of sushi-grade hamachi brushed with a whisper of garlic purée, topped with paper-thin jalapeño and fresh cilantro in a bright 2:1 yuzu-soy dressing.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../oysters-ponzu-mignonette/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/oysters-ponzu-mignonette.webp" alt="Oysters with Ponzu Mignonette" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Appetizer</span>
-      <h4>Oysters with Ponzu Mignonette</h4>
-      <p>Ice-cold freshly shucked oysters dressed with a bright Japanese mignonette of rice wine vinegar, soy sauce, lemon, toasted sesame oil, shallot, and green onion.</p>
-    </div>
-  </a>
-</div>
-<div class="col-md-4">
-  <a href="../artisan-bread-dutch-oven/" class="related-recipe-card">
-    <div class="related-img-wrap">
-      <img src="../assets/optimized/artisanbreaddutch.webp" alt="Artisan Dutch Oven Bread" loading="lazy">
-    </div>
-    <div class="related-body">
-      <span class="recipe-cat-pill">Appetizer</span>
-      <h4>Artisan Dutch Oven Bread</h4>
-      <p>Crackling golden crust and airy, open-crumb artisan boule made with four pantry staples, gentle stretch-and-folds, and steam-baked inside a blazing-hot Dutch oven.</p>
-    </div>
-  </a>
-</div>
+                    <div class="row dir-grid">
+                                <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../yellowtail-jalapeno-sashimi/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/yellowtail-jalapeno-sashimi.webp" alt="Yellowtail Sashimi with Jalapeño" loading="lazy">
+                    <span class="card-cat-badge">Appetizer</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Yellowtail Sashimi with Jalapeño</h4>
+                    <p class="card-desc">Chilled ribbons of sushi-grade hamachi brushed with a whisper of garlic purée, topped with paper-thin jalapeño and fresh cilantro in a bright 2:1 yuzu-soy dressing.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            20 mins
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../oysters-ponzu-mignonette/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/oysters-ponzu-mignonette.webp" alt="Oysters with Ponzu Mignonette" loading="lazy">
+                    <span class="card-cat-badge">Appetizer</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Oysters with Ponzu Mignonette</h4>
+                    <p class="card-desc">Ice-cold freshly shucked oysters dressed with a bright Japanese mignonette of rice wine vinegar, soy sauce, lemon, toasted sesame oil, shallot, and green onion.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            45 mins
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="card-food" href="../artisan-bread-dutch-oven/">
+                <div class="img-wrapper">
+                    <img src="../assets/optimized/artisanbreaddutch.webp" alt="Artisan Dutch Oven Bread" loading="lazy">
+                    <span class="card-cat-badge">Appetizer</span>
+                </div>
+                <div class="cardBody">
+                    <h4 class="title">Artisan Dutch Oven Bread</h4>
+                    <p class="card-desc">Crackling golden crust and airy, open-crumb artisan boule made with four pantry staples, gentle stretch-and-folds, and steam-baked inside a blazing-hot Dutch oven.</p>
+                    <div class="card-meta-footer">
+                        <span class="card-time">
+                            <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
+                            5 hours
+                        </span>
+                        <span class="card-open-hint">View ›</span>
+                    </div>
+                </div>
+            </a>
+        </div>
                     </div>
                 </section>
             </div>
