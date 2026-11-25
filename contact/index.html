@@ -2,49 +2,43 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139551000-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-139551000-1');
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farbod Jahan | Contact </title>
+    <title>Contact | Farbod Jahan</title>
+    <meta name="description" content="Get in touch with Farbod Jahan — Product Executive, Technologist, and Builder based in San Francisco, CA.">
+    <link rel="canonical" href="https://farbodjahan.com/contact/">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
     <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/contact.css">
-
-    <meta name="description" content="Farbod Jahan - Product Manager, Technologist, and Designer. Explore my portfolio, resume, and interests.">
 </head>
 
-<body>
+<body class="contact-page">
     <div class="external-wrapper">
         <!-- HEADER START -->
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="../index.html">
-                        <img src="../images/FarbodJahan.png" alt="" loading="lazy">
+                        <img src="../images/FarbodJahan.png" alt="Farbod Jahan Logo" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        
-                    <button class="closeIcon" aria-label="Close menu"><iconify-icon icon="ep:close"></iconify-icon></button>
+                        <button class="closeIcon" aria-label="Close menu"><iconify-icon icon="ep:close"></iconify-icon></button>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">
+                                <a class="nav-link" aria-current="page" href="../index.html" aria-label="Home">
                                     <iconify-icon icon="fa:home"></iconify-icon>
                                 </a>
                             </li>
@@ -55,7 +49,7 @@
                                 <a class="nav-link" href="../resume/">Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Contact</a>
+                                <a class="nav-link active" href="./">Contact</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" data-bs-toggle="dropdown"
@@ -74,47 +68,149 @@
             </nav>
         </header>
         <!-- HEADER END -->
-        <!-- SECTION PAGE TITLE START -->
-        <section class="page-title para contactTitle" >
+
+        <!-- HERO START -->
+        <section class="contact-hero">
             <div class="container">
-                    <h2 data-aos="fade-up" data-aos-duration="1000">CONTACT</h2>
+                <span class="contact-eyebrow">San Francisco, CA</span>
+                <h1>Let’s connect.</h1>
+                <p>Whether it’s product leadership, AI advisory, real estate, or even a recipe recommendation — drop a
+                    note below and I’ll get back to you.</p>
             </div>
         </section>
-        <!-- SECTION PAGE TITLE END -->
-        <!-- Section Contact Start -->
-            <section class="contact-main">
-                <div class="container">
-                    <form action="https://formspree.io/f/mpznlrry" method="POST" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="mb-3">
-                                <label for="">Name <span>required</span></label>
-                                <input type="text" name="name"  id="full-name" class="form-control" required>
+        <!-- HERO END -->
+
+        <!-- MAIN CONTACT SECTION START -->
+        <main class="contact-main">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <!-- Left: Direct Info Card -->
+                    <div class="col-lg-5">
+                        <div class="contact-info-card">
+                            <div class="contact-profile-row">
+                                <img src="../about/assets/Profile.jpg" alt="Farbod Jahan" class="contact-avatar">
+                                <div>
+                                    <h2>Farbod Jahan</h2>
+                                    <p>Product Executive &amp; Technologist</p>
+                                </div>
+                            </div>
+
+                            <p class="contact-blurb">I love meeting thoughtful builders, founders, and curious minds.
+                                Feel free to use the form or reach out directly through any channel below.</p>
+
+                            <div class="contact-channels">
+                                <div class="channel-item">
+                                    <div class="channel-icon">
+                                        <iconify-icon icon="mdi:email-outline"></iconify-icon>
+                                    </div>
+                                    <div class="channel-text">
+                                        <span class="channel-label">Email</span>
+                                        <a href="mailto:Farbod.J.Jahan@gmail.com" class="channel-value">Farbod.J.Jahan@gmail.com</a>
+                                    </div>
+                                    <button type="button" class="copy-email-btn" id="copy-email-btn"
+                                        data-email="Farbod.J.Jahan@gmail.com" aria-label="Copy email address">
+                                        <iconify-icon icon="mdi:content-copy"></iconify-icon>
+                                        <span>Copy</span>
+                                    </button>
+                                </div>
+
+                                <a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener"
+                                    class="channel-item channel-link">
+                                    <div class="channel-icon">
+                                        <iconify-icon icon="jam:linkedin"></iconify-icon>
+                                    </div>
+                                    <div class="channel-text">
+                                        <span class="channel-label">LinkedIn</span>
+                                        <span class="channel-value">linkedin.com/in/farbod-jahan</span>
+                                    </div>
+                                    <iconify-icon icon="mdi:arrow-top-right" class="channel-arrow"></iconify-icon>
+                                </a>
+
+                                <a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener"
+                                    class="channel-item channel-link">
+                                    <div class="channel-icon">
+                                        <iconify-icon icon="fa:instagram"></iconify-icon>
+                                    </div>
+                                    <div class="channel-text">
+                                        <span class="channel-label">Instagram</span>
+                                        <span class="channel-value">@farbod_jahan</span>
+                                    </div>
+                                    <iconify-icon icon="mdi:arrow-top-right" class="channel-arrow"></iconify-icon>
+                                </a>
+                            </div>
+
+                            <div class="response-note">
+                                <span class="status-dot" aria-hidden="true"></span>
+                                Typically responds within 1–2 business days
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="mb-3">
-                                <label for="">Email <span>required</span></label>
-                                <input type="email" name="email" id="email-address" class="form-control" required>
+
+                    <!-- Right: Interactive Formspree Card -->
+                    <div class="col-lg-7">
+                        <div class="contact-form-card">
+                            <form id="contact-form" action="https://formspree.io/f/mpznlrry" method="POST" novalidate>
+                                <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                                <input type="hidden" name="_subject" id="form-subject" value="New message from farbodjahan.com">
+                                <input type="hidden" name="topic" id="form-topic" value="General">
+
+                                <div class="form-section-head">
+                                    <h3>Send a message</h3>
+                                    <p>Pick a topic or jump straight in.</p>
+                                </div>
+
+                                <div class="topic-pills" role="group" aria-label="Message topic">
+                                    <button type="button" class="topic-pill is-active" data-topic="Product & Advisory">Product &amp; Advisory</button>
+                                    <button type="button" class="topic-pill" data-topic="Mentoring / Speaking">Mentoring / Speaking</button>
+                                    <button type="button" class="topic-pill" data-topic="Real Estate">Real Estate</button>
+                                    <button type="button" class="topic-pill" data-topic="Cooking / Recipe">Cooking / Recipe</button>
+                                    <button type="button" class="topic-pill" data-topic="Just Saying Hi">Just Saying Hi</button>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="full-name" class="modern-label">Name <span class="req-dot">*</span></label>
+                                        <input type="text" name="name" id="full-name" class="modern-input"
+                                            placeholder="Your name" autocomplete="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email-address" class="modern-label">Email <span class="req-dot">*</span></label>
+                                        <input type="email" name="email" id="email-address" class="modern-input"
+                                            placeholder="you@example.com" autocomplete="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="modern-label">Message <span class="req-dot">*</span></label>
+                                        <textarea name="message" id="message" rows="6" class="modern-input modern-textarea"
+                                            placeholder="What's on your mind?" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite" hidden></div>
+
+                                <div class="form-footer-row">
+                                    <button type="submit" id="submit-btn" class="submit-pill-btn">
+                                        <span class="btn-text">Send Message</span>
+                                        <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+                                    </button>
+                                    <span class="form-privacy-note">Delivered directly to Farbod’s inbox.</span>
+                                </div>
+                            </form>
+
+                            <div id="contact-success" class="contact-success-state" hidden>
+                                <div class="success-badge">
+                                    <iconify-icon icon="mdi:check"></iconify-icon>
+                                </div>
+                                <h3>Message sent!</h3>
+                                <p>Thanks for reaching out — I’ve received your note and will reply soon.</p>
+                                <button type="button" id="send-another-btn" class="send-another-btn">Send another message</button>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="mb-3">
-                                <label for="">Message <span>required</span></label>
-                                <textarea name="message" name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-from">Submit</button>
-                    
-                </form>
                 </div>
-            </section>
-        <!-- Section Contact End -->
+            </div>
+        </main>
+        <!-- MAIN CONTACT SECTION END -->
+
         <!-- Footer Start -->
         <footer>
             <div class="container">
@@ -126,13 +222,13 @@
                     </div>
                     <div class="col-sm-6">
                         <ul class="social-link">
-                            <li><a href="https://www.facebook.com/farbods0" target="_blank" aria-label="Facebook">
+                            <li><a href="https://www.facebook.com/farbods0" target="_blank" rel="noopener" aria-label="Facebook">
                                     <iconify-icon icon="dashicons:facebook-alt"></iconify-icon>
                                 </a></li>
-                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" aria-label="LinkedIn">
+                            <li><a href="https://www.linkedin.com/in/farbod-jahan" target="_blank" rel="noopener" aria-label="LinkedIn">
                                     <iconify-icon icon="jam:linkedin"></iconify-icon>
                                 </a></li>
-                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" aria-label="Instagram">
+                            <li><a href="https://www.instagram.com/farbod_jahan/" target="_blank" rel="noopener" aria-label="Instagram">
                                     <iconify-icon icon="fa:instagram"></iconify-icon>
                                 </a></li>
                         </ul>
@@ -141,23 +237,133 @@
             </div>
         </footer>
         <!-- Footer End -->
-        
-        <div id="loading">
-            <div class="loadingio-spinner-rolling-2g1nsf9rz6p">
-                <div class="ldio-xo4z6m7kfv">
-                    <div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <button class="top-btn" aria-label="Scroll to top"><iconify-icon icon="bx:up-arrow-alt"></iconify-icon></button>
     </div>
+
     <script src="../js/bootstrap.bundle.min.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="../js/simpleparallax.js" defer></script>
     <script src="../js/main.js" defer></script>
+    <script>
+        (() => {
+            // Copy email button
+            const copyBtn = document.getElementById('copy-email-btn');
+            if (copyBtn) {
+                copyBtn.addEventListener('click', async () => {
+                    const email = copyBtn.dataset.email;
+                    try {
+                        await navigator.clipboard.writeText(email);
+                    } catch {
+                        const tmp = document.createElement('input');
+                        tmp.value = email;
+                        document.body.appendChild(tmp);
+                        tmp.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(tmp);
+                    }
+                    const lbl = copyBtn.querySelector('span');
+                    if (lbl) lbl.textContent = 'Copied!';
+                    copyBtn.classList.add('is-copied');
+                    setTimeout(() => {
+                        if (lbl) lbl.textContent = 'Copy';
+                        copyBtn.classList.remove('is-copied');
+                    }, 2000);
+                });
+            }
+
+            // Topic quick-select pills
+            const topicPills = document.querySelectorAll('.topic-pill');
+            const topicInput = document.getElementById('form-topic');
+            const subjectInput = document.getElementById('form-subject');
+            let currentTopic = 'Product & Advisory';
+
+            if (topicInput) topicInput.value = currentTopic;
+            if (subjectInput) subjectInput.value = `Portfolio Contact (${currentTopic})`;
+
+            topicPills.forEach((pill) => {
+                pill.addEventListener('click', () => {
+                    topicPills.forEach((p) => p.classList.remove('is-active'));
+                    pill.classList.add('is-active');
+                    currentTopic = pill.dataset.topic || 'General';
+                    if (topicInput) topicInput.value = currentTopic;
+                    if (subjectInput) subjectInput.value = `Portfolio Contact (${currentTopic})`;
+                });
+            });
+
+            // Formspree AJAX submission with clear status & fallback
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const feedbackEl = document.getElementById('form-feedback');
+            const successEl = document.getElementById('contact-success');
+            const sendAnotherBtn = document.getElementById('send-another-btn');
+
+            const showError = (msg) => {
+                if (!feedbackEl) return;
+                feedbackEl.innerHTML = msg;
+                feedbackEl.hidden = false;
+            };
+
+            if (form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    if (feedbackEl) feedbackEl.hidden = true;
+
+                    const nameVal = (document.getElementById('full-name')?.value || '').trim();
+                    const emailVal = (document.getElementById('email-address')?.value || '').trim();
+                    const msgVal = (document.getElementById('message')?.value || '').trim();
+
+                    if (!nameVal || !emailVal || !msgVal) {
+                        showError('Please fill out your name, email, and message.');
+                        return;
+                    }
+                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
+                        showError('Please enter a valid email address.');
+                        return;
+                    }
+
+                    if (subjectInput) {
+                        subjectInput.value = `[${currentTopic}] Message from ${nameVal}`;
+                    }
+
+                    const btnText = submitBtn?.querySelector('.btn-text');
+                    if (submitBtn) submitBtn.disabled = true;
+                    if (btnText) btnText.textContent = 'Sending…';
+
+                    try {
+                        const res = await fetch(form.action, {
+                            method: 'POST',
+                            body: new FormData(form),
+                            headers: { Accept: 'application/json' },
+                        });
+
+                        if (res.ok) {
+                            form.reset();
+                            form.hidden = true;
+                            if (successEl) successEl.hidden = false;
+                        } else {
+                            const data = await res.json().catch(() => null);
+                            const errText = data?.errors?.map((err) => err.message).join(', ')
+                                || 'Something went wrong sending your message.';
+                            showError(`${errText} You can also email <a href="mailto:Farbod.J.Jahan@gmail.com">Farbod.J.Jahan@gmail.com</a> directly.`);
+                        }
+                    } catch {
+                        showError('Network error — please try again or email <a href="mailto:Farbod.J.Jahan@gmail.com">Farbod.J.Jahan@gmail.com</a> directly.');
+                    } finally {
+                        if (submitBtn) submitBtn.disabled = false;
+                        if (btnText) btnText.textContent = 'Send Message';
+                    }
+                });
+            }
+
+            if (sendAnotherBtn && form && successEl) {
+                sendAnotherBtn.addEventListener('click', () => {
+                    successEl.hidden = true;
+                    form.hidden = false;
+                    document.getElementById('full-name')?.focus();
+                });
+            }
+        })();
+    </script>
 </body>
 
 </html>
