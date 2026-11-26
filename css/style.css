@@ -22,11 +22,35 @@
     --fj-rule: #e4e0d8;
     --fj-rule-strong: #cbc5b9;
 
-    /* Visa-inspired Deep Navy + Warm Editorial Accent */
+    /* Visa-inspired Deep Navy + Multi-Discipline Editorial Accents */
     --fj-accent: #1434cb;
     --fj-accent-ink: #0f2596;
     --fj-accent-soft: #eef2ff;
     --fj-accent-border: #c7d4fe;
+
+    --fj-teal: #0f766e;
+    --fj-teal-soft: #f0fdfa;
+    --fj-teal-border: #99f6e4;
+
+    --fj-amber: #b45309;
+    --fj-amber-soft: #fffbeb;
+    --fj-amber-border: #fde68a;
+
+    --fj-coral: #ea580c;
+    --fj-coral-soft: #fff7ed;
+    --fj-coral-border: #fed7aa;
+
+    --fj-brass: #8a6829;
+    --fj-brass-soft: #faf5e8;
+    --fj-brass-border: #e5d2a6;
+
+    --fj-indigo: #4f46e5;
+    --fj-indigo-soft: #eef2ff;
+    --fj-indigo-border: #c7d2fe;
+
+    --fj-sky: #0369a1;
+    --fj-sky-soft: #f0f9ff;
+    --fj-sky-border: #bae6fd;
 
     /* Typography: Editorial Serif + Crisp Humanist Sans + Mono */
     --fj-font-sans: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -327,14 +351,47 @@ body.dj-page .fj-btn-glass {
 
 [data-reveal] {
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 360ms var(--fj-ease-out), transform 360ms var(--fj-ease-out);
+    transform: translateY(16px) scale(0.985);
+    transition: opacity 460ms var(--fj-ease-out), transform 460ms var(--fj-ease-out);
     transition-delay: var(--reveal-delay, 0ms);
 }
 
 [data-reveal].is-revealed {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+}
+
+/* Top Reading Progress Bar */
+.fj-scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 1060;
+    pointer-events: none;
+    transform-origin: left center;
+    transform: scaleX(0);
+    background: linear-gradient(90deg, var(--fj-accent) 0%, var(--fj-teal) 52%, var(--fj-coral) 100%);
+    will-change: transform;
+}
+
+@keyframes fjAuraDrift {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+        transform: translate3d(24px, -16px, 0) scale(1.06);
+    }
+}
+
+@keyframes fjPulseDot {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(20, 52, 203, 0.45);
+    }
+    60% {
+        box-shadow: 0 0 0 7px rgba(20, 52, 203, 0);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -342,6 +399,10 @@ body.dj-page .fj-btn-glass {
         opacity: 1 !important;
         transform: none !important;
         transition: none !important;
+    }
+
+    .fj-scroll-progress {
+        display: none;
     }
 }
 

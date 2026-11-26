@@ -8,6 +8,26 @@
     align-items: center;
     padding: 128px 0 88px;
     background: var(--fj-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-page-main::before {
+    content: "";
+    position: absolute;
+    inset: -20% -15%;
+    background:
+        radial-gradient(circle at 16% 26%, rgba(20, 52, 203, 0.1) 0%, transparent 45%),
+        radial-gradient(circle at 84% 28%, rgba(234, 88, 12, 0.09) 0%, transparent 42%),
+        radial-gradient(circle at 50% 86%, rgba(15, 118, 110, 0.09) 0%, transparent 45%);
+    pointer-events: none;
+    animation: fjAuraDrift 17s ease-in-out infinite;
+    will-change: transform;
+}
+
+.contact-page-main > .container {
+    position: relative;
+    z-index: 2;
 }
 
 .contact-hub-grid {
@@ -122,13 +142,37 @@ button.channel-card {
     flex-shrink: 0;
 }
 
+.channel-card:nth-child(2) .channel-icon {
+    background: var(--fj-sky-soft);
+    border-color: var(--fj-sky-border);
+    color: var(--fj-sky);
+}
+
+.channel-card:nth-child(3) .channel-icon {
+    background: var(--fj-teal-soft);
+    border-color: var(--fj-teal-border);
+    color: var(--fj-teal);
+}
+
 /* Crisp White Paper Form Card */
 .contact-form-card {
+    position: relative;
     background: var(--fj-surface);
     border: 1px solid var(--fj-rule-strong);
     border-radius: var(--fj-radius-lg);
     padding: 36px;
-    box-shadow: 0 18px 48px rgba(17, 19, 24, 0.06);
+    box-shadow: 0 22px 54px rgba(17, 19, 24, 0.07);
+    overflow: hidden;
+}
+
+.contact-form-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--fj-accent) 0%, var(--fj-teal) 48%, var(--fj-coral) 100%);
 }
 
 .topic-picker-group {
@@ -179,6 +223,7 @@ button.channel-card {
         border-color: var(--fj-ink);
         color: var(--fj-ink);
         background: #ffffff;
+        transform: translateY(-1px);
     }
 }
 
@@ -186,6 +231,20 @@ button.channel-card {
     background: var(--fj-ink);
     border-color: var(--fj-ink);
     color: #ffffff;
+    box-shadow: 0 6px 14px rgba(17, 19, 24, 0.14);
+}
+
+.topic-pill[data-slug="product"].is-active { background: var(--fj-accent); border-color: var(--fj-accent); }
+.topic-pill[data-slug="advisory"].is-active { background: var(--fj-teal); border-color: var(--fj-teal); }
+.topic-pill[data-slug="real-estate"].is-active { background: var(--fj-brass); border-color: var(--fj-brass); }
+.topic-pill[data-slug="dj"].is-active { background: var(--fj-coral); border-color: var(--fj-coral); }
+.topic-pill[data-slug="cooking"].is-active { background: var(--fj-amber); border-color: var(--fj-amber); }
+.topic-pill[data-slug="mentorship"].is-active { background: var(--fj-indigo); border-color: var(--fj-indigo); }
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-page-main::before {
+        animation: none !important;
+    }
 }
 
 .field-group {

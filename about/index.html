@@ -292,9 +292,16 @@
     <script src="../js/main.js" defer></script>
     <script>
         (() => {
-            const buttons = document.querySelectorAll('[data-venn-btn]');
-            const nodes = document.querySelectorAll('[data-venn]');
+            const buttons = Array.from(document.querySelectorAll('[data-venn-btn]'));
+            const nodes = Array.from(document.querySelectorAll('[data-venn]'));
+            const keys = buttons.map((b) => b.dataset.vennBtn);
+            const card = document.querySelector('.intersection-card');
+            let currentIdx = 0;
+            let paused = false;
+
             const activate = (key) => {
+                const idx = keys.indexOf(key);
+                if (idx >= 0) currentIdx = idx;
                 buttons.forEach((btn) => {
                     const match = btn.dataset.vennBtn === key;
                     btn.classList.toggle('is-active', match);
@@ -304,14 +311,28 @@
                     node.classList.toggle('is-active', node.dataset.venn === key);
                 });
             };
+
             buttons.forEach((btn) => {
-                btn.addEventListener('mouseenter', () => activate(btn.dataset.vennBtn));
-                btn.addEventListener('click', () => activate(btn.dataset.vennBtn));
+                btn.addEventListener('mouseenter', () => { paused = true; activate(btn.dataset.vennBtn); });
+                btn.addEventListener('click', () => { paused = true; activate(btn.dataset.vennBtn); });
             });
             nodes.forEach((node) => {
-                node.addEventListener('mouseenter', () => activate(node.dataset.venn));
-                node.addEventListener('click', () => activate(node.dataset.venn));
+                node.addEventListener('mouseenter', () => { paused = true; activate(node.dataset.venn); });
+                node.addEventListener('click', () => { paused = true; activate(node.dataset.venn); });
             });
+
+            if (card) {
+                card.addEventListener('mouseleave', () => { paused = false; });
+            }
+
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (!prefersReduced && keys.length > 1) {
+                setInterval(() => {
+                    if (paused || document.hidden) return;
+                    currentIdx = (currentIdx + 1) % keys.length;
+                    activate(keys[currentIdx]);
+                }, 3600);
+            }
         })();
     </script>
 </body>

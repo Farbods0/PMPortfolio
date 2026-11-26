@@ -53,6 +53,16 @@
         });
     }
 
+    // Top reading progress bar (GPU scaleX)
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let progressBar = null;
+    if (!prefersReducedMotion) {
+        progressBar = document.createElement('div');
+        progressBar.className = 'fj-scroll-progress';
+        progressBar.setAttribute('aria-hidden', 'true');
+        document.body.appendChild(progressBar);
+    }
+
     const handleScroll = () => {
         const y = window.scrollY || document.documentElement.scrollTop || 0;
         if (topBtn) {
@@ -61,11 +71,55 @@
             topBtn.style.opacity = showTop ? '1' : '0';
             topBtn.style.pointerEvents = showTop ? 'auto' : 'none';
         }
+        if (progressBar) {
+            const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+            const ratio = Math.min(1, Math.max(0, y / maxScroll));
+            progressBar.style.transform = `scaleX(${ratio})`;
+        }
         body.classList.toggle('sticky-header', y > 24);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
+
+    // Animated stat count-up ([data-countup])
+    const countupEls = document.querySelectorAll('[data-countup]');
+    if (countupEls.length > 0 && !prefersReducedMotion && 'IntersectionObserver' in window) {
+        const animateCounter = (el) => {
+            const target = parseFloat(el.dataset.countup);
+            if (!Number.isFinite(target)) return;
+            const prefix = el.dataset.prefix || '';
+            const suffix = el.dataset.suffix || '';
+            const duration = 850;
+            const start = performance.now();
+
+            const tick = (now) => {
+                const t = Math.min(1, (now - start) / duration);
+                const eased = 1 - Math.pow(1 - t, 3);
+                const current = Math.round(target * eased);
+                el.textContent = `${prefix}${current}${suffix}`;
+                if (t < 1) {
+                    requestAnimationFrame(tick);
+                } else {
+                    el.textContent = `${prefix}${target}${suffix}`;
+                }
+            };
+            requestAnimationFrame(tick);
+        };
+
+        const countObserver = new IntersectionObserver(
+            (entries, obs) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        obs.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.25 }
+        );
+        countupEls.forEach((el) => countObserver.observe(el));
+    }
 
     // Lightweight GPU scroll-reveal ([data-reveal])
     const revealEls = document.querySelectorAll('[data-reveal]');
