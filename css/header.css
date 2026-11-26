@@ -54,7 +54,7 @@ header .navbar {
     height: 2.25rem !important;
     max-height: 2.25rem;
     width: auto;
-    /* FarbodJahan.png is dark by default — crisp ink on light pages */
+    /* FarbodJahan.png is dark by default, crisp ink on light pages */
     filter: none;
     transition: filter 200ms ease-out;
 }

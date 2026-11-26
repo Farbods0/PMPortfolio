@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Editorial Resume — Crisp White Dossier Sheet (Effortless Readability)
+   Editorial Resume: Crisp White Dossier Sheet (Effortless Readability)
    ========================================================================== */
 
 .resume-main {
@@ -258,6 +258,13 @@
     margin: 0 0 3px;
 }
 
+.exp-note {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--fj-ink-muted);
+}
+
 .exp-org {
     font-size: 15px;
     color: var(--fj-ink-muted);
@@ -340,6 +347,15 @@
 .exp-list strong {
     color: var(--fj-ink);
     font-weight: 600;
+}
+
+.cv-earlier-note {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--fj-ink-muted);
+    margin: 18px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--fj-rule);
 }
 
 @media (max-width: 991px) {

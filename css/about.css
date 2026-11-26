@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Editorial About Page — Warm Paper, Crisp Ink & Print-Style Venn Diagram
+   Editorial About Page: Warm Paper, Crisp Ink & Print-Style Venn Diagram
    ========================================================================== */
 
 .about-hero-section {
@@ -463,6 +463,8 @@
 }
 
 .offclock-card {
+    display: flex;
+    flex-direction: column;
     padding: 22px 20px;
     background: var(--fj-bg);
     border: 1px solid var(--fj-rule);
@@ -516,6 +518,23 @@
     line-height: 1.62;
     color: var(--fj-ink-muted);
     margin: 0;
+}
+
+.offclock-link {
+    display: inline-block;
+    margin-top: auto;
+    padding-top: 14px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--fj-accent);
+    text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .offclock-link:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
 }
 
 @media (max-width: 991px) {
