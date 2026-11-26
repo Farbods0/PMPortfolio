@@ -129,11 +129,17 @@
                         </div>
 
                         <div class="hero-portrait-col" data-reveal data-reveal-delay="60">
-                            <figure class="hero-portrait-figure">
-                                <picture>
-                                    <source srcset="./about/assets/Profile.webp" type="image/webp">
-                                    <img src="./about/assets/Profile.jpg" alt="Farbod Jahan, Senior Director of Product at Visa" fetchpriority="high">
-                                </picture>
+                            <figure class="hero-portrait-figure" id="hero-portrait-card">
+                                <div class="portrait-media-wrap">
+                                    <span class="portrait-live-pill">
+                                        <span class="portrait-live-dot"></span>
+                                        <span>San Francisco &middot; Visa VAP</span>
+                                    </span>
+                                    <picture>
+                                        <source srcset="./about/assets/Profile.webp" type="image/webp">
+                                        <img src="./about/assets/Profile.jpg" alt="Farbod Jahan, Senior Director of Product at Visa" fetchpriority="high">
+                                    </picture>
+                                </div>
                                 <figcaption>
                                     <span>Farbod Jahan</span>
                                     <span>MBA, Santa Clara &middot; B.S. Computer Eng, SJSU</span>
@@ -163,6 +169,56 @@
                     </div>
                 </div>
             </section>
+
+            <!-- ANIMATED TRACK RECORD MARQUEE -->
+            <div class="logo-marquee-strip" aria-label="Career highlights and disciplines">
+                <div class="logo-marquee-track">
+                    <div class="logo-marquee-group">
+                        <span class="marquee-chip is-cobalt">Visa</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-indigo">AbbVie</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-teal">Swiftly</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-sky">PayPal</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-amber">ScreenMeet</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip">Guidewire</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-cobalt">Agentic AI</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-coral">DJ FJ</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-amber">47 Recipes</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-brass">CA DRE #02114368</span>
+                        <span class="marquee-sep">&middot;</span>
+                    </div>
+                    <div class="logo-marquee-group" aria-hidden="true">
+                        <span class="marquee-chip is-cobalt">Visa</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-indigo">AbbVie</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-teal">Swiftly</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-sky">PayPal</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-amber">ScreenMeet</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip">Guidewire</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-cobalt">Agentic AI</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-coral">DJ FJ</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-amber">47 Recipes</span>
+                        <span class="marquee-sep">&middot;</span>
+                        <span class="marquee-chip is-brass">CA DRE #02114368</span>
+                        <span class="marquee-sep">&middot;</span>
+                    </div>
+                </div>
+            </div>
 
             <!-- WHERE I WORK (EDITORIAL LEDGER) -->
             <section class="where-section" id="career">
@@ -245,29 +301,33 @@
                         </div>
                     </div>
 
-                    <div class="how-grid">
-                        <div class="how-col" data-reveal>
+                    <div class="how-grid" id="how-process-grid">
+                        <div class="how-col is-step-active" data-how-step="0" data-reveal>
                             <span class="how-step">01 / Research</span>
                             <h3>Empathize first</h3>
                             <p>Understand the problem and the person behind it. Map the competitive landscape, spot strategic leverage, and define crisp product goals.</p>
+                            <span class="how-progress" aria-hidden="true"></span>
                         </div>
 
-                        <div class="how-col" data-reveal data-reveal-delay="50">
+                        <div class="how-col" data-how-step="1" data-reveal data-reveal-delay="50">
                             <span class="how-step">02 / Design</span>
                             <h3>Shape the experience</h3>
                             <p>Combine intuitive workflows, smart interactions, and a cohesive visual language into interfaces that feel immediately natural.</p>
+                            <span class="how-progress" aria-hidden="true"></span>
                         </div>
 
-                        <div class="how-col" data-reveal data-reveal-delay="100">
+                        <div class="how-col" data-how-step="2" data-reveal data-reveal-delay="100">
                             <span class="how-step">03 / Build</span>
                             <h3>Sweat every detail</h3>
                             <p>Map design to code. Smooth constraints and edge cases. Move that button 3 pixels to the left. Fill the gap between functional and delightful.</p>
+                            <span class="how-progress" aria-hidden="true"></span>
                         </div>
 
-                        <div class="how-col" data-reveal data-reveal-delay="150">
+                        <div class="how-col" data-how-step="3" data-reveal data-reveal-delay="150">
                             <span class="how-step">04 / Refine</span>
                             <h3>Test &amp; iterate</h3>
                             <p>Put work in front of real people solving real problems. Pair hard telemetry with intuition and experience to keep raising the bar.</p>
+                            <span class="how-progress" aria-hidden="true"></span>
                         </div>
                     </div>
                 </div>
@@ -286,10 +346,11 @@
 
                     <div class="worlds-triptych">
                         <!-- Cooking Specialist -->
-                        <a href="./cooking/" class="world-card is-cooking" data-reveal>
+                        <a href="./cooking/" class="world-card is-cooking" data-reveal data-world-gallery="cooking">
                             <div class="world-photo">
-                                <img src="./cooking/assets/optimized/tonkotsu.webp" alt="Homemade 3-Day Tonkotsu Ramen" loading="lazy">
-                                <span class="world-pill">47 Scratch Recipes</span>
+                                <img class="world-img-layer is-visible" src="./cooking/assets/optimized/tonkotsu.webp" alt="Homemade 3-Day Tonkotsu Ramen" loading="lazy">
+                                <img class="world-img-layer" src="./cooking/assets/optimized/birriaQuesaTacos.webp" alt="" aria-hidden="true" loading="lazy">
+                                <span class="world-pill" data-world-pill>Tonkotsu Ramen &middot; 47 Recipes</span>
                             </div>
                             <div class="world-body">
                                 <span class="world-eyebrow">Cooking Specialist</span>
@@ -300,10 +361,14 @@
                         </a>
 
                         <!-- Part-Time DJ -->
-                        <a href="./dj/" class="world-card is-dj" data-reveal data-reveal-delay="60">
+                        <a href="./dj/" class="world-card is-dj" data-reveal data-reveal-delay="60" data-world-gallery="dj">
                             <div class="world-photo">
-                                <img src="./dj/assets/optimized/dj-photo.webp" alt="Farbod Jahan mixing as DJ FJ" loading="lazy">
-                                <span class="world-pill">Thursdays 8 PM PT</span>
+                                <img class="world-img-layer is-visible" src="./dj/assets/optimized/dj-photo.webp" alt="Farbod Jahan mixing as DJ FJ" loading="lazy">
+                                <img class="world-img-layer" src="./dj/assets/optimized/barclub.webp" alt="" aria-hidden="true" loading="lazy">
+                                <span class="world-pill is-dj-pill">
+                                    <span class="dj-eq-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                                    <span data-world-pill>Thursdays 8 PM PT</span>
+                                </span>
                             </div>
                             <div class="world-body">
                                 <span class="world-eyebrow">Part-Time DJ &middot; DJ FJ</span>
@@ -314,10 +379,11 @@
                         </a>
 
                         <!-- Realtor -->
-                        <a href="./real-estate/" class="world-card is-realtor" data-reveal data-reveal-delay="120">
+                        <a href="./real-estate/" class="world-card is-realtor" data-reveal data-reveal-delay="120" data-world-gallery="realtor">
                             <div class="world-photo">
-                                <img src="./real-estate/assets/optimized/real-estate.webp" alt="Bay Area Luxury Residence" loading="lazy">
-                                <span class="world-pill">CA DRE #02114368</span>
+                                <img class="world-img-layer is-visible" src="./real-estate/assets/optimized/real-estate.webp" alt="Bay Area Luxury Residence" loading="lazy">
+                                <img class="world-img-layer" src="./real-estate/assets/optimized/san-francisco.webp" alt="" aria-hidden="true" loading="lazy">
+                                <span class="world-pill" data-world-pill>San Francisco &middot; DRE #02114368</span>
                             </div>
                             <div class="world-body">
                                 <span class="world-eyebrow">Licensed California Realtor</span>
@@ -376,6 +442,117 @@
     <script src="js/bootstrap.bundle.min.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script>
+        (() => {
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            // 1. Subtle 3D perspective tilt on Hero Portrait (desktop fine pointer only)
+            const portraitCard = document.getElementById('hero-portrait-card');
+            if (portraitCard && !prefersReduced && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+                portraitCard.addEventListener('mousemove', (e) => {
+                    const rect = portraitCard.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) / rect.width - 0.5;
+                    const y = (e.clientY - rect.top) / rect.height - 0.5;
+                    portraitCard.style.transform = `perspective(900px) rotateY(${(x * 7).toFixed(2)}deg) rotateX(${(-y * 7).toFixed(2)}deg) translateY(-4px)`;
+                });
+                portraitCard.addEventListener('mouseleave', () => {
+                    portraitCard.style.transform = '';
+                });
+            }
+
+            // 2. Live sequential highlight across "How I Work" steps
+            const howSteps = Array.from(document.querySelectorAll('[data-how-step]'));
+            const howGrid = document.getElementById('how-process-grid');
+            if (howSteps.length > 0 && !prefersReduced) {
+                let activeStep = 0;
+                let howPaused = false;
+                const setStep = (idx) => {
+                    activeStep = idx;
+                    howSteps.forEach((el, i) => el.classList.toggle('is-step-active', i === idx));
+                };
+                howSteps.forEach((el, i) => {
+                    el.addEventListener('mouseenter', () => { howPaused = true; setStep(i); });
+                });
+                if (howGrid) {
+                    howGrid.addEventListener('mouseleave', () => { howPaused = false; });
+                }
+                setInterval(() => {
+                    if (howPaused || document.hidden) return;
+                    setStep((activeStep + 1) % howSteps.length);
+                }, 3200);
+            }
+
+            // 3. Live dual-layer crossfading galleries on all 3 "Off the Clock" cards
+            const galleries = {
+                cooking: [
+                    { src: './cooking/assets/optimized/tonkotsu.webp', label: 'Tonkotsu Ramen · 47 Recipes' },
+                    { src: './cooking/assets/optimized/birriaQuesaTacos.webp', label: 'Birria Quesa Tacos · 47 Recipes' },
+                    { src: './cooking/assets/optimized/biang-biang-braised-pork.webp', label: 'Biang Biang Pork · 47 Recipes' },
+                    { src: './cooking/assets/optimized/artisanbreaddutch.webp', label: 'Artisan Dutch Oven Bread' },
+                    { src: './cooking/assets/optimized/ashReshteh.webp', label: 'Persian Ash Reshteh' }
+                ],
+                dj: [
+                    { src: './dj/assets/optimized/dj-photo.webp', label: 'Thursdays 8 PM PT' },
+                    { src: './dj/assets/optimized/barclub.webp', label: 'Clubs & Lounges' },
+                    { src: './dj/assets/optimized/wedding.webp', label: 'Modern Weddings' },
+                    { src: './dj/assets/optimized/corporate.webp', label: 'Launches & Events' }
+                ],
+                realtor: [
+                    { src: './real-estate/assets/optimized/real-estate.webp', label: 'San Francisco · DRE #02114368' },
+                    { src: './real-estate/assets/optimized/palo-alto.webp', label: 'Palo Alto Estates' },
+                    { src: './real-estate/assets/optimized/real-estate-4.webp', label: 'Silicon Valley Homes' },
+                    { src: './real-estate/assets/optimized/real-estate-3.webp', label: 'Architectural Residences' }
+                ]
+            };
+
+            if (!prefersReduced) {
+                document.querySelectorAll('[data-world-gallery]').forEach((card, cardIdx) => {
+                    const key = card.dataset.worldGallery;
+                    const slides = galleries[key];
+                    const layers = card.querySelectorAll('.world-img-layer');
+                    const pill = card.querySelector('[data-world-pill]');
+                    if (!slides || slides.length < 2 || layers.length < 2) return;
+
+                    let activeLayer = 0;
+                    let idx = 0;
+                    let paused = false;
+
+                    card.addEventListener('mouseenter', () => { paused = true; });
+                    card.addEventListener('mouseleave', () => { paused = false; });
+
+                    const cycle = () => {
+                        if (paused || document.hidden) return;
+                        const nextIdx = (idx + 1) % slides.length;
+                        const nextSlide = slides[nextIdx];
+                        const nextLayer = 1 - activeLayer;
+
+                        const img = new Image();
+                        img.onload = () => {
+                            layers[nextLayer].src = nextSlide.src;
+                            requestAnimationFrame(() => {
+                                layers[nextLayer].classList.add('is-visible');
+                                layers[activeLayer].classList.remove('is-visible');
+                                activeLayer = nextLayer;
+                                idx = nextIdx;
+                            });
+                            if (pill) {
+                                pill.style.opacity = '0';
+                                setTimeout(() => {
+                                    pill.textContent = nextSlide.label;
+                                    pill.style.opacity = '1';
+                                }, 180);
+                            }
+                        };
+                        img.src = nextSlide.src;
+                    };
+
+                    setTimeout(() => {
+                        setInterval(cycle, 4000);
+                    }, cardIdx * 1200 + 2200);
+                });
+            }
+        })();
+    </script>
 </body>
 
 </html>

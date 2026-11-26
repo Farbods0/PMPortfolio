@@ -230,6 +230,46 @@
     transition: transform 280ms var(--fj-ease-out), box-shadow 280ms ease-out;
 }
 
+.portrait-media-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portrait-live-pill {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(17, 19, 24, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.portrait-live-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #34d399;
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+    animation: fjGreenPulse 2.2s ease-out infinite;
+}
+
+@keyframes fjGreenPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.65); }
+    65% { box-shadow: 0 0 0 7px rgba(52, 211, 153, 0); }
+}
+
 .hero-portrait-figure picture {
     display: block;
     overflow: hidden;
@@ -340,6 +380,69 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px;
     }
+}
+
+/* ==========================================================================
+   Animated Track Record Marquee Strip
+   ========================================================================== */
+
+.logo-marquee-strip {
+    background: var(--fj-surface);
+    border-bottom: 1px solid var(--fj-rule);
+    padding: 16px 0;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+
+.logo-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: fjMarqueeScroll 32s linear infinite;
+    will-change: transform;
+}
+
+.logo-marquee-strip:hover .logo-marquee-track {
+    animation-play-state: paused;
+}
+
+.logo-marquee-group {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-right: 18px;
+}
+
+.marquee-chip {
+    font-family: var(--fj-font-mono);
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--fj-ink-muted);
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: var(--fj-bg);
+    border: 1px solid var(--fj-rule);
+    white-space: nowrap;
+}
+
+.marquee-chip.is-cobalt { color: var(--fj-accent-ink); background: var(--fj-accent-soft); border-color: var(--fj-accent-border); }
+.marquee-chip.is-indigo { color: #3730a3; background: var(--fj-indigo-soft); border-color: var(--fj-indigo-border); }
+.marquee-chip.is-teal { color: #115e59; background: var(--fj-teal-soft); border-color: var(--fj-teal-border); }
+.marquee-chip.is-sky { color: #075985; background: var(--fj-sky-soft); border-color: var(--fj-sky-border); }
+.marquee-chip.is-amber { color: #92400e; background: var(--fj-amber-soft); border-color: var(--fj-amber-border); }
+.marquee-chip.is-coral { color: #9a3412; background: var(--fj-coral-soft); border-color: var(--fj-coral-border); }
+.marquee-chip.is-brass { color: #6d501b; background: var(--fj-brass-soft); border-color: var(--fj-brass-border); }
+
+.marquee-sep {
+    color: var(--fj-rule-strong);
+    font-weight: 700;
+}
+
+@keyframes fjMarqueeScroll {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
 }
 
 /* ==========================================================================
@@ -498,22 +601,59 @@
 }
 
 .how-col {
+    position: relative;
+    overflow: hidden;
     padding: 22px 20px;
     background: var(--fj-surface);
     border: 1px solid var(--fj-rule);
     border-top: 3px solid var(--fj-accent);
     border-radius: var(--fj-radius-md);
     box-shadow: 0 6px 20px rgba(17, 19, 24, 0.03);
-    transition: transform 200ms var(--fj-ease-out), box-shadow 200ms ease-out, border-color 200ms ease-out;
+    transition: transform 220ms var(--fj-ease-out), box-shadow 220ms ease-out, border-color 220ms ease-out, background-color 220ms ease-out;
+}
+
+.how-col.is-step-active {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 34px rgba(17, 19, 24, 0.09);
 }
 
 .how-col:nth-child(1) { border-top-color: var(--fj-accent); }
+.how-col:nth-child(1).is-step-active { background: linear-gradient(180deg, #ffffff 0%, var(--fj-accent-soft) 100%); border-color: var(--fj-accent-border); }
 .how-col:nth-child(2) { border-top-color: var(--fj-amber); }
 .how-col:nth-child(2) .how-step { color: var(--fj-amber); }
+.how-col:nth-child(2).is-step-active { background: linear-gradient(180deg, #ffffff 0%, var(--fj-amber-soft) 100%); border-color: var(--fj-amber-border); }
 .how-col:nth-child(3) { border-top-color: var(--fj-teal); }
 .how-col:nth-child(3) .how-step { color: var(--fj-teal); }
+.how-col:nth-child(3).is-step-active { background: linear-gradient(180deg, #ffffff 0%, var(--fj-teal-soft) 100%); border-color: var(--fj-teal-border); }
 .how-col:nth-child(4) { border-top-color: var(--fj-coral); }
 .how-col:nth-child(4) .how-step { color: var(--fj-coral); }
+.how-col:nth-child(4).is-step-active { background: linear-gradient(180deg, #ffffff 0%, var(--fj-coral-soft) 100%); border-color: var(--fj-coral-border); }
+
+.how-progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    transform-origin: left center;
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+.how-col:nth-child(1) .how-progress { background: var(--fj-accent); }
+.how-col:nth-child(2) .how-progress { background: var(--fj-amber); }
+.how-col:nth-child(3) .how-progress { background: var(--fj-teal); }
+.how-col:nth-child(4) .how-progress { background: var(--fj-coral); }
+
+.how-col.is-step-active .how-progress {
+    opacity: 1;
+    animation: howProgressFill 3.2s linear forwards;
+}
+
+@keyframes howProgressFill {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
 
 @media (hover: hover) and (pointer: fine) {
     .how-col:hover {
@@ -607,27 +747,74 @@
     position: relative;
     aspect-ratio: 16 / 11;
     overflow: hidden;
-    background: #e5e2dc;
+    background: #18181b;
 }
 
-.world-photo img {
+.world-photo img.world-img-layer {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 420ms var(--fj-ease-out);
+    opacity: 0;
+    transform: scale(1.06);
+    transition: opacity 850ms var(--fj-ease-out), transform 4.2s ease-out;
+    will-change: opacity, transform;
+}
+
+.world-photo img.world-img-layer.is-visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .world-pill {
     position: absolute;
     top: 12px;
     left: 12px;
-    padding: 4px 11px;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 12px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.92);
-    color: #111318;
+    background: rgba(17, 19, 24, 0.78);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
     font-size: 11.5px;
     font-weight: 600;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+    transition: opacity 180ms ease-out;
+}
+
+.world-pill [data-world-pill] {
+    transition: opacity 180ms ease-out;
+}
+
+/* Live 4-bar DJ audio equalizer */
+.dj-eq-bars {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 12px;
+}
+
+.dj-eq-bars span {
+    width: 2.5px;
+    border-radius: 2px;
+    background: #ff6b2b;
+    animation: djEqBounce 0.9s ease-in-out infinite;
+}
+
+.dj-eq-bars span:nth-child(1) { height: 5px; animation-delay: 0s; }
+.dj-eq-bars span:nth-child(2) { height: 11px; animation-delay: 0.2s; }
+.dj-eq-bars span:nth-child(3) { height: 7px; animation-delay: 0.4s; }
+.dj-eq-bars span:nth-child(4) { height: 10px; animation-delay: 0.15s; }
+
+@keyframes djEqBounce {
+    0%, 100% { transform: scaleY(0.35); }
+    50% { transform: scaleY(1); }
 }
 
 .world-body {
@@ -661,7 +848,11 @@
 
 @media (prefers-reduced-motion: reduce) {
     .home-hero::before,
-    .id-dot {
+    .id-dot,
+    .portrait-live-dot,
+    .logo-marquee-track,
+    .how-progress,
+    .dj-eq-bars span {
         animation: none !important;
     }
 }
