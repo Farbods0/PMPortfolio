@@ -265,9 +265,9 @@
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -428,7 +428,7 @@
                 </div>
                 <div class="cardBody">
                     <h4 class="title">Ninja Creami Thai Tea Ice Cream</h4>
-                    <p class="card-desc">Fragrant brewed Thai iced tea spun into silky, macro-friendly ice cream and finished with a ribbon of sweetened condensed milk — 172 calories and 18g protein per pint.</p>
+                    <p class="card-desc">Fragrant brewed Thai iced tea spun into silky, macro-friendly ice cream and finished with a ribbon of sweetened condensed milk, 172 calories and 18g protein per pint.</p>
                     <div class="card-meta-footer">
                         <span class="card-time">
                             <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
@@ -447,7 +447,7 @@
                 </div>
                 <div class="cardBody">
                     <h4 class="title">Ninja Creami Double Oreo</h4>
-                    <p class="card-desc">Midnight-dark black cocoa chocolate protein ice cream tasting just like an Oreo wafer, packed with mixed-in and crumbled Oreos — 299 calories and 35g protein per pint.</p>
+                    <p class="card-desc">Midnight-dark black cocoa chocolate protein ice cream tasting just like an Oreo wafer, packed with mixed-in and crumbled Oreos, 299 calories and 35g protein per pint.</p>
                     <div class="card-meta-footer">
                         <span class="card-time">
                             <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
@@ -466,7 +466,7 @@
                 </div>
                 <div class="cardBody">
                     <h4 class="title">Ninja Creami Cookie Dough</h4>
-                    <p class="card-desc">Rich vanilla bean protein ice cream loaded with real Ben &amp; Jerry&#x27;s chocolate chip cookie dough bites — 350 calories and a massive 43g protein per pint.</p>
+                    <p class="card-desc">Rich vanilla bean protein ice cream loaded with real Ben &amp; Jerry&#x27;s chocolate chip cookie dough bites, 350 calories and a massive 43g protein per pint.</p>
                     <div class="card-meta-footer">
                         <span class="card-time">
                             <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
@@ -487,7 +487,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -519,6 +519,11 @@
         </footer>
         <!-- FOOTER END -->
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

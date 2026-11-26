@@ -50,7 +50,7 @@
   "recipeCategory": "Drinks",
   "recipeYield": "1 cocktail",
   "recipeIngredient": [
-    "5–6 fresh blackberries",
+    "5-6 fresh blackberries",
     "1/2 oz simple syrup",
     "2 oz premium vodka",
     "1/2 oz yuzu juice",
@@ -68,11 +68,11 @@
         },
         {
           "@type": "HowToStep",
-          "text": "2. Shake Hard: Add the vodka and yuzu juice, fill with ice, and shake hard for 10–15 seconds."
+          "text": "2. Shake Hard: Add the vodka and yuzu juice, fill with ice, and shake hard for 10-15 seconds."
         },
         {
           "@type": "HowToStep",
-          "text": "3. Dirty Dump & Garnish: Pour the entire contents — ice, crushed berry pulp, and all — straight into a rocks glass. Slap the mint sprig between your palms to release its oils and garnish alongside a dried citrus wheel."
+          "text": "3. Dirty Dump & Garnish: Pour the entire contents, ice, crushed berry pulp, and all, straight into a rocks glass. Slap the mint sprig between your palms to release its oils and garnish alongside a dried citrus wheel."
         }
       ]
     }
@@ -149,9 +149,9 @@
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -218,7 +218,7 @@
                                 <div class="ingredient-group">
   <h5>Per Cocktail (Made Fresh to Order)</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="5–6 fresh blackberries">5–6 fresh blackberries</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="5-6 fresh blackberries">5-6 fresh blackberries</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="1/2 oz simple syrup">1/2 oz simple syrup</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="2 oz premium vodka">2 oz premium vodka</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="1/2 oz yuzu juice">1/2 oz yuzu juice</label></li>
@@ -237,8 +237,8 @@
                             <div class="cardSteps">
   <div class="titleStep">Muddle, Shake &amp; Pour</div>
 <p class="recipe-step-item" title="Click to mark step done">1. <strong>Muddle:</strong> In a cocktail shaker, muddle the fresh blackberries with simple syrup until completely broken down and juicy.</p>
-  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Shake Hard:</strong> Add the vodka and yuzu juice, fill with ice, and shake hard for 10–15 seconds.</p>
-  <p class="recipe-step-item" title="Click to mark step done">3. <strong>Dirty Dump & Garnish:</strong> Pour the entire contents — ice, crushed berry pulp, and all — straight into a rocks glass. Slap the mint sprig between your palms to release its oils and garnish alongside a dried citrus wheel.</p>
+  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Shake Hard:</strong> Add the vodka and yuzu juice, fill with ice, and shake hard for 10-15 seconds.</p>
+  <p class="recipe-step-item" title="Click to mark step done">3. <strong>Dirty Dump & Garnish:</strong> Pour the entire contents, ice, crushed berry pulp, and all, straight into a rocks glass. Slap the mint sprig between your palms to release its oils and garnish alongside a dried citrus wheel.</p>
 </div>
                         </section>
                     </div>
@@ -317,7 +317,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -349,6 +349,11 @@
         </footer>
         <!-- FOOTER END -->
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

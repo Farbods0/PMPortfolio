@@ -120,7 +120,7 @@
         },
         {
           "@type": "HowToStep",
-          "text": "10. Heat vegetable oil in a frying pan over high heat. Fry the pork with a pinch of salt and pepper until golden, then pour in the glaze and cook for 6–7 minutes until dark, glossy, and sticky."
+          "text": "10. Heat vegetable oil in a frying pan over high heat. Fry the pork with a pinch of salt and pepper until golden, then pour in the glaze and cook for 6-7 minutes until dark, glossy, and sticky."
         },
         {
           "@type": "HowToStep",
@@ -201,9 +201,9 @@
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -332,7 +332,7 @@
   <p class="recipe-step-item" title="Click to mark step done">7. Transfer the folded buns (still on their parchment squares) onto baking trays, cover loosely, and prove for 1 more hour until puffed up.</p>
   <p class="recipe-step-item" title="Click to mark step done">8. Bring a large steamer pan to a boil. Steam the buns in batches on their parchment squares for 15 minutes until pillowy and cooked through.</p>
   <p class="recipe-step-item" title="Click to mark step done">9. Chop the braised pork belly into bite-sized chunks and whisk together the glaze ingredients in a small bowl.</p>
-  <p class="recipe-step-item" title="Click to mark step done">10. Heat vegetable oil in a frying pan over high heat. Fry the pork with a pinch of salt and pepper until golden, then pour in the glaze and cook for 6–7 minutes until dark, glossy, and sticky.</p>
+  <p class="recipe-step-item" title="Click to mark step done">10. Heat vegetable oil in a frying pan over high heat. Fry the pork with a pinch of salt and pepper until golden, then pour in the glaze and cook for 6-7 minutes until dark, glossy, and sticky.</p>
   <p class="recipe-step-item" title="Click to mark step done">11. Open the warm steamed buns and stuff generously with sticky pork belly, fresh torn cilantro, sliced red chillies, spring onion strips, sesame seeds, and chopped toasted cashews.</p>
 </div>
                         </section>
@@ -412,7 +412,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -444,6 +444,11 @@
         </footer>
         <!-- FOOTER END -->
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

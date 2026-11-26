@@ -66,7 +66,7 @@
         },
         {
           "@type": "HowToStep",
-          "text": "2. Mix all the dry ingredients together —flour (add about 90% and reserve 10% of it to add as you go)and salt."
+          "text": "2. Mix all the dry ingredients together , flour (add about 90% and reserve 10% of it to add as you go)and salt."
         },
         {
           "@type": "HowToStep",
@@ -199,9 +199,9 @@
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -285,7 +285,7 @@
                             <div class="cardSteps">
   <div class="titleStep">Making the Bread</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Activate the yeast by mixing it with water and a tablespoon of sugar You want the water to be at about 100 degrees, which you can check with a thermometer (or just heat up the water in the microwave for about 30 seconds at full power to get it to this temp). The yeast takes about 10 minutes to activate.</p>
-  <p class="recipe-step-item" title="Click to mark step done">2. Mix all the dry ingredients together —flour (add about 90% and reserve 10% of it to add as you go)and salt.</p>
+  <p class="recipe-step-item" title="Click to mark step done">2. Mix all the dry ingredients together , flour (add about 90% and reserve 10% of it to add as you go)and salt.</p>
   <p class="recipe-step-item" title="Click to mark step done">3.Mix the activated yeast with the dry ingredients and mix until it forms a shaggy dough ball.</p>
   <p class="recipe-step-item" title="Click to mark step done">4. Transfer dough into a lightly-oiled bowl.</p>
   <p class="recipe-step-item" title="Click to mark step done">5. Cover bowl with cling film and allow dough to proof for ~ 1 hour at room temp.</p>
@@ -378,7 +378,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -410,6 +410,11 @@
         </footer>
         <!-- FOOTER END -->
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

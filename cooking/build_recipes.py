@@ -258,7 +258,7 @@ def render_footer(root_prefix: str = "../../", cooking_href: str = "../") -> str
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -325,7 +325,7 @@ def render_all_recipes_page(recipes: list) -> str:
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="All Recipes | Farbod Jahan">
-    <meta property="og:description" content="Browse all {total_count} homemade recipes — filter by category, time, or ingredient.">
+    <meta property="og:description" content="Browse all {total_count} homemade recipes. Filter by category, time, or ingredient.">
     <meta property="og:image" content="{og_image}">
     <meta property="og:url" content="{canonical}">
 
@@ -368,12 +368,12 @@ def render_all_recipes_page(recipes: list) -> str:
                             <select id="dir-time-filter" class="dir-select" aria-label="Filter by total time">
                                 <option value="all">Any time</option>
                                 <option value="quick">Quick (≤ 45 mins)</option>
-                                <option value="medium">1 – 3 hours</option>
+                                <option value="medium">1 to 3 hours</option>
                                 <option value="long">Long projects (3+ hrs)</option>
                             </select>
                             <select id="dir-sort-select" class="dir-select" aria-label="Sort recipes">
                                 <option value="featured">Featured</option>
-                                <option value="alpha">A – Z</option>
+                                <option value="alpha">A to Z</option>
                                 <option value="quickest">Quickest first</option>
                             </select>
                         </div>
@@ -479,9 +479,9 @@ def render_recipe_page(recipe: dict, all_recipes: list) -> str:
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -573,6 +573,11 @@ def render_recipe_page(recipe: dict, all_recipes: list) -> str:
 
 {render_footer()}
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

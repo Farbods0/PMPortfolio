@@ -48,7 +48,7 @@
   },
   "url": "https://farbodjahan.com/cooking/pad-see-eiw/",
   "recipeCategory": "Entree",
-  "recipeYield": "6–8 servings",
+  "recipeYield": "6-8 servings",
   "recipeIngredient": [
     "3 lbs flank steak, sliced thin against the grain",
     "3 lbs fresh wide rice noodles, cut into 1/2-inch ribbons (or dried wide rice noodles)",
@@ -76,7 +76,7 @@
         },
         {
           "@type": "HowToStep",
-          "text": "2. Boil or soak the wide rice noodles just until tender-pliable (2–3 minutes for fresh), drain thoroughly, and toss with a drizzle of oil so they don't stick together."
+          "text": "2. Boil or soak the wide rice noodles just until tender-pliable (2-3 minutes for fresh), drain thoroughly, and toss with a drizzle of oil so they don't stick together."
         },
         {
           "@type": "HowToStep",
@@ -84,7 +84,7 @@
         },
         {
           "@type": "HowToStep",
-          "text": "4. Heat oil in a smoking-hot wok over medium-high to high heat. Sear the beef in batches for 2–3 minutes until browned, toss in the Chinese broccoli for 2 minutes until crisp-tender, and transfer to a bowl."
+          "text": "4. Heat oil in a smoking-hot wok over medium-high to high heat. Sear the beef in batches for 2-3 minutes until browned, toss in the Chinese broccoli for 2 minutes until crisp-tender, and transfer to a bowl."
         },
         {
           "@type": "HowToStep",
@@ -169,9 +169,9 @@
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -212,7 +212,7 @@
                                         <iconify-icon icon="ic:outline-ramen-dining"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span id="recipe-yield-val" data-base-yield="6–8 servings">6–8 servings</span>
+                                    <span id="recipe-yield-val" data-base-yield="6-8 servings">6-8 servings</span>
                                 </div>
                             </div>
                         </div>
@@ -270,9 +270,9 @@
                             <div class="cardSteps">
   <div class="titleStep">Prep &amp; High-Heat Wok Stir-Fry</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Toss the thinly sliced flank steak with light soy sauce in a bowl and marinate while prepping the remaining ingredients.</p>
-  <p class="recipe-step-item" title="Click to mark step done">2. Boil or soak the wide rice noodles just until tender-pliable (2–3 minutes for fresh), drain thoroughly, and toss with a drizzle of oil so they don't stick together.</p>
+  <p class="recipe-step-item" title="Click to mark step done">2. Boil or soak the wide rice noodles just until tender-pliable (2-3 minutes for fresh), drain thoroughly, and toss with a drizzle of oil so they don't stick together.</p>
   <p class="recipe-step-item" title="Click to mark step done">3. Whisk together the dark soy sauce, remaining light soy sauce, minced garlic, oyster sauce, rice vinegar, brown sugar, and MSG until the sugar dissolves.</p>
-  <p class="recipe-step-item" title="Click to mark step done">4. Heat oil in a smoking-hot wok over medium-high to high heat. Sear the beef in batches for 2–3 minutes until browned, toss in the Chinese broccoli for 2 minutes until crisp-tender, and transfer to a bowl.</p>
+  <p class="recipe-step-item" title="Click to mark step done">4. Heat oil in a smoking-hot wok over medium-high to high heat. Sear the beef in batches for 2-3 minutes until browned, toss in the Chinese broccoli for 2 minutes until crisp-tender, and transfer to a bowl.</p>
   <p class="recipe-step-item" title="Click to mark step done">5. Add remaining oil to the wok, crack in the eggs, and scramble for ~1 minute. Add the noodles and sauce, folding gently so the dark soy caramelizes onto the wide noodles, then return the steak and Chinese broccoli for 2 minutes with a dash of fish sauce.</p>
   <p class="recipe-step-item" title="Click to mark step done">6. Plate hot and finish with thinly sliced scallions and toasted sesame seeds.</p>
 </div>
@@ -353,7 +353,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -385,6 +385,11 @@
         </footer>
         <!-- FOOTER END -->
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

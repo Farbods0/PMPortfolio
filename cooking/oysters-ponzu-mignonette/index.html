@@ -48,9 +48,9 @@
   },
   "url": "https://farbodjahan.com/cooking/oysters-ponzu-mignonette/",
   "recipeCategory": "Appetizer",
-  "recipeYield": "8–12 oysters",
+  "recipeYield": "8-12 oysters",
   "recipeIngredient": [
-    "8–12 fresh oysters for shucking",
+    "8-12 fresh oysters for shucking",
     "2 tbsp rice wine vinegar",
     "1 tbsp soy sauce",
     "2 tsp fresh lemon juice",
@@ -70,7 +70,7 @@
         },
         {
           "@type": "HowToStep",
-          "text": "2. Mellow the Aromatics: Stir in the finely minced shallot and sliced green onion. Refrigerate at least 20–30 minutes (or several hours ahead) so the shallots mellow in the citrus-soy liquid."
+          "text": "2. Mellow the Aromatics: Stir in the finely minced shallot and sliced green onion. Refrigerate at least 20-30 minutes (or several hours ahead) so the shallots mellow in the citrus-soy liquid."
         },
         {
           "@type": "HowToStep",
@@ -151,9 +151,9 @@
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -194,7 +194,7 @@
                                         <iconify-icon icon="mdi:fish"></iconify-icon>
                                     </div>
                                     <h4>Yield</h4>
-                                    <span id="recipe-yield-val" data-base-yield="8–12 oysters">8–12 oysters</span>
+                                    <span id="recipe-yield-val" data-base-yield="8-12 oysters">8-12 oysters</span>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                                 <div class="ingredient-group">
   <h5>Oysters &amp; Ponzu Mignonette</h5>
   <ul class="ingredient-list">
-    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="8–12 fresh oysters for shucking">8–12 fresh oysters for shucking</label></li>
+    <li class="ingredient-item"><input type="checkbox" id="ing-0-0" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-0" data-raw-text="8-12 fresh oysters for shucking">8-12 fresh oysters for shucking</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-1" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-1" data-raw-text="2 tbsp rice wine vinegar">2 tbsp rice wine vinegar</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-2" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-2" data-raw-text="1 tbsp soy sauce">1 tbsp soy sauce</label></li>
     <li class="ingredient-item"><input type="checkbox" id="ing-0-3" class="ingredient-check" aria-label="Mark ingredient used"><label for="ing-0-3" data-raw-text="2 tsp fresh lemon juice">2 tsp fresh lemon juice</label></li>
@@ -241,7 +241,7 @@
                             <div class="cardSteps">
   <div class="titleStep">Mignonette &amp; Service</div>
 <p class="recipe-step-item" title="Click to mark step done">1. <strong>Make the Mignonette First:</strong> Whisk the rice wine vinegar, soy sauce, fresh lemon juice, sugar, and sesame oil until the sugar completely dissolves.</p>
-  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Mellow the Aromatics:</strong> Stir in the finely minced shallot and sliced green onion. Refrigerate at least 20–30 minutes (or several hours ahead) so the shallots mellow in the citrus-soy liquid.</p>
+  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Mellow the Aromatics:</strong> Stir in the finely minced shallot and sliced green onion. Refrigerate at least 20-30 minutes (or several hours ahead) so the shallots mellow in the citrus-soy liquid.</p>
   <p class="recipe-step-item" title="Click to mark step done">3. <strong>Shuck & Serve:</strong> Shuck the oysters clean of any shell grit, nestle level on a platter of crushed ice or rock salt, and spoon ~1/2 teaspoon of chilled ponzu mignonette over each oyster.</p>
 </div>
                         </section>
@@ -321,7 +321,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -353,6 +353,11 @@
         </footer>
         <!-- FOOTER END -->
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

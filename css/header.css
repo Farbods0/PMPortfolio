@@ -2,7 +2,7 @@
    Adaptive Editorial Header (Light Paper Default + Dark Hero Support)
    ========================================================================== */
 
-header {
+.external-wrapper > header {
     position: fixed;
     left: 0;
     right: 0;
@@ -16,7 +16,7 @@ header {
     transition: background-color 200ms ease-out, border-color 200ms ease-out, box-shadow 200ms ease-out;
 }
 
-.sticky-header header {
+.sticky-header .external-wrapper > header {
     background: rgba(255, 255, 255, 0.94);
     border-bottom-color: var(--fj-rule-strong);
     box-shadow: 0 6px 24px rgba(17, 19, 24, 0.05);

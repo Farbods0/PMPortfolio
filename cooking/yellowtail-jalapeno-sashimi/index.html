@@ -68,7 +68,7 @@
         },
         {
           "@type": "HowToStep",
-          "text": "2. Slice & Garlic-Kiss the Hamachi: Working on a cold board, slice the yellowtail cleanly. Lightly touch the underside of each slice with a tiny, barely visible dot of garlic purée — just enough for aroma."
+          "text": "2. Slice & Garlic-Kiss the Hamachi: Working on a cold board, slice the yellowtail cleanly. Lightly touch the underside of each slice with a tiny, barely visible dot of garlic purée, just enough for aroma."
         },
         {
           "@type": "HowToStep",
@@ -153,9 +153,9 @@
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -246,7 +246,7 @@
                             <div class="cardSteps">
   <div class="titleStep">Sauce &amp; Cold Plating</div>
 <p class="recipe-step-item" title="Click to mark step done">1. <strong>Make Yuzu Soy:</strong> Whisk together the 60 ml yuzu juice and 30 ml soy sauce in a small jar and chill thoroughly.</p>
-  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Slice & Garlic-Kiss the Hamachi:</strong> Working on a cold board, slice the yellowtail cleanly. Lightly touch the underside of each slice with a tiny, barely visible dot of garlic purée — just enough for aroma.</p>
+  <p class="recipe-step-item" title="Click to mark step done">2. <strong>Slice & Garlic-Kiss the Hamachi:</strong> Working on a cold board, slice the yellowtail cleanly. Lightly touch the underside of each slice with a tiny, barely visible dot of garlic purée, just enough for aroma.</p>
   <p class="recipe-step-item" title="Click to mark step done">3. <strong>Garnish & Chill:</strong> Arrange slices flat on a chilled plate and top each piece with one paper-thin jalapeño ring and a single cilantro leaf. Cover tightly with plastic wrap and keep refrigerated until service.</p>
   <p class="recipe-step-item" title="Click to mark step done">4. <strong>Dress at the Last Second:</strong> Right before serving, drizzle the cold yuzu soy lightly over the fish so it glazes without curing the sashimi, and serve immediately.</p>
 </div>
@@ -327,7 +327,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -359,6 +359,11 @@
         </footer>
         <!-- FOOTER END -->
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

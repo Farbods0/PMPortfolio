@@ -67,7 +67,7 @@
         },
         {
           "@type": "HowToStep",
-          "text": "2. Slowly stream in the extra-virgin olive oil while whisking vigorously — or seal the mason jar and shake hard for 15 seconds — until thick and glossy."
+          "text": "2. Slowly stream in the extra-virgin olive oil while whisking vigorously, or seal the mason jar and shake hard for 15 seconds, until thick and glossy."
         },
         {
           "@type": "HowToStep",
@@ -148,9 +148,9 @@
                             <iconify-icon icon="mdi:link-variant"></iconify-icon>
                             <span class="btn-label">Share</span>
                         </button>
-                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" aria-pressed="false">
+                        <button type="button" class="recipe-action-btn" id="wake-lock-btn" data-wake-lock-toggle aria-pressed="false">
                             <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                            <span class="btn-label">Keep Awake</span>
+                            <span class="btn-label">Keep Screen On</span>
                         </button>
                         <button type="button" class="recipe-action-btn" id="print-recipe-btn">
                             <iconify-icon icon="mdi:printer-outline"></iconify-icon>
@@ -235,7 +235,7 @@
                             <div class="cardSteps">
   <div class="titleStep">Whisk or Jar-Shake</div>
 <p class="recipe-step-item" title="Click to mark step done">1. Whisk the balsamic vinegar, honey, and Dijon mustard in a small bowl (or add to a mason jar) until smooth.</p>
-  <p class="recipe-step-item" title="Click to mark step done">2. Slowly stream in the extra-virgin olive oil while whisking vigorously — or seal the mason jar and shake hard for 15 seconds — until thick and glossy.</p>
+  <p class="recipe-step-item" title="Click to mark step done">2. Slowly stream in the extra-virgin olive oil while whisking vigorously, or seal the mason jar and shake hard for 15 seconds, until thick and glossy.</p>
   <p class="recipe-step-item" title="Click to mark step done">3. Season generously with coarse salt and freshly cracked black pepper to taste. Keeps refrigerated in a sealed jar for up to 2 weeks.</p>
 </div>
                         </section>
@@ -294,7 +294,7 @@
                 </div>
                 <div class="cardBody">
                     <h4 class="title">Brussel Sprouts</h4>
-                    <p class="card-desc">Crispy roasted Brussels sprouts — the one vegetable your guests will ask for seconds of.</p>
+                    <p class="card-desc">Crispy roasted Brussels sprouts, the one vegetable your guests will ask for seconds of.</p>
                     <div class="card-meta-footer">
                         <span class="card-time">
                             <iconify-icon icon="ic:outline-watch-later"></iconify-icon>
@@ -315,7 +315,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">© 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Craft Kitchen &amp; Homemade Recipes &middot; San Francisco, CA</p>
                     </div>
 
@@ -347,6 +347,11 @@
         </footer>
         <!-- FOOTER END -->
     </div>
+
+    <button type="button" class="mobile-cook-mode-btn" id="mobile-wake-lock-btn" data-wake-lock-toggle aria-pressed="false" aria-label="Keep screen on while cooking">
+        <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
+        <span class="btn-label">Keep Screen On</span>
+    </button>
 
     <button class="top-btn" aria-label="Scroll to top">
         <iconify-icon icon="bx:up-arrow-alt"></iconify-icon>

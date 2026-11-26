@@ -45,7 +45,7 @@
                 ? 'Live Stream Window Now Open'
                 : 'Thursdays · 8:00 PM PT';
             titleEl.textContent = isLiveWindow
-                ? 'Casa de DJ FJ — Thursday Night Session'
+                ? 'Casa de DJ FJ: Thursday Night Session'
                 : 'Next Casa de DJ FJ Livestream';
         }
 

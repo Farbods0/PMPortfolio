@@ -87,7 +87,7 @@
                         <span class="fj-kicker">San Francisco, CA &middot; Pacific Time</span>
                         <h1 class="contact-headline">Say hello.</h1>
                         <p class="contact-lead">
-                            Whether it’s a product leadership conversation, startup advisory, buying a home in the Bay Area, booking a DJ set, swapping a recipe, or mentorship — pick a tag and send a note.
+                            Whether it's a product leadership conversation, startup advisory, buying a home in the Bay Area, booking a DJ set, swapping a recipe, or mentorship, pick a tag and send a note.
                         </p>
 
                         <div class="direct-channels">
@@ -187,7 +187,7 @@
                                     <iconify-icon icon="lucide:check"></iconify-icon>
                                 </div>
                                 <h3>Message sent.</h3>
-                                <p>Thanks for reaching out — I’ve got your note and will get back to you soon.</p>
+                                <p>Thanks for reaching out. I've got your note and will get back to you soon.</p>
                                 <button type="button" class="fj-btn fj-btn-secondary" id="contact-reset-btn">Send another message</button>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand-meta">
-                        <div class="copyright">© 2010 – 2026 Farbod Jahan</div>
+                        <div class="copyright">&copy; 2010 - 2026 Farbod Jahan</div>
                         <p class="footer-tagline">Sr. Director of Product @ Visa &middot; DJ, Cook &amp; Realtor &middot; San Francisco</p>
                     </div>
 
@@ -260,7 +260,7 @@
                 if (messageBox && activePills.length === 1 && activePills[0].dataset.placeholder) {
                     messageBox.placeholder = activePills[0].dataset.placeholder;
                 } else if (messageBox && activePills.length > 1) {
-                    messageBox.placeholder = `Regarding ${activePills.map((p) => p.dataset.topic).join(' & ')} — share a few details...`;
+                    messageBox.placeholder = `Regarding ${activePills.map((p) => p.dataset.topic).join(' & ')}: share a few details...`;
                 }
             };
 
