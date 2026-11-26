@@ -500,7 +500,7 @@
       {
         "title": "Chicken Marinade",
         "items": [
-          "8 oz (800g) boneless and skinless chicken thighs cut into bite-sized pieces",
+          "28 oz (1.75 lbs / 800g) boneless skinless chicken thighs, cut into bite-sized pieces",
           "1 cup plain yogurt",
           "1 1/2 tablespoons minced garlic",
           "1 tablespoon ginger",
@@ -524,7 +524,7 @@
           "1 egg",
           "1/4 cup (4 tablespoons) butter",
           "3 cloves garlic, minced",
-          "(optional topping: chopped fresh cilantro"
+          "Fresh chopped cilantro (optional topping)"
         ]
       },
       {
@@ -541,7 +541,7 @@
           "1 teaspoon ground coriander",
           "14 oz (400g) tomato puree (tomato sauce/Passata)",
           "1 teaspoon Kashmiri chili (optional for colour and flavour)",
-          "teaspoon ground red chili powder (adjust to your taste preference)",
+          "1/2 teaspoon ground red chili powder (adjust to your taste preference)",
           "1 teaspoon salt",
           "1 1/4 cups of heavy or thickened cream (use evaporated milk for lower calories)",
           "1 teaspoon brown sugar",
@@ -914,7 +914,7 @@
       {
         "title": "",
         "items": [
-          "1 whole Chicken breast",
+          "1 lb (1 large) boneless skinless chicken breast",
           "1 Onion",
           "6 cloves of Garlic",
           "2 turnips washed and grated or chopped",
@@ -1263,7 +1263,7 @@
       {
         "title": "Fajita's",
         "items": [
-          "4 Large boneless skinless chicken breasts",
+          "2.5 to 3 lbs (4 large) boneless skinless chicken breasts",
           "1 tablespoon cornstarch",
           "2 teaspoons chili powder",
           "1 teaspoon salt",
@@ -1280,12 +1280,12 @@
       {
         "title": "Guacamole Recipe",
         "items": [
-          "3 avocado, NS as to Florida or Californias avocadospeeled, pitted, and mashed",
+          "3 ripe avocados, peeled, pitted, and mashed",
           "1 lime, juiced",
           "1 teaspoon salt",
           "1/2 cup diced onion",
           "3 tablespoons chopped fresh cilantro",
-          "2 plum tomato (blank)s roma (plum) tomatoes, diced",
+          "2 Roma (plum) tomatoes, diced",
           "1 teaspoon minced garlic",
           "1 pinch ground cayenne pepper"
         ]
@@ -2074,13 +2074,13 @@
       {
         "title": "Dough",
         "items": [
-          "1/2 cup(120g) whole milk @ 95f (30c)",
-          "1 tablespoons (9g) instant yeast 2.5 cups (320g) Bread flour",
-          "1 teaspoon (7g) fine sea salt",
-          "2.5 tablespoons (35g) granulated sugar",
-          "1 whole egg",
-          "egg yolk",
-          "tablespoons (42g) unsalted butter, softened"
+          "1/2 cup (120g) whole milk @ 95°F (35°C)",
+          "1 tbsp (9g) instant yeast",
+          "2.5 cups (320g) bread flour",
+          "1 tsp (7g) fine sea salt",
+          "2.5 tbsp (35g) granulated sugar",
+          "1 whole egg + 1 egg yolk (room temperature)",
+          "3 tbsp (42g) unsalted butter, softened"
         ]
       },
       {
@@ -2092,13 +2092,13 @@
       {
         "title": "Chicken Marinade (Overnight)",
         "items": [
-          "1/2 cup(120g) whole milk @ 95f (30c)",
-          "1 tablespoons (9g) instant yeast 2.5 cups (320g) Bread flour",
-          "1 teaspoon (7g) fine sea salt",
-          "2.5 tablespoons (35g) granulated sugar",
-          "1 whole egg",
-          "egg yolk",
-          "tablespoons (42g) unsalted butter, softened"
+          "2 to 2.5 lbs boneless skinless chicken thighs or breasts (6 sandwich-sized pieces)",
+          "2 cups buttermilk",
+          "2 tbsp hot sauce (Louisiana-style)",
+          "1 tbsp kosher salt & 1 tsp black pepper",
+          "2 tsp smoked paprika, 2 tsp garlic powder & 1 tsp onion powder",
+          "2 cups all-purpose flour & 1/2 cup cornstarch (dredge, seasoned with 1 tbsp paprika, 2 tsp garlic powder, 2 tsp salt, 1 tsp cayenne)",
+          "Neutral oil for frying (peanut or canola) & dill pickle chips for serving"
         ]
       },
       {
@@ -3961,47 +3961,66 @@
     ],
     "title": "Signature Chicken Marinades (7 Flavors)",
     "category": "Entree",
-    "description": "High-flavor bulk meal-prep marinades from Korean Gochujang and Yakitori to Cantonese Char Siu, Vietnamese Lemongrass, Peruvian Pollo a la Brasa, and Fiery Harissa.",
+    "description": "Seven high-flavor bulk meal-prep marinades, each scaled consistently for 10 lbs of boneless, skinless chicken breast: Korean Gochujang, Yakitori, Teriyaki, Cantonese Char Siu, Vietnamese Lemongrass, Peruvian Pollo a la Brasa, and Fiery Harissa.",
     "image": "assets/optimized/chicken-marinades.webp",
     "prepTime": "15 mins",
     "totalTime": "8-24 hours",
-    "yield": "7 Bulk Marinades",
+    "yield": "10 lbs chicken breast per marinade",
     "yieldIcon": "fluent:food-chicken-leg-24-filled",
     "ingredientGroups": [
       {
-        "title": "1. Gochujang Chicken (6-8 Hrs Max · 16-20 Thighs)",
+        "title": "1. Gochujang Chicken (6-8 Hrs Max · 10 lbs Chicken Breast)",
         "items": [
-          "6 to 8 tbsp gochujang",
-          "3 garlic cloves, microplaned",
-          "2 tsp gochugaru (Korean red pepper flakes)",
-          "5 tbsp brown sugar",
-          "4 tbsp low-sodium soy sauce & 2 tbsp toasted sesame oil",
-          "2 tbsp each garlic powder, onion powder & paprika",
-          "1/2 tsp salt & 1/2 tsp black pepper"
+          "10 lbs boneless skinless chicken breast, butterflied or pounded even",
+          "3/4 to 1 cup (12 to 16 tbsp) gochujang",
+          "6 to 8 garlic cloves, microplaned",
+          "4 tsp gochugaru (Korean red pepper flakes)",
+          "10 tbsp (1/2 cup + 2 tbsp) brown sugar",
+          "1/2 cup low-sodium soy sauce & 1/4 cup toasted sesame oil",
+          "1/4 cup (4 tbsp) each garlic powder, onion powder & paprika",
+          "1 tsp kosher salt & 1 tsp black pepper"
         ]
       },
       {
-        "title": "2. Yakitori & 3. Teriyaki Marinades (12 Hrs)",
+        "title": "2. Yakitori Marinade (12 Hrs · 10 lbs Chicken Breast)",
         "items": [
-          "Yakitori: 1 cup soy sauce, 1/2 cup mirin, 1/4 cup sake/Shaoxing wine, 2 tbsp brown sugar, 4 cloves garlic, 1 tsp ginger",
-          "Teriyaki: 1/2 cup soy sauce, 2 tbsp honey, 2 tbsp brown sugar, 2 tbsp rice wine vinegar, 2 tbsp sesame oil, 3 cloves garlic, 1 tbsp fresh ginger"
+          "10 lbs boneless skinless chicken breast, butterflied or cubed for skewers",
+          "1.5 cups low-sodium soy sauce",
+          "1 cup mirin",
+          "1/2 cup sake or Shaoxing wine",
+          "1/4 cup (4 tbsp) brown sugar",
+          "8 cloves garlic, microplaned",
+          "2 tsp fresh grated ginger"
         ]
       },
       {
-        "title": "4. Macro Cantonese Char Siu (12-24 Hrs · 10 lbs Breast)",
+        "title": "3. Teriyaki Marinade (12 Hrs · 10 lbs Chicken Breast)",
         "items": [
+          "10 lbs boneless skinless chicken breast, butterflied or pounded even",
+          "1.5 cups low-sodium soy sauce",
+          "6 tbsp honey & 6 tbsp brown sugar",
+          "6 tbsp unseasoned rice wine vinegar & 6 tbsp toasted sesame oil",
+          "9 to 10 cloves garlic, microplaned",
+          "3 tbsp fresh grated ginger"
+        ]
+      },
+      {
+        "title": "4. Macro Cantonese Char Siu (12-24 Hrs · 10 lbs Chicken Breast)",
+        "items": [
+          "10 lbs boneless skinless chicken breast, butterflied or pounded even",
           "3/4 cup Golden Monkfruit sweetener",
           "1/3 cup regular soy sauce & 1/4 cup dark soy sauce",
           "1/3 cup Shaoxing wine & 2 tbsp toasted sesame oil",
-          "3 cubes red fermented bean curd (nam yue) mashed w/ 2 tbsp jar liquid",
+          "3 cubes red fermented bean curd (nam yue), mashed with 2 tbsp jar liquid",
           "12 cloves garlic (microplaned) + 2 tbsp garlic powder + 1 tbsp onion powder",
           "1.5 tbsp Chinese five-spice & 1.5 tsp white pepper",
           "1 tsp xanthan gum (whisked in last so marinade clings like a glaze)"
         ]
       },
       {
-        "title": "5. Vietnamese Lemongrass & Garlic (12-24 Hrs · 10 lbs)",
+        "title": "5. Vietnamese Lemongrass & Garlic (12-24 Hrs · 10 lbs Chicken Breast)",
         "items": [
+          "10 lbs boneless skinless chicken breast, butterflied or pounded even",
           "1/3 cup regular soy sauce & 1/3 cup fish sauce (Red Boat)",
           "2/3 cup Golden Monkfruit sweetener",
           "1/4 cup avocado/neutral oil & 3 tbsp unseasoned rice vinegar",
@@ -4011,8 +4030,9 @@
         ]
       },
       {
-        "title": "6. Peruvian Pollo a la Brasa (12-24 Hrs · 10 lbs)",
+        "title": "6. Peruvian Pollo a la Brasa (12-24 Hrs · 10 lbs Chicken Breast)",
         "items": [
+          "10 lbs boneless skinless chicken breast, butterflied or pounded even",
           "3/4 cup Aji Amarillo paste",
           "1/2 cup regular soy sauce & 1/4 cup Dijon mustard",
           "3 tbsp red wine vinegar, 3 tbsp Golden Monkfruit & 3 tbsp avocado oil",
@@ -4022,8 +4042,9 @@
         ]
       },
       {
-        "title": "7. Fiery Harissa & Toasted Spice (8-24 Hrs · 10 lbs)",
+        "title": "7. Fiery Harissa & Toasted Spice (8-24 Hrs · 10 lbs Chicken Breast)",
         "items": [
+          "10 lbs boneless skinless chicken breast, butterflied or pounded even",
           "3/4 cup spicy Harissa paste (zero added sugar, e.g., Mina or DEA)",
           "1/3 cup regular soy sauce & 1/3 cup tomato paste",
           "1/3 cup Golden Monkfruit, 1/4 cup red wine vinegar & 1/3 cup olive oil",
@@ -4035,19 +4056,23 @@
     ],
     "instructionSections": [
       {
-        "title": "Marinating & High-Heat Char",
+        "title": "Marinating & High-Heat Char (Scaled for 10 lbs Chicken Breast)",
         "steps": [
           {
             "type": "step",
-            "html": "1. <strong>Whisk Smooth:</strong> Whisk all ingredients for your chosen marinade in a large bowl until fully emulsified (if making Cantonese Char Siu, whisk the xanthan gum in last so it thickens into a clingy glaze without clumping)."
+            "html": "1. <strong>Prep the Chicken:</strong> Every marinade above is scaled for <strong>10 lbs of boneless, skinless chicken breast</strong> (tap 0.5x above for a 5-lb batch). Butterfly or pound thick breasts to an even thickness so they absorb flavor and cook evenly."
           },
           {
             "type": "step",
-            "html": "2. <strong>Cure & Marinate:</strong> Toss chicken thighs or evenly butterflied/pounded chicken breasts in heavy-duty zip-top bags or Cambro containers, massaging to coat every surface. Respect the window: <strong>6-8 hours max</strong> for Gochujang so it stays tender, and <strong>12-24 hours</strong> for the 10-lb macro marinades."
+            "html": "2. <strong>Whisk Smooth:</strong> Whisk all ingredients for your chosen marinade in a large bowl until fully emulsified (if making Cantonese Char Siu, whisk the xanthan gum in last so it thickens into a clingy glaze without clumping)."
           },
           {
             "type": "step",
-            "html": "3. <strong>Grill, Broil, or Air-Fry:</strong> Cook over a medium-high oiled grill, under the oven broiler, or in a 400°F air fryer, flipping until edges blister and caramelize and internal temperature hits 160°F-165°F for breast (175°F for thighs). Rest 5-10 minutes before slicing against the grain."
+            "html": "3. <strong>Cure & Marinate:</strong> Toss the 10 lbs of chicken breast in heavy-duty zip-top bags or Cambro containers, massaging to coat every surface. Respect the window: <strong>6-8 hours max</strong> for Gochujang so it stays tender, <strong>12 hours</strong> for Yakitori and Teriyaki, and <strong>12-24 hours</strong> for Char Siu, Lemongrass, Pollo a la Brasa, and Harissa."
+          },
+          {
+            "type": "step",
+            "html": "4. <strong>Grill, Broil, or Air-Fry:</strong> Cook over a medium-high oiled grill, under the oven broiler, or in a 400°F air fryer, flipping until edges blister and caramelize and internal temperature hits 160°F-165°F. Rest 5-10 minutes before slicing against the grain."
           }
         ]
       }
