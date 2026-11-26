@@ -520,7 +520,7 @@
 
 @media (max-width: 991px) {
     .about-hero-section {
-        padding-top: 100px;
+        padding-top: calc(96px + env(safe-area-inset-top, 0px));
     }
 
     .about-split-grid {

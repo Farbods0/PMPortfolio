@@ -101,6 +101,34 @@ body.cooking-page {
 
 html {
     background-color: var(--fj-bg);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+}
+
+button,
+a,
+[role="button"] {
+    touch-action: manipulation;
+}
+
+button,
+[role="button"],
+.fj-btn,
+.ck-btn,
+.filter-pill,
+.topic-pill,
+.scale-pill {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+@media (pointer: coarse) {
+    input:not([type="checkbox"]):not([type="radio"]),
+    textarea,
+    select {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -180,6 +208,33 @@ section {
     letter-spacing: 0.1em;
     color: var(--fj-accent);
     margin-bottom: 12px;
+}
+
+.fj-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    max-width: 100%;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(15, 15, 20, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-family: var(--fj-font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0.03em;
+}
+
+.fj-eyebrow-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+    flex-shrink: 0;
 }
 
 .fj-section-header {
@@ -409,8 +464,8 @@ body.dj-page .fj-btn-glass {
 
 .top-btn {
     position: fixed;
-    right: 24px;
-    bottom: 28px;
+    right: 20px;
+    bottom: max(20px, calc(12px + env(safe-area-inset-bottom, 0px)));
     z-index: 900;
     cursor: pointer;
     opacity: 0;

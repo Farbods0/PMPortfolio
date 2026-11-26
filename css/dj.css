@@ -2,19 +2,28 @@
    DJ FJ Vertical — Club Editorial Dark + Electric Violet
    ========================================================================== */
 
+body.dj-page {
+    --fj-bg-elevated: #141418;
+    --fj-border: rgba(255, 255, 255, 0.11);
+    --fj-text: #f7f7f8;
+    --fj-text-secondary: #b4b4c0;
+    --fj-text-tertiary: #848494;
+    --fj-radius-xl: 20px;
+}
+
 .dj-display-heading {
     font-family: var(--fj-font-display);
     letter-spacing: -0.035em;
 }
 
 .dj-hero {
-    min-height: 92vh;
+    min-height: 92svh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding: 140px 0 88px;
+    padding: calc(132px + env(safe-area-inset-top, 0px)) 0 88px;
     border-bottom: 1px solid rgba(168, 85, 247, 0.18);
 }
 
@@ -398,8 +407,13 @@
 }
 
 @media (max-width: 575px) {
+    .dj-hero {
+        min-height: auto;
+        padding: calc(112px + env(safe-area-inset-top, 0px)) 0 64px;
+    }
+
     .dj-stream-card {
-        padding: 32px 18px;
+        padding: 28px 16px;
     }
 
     .dj-countdown-grid {
@@ -407,7 +421,16 @@
     }
 
     .cd-unit {
-        padding: 14px 6px;
+        padding: 14px 4px;
+    }
+
+    .cd-value {
+        font-size: 1.75rem;
+    }
+
+    .cd-label {
+        font-size: 9.5px;
+        letter-spacing: 0.06em;
     }
 }
 

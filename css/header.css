@@ -9,6 +9,16 @@
     top: 0;
     z-index: 999;
     font-family: var(--fj-font-sans);
+    padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Backdrop blur lives on ::before so header does NOT create a containing block for position: fixed .navbar-collapse on iOS Safari */
+.external-wrapper > header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
     background: rgba(250, 249, 245, 0.88);
     backdrop-filter: blur(18px) saturate(160%);
     -webkit-backdrop-filter: blur(18px) saturate(160%);
@@ -16,7 +26,7 @@
     transition: background-color 200ms ease-out, border-color 200ms ease-out, box-shadow 200ms ease-out;
 }
 
-.sticky-header .external-wrapper > header {
+.sticky-header .external-wrapper > header::before {
     background: rgba(255, 255, 255, 0.94);
     border-bottom-color: var(--fj-rule-strong);
     box-shadow: 0 6px 24px rgba(17, 19, 24, 0.05);
@@ -136,45 +146,50 @@ header .navbar-nav .nav-item.dropdown > .nav-link::after {
    Dark-Hero & Dark-Page Header Adaptation (Real Estate Hero, DJ, Cooking)
    ========================================================================== */
 
-body.realestate-page:not(.sticky-header) header,
-body.dj-page header,
-body.cooking-page header {
+body.realestate-page:not(.sticky-header) .external-wrapper > header::before,
+body.dj-page .external-wrapper > header::before,
+body.cooking-page .external-wrapper > header::before {
     background: rgba(10, 10, 12, 0.58);
     border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
-body.dj-page.sticky-header header,
-body.cooking-page.sticky-header header {
+body.dj-page.sticky-header .external-wrapper > header::before,
+body.cooking-page.sticky-header .external-wrapper > header::before {
     background: rgba(12, 12, 15, 0.9);
     border-bottom-color: rgba(255, 255, 255, 0.14);
     box-shadow: 0 10px 32px rgba(0, 0, 0, 0.45);
 }
 
-body.realestate-page.sticky-header header {
+body.realestate-page.sticky-header .external-wrapper > header::before {
     background: rgba(247, 244, 237, 0.94);
     border-bottom-color: var(--fj-rule-strong);
     box-shadow: 0 6px 24px rgba(24, 22, 19, 0.07);
 }
 
-body.realestate-page:not(.sticky-header) .navbar-brand img,
-body.dj-page .navbar-brand img,
-body.cooking-page .navbar-brand img {
+body.realestate-page:not(.sticky-header) .external-wrapper > header .navbar-brand img,
+body.dj-page .external-wrapper > header .navbar-brand img,
+body.cooking-page .external-wrapper > header .navbar-brand img {
     filter: brightness(0) invert(1);
 }
 
-body.realestate-page:not(.sticky-header) header .navbar-nav .nav-item .nav-link,
-body.dj-page header .navbar-nav .nav-item .nav-link,
-body.cooking-page header .navbar-nav .nav-item .nav-link {
+body.realestate-page:not(.sticky-header) .external-wrapper > header .navbar-nav .nav-item .nav-link,
+body.dj-page .external-wrapper > header .navbar-nav .nav-item .nav-link,
+body.cooking-page .external-wrapper > header .navbar-nav .nav-item .nav-link {
     color: rgba(247, 247, 248, 0.8);
 }
 
-body.realestate-page:not(.sticky-header) header .navbar-nav .nav-item .nav-link.active,
-body.realestate-page:not(.sticky-header) header .navbar-nav .nav-item .nav-link:hover,
-body.dj-page header .navbar-nav .nav-item .nav-link.active,
-body.dj-page header .navbar-nav .nav-item .nav-link:hover,
-body.cooking-page header .navbar-nav .nav-item .nav-link.active,
-body.cooking-page header .navbar-nav .nav-item .nav-link:hover {
+body.realestate-page:not(.sticky-header) .external-wrapper > header .navbar-nav .nav-item .nav-link.active,
+body.dj-page .external-wrapper > header .navbar-nav .nav-item .nav-link.active,
+body.cooking-page .external-wrapper > header .navbar-nav .nav-item .nav-link.active {
     color: #ffffff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    body.realestate-page:not(.sticky-header) .external-wrapper > header .navbar-nav .nav-item .nav-link:hover,
+    body.dj-page .external-wrapper > header .navbar-nav .nav-item .nav-link:hover,
+    body.cooking-page .external-wrapper > header .navbar-nav .nav-item .nav-link:hover {
+        color: #ffffff;
+    }
 }
 
 /* Desktop Dropdown Menu */
@@ -316,14 +331,15 @@ body.cooking-page header .navbar-nav .nav-item .nav-link:hover {
         box-shadow: none;
     }
 
-    header .navbar-collapse {
+    .external-wrapper > header .navbar-collapse {
         position: fixed;
         inset: 0;
+        width: 100%;
         height: 100dvh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         background: #faf9f5;
         color: #111318;
         opacity: 0;
@@ -332,59 +348,67 @@ body.cooking-page header .navbar-nav .nav-item .nav-link:hover {
         transform: scale(0.98);
         transition: opacity 200ms ease-out, transform 220ms var(--fj-ease-out), visibility 200ms;
         overflow-y: auto;
-        padding: 80px 24px 40px;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+        padding: calc(76px + env(safe-area-inset-top, 0px)) 24px calc(36px + env(safe-area-inset-bottom, 0px));
         z-index: 1050;
     }
 
-    body.dj-page header .navbar-collapse,
-    body.cooking-page header .navbar-collapse {
+    body.dj-page .external-wrapper > header .navbar-collapse,
+    body.cooking-page .external-wrapper > header .navbar-collapse {
         background: #0e0e12;
         color: #f5f5f7;
     }
 
-    header .collapse:not(.show) {
+    .external-wrapper > header .collapse:not(.show) {
         display: flex;
     }
 
-    header .navbar-collapse.show {
+    .external-wrapper > header .navbar-collapse.show {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
         transform: scale(1);
     }
 
-    header .navbar-nav {
+    .external-wrapper > header .navbar-nav {
         width: 100%;
         max-width: 320px;
+        margin: auto 0;
         gap: 4px;
     }
 
-    header .navbar-nav .nav-item {
+    .external-wrapper > header .navbar-nav .nav-item {
         width: 100%;
         text-align: center;
     }
 
-    header .navbar-nav .nav-item .nav-link,
-    body.realestate-page:not(.sticky-header) header .navbar-nav .nav-item .nav-link {
+    .external-wrapper > header .navbar-nav .nav-item .nav-link,
+    body.realestate-page:not(.sticky-header) .external-wrapper > header .navbar-nav .nav-item .nav-link {
         width: 100%;
         justify-content: center;
         font-size: 20px;
         font-weight: 600;
-        padding: 12px 20px;
+        padding: 13px 20px;
         border-radius: 10px;
         color: #111318;
     }
 
-    body.dj-page header .navbar-nav .nav-item .nav-link,
-    body.cooking-page header .navbar-nav .nav-item .nav-link {
+    .external-wrapper > header .navbar-nav .nav-item .nav-link[aria-label="Home"]::after {
+        content: "Home";
+        margin-left: 6px;
+    }
+
+    body.dj-page .external-wrapper > header .navbar-nav .nav-item .nav-link,
+    body.cooking-page .external-wrapper > header .navbar-nav .nav-item .nav-link {
         color: #f5f5f7;
     }
 
-    header .navbar-nav .nav-item .nav-link::before {
+    .external-wrapper > header .navbar-nav .nav-item .nav-link::before {
         content: none;
     }
 
-    header .navbar-nav .nav-item .dropdown-menu {
+    .external-wrapper > header .navbar-nav .nav-item .dropdown-menu {
         position: static !important;
         transform: none !important;
         opacity: 1 !important;
@@ -396,13 +420,13 @@ body.cooking-page header .navbar-nav .nav-item .nav-link:hover {
         width: 100% !important;
     }
 
-    body.dj-page header .navbar-nav .nav-item .dropdown-menu,
-    body.cooking-page header .navbar-nav .nav-item .dropdown-menu {
+    body.dj-page .external-wrapper > header .navbar-nav .nav-item .dropdown-menu,
+    body.cooking-page .external-wrapper > header .navbar-nav .nav-item .dropdown-menu {
         background: rgba(255, 255, 255, 0.05);
         border-color: rgba(255, 255, 255, 0.1);
     }
 
-    header .navbar-nav .nav-item .dropdown-menu ul {
+    .external-wrapper > header .navbar-nav .nav-item .dropdown-menu ul {
         list-style: none;
         margin: 0;
         padding: 0;
@@ -411,9 +435,9 @@ body.cooking-page header .navbar-nav .nav-item .nav-link:hover {
         box-shadow: none;
     }
 
-    header .navbar-nav .nav-item .dropdown-menu ul .dropdownitem {
+    .external-wrapper > header .navbar-nav .nav-item .dropdown-menu ul .dropdownitem {
         display: block;
-        padding: 10px 16px;
+        padding: 11px 16px;
         font-size: 16px;
         font-weight: 500;
         color: inherit;
@@ -426,10 +450,10 @@ body.cooking-page header .navbar-nav .nav-item .nav-link:hover {
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 16px;
+        top: calc(14px + env(safe-area-inset-top, 0px));
         right: 20px;
-        width: 42px;
-        height: 42px;
+        width: 44px;
+        height: 44px;
         border-radius: 999px;
         color: inherit;
         background: rgba(0, 0, 0, 0.05);

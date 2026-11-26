@@ -3,10 +3,10 @@
    ========================================================================== */
 
 .contact-page-main {
-    min-height: calc(100vh - 108px);
+    min-height: calc(100svh - 108px);
     display: flex;
     align-items: center;
-    padding: 128px 0 88px;
+    padding: calc(120px + env(safe-area-inset-top, 0px)) 0 88px;
     background: var(--fj-bg);
     position: relative;
     overflow: hidden;
@@ -258,7 +258,7 @@ button.channel-card {
     border-radius: 10px;
     padding: 12px 14px;
     font-family: var(--fj-font-sans);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
     color: var(--fj-ink);
     transition: background-color 160ms ease-out, border-color 160ms ease-out, box-shadow 160ms ease-out;

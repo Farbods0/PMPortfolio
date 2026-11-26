@@ -67,13 +67,13 @@ body.cooking-page .external-wrapper {
    ========================================================================== */
 
 .hero-main {
-    min-height: 92vh;
+    min-height: 92svh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding: 120px 0 80px;
+    padding: calc(112px + env(safe-area-inset-top, 0px)) 0 80px;
 }
 
 .hero-main video {
@@ -172,11 +172,6 @@ body.cooking-page .external-wrapper {
     color: #000000;
 }
 
-.ck-btn-primary:hover {
-    background: #ffffff;
-    color: #000000;
-}
-
 .ck-btn-glass {
     background: rgba(255, 255, 255, 0.09);
     backdrop-filter: blur(16px);
@@ -185,20 +180,27 @@ body.cooking-page .external-wrapper {
     color: #f5f5f7;
 }
 
-.ck-btn-glass:hover {
-    background: rgba(255, 255, 255, 0.16);
-    border-color: rgba(255, 255, 255, 0.26);
-    color: #ffffff;
-}
-
 .ck-btn-accent {
     background: var(--ck-accent);
     color: #0b0b0c;
 }
 
-.ck-btn-accent:hover {
-    background: #edd097;
-    color: #0b0b0c;
+@media (hover: hover) and (pointer: fine) {
+    .ck-btn-primary:hover {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .ck-btn-glass:hover {
+        background: rgba(255, 255, 255, 0.16);
+        border-color: rgba(255, 255, 255, 0.26);
+        color: #ffffff;
+    }
+
+    .ck-btn-accent:hover {
+        background: #edd097;
+        color: #0b0b0c;
+    }
 }
 
 /* ==========================================================================
@@ -255,9 +257,11 @@ body.cooking-page .external-wrapper {
     transition: opacity 160ms ease-out, transform 160ms var(--ck-ease-out);
 }
 
-.section-link-subtle:hover {
-    color: #f0d7a7;
-    opacity: 0.95;
+@media (hover: hover) and (pointer: fine) {
+    .section-link-subtle:hover {
+        color: #f0d7a7;
+        opacity: 0.95;
+    }
 }
 
 .bento-grid {
@@ -446,7 +450,7 @@ body.cooking-page .external-wrapper {
     color: var(--ck-text);
     padding: 11px 40px 11px 44px;
     border-radius: 12px;
-    font-size: 15px;
+    font-size: 16px;
     transition: background-color 180ms ease-out, border-color 180ms ease-out, box-shadow 180ms ease-out;
 }
 
@@ -482,8 +486,10 @@ body.cooking-page .external-wrapper {
     transition: background-color 150ms ease-out;
 }
 
-.search-clear-btn:hover {
-    background: rgba(255, 255, 255, 0.22);
+@media (hover: hover) and (pointer: fine) {
+    .search-clear-btn:hover {
+        background: rgba(255, 255, 255, 0.22);
+    }
 }
 
 .recipe-filter-pills {
@@ -514,8 +520,10 @@ body.cooking-page .external-wrapper {
     transform: scale(0.96);
 }
 
-.filter-pill:hover {
-    color: var(--ck-text);
+@media (hover: hover) and (pointer: fine) {
+    .filter-pill:hover {
+        color: var(--ck-text);
+    }
 }
 
 .filter-pill.is-active {
@@ -709,19 +717,28 @@ body.cooking-page .external-wrapper {
 .sliderWrapper .swiper-pagination {
     position: relative;
     bottom: 0;
-    width: auto;
+    left: auto !important;
+    transform: none !important;
+    width: auto !important;
+    max-width: calc(100% - 104px);
+    overflow: hidden;
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
+.sliderWrapper .swiper-pagination-bullets-dynamic {
+    display: block;
+    white-space: nowrap;
+}
+
 .sliderWrapper .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
-    margin: 0 !important;
+    margin: 0 3px !important;
     background: rgba(255, 255, 255, 0.25);
     opacity: 1;
-    transition: width 220ms var(--ck-ease-out), background-color 180ms ease-out;
+    transition: width 220ms var(--ck-ease-out), background-color 180ms ease-out, transform 220ms var(--ck-ease-out);
 }
 
 .sliderWrapper .swiper-pagination-bullet-active {
@@ -758,9 +775,11 @@ body.cooking-page .external-wrapper {
     content: none;
 }
 
-.carousel-nav-btns .swiper-button-prev:hover,
-.carousel-nav-btns .swiper-button-next:hover {
-    background: rgba(255, 255, 255, 0.16);
+@media (hover: hover) and (pointer: fine) {
+    .carousel-nav-btns .swiper-button-prev:hover,
+    .carousel-nav-btns .swiper-button-next:hover {
+        background: rgba(255, 255, 255, 0.16);
+    }
 }
 
 .carousel-nav-btns .swiper-button-prev:active,
@@ -839,14 +858,16 @@ body.cooking-page .external-wrapper {
     transition: transform 160ms var(--ck-ease-out);
 }
 
-.ck-back-pill:hover {
-    background: rgba(255, 255, 255, 0.14);
-    border-color: rgba(255, 255, 255, 0.24);
-    color: #ffffff;
-}
+@media (hover: hover) and (pointer: fine) {
+    .ck-back-pill:hover {
+        background: rgba(255, 255, 255, 0.14);
+        border-color: rgba(255, 255, 255, 0.24);
+        color: #ffffff;
+    }
 
-.ck-back-pill:hover iconify-icon {
-    transform: translateX(-2px);
+    .ck-back-pill:hover iconify-icon {
+        transform: translateX(-2px);
+    }
 }
 
 .ck-back-pill:active {
@@ -935,8 +956,10 @@ body.cooking-page .external-wrapper {
     color: #f5f5f7;
 }
 
-.dir-select:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+@media (hover: hover) and (pointer: fine) {
+    .dir-select:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 }
 
 .dir-select:focus {
@@ -1001,9 +1024,11 @@ body.cooking-page .external-wrapper {
     transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out, transform 120ms var(--ck-ease-out);
 }
 
-.recipe-action-btn:hover {
-    background: rgba(255, 255, 255, 0.13);
-    border-color: rgba(255, 255, 255, 0.22);
+@media (hover: hover) and (pointer: fine) {
+    .recipe-action-btn:hover {
+        background: rgba(255, 255, 255, 0.13);
+        border-color: rgba(255, 255, 255, 0.22);
+    }
 }
 
 .recipe-action-btn:active {
@@ -1108,9 +1133,11 @@ body.cooking-page .external-wrapper {
     transition: background-color 160ms ease-out, color 160ms ease-out;
 }
 
-.recipe-cat-link:hover {
-    background: var(--ck-accent);
-    color: #0b0b0c;
+@media (hover: hover) and (pointer: fine) {
+    .recipe-cat-link:hover {
+        background: var(--ck-accent);
+        color: #0b0b0c;
+    }
 }
 
 .recipe-title {
@@ -1232,9 +1259,10 @@ body.cooking-page .external-wrapper {
     background: transparent;
     border: 1px solid transparent;
     color: var(--ck-text-secondary);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
-    padding: 4px 10px;
+    padding: 7px 12px;
+    min-height: 36px;
     border-radius: 999px;
     cursor: pointer;
     transition: background-color 140ms ease-out, color 140ms ease-out, transform 120ms var(--ck-ease-out);
@@ -1314,8 +1342,10 @@ body.cooking-page .external-wrapper {
     transition: background-color 140ms ease-out;
 }
 
-.food-detail .ingredient-list li.ingredient-item:hover {
-    background: rgba(255, 255, 255, 0.05);
+@media (hover: hover) and (pointer: fine) {
+    .food-detail .ingredient-list li.ingredient-item:hover {
+        background: rgba(255, 255, 255, 0.05);
+    }
 }
 
 .ingredient-check {
@@ -1395,8 +1425,10 @@ body.cooking-page .external-wrapper {
     transition: background-color 140ms ease-out, opacity 180ms ease-out;
 }
 
-.recipe-step-item:hover {
-    background: rgba(255, 255, 255, 0.04);
+@media (hover: hover) and (pointer: fine) {
+    .recipe-step-item:hover {
+        background: rgba(255, 255, 255, 0.04);
+    }
 }
 
 .recipe-step-item.is-done {
@@ -1447,12 +1479,17 @@ body.cooking-page .external-wrapper {
     .dir-controls-bar {
         position: static;
     }
+
+    /* Avoid duplicate "Keep Screen On" button when floating mobile pill is active */
+    .recipe-topbar #wake-lock-btn {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
     .hero-main {
-        min-height: 82vh;
-        padding: 110px 0 64px;
+        min-height: 78svh;
+        padding: calc(104px + env(safe-area-inset-top, 0px)) 0 64px;
     }
 
     .courses-section,
@@ -1463,19 +1500,57 @@ body.cooking-page .external-wrapper {
 
     .recipes-dir-main,
     .recipe-page-main {
-        padding: 96px 0 56px;
+        padding: calc(92px + env(safe-area-inset-top, 0px)) 0 56px;
     }
 
     .recipe-surface {
         padding: 20px 16px 28px;
     }
 
-    .dir-selects {
+    .recipe-filter-pills {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: 100%;
         width: 100%;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        border-radius: 999px;
+    }
+
+    .recipe-filter-pills::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-pill {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .dir-selects {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 8px;
     }
 
     .dir-select {
-        flex: 1;
+        width: 100%;
+        min-width: 0;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .recipe-meta-grid {
+        gap: 8px;
+    }
+
+    .cookCard {
+        padding: 12px 8px;
+    }
+
+    .cookCard span {
+        font-size: 13.5px;
     }
 }
 

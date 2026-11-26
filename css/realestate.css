@@ -3,14 +3,32 @@
    ========================================================================== */
 
 .re-hero {
-    min-height: 92vh;
+    min-height: 92svh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding: 140px 0 88px;
+    padding: calc(132px + env(safe-area-inset-top, 0px)) 0 88px;
     border-bottom: 1px solid rgba(212, 180, 117, 0.16);
+}
+
+.re-hero .fj-btn-glass,
+.re-advisor-card .fj-btn-glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .re-hero .fj-btn-glass:hover,
+    .re-advisor-card .fj-btn-glass:hover {
+        background: rgba(255, 255, 255, 0.18);
+        border-color: rgba(255, 255, 255, 0.45);
+        color: #ffffff;
+    }
 }
 
 .re-hero video {

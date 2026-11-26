@@ -11,25 +11,66 @@
         loadingEl.remove();
     }
 
-    // Mobile drawer controls (with Escape key & link-click auto-close)
+    // Mobile drawer controls (bypasses Bootstrap's height-collapsing transition so the full-screen drawer opens reliably on iOS/mobile)
+    const openMobileMenu = () => {
+        if (!collapseMenu) return;
+        collapseMenu.classList.remove('collapsing');
+        collapseMenu.style.height = '';
+        collapseMenu.classList.add('show');
+        body.classList.add('mobile-menu-open');
+        body.style.overflow = 'hidden';
+        if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'true');
+    };
+
     const closeMobileMenu = () => {
         if (!collapseMenu) return;
-        collapseMenu.classList.remove('show');
+        collapseMenu.classList.remove('show', 'collapsing');
+        collapseMenu.style.height = '';
+        body.classList.remove('mobile-menu-open');
         body.style.overflow = '';
         if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
     };
 
-    if (toggleBtn && collapseMenu) {
-        toggleBtn.addEventListener('click', () => {
-            requestAnimationFrame(() => {
-                const isOpen = collapseMenu.classList.contains('show');
-                body.style.overflow = isOpen ? 'hidden' : '';
-            });
-        });
-    }
+    // Intercept mobile drawer & dropdown clicks at window capture phase (above document) so Bootstrap's delegated listeners never conflict
+    window.addEventListener(
+        'click',
+        (e) => {
+            if (window.innerWidth >= 992) return;
+
+            const clickedToggler = toggleBtn && e.target.closest('.navbar-toggler');
+            if (clickedToggler && collapseMenu) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+                if (collapseMenu.classList.contains('show')) {
+                    closeMobileMenu();
+                } else {
+                    openMobileMenu();
+                }
+                return;
+            }
+
+            const clickedDrop = collapseMenu && e.target.closest('.navbar-collapse [data-bs-toggle="dropdown"]');
+            if (clickedDrop) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+                const menu = clickedDrop.nextElementSibling;
+                if (!menu) return;
+                const willOpen = !menu.classList.contains('show');
+                menu.classList.toggle('show', willOpen);
+                clickedDrop.classList.toggle('show', willOpen);
+                clickedDrop.setAttribute('aria-expanded', String(willOpen));
+            }
+        },
+        true
+    );
 
     closeBtns.forEach((btn) => {
-        btn.addEventListener('click', closeMobileMenu);
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeMobileMenu();
+        });
     });
 
     if (collapseMenu) {
@@ -39,6 +80,12 @@
             });
         });
     }
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 992 && collapseMenu && collapseMenu.classList.contains('show')) {
+            closeMobileMenu();
+        }
+    });
 
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && collapseMenu && collapseMenu.classList.contains('show')) {

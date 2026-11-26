@@ -57,6 +57,8 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+                dynamicBullets: true,
+                dynamicMainBullets: 5,
             },
             breakpoints: {
                 300: {
