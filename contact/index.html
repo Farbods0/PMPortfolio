@@ -132,19 +132,20 @@
                                 <div class="topic-picker-group">
                                     <div class="form-field-label">
                                         <span>What’s this regarding?</span>
-                                        <span class="req-badge">Select one or more</span>
+                                        <span class="req-badge">Select one</span>
                                     </div>
                                     <input type="hidden" name="topic" id="contact-topic" value="Product">
+                                    <input type="hidden" name="_subject" id="contact-subject" value="[Product] New inquiry from farbodjahan.com">
 
-                                    <!-- Each tag separated cleanly -->
-                                    <div class="topic-pills" role="group" aria-label="Inquiry topics">
-                                        <button type="button" class="topic-pill is-active" data-topic="Product" data-slug="product" data-placeholder="Share what you're building or the product role/topic on your mind..." aria-pressed="true">Product</button>
-                                        <button type="button" class="topic-pill" data-topic="Advisory" data-slug="advisory" data-placeholder="Tell me about your company, stage, and where you're looking for advisory support..." aria-pressed="false">Advisory</button>
-                                        <button type="button" class="topic-pill" data-topic="Real Estate" data-slug="real-estate" data-placeholder="Looking to buy, sell, or invest in SF / Peninsula / South Bay? Share your timeline and goals..." aria-pressed="false">Real Estate</button>
-                                        <button type="button" class="topic-pill" data-topic="DJ" data-slug="dj" data-placeholder="Share your event date, venue/city, vibe, and set length..." aria-pressed="false">DJ</button>
-                                        <button type="button" class="topic-pill" data-topic="Cooking" data-slug="cooking" data-placeholder="Have a recipe request, kitchen question, or dish I should tackle next?..." aria-pressed="false">Cooking</button>
-                                        <button type="button" class="topic-pill" data-topic="Mentorship" data-slug="mentorship" data-placeholder="Tell me a little about your background and what career questions you're navigating..." aria-pressed="false">Mentorship</button>
-                                        <button type="button" class="topic-pill" data-topic="Other" data-slug="other" data-placeholder="What's on your mind?..." aria-pressed="false">Other</button>
+                                    <!-- Single-select inquiry topics -->
+                                    <div class="topic-pills" role="radiogroup" aria-label="Inquiry topic">
+                                        <button type="button" class="topic-pill is-active" role="radio" data-topic="Product" data-slug="product" data-placeholder="Share what you're building or the product role/topic on your mind..." aria-checked="true">Product</button>
+                                        <button type="button" class="topic-pill" role="radio" data-topic="Advisory" data-slug="advisory" data-placeholder="Tell me about your company, stage, and where you're looking for advisory support..." aria-checked="false">Advisory</button>
+                                        <button type="button" class="topic-pill" role="radio" data-topic="Real Estate" data-slug="real-estate" data-placeholder="Looking to buy, sell, or invest in SF / Peninsula / South Bay? Share your timeline and goals..." aria-checked="false">Real Estate</button>
+                                        <button type="button" class="topic-pill" role="radio" data-topic="DJ" data-slug="dj" data-placeholder="Share your event date, venue/city, vibe, and set length..." aria-checked="false">DJ</button>
+                                        <button type="button" class="topic-pill" role="radio" data-topic="Cooking" data-slug="cooking" data-placeholder="Have a recipe request, kitchen question, or dish I should tackle next?..." aria-checked="false">Cooking</button>
+                                        <button type="button" class="topic-pill" role="radio" data-topic="Mentorship" data-slug="mentorship" data-placeholder="Tell me a little about your background and what career questions you're navigating..." aria-checked="false">Mentorship</button>
+                                        <button type="button" class="topic-pill" role="radio" data-topic="Other" data-slug="other" data-placeholder="What's on your mind?..." aria-checked="false">Other</button>
                                     </div>
                                 </div>
 
@@ -244,48 +245,41 @@
     <script>
         (() => {
             const topicInput = document.getElementById('contact-topic');
+            const subjectInput = document.getElementById('contact-subject');
             const messageBox = document.getElementById('message');
             const pills = Array.from(document.querySelectorAll('.topic-pill'));
 
-            const syncSelectedTopics = (lastClickedPill) => {
-                let activePills = pills.filter((p) => p.classList.contains('is-active'));
-                if (activePills.length === 0 && lastClickedPill) {
-                    lastClickedPill.classList.add('is-active');
-                    lastClickedPill.setAttribute('aria-pressed', 'true');
-                    activePills = [lastClickedPill];
-                }
+            const selectTopic = (selectedPill) => {
+                if (!selectedPill) return;
+                pills.forEach((p) => {
+                    const isMatch = p === selectedPill;
+                    p.classList.toggle('is-active', isMatch);
+                    p.setAttribute('aria-checked', String(isMatch));
+                });
+                const topic = selectedPill.dataset.topic || 'Other';
                 if (topicInput) {
-                    topicInput.value = activePills.map((p) => p.dataset.topic).join(', ');
+                    topicInput.value = topic;
                 }
-                if (messageBox && activePills.length === 1 && activePills[0].dataset.placeholder) {
-                    messageBox.placeholder = activePills[0].dataset.placeholder;
-                } else if (messageBox && activePills.length > 1) {
-                    messageBox.placeholder = `Regarding ${activePills.map((p) => p.dataset.topic).join(' & ')}: share a few details...`;
+                if (subjectInput) {
+                    subjectInput.value = `[${topic}] New inquiry from farbodjahan.com`;
+                }
+                if (messageBox && selectedPill.dataset.placeholder) {
+                    messageBox.placeholder = selectedPill.dataset.placeholder;
                 }
             };
 
             pills.forEach((pill) => {
-                pill.addEventListener('click', () => {
-                    const willActivate = !pill.classList.contains('is-active');
-                    pill.classList.toggle('is-active', willActivate);
-                    pill.setAttribute('aria-pressed', String(willActivate));
-                    syncSelectedTopics(pill);
-                });
+                pill.addEventListener('click', () => selectTopic(pill));
             });
 
-            // Pre-select separate tag from URL ?topic=real-estate | dj | cooking | advisory | mentorship | product
+            // Pre-select topic from URL ?topic=real-estate | dj | cooking | advisory | mentorship | product
             const urlTopic = (new URLSearchParams(window.location.search).get('topic') || '').toLowerCase();
             if (urlTopic) {
                 const match = pills.find(
                     (p) => p.dataset.slug === urlTopic || p.dataset.topic.toLowerCase() === urlTopic
                 );
                 if (match) {
-                    pills.forEach((p) => {
-                        const isMatch = p === match;
-                        p.classList.toggle('is-active', isMatch);
-                        p.setAttribute('aria-pressed', String(isMatch));
-                    });
-                    syncSelectedTopics(match);
+                    selectTopic(match);
                 }
             }
 
