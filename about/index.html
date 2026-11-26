@@ -147,7 +147,7 @@
                                 </p>
                             </div>
 
-                            <!-- Crisp Ink-on-Paper Intersection Diagram -->
+                            <!-- Interactive Color-Blended Intersection Centerpiece -->
                             <div class="intersection-card" data-reveal>
                                 <div class="intersection-header">
                                     <span class="fj-kicker">My Sweet Spot</span>
@@ -155,48 +155,91 @@
                                 </div>
 
                                 <div class="venn-layout">
-                                    <div class="venn-svg-wrap" aria-hidden="true">
-                                        <svg viewBox="0 0 360 320" class="venn-svg" id="venn-svg">
+                                    <div class="venn-stage" aria-hidden="true">
+                                        <svg viewBox="0 0 380 350" class="venn-svg" id="venn-svg">
+                                            <defs>
+                                                <radialGradient id="grad-tech" cx="38%" cy="35%" r="65%">
+                                                    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.52" />
+                                                    <stop offset="100%" stop-color="#1434cb" stop-opacity="0.22" />
+                                                </radialGradient>
+                                                <radialGradient id="grad-design" cx="62%" cy="35%" r="65%">
+                                                    <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.52" />
+                                                    <stop offset="100%" stop-color="#ea580c" stop-opacity="0.22" />
+                                                </radialGradient>
+                                                <radialGradient id="grad-biz" cx="50%" cy="68%" r="65%">
+                                                    <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.52" />
+                                                    <stop offset="100%" stop-color="#0f766e" stop-opacity="0.22" />
+                                                </radialGradient>
+                                                <linearGradient id="grad-center" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                    <stop offset="0%" stop-color="#1434cb" />
+                                                    <stop offset="55%" stop-color="#0f766e" />
+                                                    <stop offset="100%" stop-color="#ea580c" />
+                                                </linearGradient>
+                                            </defs>
+
                                             <g class="venn-node is-active" data-venn="tech">
-                                                <circle cx="140" cy="126" r="82" fill="rgba(20, 52, 203, 0.08)" stroke="#1434cb" stroke-width="1.8" />
-                                                <text x="108" y="96" class="venn-label">Technology</text>
+                                                <circle class="venn-ring-halo" cx="140" cy="134" r="108" fill="none" stroke="#1434cb" stroke-width="1.5" stroke-dasharray="4 5" />
+                                                <circle class="venn-circle" cx="140" cy="134" r="98" fill="url(#grad-tech)" stroke="#1434cb" stroke-width="2.2" />
+                                                <text x="108" y="106" class="venn-label">Technology</text>
+                                                <text x="108" y="123" class="venn-sublabel">AI &amp; Systems</text>
                                             </g>
+
                                             <g class="venn-node" data-venn="design">
-                                                <circle cx="220" cy="126" r="82" fill="rgba(180, 83, 9, 0.08)" stroke="#b45309" stroke-width="1.8" />
-                                                <text x="242" y="96" class="venn-label">Design</text>
+                                                <circle class="venn-ring-halo" cx="240" cy="134" r="108" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="4 5" />
+                                                <circle class="venn-circle" cx="240" cy="134" r="98" fill="url(#grad-design)" stroke="#d97706" stroke-width="2.2" />
+                                                <text x="272" y="106" class="venn-label">Design</text>
+                                                <text x="272" y="123" class="venn-sublabel">UX &amp; Craft</text>
                                             </g>
+
                                             <g class="venn-node" data-venn="business">
-                                                <circle cx="180" cy="196" r="82" fill="rgba(15, 118, 110, 0.08)" stroke="#0f766e" stroke-width="1.8" />
-                                                <text x="180" y="252" class="venn-label">Business</text>
+                                                <circle class="venn-ring-halo" cx="190" cy="222" r="108" fill="none" stroke="#0f766e" stroke-width="1.5" stroke-dasharray="4 5" />
+                                                <circle class="venn-circle" cx="190" cy="222" r="98" fill="url(#grad-biz)" stroke="#0f766e" stroke-width="2.2" />
+                                                <text x="190" y="274" class="venn-label">Business</text>
+                                                <text x="190" y="291" class="venn-sublabel">P&amp;L &amp; Growth</text>
                                             </g>
-                                            <circle cx="180" cy="150" r="19" fill="#111318" />
-                                            <text x="180" y="154" class="venn-center-label">FJ</text>
+
+                                            <!-- Center FJ Core Badge -->
+                                            <g class="venn-core">
+                                                <circle class="venn-core-orbit" cx="190" cy="166" r="31" fill="none" stroke="url(#grad-center)" stroke-width="1.5" stroke-dasharray="5 4" />
+                                                <circle cx="190" cy="166" r="24" fill="url(#grad-center)" />
+                                                <circle cx="190" cy="166" r="21" fill="#111318" />
+                                                <text x="190" y="171" class="venn-center-label">FJ</text>
+                                            </g>
                                         </svg>
                                     </div>
 
                                     <div class="venn-pillars" role="tablist" aria-label="Core disciplines">
                                         <button type="button" class="venn-pillar is-active" data-venn-btn="tech" role="tab" aria-selected="true">
-                                            <span class="pillar-dot dot-tech"></span>
-                                            <div>
+                                            <span class="pillar-icon-badge badge-tech">
+                                                <iconify-icon icon="lucide:cpu"></iconify-icon>
+                                            </span>
+                                            <div class="pillar-copy">
                                                 <h4>Technology &amp; Security</h4>
                                                 <p>Computer Engineering roots, fluent across agentic AI, cloud data pipelines, APIs, and enterprise reliability.</p>
                                             </div>
+                                            <span class="pillar-progress" aria-hidden="true"></span>
                                         </button>
 
                                         <button type="button" class="venn-pillar" data-venn-btn="design" role="tab" aria-selected="false">
-                                            <span class="pillar-dot dot-design"></span>
-                                            <div>
+                                            <span class="pillar-icon-badge badge-design">
+                                                <iconify-icon icon="lucide:sparkles"></iconify-icon>
+                                            </span>
+                                            <div class="pillar-copy">
                                                 <h4>Design &amp; User Craft</h4>
-                                                <p>Translating messy technical complexity into clear, intuitive workflows that respect the user’s time.</p>
+                                                <p>Translating messy technical complexity into clear, intuitive workflows that respect the user's time.</p>
                                             </div>
+                                            <span class="pillar-progress" aria-hidden="true"></span>
                                         </button>
 
                                         <button type="button" class="venn-pillar" data-venn-btn="business" role="tab" aria-selected="false">
-                                            <span class="pillar-dot dot-biz"></span>
-                                            <div>
+                                            <span class="pillar-icon-badge badge-biz">
+                                                <iconify-icon icon="lucide:trending-up"></iconify-icon>
+                                            </span>
+                                            <div class="pillar-copy">
                                                 <h4>Business &amp; Strategy</h4>
                                                 <p>MBA-backed P&amp;L discipline, PLG monetization, and executive alignment that turn roadmaps into real revenue.</p>
                                             </div>
+                                            <span class="pillar-progress" aria-hidden="true"></span>
                                         </button>
                                     </div>
                                 </div>

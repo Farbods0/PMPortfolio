@@ -182,85 +182,163 @@
     }
 }
 
-/* Architectural Print Venn Diagram */
+/* Interactive Color-Blended Venn Diagram Centerpiece */
 .intersection-card {
     margin-top: 40px;
+    position: relative;
     background: var(--fj-surface);
     border: 1px solid var(--fj-rule-strong);
     border-radius: var(--fj-radius-lg);
-    padding: 32px;
+    padding: 36px 34px 34px;
+    box-shadow: 0 22px 56px rgba(17, 19, 24, 0.07);
+    overflow: hidden;
+}
+
+.intersection-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--fj-accent) 0%, var(--fj-amber) 50%, var(--fj-teal) 100%);
 }
 
 .intersection-header h3 {
     font-family: var(--fj-font-serif);
     font-style: italic;
     font-weight: 400;
-    font-size: clamp(1.45rem, 2.4vw, 1.85rem);
-    line-height: 1.3;
+    font-size: clamp(1.5rem, 2.5vw, 1.95rem);
+    line-height: 1.28;
     color: var(--fj-ink);
-    margin: 0 0 24px;
+    margin: 0 0 28px;
 }
 
 .venn-layout {
     display: grid;
-    grid-template-columns: 270px minmax(0, 1fr);
+    grid-template-columns: minmax(270px, 310px) minmax(0, 1fr);
     gap: 28px;
     align-items: center;
+}
+
+.venn-stage {
+    position: relative;
+    border-radius: 16px;
+    padding: 18px 14px 12px;
+    background:
+        radial-gradient(rgba(17, 19, 24, 0.08) 1px, transparent 1px),
+        linear-gradient(145deg, #f8faff 0%, #fffbf5 52%, #f4fbfa 100%);
+    background-size: 16px 16px, 100% 100%;
+    border: 1px solid var(--fj-rule);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .venn-svg {
     width: 100%;
     height: auto;
     overflow: visible;
+    display: block;
 }
 
 .venn-node {
     cursor: pointer;
-    opacity: 0.55;
-    transition: opacity 180ms ease-out, transform 200ms var(--fj-ease-out);
-    transform-origin: 180px 150px;
+    opacity: 0.62;
+    transition: opacity 240ms ease-out, transform 300ms var(--fj-ease-out);
+    transform-origin: 190px 166px;
+}
+
+.venn-circle {
+    mix-blend-mode: multiply;
+    transition: stroke-width 220ms ease-out, filter 220ms ease-out;
+}
+
+.venn-ring-halo {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: opacity 260ms ease-out;
 }
 
 .venn-node.is-active {
     opacity: 1;
-    transform: scale(1.03);
+    transform: scale(1.04);
+}
+
+.venn-node.is-active .venn-circle {
+    stroke-width: 2.8;
+    filter: drop-shadow(0 8px 18px rgba(17, 19, 24, 0.14));
+}
+
+.venn-node.is-active .venn-ring-halo {
+    opacity: 0.7;
+    animation: vennOrbit 22s linear infinite;
+}
+
+.venn-core-orbit {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: vennOrbit 16s linear infinite reverse;
+}
+
+@keyframes vennOrbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .venn-label {
     fill: #111318;
     font-family: var(--fj-font-sans);
-    font-size: 12.5px;
+    font-size: 14px;
     font-weight: 700;
+    text-anchor: middle;
+    letter-spacing: -0.01em;
+}
+
+.venn-sublabel {
+    fill: #475062;
+    font-family: var(--fj-font-mono);
+    font-size: 9.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     text-anchor: middle;
 }
 
 .venn-center-label {
     fill: #ffffff;
     font-family: var(--fj-font-sans);
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     text-anchor: middle;
+    letter-spacing: 0.02em;
     pointer-events: none;
 }
 
 .venn-pillars {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .venn-pillar {
+    position: relative;
+    overflow: hidden;
     text-align: left;
     background: var(--fj-bg);
     border: 1px solid var(--fj-rule);
+    border-left: 3px solid transparent;
     border-radius: var(--fj-radius-md);
-    padding: 14px 16px;
+    padding: 16px 18px;
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 14px;
     cursor: pointer;
     color: var(--fj-ink);
-    transition: background-color 160ms ease-out, border-color 160ms ease-out, transform 130ms var(--fj-ease-out);
+    transition: background-color 180ms ease-out, border-color 180ms ease-out, transform 180ms var(--fj-ease-out), box-shadow 180ms ease-out;
 }
 
 .venn-pillar:active {
@@ -270,48 +348,107 @@
 .venn-pillar.is-active {
     background: #ffffff;
     border-color: var(--fj-ink);
-    box-shadow: 0 8px 22px rgba(17, 19, 24, 0.08);
+    box-shadow: 0 12px 28px rgba(17, 19, 24, 0.08);
     transform: translateX(4px);
 }
 
 .venn-pillar[data-venn-btn="tech"].is-active {
-    border-color: var(--fj-accent);
-    background: var(--fj-accent-soft);
+    border-color: var(--fj-accent-border);
+    border-left-color: var(--fj-accent);
+    background: linear-gradient(135deg, #ffffff 0%, var(--fj-accent-soft) 100%);
 }
 
 .venn-pillar[data-venn-btn="design"].is-active {
-    border-color: var(--fj-amber);
-    background: var(--fj-amber-soft);
+    border-color: var(--fj-amber-border);
+    border-left-color: var(--fj-amber);
+    background: linear-gradient(135deg, #ffffff 0%, var(--fj-amber-soft) 100%);
 }
 
 .venn-pillar[data-venn-btn="business"].is-active {
-    border-color: var(--fj-teal);
-    background: var(--fj-teal-soft);
+    border-color: var(--fj-teal-border);
+    border-left-color: var(--fj-teal);
+    background: linear-gradient(135deg, #ffffff 0%, var(--fj-teal-soft) 100%);
 }
 
-.pillar-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-top: 6px;
+.pillar-icon-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
     flex-shrink: 0;
+    transition: transform 180ms var(--fj-ease-out);
 }
 
-.dot-tech { background: #1434cb; }
-.dot-design { background: #b45309; }
-.dot-biz { background: #0f766e; }
+.venn-pillar.is-active .pillar-icon-badge {
+    transform: scale(1.06);
+}
+
+.badge-tech {
+    background: var(--fj-accent-soft);
+    border: 1px solid var(--fj-accent-border);
+    color: var(--fj-accent);
+}
+
+.badge-design {
+    background: var(--fj-amber-soft);
+    border: 1px solid var(--fj-amber-border);
+    color: var(--fj-amber);
+}
+
+.badge-biz {
+    background: var(--fj-teal-soft);
+    border: 1px solid var(--fj-teal-border);
+    color: var(--fj-teal);
+}
+
+.pillar-copy {
+    flex: 1;
+    min-width: 0;
+}
 
 .venn-pillar h4 {
-    font-size: 15px;
+    font-size: 15.5px;
     font-weight: 700;
-    margin: 0 0 3px;
+    margin: 0 0 4px;
 }
 
 .venn-pillar p {
-    font-size: 13.5px;
-    line-height: 1.52;
+    font-size: 13.8px;
+    line-height: 1.54;
     color: var(--fj-ink-muted);
     margin: 0;
+}
+
+.pillar-progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2.5px;
+    transform-origin: left center;
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+.venn-pillar[data-venn-btn="tech"] .pillar-progress { background: var(--fj-accent); }
+.venn-pillar[data-venn-btn="design"] .pillar-progress { background: var(--fj-amber); }
+.venn-pillar[data-venn-btn="business"] .pillar-progress { background: var(--fj-teal); }
+
+.venn-pillar.is-active .pillar-progress {
+    opacity: 1;
+    animation: pillarProgressFill 3.6s linear forwards;
+}
+
+@keyframes pillarProgressFill {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
 }
 
 /* Personal Notes */
@@ -351,7 +488,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .about-hero-section::before {
+    .about-hero-section::before,
+    .venn-ring-halo,
+    .venn-core-orbit,
+    .pillar-progress {
         animation: none !important;
     }
 }
@@ -396,8 +536,8 @@
         grid-template-columns: 1fr;
     }
 
-    .venn-svg-wrap {
-        max-width: 260px;
+    .venn-stage {
+        max-width: 320px;
         margin: 0 auto;
     }
 
